@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ann Adren McDonald</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+ <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="#">NEW WORK</a></li>
+          <li><a href="#">SELF PORTRAITS</a></li>
+          <li><a href="#">PLASTIC CAMERA</a></li>
+          <li><a href="#">ARCHIVE</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">JEWELRY</a></li>
+        </ul>
+      </div>
+
+
+
+
+<%= yield %>
+
+
+<div class="bottom-wrapper">
+</div>
+
+
+<div class="nav navbar-fixed-bottom">
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<small class = "copyright pull-left">all contents © Ann Adren McDonald 2013</small>
+			</div>
+
+			<div class="col-md-4">
+			</div>
+			
+			<div class="col-md-4">
+				<small class="social pull-right">NOTHING</small>
+			</div>
+		</div>
+		</div>
+</footer>
+</div>
+
+</body>
+</html>
