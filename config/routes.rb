@@ -2,6 +2,23 @@ Ann::Application.routes.draw do
   resource :pages
 
   root 'pages#index'
+  
+  #about pages through pages controller
+  match 'resume',     to: 'pages#resume',    via: 'get',  as: 'resume'
+  match 'biography',  to: 'pages#biography', via: 'get',  as: 'biography'
+  match 'criticism',  to: 'pages#criticism', via: 'get',  as: 'criticism'
+  match 'about',      to: 'pages#about',     via: 'get',  as: 'about'
+
+
+  #gallery pages through gallery controller
+  match 'newWork',  to:  'galleries#new_work',  via: 'get', as: 'new_work'
+  match 'selfPortrait',  to:  'galleries#self_portrait',  via: 'get', as: 'self_portrait'
+  match 'plasticCamera',  to:  'galleries#plastic_camera',  via: 'get', as: 'plastic_camera'
+  match 'archive',  to:  'galleries#archive',  via: 'get', as: 'archive'
+  
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
