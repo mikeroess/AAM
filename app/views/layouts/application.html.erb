@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ann Adren McDonald</title>
+  <title>Anne Adren McDonald</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+<style>
+#big-name{
+	margin-bottom: 5%;
+}
+</style>
+
+
 </head>
+
+
 <body>
 
  <div id="wrapper">
@@ -15,12 +24,12 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-          <li><a href="new_work_path">NEW WORK</a></li>
-          <li><a href="#">SELF PORTRAITS</a></li>
-          <li><a href="#">PLASTIC CAMERA</a></li>
-          <li><a href="#">ARCHIVE</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">JEWELRY</a></li>
+          <li><a href="/newWork">NEW WORK</a></li>
+          <li><a href="/selfPortrait">SELF PORTRAITS</a></li>
+          <li><a href="/plasticCamera">PLASTIC CAMERA</a></li>
+          <li><a href="/archive">ARCHIVE</a></li>
+          <li><a href="/about">ABOUT</a></li>
+          <li><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">JEWELRY</a></li>
         </ul>
       </div>
 

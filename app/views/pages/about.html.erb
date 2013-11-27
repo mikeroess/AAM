@@ -1,0 +1,61 @@
+<style>
+	
+	.top-container{
+		height: 35%;
+	}
+	
+	#about-page-container {
+		text-align: center;
+
+	}
+
+	#about-page-row {
+		margin-top: 20%;
+	}
+
+	#about-row {
+		height: 150px;
+		vertical-align: center;
+
+	}
+
+	
+
+
+</style>
+
+<div class="top-container">
+</div>
+
+<div class="container" id="about-page-container">
+
+	<div class="row" id="about-page-row">
+	
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("criticism.jpg", alt: "resume", :class => "img-responsive"), resume_path %><br />
+			Resume
+		</div>
+
+				<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("criticism.jpg", alt: "bio", :class => "img-responsive" ), biography_path %><br />
+			Bio
+		
+		</div>
+	
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("criticism.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %><br />
+			Criticism
+		</div>
+	
+
+	
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("criticism.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %><br />
+			Czech Work	
+		</div>
+	
+
+	</div>
+
+</div>
+</div>
