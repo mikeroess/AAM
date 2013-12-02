@@ -7,11 +7,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-<style>
-#big-name{
-	margin-bottom: 5%;
-}
-</style>
+
 
 
 </head>
@@ -26,7 +22,7 @@
         <ul class="sidebar-nav">
           <li><a href="/newWork">NEW WORK</a></li>
           <li><a href="/selfPortrait">SELF PORTRAITS</a></li>
-          <li><a href="/plasticCamera">PLASTIC CAMERA</a></li>
+          <li><%= link_to "PLASTIC CAMERA", plastic_camera_path %></li>
           <li><a href="/archive">ARCHIVE</a></li>
           <li><a href="/about">ABOUT</a></li>
           <li><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">JEWELRY</a></li>
@@ -34,23 +30,25 @@
       </div>
 
 
-
-
+<div id="main-page">
 <%= yield %>
-
-
-<div id="big-name">
-	<hr>
-	<p>
-		<h1>ANNE ARDEN MCDONALD</h1>
-	</p>
 </div>
+<!--second footer thing with name and button to go home 
+<div class="bottom-second-footer">
+  <div class="row">
+    <hr>
+
+    <p class="logo">Anne Arden McDonald</p>
+  </div>
+</div>
+-->
+<!--footer-->
 <div class="nav navbar-fixed-bottom">
 <footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<small class = "copyright pull-left">all contents © Ann Adren McDonald 2013</small>
+				<small class = "copyright pull-left">all contents © Anne Adren McDonald 2013</small>
 			</div>
 
 			<div class="col-md-4">
