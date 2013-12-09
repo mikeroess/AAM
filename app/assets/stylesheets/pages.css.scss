@@ -3,12 +3,37 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
- .bottom-second-footer{
-      margin-bottom: 1%;
-      height: 20%;
-      margin-top: 1%;
-      width: 100%;
-      position: fixed;
+// Wraps entire page
+  #body{
+        font-family: Cardo-Regular;
+  }
+
+// Footer.  Should be on top of everything else.
+.copyright {
+    color: white;
+}
+
+.social { 
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.footer {
+  background: #3B2D2D;  
+}
+ 
+// this covers the 'yeild' section in views/appliation -- i.e. where the content is located
+    #main-page{
+      overflow: scroll;
+      height: 80%;
+      width: 80%;
+      float: right;
+    }
+
+
+//this covers the area where "Anne Arden McDonald is written in huge letters"
+    .bottom-second-footer {
     }
 
     .logo{
@@ -16,41 +41,36 @@
       float: right;
       margin-top: 3%;
       margin-bottom: 4%;
+      
     }
 
-    #main-page{
-      overflow: scroll;
-      height: 90%;
-      width: 90%;
-      float: right;
-    }
 
+
+
+// all of this was added for that dumb old sidebar.  I have to look into what it does and fix it
 
 #wrapper {
-  border-right: thick;
-  transition: all 0.4s ease 0s;
+
+    
+    transition: all 0.4s ease 0s;
+  
 }
 
 #sidebar-wrapper {
   margin-left: -250px;
   left: 250px;
   width: 20%;
-  background: #C0C0C0;
   position: fixed;
   height: 100%;
   overflow-y: auto;
   z-index: 1000;
+  border-right: thin solid #C9C9C9;
   transition: all 0.4s ease 0s;
 }
 
-#big-name {
-	float:right;
 
-}
 
-#page-content-wrapper {
-  width: 100%;
-}
+
 
 .sidebar-nav {
   position: absolute;
@@ -67,13 +87,13 @@
 }
 
 .sidebar-nav li a {
-  color: #999999;
+  color: #000000;
   display: block;
   text-decoration: none;
 }
 
 .sidebar-nav li a:hover {
-  color: #fff;
+  color: #999999;
   background: rgba(255,255,255,0.2);
   text-decoration: none;
 }
@@ -90,13 +110,18 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #999999;
+  color: #000000;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
   color: #fff;
   background: none;
 }
+
+
+
+
+
 
 .content-header {
   height: 65px;
@@ -128,34 +153,19 @@
   left: 0;
 }
 
-#wrapper.active {
-  position: relative;
-  left: 250px;
-}
+  
+  #wrapper.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s;
+  }
+  
+  #menu-toggle {
+    display: inline-block;
+  }
 
-#wrapper.active #sidebar-wrapper {
-  left: 250px;
-  width: 250px;
-  transition: all 0.4s ease 0s;
-}
+  .inset {
+    padding: 15px;
+  }
 
-#menu-toggle {
-  display: inline-block;
-}
-
-.inset {
-  padding: 15px;
-}
-
-}
-.copyright {
-    color: white;
-}
-
-.social { 
-    color: white;
-}
-
-.footer {
-	background: #3C2605;
 }

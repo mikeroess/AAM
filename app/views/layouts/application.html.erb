@@ -13,12 +13,11 @@
 </head>
 
 
-<body>
+<body id="body">
 
- <div id="wrapper">
       
       <!-- Sidebar -->
-      <div id="sidebar-wrapper">
+      <div id="sidebar-wrapper" >
         <ul class="sidebar-nav">
           <li><a href="/newWork">NEW WORK</a></li>
           <li><a href="/selfPortrait">SELF PORTRAITS</a></li>
@@ -30,23 +29,19 @@
       </div>
 
 
-<div id="main-page">
-<%= yield %>
-</div>
-<!--second footer thing with name and button to go home 
-<div class="bottom-second-footer">
-  <div class="row">
-    <hr>
+    <div id="main-page">  
+      <%= yield %>
+    </div>
 
-    <p class="logo">Anne Arden McDonald</p>
-  </div>
-</div>
--->
+    <div class="bottom-second-footer">
+        <p class="logo">Anne Arden McDonald</p>
+    </div>
+
 <!--footer-->
-<div class="nav navbar-fixed-bottom">
-<footer class="footer">
-	<div class="container">
-		<div class="row">
+  <div class="nav navbar-fixed-bottom">
+    <footer class="footer">
+	   <div class="container">
+		  <div class="row">
 			<div class="col-md-4">
 				<small class = "copyright pull-left">all contents © Anne Adren McDonald 2013</small>
 			</div>
@@ -59,8 +54,8 @@
 			</div>
 		</div>
 		</div>
-</footer>
+    </footer>
+  </div>
 </div>
-
 </body>
 </html>

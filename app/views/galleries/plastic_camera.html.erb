@@ -4,25 +4,21 @@
 	
 	#about-page-container {
 		text-align: center;
+		margin-top: 1%;
+		margin-bottom: 1%;
 
 	}
 
-	#about-page-row {
-		margin-top: 8%;
-	}
+
 
 	#about-row {
-		height: 150px;
 		vertical-align: center;
 	}
 
 	.title {
 		text-align: center;
 		margin-top: 10%;
-
-	}
-
-
+		font-family: Cardo-Regular;
 	}
 
 	
@@ -30,18 +26,13 @@
 
 </style>
 
- <div class="container">
-	<div class="row">
- 
-			<h1 class="title">PLASTIC CAMERA WORK</h1>
-
+	 <div class="container">
+		<div class="row"> 
+				<h1 class="title">PLASTIC CAMERA WORK</h1>
+		</div>
 	</div>
-</div>
 
-<div class="container" id="about-page-container">
-
-	<div class="row" id="about-page-row">
-	
+	<div class="container" id="about-page-container">
 		<div class="col-md-4" id="about-row">
 			<%= link_to image_tag("icon_diana_4.jpg", alt: "icon_diana_4", :class => "img-responsive"), icon_diana_path %><br />
 			Icon Diana Photos
@@ -57,10 +48,6 @@
 			<%= link_to image_tag("garden_diana_1.jpg", alt: "garden_diana_1", :class => "img-responsive" ), garden_diana_path %><br />
 			Garden and Travel Diana Photos
 		</div>
+	</div>
 	
 
-
-
-	</div>
-
-</div>
