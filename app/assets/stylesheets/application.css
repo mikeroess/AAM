@@ -36,3 +36,8 @@
   font-family: 'Cardo-Italic';
   src: url('../assets/fonts/Cardo-Italic.ttf');
  }
+
+ @font-face {
+  font-family: 'Copperplate';
+  src: url('../assets/fonts/Copperplate.dfont');
+ }

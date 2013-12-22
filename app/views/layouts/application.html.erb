@@ -13,34 +13,44 @@
 </head>
 
 
-<body id="body">
+<body>
+  <div id="body">
 
       
 <!-- Sidebar -->
       <div id="sidebar-wrapper" >
         <ul class="sidebar-nav">
-          <li><a href="/newWork">NEW WORK</a></li>
-          <li><a href="/selfPortrait">SELF PORTRAITS</a></li>
-          <li><%= link_to "PLASTIC CAMERA", plastic_camera_path %></li>
-          <li><a href="/archive">ARCHIVE</a></li>
-          <li><a href="/about">ABOUT</a></li>
-          <li><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">JEWELRY</a></li>
+          <li><strong><a href="/newWork">NEW WORK</a></strong>
+          </li>
+          <li><strong><a href="/selfPortrait">SELF PORTRAITS</a></strong>
+          </li>
+          <li><strong><%= link_to "PLASTIC CAMERA", plastic_camera_path %></strong>
+          </li>
+          <li><strong><a href="/archive">ARCHIVE</a></strong>
+          </li>
+          <li><strong><a href="/about">ABOUT</a></strong>
+          </li>
+          <li><strong><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">JEWELRY</a></strong>
+          </li>
         </ul>
       </div>
 
 <!-- main page -->
-    <div id="main-page">  
-      <%= yield %>
-    </div>
+    
+      <div id="main-page">  
+        <%= yield %>
+      </div>
 
 
 <!-- second fotter -->
 
 <!--footer-->
-  <div id="bottom-wrapper">
-      <div class="bottom-second-footer nav navbar-fixed-bottom">
-        <hr>
-          <p class="logo">Anne Arden McDonald</p>
+  
+      <div class="bottom-second-footer navbar-fixed-bottom">
+        <div class="left-footer-box">
+        </div>
+        <div class="right-footer-box">
+          <p class="logo">ANNE ARDEN MCDONALD</p>
       </div>
 
     <div class="nav navbar-fixed-bottom">

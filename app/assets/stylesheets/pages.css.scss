@@ -27,22 +27,36 @@
     #main-page{
       overflow: scroll;
       height: 80%;
-      width: 80%;
+      width: 95%;
       float: right;
     }
 
 
 //this covers the area where "Anne Arden McDonald is written in huge letters"
+  
+
+    .left-footer-box{
+    float: left;
+    }
+
+    .right-footer-box{
+    float: right;
+    background: #FFFFFF;
+    width: 89%;
+    font-family: Copperplate;
+    }
+  
     .bottom-second-footer {
+    border-top: thin solid #C9C9C9;
     }
 
     .logo{
-      font-size: 350%;
+      font-size: 210%;
       float: right;
-      float: bottom;
-      margin-top: 3%;
-      margin-bottom: 4%;
-      
+      margin-top: 4%;
+      margin-bottom: 6%;
+      padding-right: 5%;
+      font-family: Copperplate;
     }
 
 
@@ -58,9 +72,7 @@
 }
 
 #sidebar-wrapper {
-  margin-left: -250px;
-  left: 250px;
-  width: 20%;
+  width: 10%;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -75,8 +87,8 @@
 
 .sidebar-nav {
   position: absolute;
-  top: 0;
-  width: 250px;
+  top: 10%;
+  width: 150px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -84,7 +96,8 @@
 
 .sidebar-nav li {
   line-height: 40px;
-  text-indent: 20px;
+  text-align: right;
+    font-family: Cardo-Bold;
 }
 
 .sidebar-nav li a {
@@ -108,6 +121,7 @@
   height: 65px;
   line-height: 60px;
   font-size: 18px;
+  font-family: Cardo-Bold;
 }
 
 .sidebar-nav > .sidebar-brand a {
