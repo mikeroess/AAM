@@ -15,7 +15,29 @@
 
 <div class="gallery-div">
 
-<!--first rowow-->
+
+<script type="text/javascript">
+    $(".down").click(function () {
+        $("#mover").animate({marginTop: '-=20px'}, 0);
+    });
+
+    $(".up").click(function () {
+        $("#mover").animate({ marginTop: '+=20px' }, 0);
+    });
+</script>
+
+
+<!-- buttons to scroll in gallery -->
+	<div class="pull-right">
+		<ul>
+			<li class="up"><%= link_to image_tag("watch_3_up.jpg", alt: "scroll up") %>
+			</li>
+			<li class="down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down") %>
+			</li>
+		</ul>
+	</div>
+
+<!--first row-->
 	<div class="container" id="gallery-page-container">
 
 		<div class="row" id="gallery-page-row">
