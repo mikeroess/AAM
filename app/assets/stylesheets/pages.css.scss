@@ -9,15 +9,13 @@
   }
 
 // Footer.  Should be on top of everything else.
-.social { 
-    color: white;
-    margin-top: 2%;
-    margin-bottom: 1%;
-}
+
 
 .footer {
   background: #3B2D2D;  
-  color: #fff;
+  color: #EBEBEB;
+  float: bottom;
+  size: 85%;
 }
  
 .left-border {
@@ -45,7 +43,7 @@
     .right-footer-box{
     float: right;
     background: #FFFFFF;
-    width: 89%;
+    width: 87%;
     font-family: Copperplate;
     }
   
@@ -54,7 +52,7 @@
     }
 
     .logo{
-      font-size: 210%;
+      font-size: 260%;
       float: right;
       margin-top: 4%;
       margin-bottom: 6%;
@@ -76,7 +74,7 @@
 }
 
 #sidebar-wrapper {
-  width: 14%;
+  width: 13%;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -91,7 +89,7 @@
 
 .sidebar-nav {
   position: absolute;
-  top: 10%;
+  top: 3%;
   width: 150px;
   list-style: none;
   margin: 0;
@@ -101,7 +99,7 @@
 .sidebar-nav li {
   line-height: 40px;
   text-align: right;
-    font-family: Cardo-Bold;
+    font-family: Cardo;
 }
 
 .sidebar-nav li a {
