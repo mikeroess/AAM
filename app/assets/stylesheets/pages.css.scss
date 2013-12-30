@@ -89,7 +89,7 @@
 
 .sidebar-nav {
   position: absolute;
-  top: 3%;
+  top: 8%;
   width: 150px;
   list-style: none;
   margin: 0;
@@ -235,4 +235,25 @@ dropdown-menu .sub-menu {
 #about-row {
   color: #666666;
   font-size: 80%;
+}
+
+// Bio page
+
+#bio-text {
+  float: left;
+  margin-top: 3%;
+  color: #666666;
+}
+
+#bio-box {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: 6%;
+  float: right;
+  background: #CCCCCC;
+  padding-bottom: 13%;
+}
+
+#bio-image {
+  float: center;
 }
