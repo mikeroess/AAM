@@ -9,10 +9,6 @@
   }
 
 // Footer.  Should be on top of everything else.
-.copyright {
-    color: white;
-}
-
 .social { 
     color: white;
     margin-top: 2%;
@@ -21,8 +17,15 @@
 
 .footer {
   background: #3B2D2D;  
+  color: #fff;
 }
  
+.left-border {
+  padding-left: 20px;
+  border-left: solid #fff;
+  background: #3B2D2D;  
+}
+
 // this covers the 'yeild' section in views/appliation -- i.e. where the content is located
     #main-page{
       overflow: scroll;
@@ -73,7 +76,7 @@
 }
 
 #sidebar-wrapper {
-  width: 10%;
+  width: 14%;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -221,4 +224,17 @@ dropdown-menu .sub-menu {
     padding: 15px;
   }
 
+}
+
+// About page
+
+#about-page-container {
+  padding-right: 11%;
+  padding-left: 6%;
+  padding-top: 7%;
+}
+
+#about-row {
+  color: #666666;
+  font-size: 80%;
 }

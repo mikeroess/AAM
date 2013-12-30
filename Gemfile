@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# icons to get the facebook icon in the footer
+gem 'font-awesome-less'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
