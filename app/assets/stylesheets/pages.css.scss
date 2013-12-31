@@ -231,7 +231,7 @@ dropdown-menu .sub-menu {
   margin-right: 2%;
 }
 
-// About page
+// About Page
 
 #about-page-container {
   padding-right: 11%;
@@ -244,15 +244,15 @@ dropdown-menu .sub-menu {
   font-size: 80%;
 }
 
-// Bio page
+// Bio + Crit + Resume pagespage
 
-#bio-text {
+#pages-text {
   float: left;
   margin-top: 3%;
   color: #666666;
 }
 
-#bio-box {
+#pages-box {
   margin-top: 2%;
   margin-bottom: 4%;
   margin-right: 6%;
@@ -261,30 +261,8 @@ dropdown-menu .sub-menu {
   padding-bottom: 13%;
 }
 
-#bio-image {
+#pages-image {
   float: center;
 }
 
-// Criticism page
 
-#crit-text {
-  overflow: scroll;
-  float: left;
-  margin-top: 3%;
-  color: #666666;
-
-}
-
-#crit-box {
-  margin-top: 2%;
-  margin-bottom: 4%;
-  margin-right: 6%;
-  float: right;
-  background: #CCCCCC;
-  padding-bottom: 13%;
-}
-
-#crit-image {
-
-  float: center;
-}
