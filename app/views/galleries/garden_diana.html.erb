@@ -2,24 +2,58 @@
 
 
 <script type="text/javascript">
-    $(".down").click(function () {
-        $("#mover").animate({marginTop: '-=20px'}, 0);
-    });
+    var step = 25;
+	var scrolling = false;
 
-    $(".up").click(function () {
-        $("#mover").animate({ marginTop: '+=20px' }, 0);
+// Wire up events for the 'scrollUp' link:
+$("#up-button").bind("click", function(event) {
+    event.preventDefault();
+    // Animates the scrollTop property by the specified
+    // step.
+    $("#gallery-page-container").animate({
+        scrollTop: "-=" + step + "px"
     });
+}).bind("mouseover", function(event) {
+    scrolling = true;
+    scrollContent("up");
+}).bind("mouseout", function(event) {
+    scrolling = false;
+});
+
+
+$("#down-button").bind("click", function(event) {
+    event.preventDefault();
+    $("#gallery-page-container").animate({
+        scrollTop: "+=" + step + "px"
+    });
+}).bind("mouseover", function(event) {
+    scrolling = true;
+    scrollContent("down");
+}).bind("mouseout", function(event) {
+    scrolling = false;
+});
+
+function scrollContent(direction) {
+    var amount = (direction === "up" ? "-=1px" : "+=1px");
+    $("#gallery-page-container").animate({
+        scrollTop: amount
+    }, 1, function() {
+        if (scrolling) {
+            scrollContent(direction);
+        }
+    });
+}
 </script>
 
 
 <!-- buttons to scroll in gallery -->
-	<div class="gallery-pull-right pull-right">
+	<div class="gallery-pull-right pull-right" >
 		
 			<div class="gallery-up">
-				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive") %>
+				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
 
 			</div>
-			<div class="gallery-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive") %>
+			<div class="gallery-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
 			</div>
 		</ul>
 	</div>
