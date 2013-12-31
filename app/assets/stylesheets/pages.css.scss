@@ -15,12 +15,13 @@
   background: #3B2D2D;  
   color: #EBEBEB;
   float: bottom;
-  size: 85%;
+  font-size: 70%;
 }
  
 .left-border {
   padding-left: 20px;
   border-left: solid #fff;
+  border-width: 2px;
   background: #3B2D2D;  
 }
 
@@ -48,11 +49,12 @@
     }
   
     .bottom-second-footer {
-    border-top: thin solid #C9C9C9;
+    border-top: solid #C9C9C9;
+    border-width: 2px;
     }
 
     .logo{
-      font-size: 260%;
+      font-size: 180%;
       float: right;
       margin-top: 4%;
       margin-bottom: 6%;
@@ -79,7 +81,8 @@
   height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  border-right: thin solid #C9C9C9;
+  border-right: solid #C9C9C9;
+  border-width: 2px;
   transition: all 0.4s ease 0s;
 }
 
@@ -90,15 +93,16 @@
 .sidebar-nav {
   position: absolute;
   top: 8%;
-  width: 150px;
+  width: 95%;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .sidebar-nav li {
-  line-height: 40px;
+  line-height: 30px;
   text-align: right;
+  font-size: 80%;
     font-family: Cardo;
 }
 

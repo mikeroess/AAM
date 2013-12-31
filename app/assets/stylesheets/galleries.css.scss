@@ -3,7 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.gallery-page-row {
+#gallery-page-container {
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 5%;
+	width: 88%;
+	font-size: 65%;
+	}
+
+
+#gallery-page-row {
 	margin-left: 5%;
 	padding-top: 5%;
+	color: #999999;
 }
+
+.gallery-pull-right{
+	width: 9%;
+	height: 100%;
+}
+
+.gallery-up{
+	margin-left: 1%;
+	position: fixed;
+	margin-top: 5%;
+
+}
+
+.gallery-down{
+	position: fixed;
+	margin-left: 1%;
+	bottom: 23%;
+	
+}
+
+

@@ -1,19 +1,3 @@
-<style>
-	
-	.gallery-div {
-		overflow: scroll;
-	}
-
-
-	.gallery-page-container {
-		text-align: center;
-		margin-top: 1%;
-		margin-bottom: 1%;
-		margin-right: 5%;
-
-	}
-</style>
-
 <div class="gallery-div">
 
 
@@ -29,11 +13,13 @@
 
 
 <!-- buttons to scroll in gallery -->
-	<div class="pull-right">
+	<div class="gallery-pull-right pull-right">
 		
-			<div class="up"><%= link_to image_tag("watch_3_up.jpg", alt: "scroll up") %>
+			<div class="gallery-up">
+				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive") %>
+
 			</div>
-			<div class="down"><%= link_to image_tag("watch_2_down.jpg", alt: "scroll down") %>
+			<div class="gallery-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive") %>
 			</div>
 		</ul>
 	</div>
@@ -43,27 +29,27 @@
 
 		<div class="row" id="gallery-page-row">
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_1.jpg", alt: "garden_diana_1", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_2.jpg", alt: "garden_diana_2", :class => "img-responsive" ), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			
 			</div>
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_3.jpg", alt: "garden_diana_3", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 		
 
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_4.jpg", alt: "garden_diana_4", :class => "img-responsive"),  garden_dianas_statement_path %>
-				description, date	
+				<em>Description, date</em>	
 			</div>
 		</div>
 	</div>
@@ -73,27 +59,27 @@
 
 		<div class="row" id="gallery-page-row">
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_5.jpg", alt: "garden_diana_5", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_6.jpg", alt: "garden_diana_6", :class => "img-responsive" ), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			
 			</div>
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_7.jpg", alt: "garden_diana_7", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 		
 
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_8.jpg", alt: "garden_diana_8", :class => "img-responsive"),  garden_dianas_statement_path %>
-				description, date	
+				<em>Description, date</em>
 			</div>
 		</div>
 	</div>
@@ -103,25 +89,25 @@
 
 		<div class="row" id="gallery-page-row">
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_9.jpg", alt: "garden_diana_9", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_10.jpg", alt: "garden_diana_10", :class => "img-responsive" ), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			
 			</div>
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_11.jpg", alt: "garden_diana_11", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_12.jpg", alt: "garden_diana_12", :class => "img-responsive"),  garden_dianas_statement_path %>
-				description, date	
+				<em>Description, date</em>	
 			</div>
 		</div>
 	</div>
@@ -131,25 +117,25 @@
 
 		<div class="row" id="gallery-page-row">
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_12.jpg", alt: "garden_diana_13", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_14.jpg", alt: "garden_diana_14", :class => "img-responsive" ), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			
 			</div>
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_15.jpg", alt: "garden_diana_15", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_16.jpg", alt: "garden_diana_16", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
 		</div>
@@ -160,25 +146,25 @@
 
 		<div class="row" id="gallery-page-row">
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_17.jpg", alt: "garden_diana_17", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_18.jpg", alt: "garden_diana_18", :class => "img-responsive" ), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			
 			</div>
 		
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_19.jpg", alt: "garden_diana_19", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
-			<div class="col-md-3" id="gallery-row">
+			<div class="col-xs-3" id="gallery-row">
 				<%= link_to image_tag("garden_diana_20.jpg", alt: "garden_diana_20", :class => "img-responsive"), garden_dianas_statement_path %>
-				description, date
+				<em>Description, date</em>
 			</div>
 
 		</div>
