@@ -25,6 +25,13 @@ Ann::Application.routes.draw do
   match 'pillowBookStatement',       to: 'statements#pillow_book_statement',        via: 'get',  as: 'pillow_book_statement'
   match 'gardenDianasStatement',     to: 'statements#garden_dianas_statement',      via: 'get',  as: 'garden_dianas_statement'
   match 'iconDianasStatement',       to: 'statements#icon_dianas_statement',        via: 'get',  as: 'icon_dianas_statement'
+
+  # work details pages through galleries controller
+  match 'pillowBook1',              to: 'galleries#pillow_book_1',                  via: 'get',  as:  'pillow_book_1'
+  match 'pillowBook2',              to: 'galleries#pillow_book_2',                  via: 'get',  as:  'pillow_book_2'
+  match 'pillowBook3',              to: 'galleries#pillow_book_3',                  via: 'get',  as:  'pillow_book_3'
+  match 'pillowBook4',              to: 'galleries#pillow_book_4',                  via: 'get',  as:  'pillow_book_4'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

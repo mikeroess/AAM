@@ -26,7 +26,7 @@
 
 // this covers the 'yeild' section in views/appliation -- i.e. where the content is located
     #main-page{
-      overflow: scroll;
+
       height: 80%;
       width: 85%;
       float: right;
@@ -265,4 +265,14 @@ dropdown-menu .sub-menu {
   float: center;
 }
 
+// Detail pages
+.detail-row {
+margin-top: 10%;
+margin-left: 20%;
+}
 
+// Detail Pages
+  .picture-text {
+  font-family: Cardo-Italic;
+  color: #666666;
+  }

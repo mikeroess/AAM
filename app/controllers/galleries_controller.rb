@@ -1,5 +1,7 @@
 class GalleriesController < ApplicationController
 
+
+# galleries
 	def new_work
 	end
 
@@ -19,6 +21,19 @@ class GalleriesController < ApplicationController
 	end
 
 	def garden_diana
+	end
+
+# pillow book details
+	def pillow_book_1
+	end
+
+	def pillow_book_2
+	end
+
+	def pillow_book_3
+	end
+
+	def pillow_book_4
 	end
 
 end
