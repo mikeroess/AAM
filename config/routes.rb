@@ -19,7 +19,8 @@ Ann::Application.routes.draw do
   match 'pillowBook',     to:  'galleries#pillow_book',     via:'get',  as: 'pillow_book'
   match 'iconDiana',      to:  'galleries#icon_diana',      via: 'get', as: 'icon_diana'
   match 'gardenDiana',    to:  'galleries#garden_diana',    via: 'get', as: 'garden_diana'
-
+  match 'botanicals',     to:  'galleries#botanicals',      via: 'get', as: 'botanicals'
+  match 'watches',        to:  'galleries#watches',         via: 'get', as: 'watches'
 
   #statement pages through statements controller
   match 'pillowBookStatement',       to: 'statements#pillow_book_statement',        via: 'get',  as: 'pillow_book_statement'

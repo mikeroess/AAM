@@ -23,6 +23,15 @@ class GalleriesController < ApplicationController
 	def garden_diana
 	end
 
+	def botanicals
+	end
+
+	def watches
+	end
+
+	def self_portraits
+	end
+
 # pillow book details
 	def pillow_book_1
 	end

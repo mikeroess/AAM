@@ -1,0 +1,37 @@
+<style>
+	#about-page-container {
+		text-align: center;
+
+
+	}
+</style>
+
+<div class="container" id="about-page-container">
+
+	<div class="row" id="about-page-row">
+	
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("bot-1-couples.jpg", alt: "couples", :class => "img-responsive"), resume_path %>
+			Resume
+		</div>
+
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("bot-2-eyelash.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
+			Bio
+		
+		</div>
+	
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("bot-3-flying.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
+			Criticism
+		</div>
+	
+
+	
+		<div class="col-md-3" id="about-row">
+			<%= link_to image_tag("bot-4-women.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
+			Czech Work	
+		</div>
+	</div>
+</div>
+
