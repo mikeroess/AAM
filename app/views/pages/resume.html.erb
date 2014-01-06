@@ -1,9 +1,10 @@
-<div class="container-fluid">
+<div class="container pages-page">
 
 	<div class="row">
 	
 		<div class="col-lg-7" id="pages-text">
-	<p><strong>Resume</strong></p>
+	<div id="pages-text-resume">
+		<p><strong>Resume</strong></p>
 	&nbsp;
 	
 <p>SELECTED ONE PERSON EXHIBITIONS</p>
@@ -11,26 +12,21 @@
 <p>2012</p>
 <p>Cincinnati Month of Photography, Cinn, Oh.</p>
 <p>2011</p>
-<p>ATOM, PLANET, Skink Ink Editions, Brooklyn, NY.
-	&nbsp;
+<p>ATOM, PLANET, Skink Ink Editions, Brooklyn, NY.<br />
 WEIGHING THE CLOUDS, University of Louisville, Ky.</p>
 <p>2010</p>
 <p>Win Initiatives, New York, NY.</p>
 <p>2009</p>
 <p>Liloveve Gallery, Brooklyn, NY.</p>
 <p>2006</p>
-<p>THE BODY IN TRANSFMORMATION, Month of Photography, Slovakia.
-	&nbsp;
+<p>THE BODY IN TRANSFMORMATION, Month of Photography, Slovakia.<br />
 FLYING AND FLOATING, Hartsfield International Airport, Atlanta, GA.</p>
 <p>2005</p>
-<p>BOUYANCY, Cave Space, Brooklyn, NY.
-	&nbsp;
+<p>BOUYANCY, Cave Space, Brooklyn, NY.<br />
 FROM EARTH TO SKY, Artoteca, Milan, Italy</p>
 <p>2003</p>
-<p>UC Berkeley Extension Gallery, San Francisco, Ca.
-	&nbsp;
-Brooklyn Botanic Garden, Brooklyn, NY.
-	&nbsp;
+<p>UC Berkeley Extension Gallery, San Francisco, Ca.<br />
+Brooklyn Botanic Garden, Brooklyn, NY.<br />
 Contemporary Arts Center, Abilene, Tx.</p>
 <p>2000</p>
 <p>LA METAMORFOSIS DE ICARO, Santiago, Chile.</p>
@@ -313,17 +309,14 @@ Visiting undergraduate at the Rhode Island School of Design,
 Providence, R.I.
 Studied with William Parker.
 
-
+</div>
 </div>
 
-<div class="col-lg-4" id="pages-box">
-		<div id="pages-image">
-			<div class="up"><%= link_to image_tag("watch_3_up.jpg", alt: "scroll up") %>
-			</div>
-			<div class="down"><%= link_to image_tag("watch_2_down.jpg", alt: "scroll down") %>
-			</div>
+<div class="col-xs-4" id="pages-box-resume">
+			<div id="pages-image">
+				<%= link_to image_tag("sp-06-12.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
 		</div>
-		description-date
+		<div id="pages-box-text"><em>description-date</em></div>
 </div>
 	
 	

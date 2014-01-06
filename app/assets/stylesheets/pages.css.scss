@@ -11,12 +11,12 @@
     }
 
 // Index
-.front-image {
-heigh: 100%;
-width: 87%;
+#front-image {
 position: fixed;
-margin-left: 3%;
-max-height: 100%;
+margin-left: 13%;
+width: 91%;
+margin-top: 5px;
+
 }
 
 // About Page
@@ -40,7 +40,7 @@ max-height: 100%;
 
 // Bio + Crit + Resume pagespage
 
-.bio-page {
+.pages-page {
   width: 80%;
   margin-left:16%;
 }
@@ -63,6 +63,21 @@ max-height: 100%;
   text-align: right;
   padding-bottom: 20%;
   font-size: 80%;
+}
+
+#pages-box-resume {
+  margin-top: 2%;
+  background: #CCCCCC;
+  width: 39%;
+  float:left;
+  text-align: right;
+  padding-bottom: 29%;
+  font-size: 80%;
+}
+
+#pages-text-resume {
+  width: 80%;
+  
 }
 
 #pages-image {
