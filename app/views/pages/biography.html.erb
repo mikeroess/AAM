@@ -1,8 +1,8 @@
-<div class="container-fluid">
+<div class="container bio-page">
 
 	<div class="row">
 	
-		<div class="col-lg-7" id="pages-text">
+		<div class="col-xs-7" id="pages-text">
 			<p><strong>Bio</strong></p>
 			&nbsp;
 
@@ -13,11 +13,11 @@
 			<p>Most of the work on these sites is available for purchase; please feel free to inquire about the price.
 			</p>
 		</div>
-	</div>
-		<div id="pages-box">
-				<div class="col-lg-11" ><%= link_to image_tag("bio.jpg", alt: "bio", :class => "img-responsive") %>
-				</div>		
-			<em>Photo by Joel Simpson</em>
+
+		<div class="col-xs-4" id="pages-box">
+			<div id="pages-image"><%= link_to image_tag("bio.jpg", alt: "bio", :class => "img-responsive") %>
+			</div>
+			<div id="pages-box-text"><em>Photo by Joel Simpson</em></div>
 		</div>
 	</div>
 
