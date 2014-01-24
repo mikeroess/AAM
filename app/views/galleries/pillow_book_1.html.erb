@@ -1,17 +1,17 @@
 <div class="container-fluid detail-image">
 	<div class="row detail-row">
-		<div class="col-xs-7">
+		<div class="col-xs-8">
 			<%= image_tag("pillow_book_1.jpg", alt: "pillow_book_1", 
 			:class => "img-responsive")%><br />
 			<div class="row">
-				<div class="col-xs-3">
+				<div class="col-xs-2 pull-left">
 					<%= image_tag("watch_4_left.jpg", alt: "right facing wathc hand", 
 					:class => "img-responsive")%><br />
 				</div>
-				<div class= "col-xs-4 picture-text">
-					<em><%= link_to("Read Artists Statement", pillow_book_statement_path) %></em>
+				<div class= "col-xs-8" id="detail-text">
+					<em>Work Detail description, date &mdash; <%= link_to("Read Artists Statement", pillow_book_statement_path) %></em>
 				</div>
-				<div class="col-xs-3 col-xs-offset-6">
+				<div class="col-xs-2 pull-right">
 					<%= image_tag("watch_4_right.jpg", alt: "right facing wathc hand", 
 					:class => "img-responsive")%><br />
 				</div>

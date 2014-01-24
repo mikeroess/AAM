@@ -1,95 +1,101 @@
-<style>
-	#about-page-container {
-		text-align: center;
-		margin-top: 1%;
-		margin-bottom: 1%;
+<div class="gallery-div">
 
-	}
-</style>
-
-<div class="container" id="about-page-container">
-
-	<div class="row" id="about-page-row">
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "resume", :class => "img-responsive"), resume_path %>
-			Resume
-		</div>
-
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
-			Bio
+<!-- buttons to scroll in gallery -->
+	<div class="gallery-pull-right pull-right" >
 		
-		</div>
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
-			Criticism
-		</div>
-	
+			<div class="gallery-up hidden-xs hidden-xs">
+				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
 
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
-			Czech Work	
+			</div>
+			<div class="gallery-down hidden-xs hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			</div>
+		</ul>
+	</div>
+<!--first row -->
+	<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bot-1-couples.jpg", alt: "couples", :class => "img-responsive"), botanicals_path %>
+				<em>Couples, 2000</em>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bot-2-eyelash.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
+			<em>Eyelash, 2000</em>
+			
+			</div>
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bot-3-flying.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
+			<em>Flying, 2000</em>
+			</div>
+		
+
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bot-4-women.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
+			<em>Women, 2000</em>	
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="container" id="about-page-container">
+	<div class="container" id="gallery-page-container">
 
-	<div class="row" id="about-page-row">
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "resume", :class => "img-responsive"), resume_path %>
-			Resume
-		</div>
-
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
-			Bio
+		<div class="row" id="gallery-page-row">
 		
-		</div>
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
-			Criticism
-		</div>
-	
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "resume", :class => "img-responsive"), resume_path %>
+				Resume
+			</div>
 
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
-			Czech Work	
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
+				Bio
+			
+			</div>
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
+				Criticism
+			</div>
+		
+
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
+				Czech Work	
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="container" id="about-page-container">
+	<div class="container" id="gallery-page-container">
 
-	<div class="row" id="about-page-row">
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "resume", :class => "img-responsive"), resume_path %>
-			Resume
-		</div>
-
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
-			Bio
+		<div class="row" id="gallery-page-row">
 		
-		</div>
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
-			Criticism
-		</div>
-	
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "resume", :class => "img-responsive"), resume_path %>
+				Resume
+			</div>
 
-	
-		<div class="col-md-3" id="about-row">
-			<%= link_to image_tag("criticism.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
-			Czech Work	
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
+				Bio
+			
+			</div>
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
+				Criticism
+			</div>
+		
+
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("criticism.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>
+				Czech Work	
+			</div>
 		</div>
 	</div>
 </div>

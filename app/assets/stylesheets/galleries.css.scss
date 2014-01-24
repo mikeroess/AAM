@@ -3,12 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+//general gallery stuff
+
 #gallery-page-container {
 	text-align: center;
-	margin-top: 1%;
 	margin-bottom: 1%;
 	margin-right: 5%;
-	width: 88%;
+	margin-left: 15%;
+	width: 75%;
 	font-size: 65%;
 	}
 
@@ -17,7 +20,19 @@
 	margin-left: 5%;
 	padding-top: 5%;
 	color: #999999;
+	font-family: Cardo-Italic;
 }
+
+.gallery-div{
+	margin-bottom:19%;
+}
+
+#gallery-row{
+	
+}
+
+
+// the arrows that scroll in the galleries
 
 .gallery-pull-right{
 	width: 9%;
@@ -28,6 +43,7 @@
 	margin-left: 1%;
 	position: fixed;
 	margin-top: 5%;
+	width: 5%;
 
 }
 
@@ -35,7 +51,36 @@
 	position: fixed;
 	margin-left: 1%;
 	bottom: 23%;
-	
+	width: 5%;
 }
 
 
+// Plastic Camera front page specific stuff
+
+#plastic-camera-page-container {
+  margin-left :20%;
+  margin-right: 5%;
+  padding-top: 5%;
+  height: 100%;
+  max-width: 100%;
+
+}
+
+#about-row {
+  color: #666666;
+  font-size: 80%;  
+  text-align: center;
+}
+
+
+// Detail pages
+
+.detail-row {
+padding-top: 3%;
+margin-left: 30%;
+}
+
+#detail-text {
+	font-size: 80%;
+	height: 25%;
+}

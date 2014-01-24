@@ -8,6 +8,7 @@ Ann::Application.routes.draw do
   match 'biography',     to: 'pages#biography',        via: 'get',  as: 'biography'
   match 'criticism',     to: 'pages#criticism',        via: 'get',  as: 'criticism'
   match 'about',         to: 'pages#about',            via: 'get',  as: 'about'
+  match 'jewelry',       to: 'pages#jewelry',          via: 'get',  as: 'jewelry'
   #match 'plasticCamera', to: 'pages#plastic_camera',   via: 'get',  as: 'plastic_camera'
 
 

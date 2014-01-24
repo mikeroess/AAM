@@ -25,6 +25,11 @@
 }
 
 @font-face {
+  font-family: 'Cardo-Light'
+  src: url('..Copperplate_Light_SSi_Light.ttf');
+}
+
+@font-face {
   font-family: 'Cardo-Regular';
   src: url('../assets/fonts/Cardo-Regular.ttf');
  }
@@ -43,5 +48,6 @@
   font-family: 'Copperplate';
   src: url('../assets/fonts/Copperplate.dfont');
  }
+
 
 

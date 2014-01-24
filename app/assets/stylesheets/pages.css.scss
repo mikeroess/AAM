@@ -19,6 +19,7 @@ margin-top: 5px;
 
 }
 
+
 // About Page
 
 #about-page-container {
@@ -34,6 +35,7 @@ margin-top: 5px;
   color: #666666;
   font-size: 80%;  
   text-align: center;
+  font-family: Cardo-Regular;
 }
 
 
@@ -91,18 +93,7 @@ margin-right: auto;
   margin-right: 15%;
 }
 
-// Detail pages
 
-.detail-row {
-margin-top: 10%;
-margin-left: 20%;
-}
-
-// Detail Pages
-  .picture-text {
-  font-family: Cardo-Italic;
-  color: #666666;
-  }
 
 
  // Wraps entire page -- setting font
@@ -128,11 +119,13 @@ margin-left: 20%;
 
 .social {
   margin-right: 7%;
+  font-family :Cardo-Regular;
 }
 
 .copyright {
   margin-left: 10%;
   padding-top: 2%;
+  font-family :Cardo-Regular;
 }
 
 //this covers the area where "Anne Arden McDonald is written in huge letters" 
@@ -155,15 +148,21 @@ margin-left: 20%;
     }
 
     .logo{
-      font-size: 180%;
+      font-size: 125%;
       float: right;
       margin-top: 4%;
       margin-bottom: 6%;
       padding-right: 5%;
-      font-family: Copperplate;
+      font-family: Cardo-Light;
+      letter-spacing:5px;
     }
 
 // sidebar mostly adapted from an example online.
+
+
+.small-letter{
+  font-size: 99%;
+}
 
 #wrapper { 
     transition: all 0.4s ease 0s;
@@ -193,9 +192,11 @@ margin-left: 20%;
 .sidebar-nav li {
   line-height: 30px;
   text-align: right;
-  font-size: 80%;
-    font-family: Cardo;
+  font-size: 68%;
+  font-family: Cardo-Bold;
+  letter-spacing:1px;
 }
+
 
 .sidebar-nav li a {
   color: #000000;
@@ -314,4 +315,10 @@ dropdown-menu .sub-menu {
     padding: 15px;
   }
 
+}
+
+// Jewelry Page
+.jewelry-div{
+  padding-left: 35%;
+  padding-bottom: 14%;
 }
