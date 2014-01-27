@@ -33,6 +33,17 @@ Ann::Application.routes.draw do
   match 'pillowBook2',              to: 'galleries#pillow_book_2',                  via: 'get',  as:  'pillow_book_2'
   match 'pillowBook3',              to: 'galleries#pillow_book_3',                  via: 'get',  as:  'pillow_book_3'
   match 'pillowBook4',              to: 'galleries#pillow_book_4',                  via: 'get',  as:  'pillow_book_4'
+  match 'pillowBook5',              to: 'galleries#pillow_book_5',                  via: 'get',  as:  'pillow_book_5'
+  match 'pillowBook6',              to: 'galleries#pillow_book_6',                  via: 'get',  as:  'pillow_book_6'
+  match 'pillowBook7',              to: 'galleries#pillow_book_7',                  via: 'get',  as:  'pillow_book_7'
+  match 'pillowBook8',              to: 'galleries#pillow_book_8',                  via: 'get',  as:  'pillow_book_8'
+  match 'pillowBook9',              to: 'galleries#pillow_book_9',                  via: 'get',  as:  'pillow_book_9'
+  match 'pillowBook10',              to: 'galleries#pillow_book_10',                  via: 'get',  as:  'pillow_book_10'
+  match 'pillowBook11',              to: 'galleries#pillow_book_11',                  via: 'get',  as:  'pillow_book_11'
+  match 'pillowBook12',              to: 'galleries#pillow_book_12',                  via: 'get',  as:  'pillow_book_12'
+  match 'pillowBook13',              to: 'galleries#pillow_book_13',                  via: 'get',  as:  'pillow_book_13'
+  match 'pillowBook14',              to: 'galleries#pillow_book_14',                  via: 'get',  as:  'pillow_book_14'
+  match 'pillowBook15',              to: 'galleries#pillow_book_15',                  via: 'get',  as:  'pillow_book_15'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

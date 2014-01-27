@@ -45,4 +45,36 @@ class GalleriesController < ApplicationController
 	def pillow_book_4
 	end
 
+	def pillow_book_5
+	end
+
+	def pillow_book_6
+	end
+
+	def pillow_book_7
+	end
+
+	def pillow_book_8
+	end
+
+	def pillow_book_9
+	end
+
+	def pillow_book_10
+	end
+
+	def pillow_book_11
+	end
+
+	def pillow_book_12
+	end
+
+	def pillow_book_13
+	end
+
+	def pillow_book_14
+	end
+
+	def pillow_book_15
+	end
 end
