@@ -26,7 +26,7 @@ Ann::Application.routes.draw do
   #statement pages through statements controller
   match 'pillowBookStatement',       to: 'statements#pillow_book_statement',        via: 'get',  as: 'pillow_book_statement'
   match 'gardenDianasStatement',     to: 'statements#garden_dianas_statement',      via: 'get',  as: 'garden_dianas_statement'
-  match 'iconDianasStatement',       to: 'statements#icon_dianas_statement',        via: 'get',  as: 'icon_dianas_statement'
+  match 'iconDianaStatement',       to: 'statements#icon_diana_statement',        via: 'get',  as: 'icon_diana_statement'
 
   # work details pages through galleries controller
   match 'pillowBook1',              to: 'galleries#pillow_book_1',                  via: 'get',  as:  'pillow_book_1'
@@ -44,6 +44,26 @@ Ann::Application.routes.draw do
   match 'pillowBook13',              to: 'galleries#pillow_book_13',                  via: 'get',  as:  'pillow_book_13'
   match 'pillowBook14',              to: 'galleries#pillow_book_14',                  via: 'get',  as:  'pillow_book_14'
   match 'pillowBook15',              to: 'galleries#pillow_book_15',                  via: 'get',  as:  'pillow_book_15'
+
+    match 'iconDiana1',              to: 'galleries#icon_diana_1',                  via: 'get',  as:  'icon_diana_1'
+    match 'iconDiana2',              to: 'galleries#icon_diana_2',                  via: 'get',  as:  'icon_diana_2'
+    match 'iconDiana3',              to: 'galleries#icon_diana_3',                  via: 'get',  as:  'icon_diana_3'
+    match 'iconDiana4',              to: 'galleries#icon_diana_4',                  via: 'get',  as:  'icon_diana_4'
+    match 'iconDiana5',              to: 'galleries#icon_diana_5',                  via: 'get',  as:  'icon_diana_5'
+    match 'iconDiana6',              to: 'galleries#icon_diana_6',                  via: 'get',  as:  'icon_diana_6'
+    match 'iconDiana7',              to: 'galleries#icon_diana_7',                  via: 'get',  as:  'icon_diana_7'
+    match 'iconDiana8',              to: 'galleries#icon_diana_8',                  via: 'get',  as:  'icon_diana_8'
+    match 'iconDiana9',              to: 'galleries#icon_diana_9',                  via: 'get',  as:  'icon_diana_9'
+    match 'iconDiana10',              to: 'galleries#icon_diana_10',                  via: 'get',  as:  'icon_diana_10'
+    match 'iconDiana11',              to: 'galleries#icon_diana_11',                  via: 'get',  as:  'icon_diana_11'
+    match 'iconDiana12',              to: 'galleries#icon_diana_12',                  via: 'get',  as:  'icon_diana_12'
+    match 'iconDiana13',              to: 'galleries#icon_diana_13',                  via: 'get',  as:  'icon_diana_13'
+    match 'iconDiana14',              to: 'galleries#icon_diana_14',                  via: 'get',  as:  'icon_diana_14'
+    match 'iconDiana15',              to: 'galleries#icon_diana_15',                  via: 'get',  as:  'icon_diana_15'
+    match 'iconDiana16',              to: 'galleries#icon_diana_16',                  via: 'get',  as:  'icon_diana_16'
+    match 'iconDiana17',              to: 'galleries#icon_diana_17',                  via: 'get',  as:  'icon_diana_17'
+    match 'iconDiana18',              to: 'galleries#icon_diana_18',                  via: 'get',  as:  'icon_diana_18'
+    match 'iconDiana19',              to: 'galleries#icon_diana_19',                  via: 'get',  as:  'icon_diana_19'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

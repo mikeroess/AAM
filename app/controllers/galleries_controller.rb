@@ -77,4 +77,62 @@ class GalleriesController < ApplicationController
 
 	def pillow_book_15
 	end
+
+	#icon diana details
+	def icon_diana_1
+	end
+
+	def icon_diana_2
+	end
+
+	def icon_diana_3
+	end
+
+	def icon_diana_4
+	end
+
+	def icon_diana_5
+	end
+
+	def icon_diana_6
+	end
+
+	def icon_diana_7
+	end
+
+	def icon_diana_8
+	end
+
+	def icon_diana_9
+	end
+
+	def icon_diana_10
+	end
+
+	def icon_diana_11
+	end
+
+	def icon_diana_12
+	end
+
+	def icon_diana_13
+	end
+
+	def icon_diana_14
+	end
+
+	def icon_diana_15
+	end
+
+	def icon_diana_16
+	end
+
+	def icon_diana_17
+	end
+
+	def icon_diana_18
+	end
+
+	def icon_diana_19
+	end
 end
