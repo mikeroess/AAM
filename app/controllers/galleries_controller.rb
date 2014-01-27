@@ -32,6 +32,9 @@ class GalleriesController < ApplicationController
 	def self_portraits
 	end
 
+	def group
+	end
+
 # pillow book details
 	def pillow_book_1
 	end

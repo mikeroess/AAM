@@ -3,11 +3,11 @@
 <!-- buttons to scroll in gallery -->
 	<div class="gallery-pull-right pull-right" >
 		
-			<div class="gallery-up hidden-xs hidden-xs">
+			<div class="gallery-up hidden-xs">
 				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
 
 			</div>
-			<div class="gallery-down hidden-xs hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			<div class="gallery-down hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
 			</div>
 		</ul>
 	</div>
@@ -17,13 +17,13 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("bot-1-couples.jpg", alt: "couples", :class => "img-responsive"), botanicals_path %>
-				<em>Couples, 2000</em>
+				<%= link_to image_tag("bot-1-couples.jpg", alt: "botanicals", :class => "img-responsive"), botanicals_path %><br />
+					Botanicals
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("bot-2-eyelash.jpg", alt: "bio", :class => "img-responsive" ), biography_path %>
-			<em>Eyelash, 2000</em>
+				<%= link_to image_tag("Group-1-10-1997-Austria.jpg", alt: "group", :class => "img-responsive" ), group_path %>
+			<em>Group</em>
 			
 			</div>
 		
@@ -31,8 +31,6 @@
 				<%= link_to image_tag("bot-3-flying.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %>
 			<em>Flying, 2000</em>
 			</div>
-		
-
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
 				<%= link_to image_tag("bot-4-women.jpg", alt: "Czech Work", :class => "img-responsive"),  "http://www.czechslovakphotos.com/" %>

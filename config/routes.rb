@@ -22,11 +22,13 @@ Ann::Application.routes.draw do
   match 'gardenDiana',    to:  'galleries#garden_diana',    via: 'get', as: 'garden_diana'
   match 'botanicals',     to:  'galleries#botanicals',      via: 'get', as: 'botanicals'
   match 'watches',        to:  'galleries#watches',         via: 'get', as: 'watches'
+  match 'group',          to:  'galleries#group',           via: 'get', as: 'group'
 
   #statement pages through statements controller
-  match 'pillowBookStatement',       to: 'statements#pillow_book_statement',        via: 'get',  as: 'pillow_book_statement'
+  match 'pillowBookStatement',      to: 'statements#pillow_book_statement',       via: 'get',  as: 'pillow_book_statement'
   match 'gardenDianaStatement',     to: 'statements#garden_diana_statement',      via: 'get',  as: 'garden_diana_statement'
   match 'iconDianaStatement',       to: 'statements#icon_diana_statement',        via: 'get',  as: 'icon_diana_statement'
+  match 'groupStatement',           to: 'statements#group_statement',             via: 'get',  as: 'group_statement'
 
   # work details pages through galleries controller
   match 'pillowBook1',              to: 'galleries#pillow_book_1',                  via: 'get',  as:  'pillow_book_1'
@@ -86,6 +88,15 @@ Ann::Application.routes.draw do
     match 'gardenDiana19',              to: 'galleries#garden_diana_19',                  via: 'get',  as:  'garden_diana_19'
     match 'gardenDiana20',              to: 'galleries#garden_diana_20',                  via: 'get',  as:  'garden_diana_20'
 
+    match 'Group1',              to: 'galleries#group_1',                  via: 'get',  as:  'group_1'
+    match 'Group2',              to: 'galleries#group_2',                  via: 'get',  as:  'group_2'
+    match 'Group3',              to: 'galleries#group_3',                  via: 'get',  as:  'group_3'
+    match 'Group4',              to: 'galleries#group_4',                  via: 'get',  as:  'group_4'
+    match 'Group5',              to: 'galleries#group_5',                  via: 'get',  as:  'group_5'
+    match 'Group6',              to: 'galleries#group_6',                  via: 'get',  as:  'group_6'
+    match 'Group7',              to: 'galleries#group_7',                  via: 'get',  as:  'group_7'
+    match 'Group8',              to: 'galleries#group_8',                  via: 'get',  as:  'group_8'
+    match 'Group9',              to: 'galleries#group_9',                  via: 'get',  as:  'group_9'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

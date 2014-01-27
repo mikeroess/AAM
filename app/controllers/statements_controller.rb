@@ -4,4 +4,7 @@ class StatementsController < ApplicationController
 
 	def icon_diana_statement
 	end
+
+	def group_statement
+	end
 end

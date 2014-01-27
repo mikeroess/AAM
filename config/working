@@ -1,56 +1,9 @@
-    def garden_diana_1
-    end
-
-    def garden_diana_2
-    end
-
-    def garden_diana_3
-    end
-
-    def garden_diana_4
-    end
-
-    def garden_diana_5
-    end
-
-    def garden_diana_6
-    end
-
-    def garden_diana_7
-    end
-
-    def garden_diana_8
-    end
-
-    def garden_diana_9
-    end
-
-    def garden_diana_10
-    end
-
-    def garden_diana_11
-    end
-
-    def garden_diana_12
-    end
-
-    def garden_diana_13
-    end
-
-    def garden_diana_14
-    end
-
-    def garden_diana_15
-    end
-
-    def garden_diana_16
-    end
-
-    def garden_diana_17
-    end
-
-    def garden_diana_18
-    end
-
-    def garden_diana_19
-    end
+match 'Group1',              to: 'galleries#group_1',                  via: 'get',  as:  'group_1'
+    match 'Group2',              to: 'galleries#group_2',                  via: 'get',  as:  'group_2'
+    match 'Group3',              to: 'galleries#group_3',                  via: 'get',  as:  'group_3'
+    match 'Group4',              to: 'galleries#group_4',                  via: 'get',  as:  'group_4'
+    match 'Group5',              to: 'galleries#group_5',                  via: 'get',  as:  'group_5'
+    match 'Group6',              to: 'galleries#group_6',                  via: 'get',  as:  'group_6'
+    match 'Group7',              to: 'galleries#group_7',                  via: 'get',  as:  'group_7'
+    match 'Group8',              to: 'galleries#group_8',                  via: 'get',  as:  'group_8'
+    match 'Group9',              to: 'galleries#group_9',                  via: 'get',  as:  'group_9'

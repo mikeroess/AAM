@@ -178,6 +178,7 @@ margin-right: auto;
   border-width: 1px;
   transition: all 0.4s ease 0s;
   background: #FFFFFF;
+  @media (max-width: 480px) { width:29% }
 }
 
 .sidebar-nav {
@@ -195,6 +196,8 @@ margin-right: auto;
   font-size: 68%;
   font-family: Cardo-Bold;
   letter-spacing:1px;
+   @media (max-width: 480px) { letter-spacing:0px;
+                                font-size: 55%; }
 }
 
 
@@ -317,8 +320,17 @@ dropdown-menu .sub-menu {
 
 }
 
-// Jewelry Page
-.jewelry-div{
-  padding-left: 35%;
-  padding-bottom: 14%;
+.left-watch {
+  width: 20%;
+   @media (max-width: 480px) { width:30% }
+}
+
+.right-watch{
+  width: 20%;
+   @media (max-width: 480px) { width:30% }
+}
+
+.detail-text{
+  text-align: center;
+  
 }
