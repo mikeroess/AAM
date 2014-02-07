@@ -35,6 +35,12 @@ class GalleriesController < ApplicationController
 	def group
 	end
 
+	def layered
+	end
+
+	def bouyancy
+	end
+
 # pillow book details
 	def pillow_book_1
 	end
@@ -199,4 +205,81 @@ class GalleriesController < ApplicationController
 
     def garden_diana_20
     end
+
+    #group
+
+    def group_1
+    end
+
+    def group_2
+    end
+
+    def group_3
+    end
+
+    def group_4
+    end
+
+    def group_5
+    end
+
+    def group_6
+    end
+
+    def group_7
+    end
+
+    def group_8
+    end
+
+    def group_9
+    end
+
+    def group_10
+    end
+
+    def group_11
+    end
+
+    def group_12
+    end
+
+    def group_13
+    end
+
+    #layered
+    def layered_1
+    end
+
+    def layered_2
+    end
+
+    def layered_3
+    end
+
+    def layered_4
+    end
+
+    def layered_5
+    end
+
+    def layered_6
+    end
+
+    def layered_7
+    end
+
+    def layered_8
+    end
+
+    def layered_9
+    end
+
+    def layered_10
+    end
+
+    def layered_11
+    end
+
+
 end

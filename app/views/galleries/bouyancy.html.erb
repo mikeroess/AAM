@@ -1,0 +1,58 @@
+
+<div class="gallery-div">
+
+<!-- buttons to scroll in gallery -->
+	<div class="gallery-pull-right pull-right" >
+		
+			<div class="gallery-up hidden-xs">
+				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
+
+			</div>
+			<div class="gallery-down hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			</div>
+		</ul>
+	</div>
+
+<!--first row-->
+	<div class="container-fluid" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-1-you-are-born.jpg", alt: "You are born", :class => "img-responsive"), bouyancy_1_path %><br />
+				You Are Born, 2005, 42 x 96 ins.  (plus detail)
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-2-the-path-you-walk-will-be-who-you-are-crop.jpg", alt: "The path you walk will be who you are", :class => "img-responsive" ), bouyancy_2_path %><br />
+				The Path You Walk Will Be Who You Are, 2005, 42 x 96 ins.
+			
+			</div>
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-3-you-will-die.jpg", alt: "you will die", :class => "img-responsive"), bouyancy_3_path %><br />
+				You Will Die (plus detail), 2005, 42 x 96 ins.
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-4-Your-spirit-will-pass-out-of-your-body-and-back-into-the-universe.jpg", alt: "Your spirit will pass out of your body and back into the universe", :class => "img-responsive"),  bouyancy_4_path %><br />
+				Your Spirit Will Pass Out of Your Body and Back Into the Universe, 2005, 42 x 96 ins.	
+			</div>
+		</div>
+	</div>
+
+<!--second row-->
+	<div class="container-fluid" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-6-connected-globe.jpg", alt: "We are all connected", :class => "img-responsive"), bouyancy_5_path %><br />
+				We Are All Connected, 2005, 312 x 120 ins
+			</div>
+
+			
+		</div>
+	</div>
+
+</div>
