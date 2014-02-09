@@ -36,6 +36,7 @@ Ann::Application.routes.draw do
   match 'botanicalsStatement',      to: 'statements#botanicals_statement',        via: 'get',  as: 'botanicals_statement'
   match 'atomPlanetStatement',      to: 'statements#atom_planet_statement',       via: 'get',  as: 'atom_planet_statement'
   match 'selfPortraitStatement',    to: 'statements#self_portrait_statement',     via: 'get',  as: 'self_portrait_statement'
+  match 'watchesStatement',         to: 'statements#watches_statement',           via: 'get',  as: 'watches_statement'
 
 
   # work details pages through galleries controller
@@ -187,6 +188,37 @@ Ann::Application.routes.draw do
     match 'sp38',              to: 'galleries#sp_38',                  via: 'get',  as:  'sp_38'
     match 'sp39',              to: 'galleries#sp_39',                  via: 'get',  as:  'sp_39'
     match 'sp40',              to: 'galleries#sp_40',                  via: 'get',  as:  'sp_40'
+
+    match 'watches1',         to: 'galleries#watches_1',               via: 'get',  as:  'watches_1'
+    match 'watches2',         to: 'galleries#watches_2',               via: 'get',  as:  'watches_2'
+    match 'watches3',         to: 'galleries#watches_3',               via: 'get',  as:  'watches_3'
+    match 'watches4',         to: 'galleries#watches_4',               via: 'get',  as:  'watches_4'
+    match 'watches5',         to: 'galleries#watches_5',               via: 'get',  as:  'watches_5'
+    match 'watches6',         to: 'galleries#watches_6',               via: 'get',  as:  'watches_6'
+    match 'watches7',         to: 'galleries#watches_7',               via: 'get',  as:  'watches_7'
+    match 'watches8',         to: 'galleries#watches_8',               via: 'get',  as:  'watches_8'
+    match 'watches9',         to: 'galleries#watches_9',               via: 'get',  as:  'watches_9'
+    match 'watches10',         to: 'galleries#watches_10',               via: 'get',  as:  'watches_10'
+    match 'watches11',         to: 'galleries#watches_11',               via: 'get',  as:  'watches_11'
+    match 'watches12',         to: 'galleries#watches_12',               via: 'get',  as:  'watches_12'
+    match 'watches13',         to: 'galleries#watches_13',               via: 'get',  as:  'watches_13'
+    match 'watches14',         to: 'galleries#watches_14',               via: 'get',  as:  'watches_14'
+    match 'watches15',         to: 'galleries#watches_15',               via: 'get',  as:  'watches_15'
+    match 'watches16',         to: 'galleries#watches_16',               via: 'get',  as:  'watches_16'
+    match 'watches17',         to: 'galleries#watches_17',               via: 'get',  as:  'watches_17'
+    match 'watches18',         to: 'galleries#watches_18',               via: 'get',  as:  'watches_18'
+    match 'watches19',         to: 'galleries#watches_19',               via: 'get',  as:  'watches_19'
+    match 'watches20',         to: 'galleries#watches_20',               via: 'get',  as:  'watches_20'
+    match 'watches21',         to: 'galleries#watches_21',               via: 'get',  as:  'watches_21'
+    match 'watches22',         to: 'galleries#watches_22',               via: 'get',  as:  'watches_22'
+    match 'watches23',         to: 'galleries#watches_23',               via: 'get',  as:  'watches_23'
+    match 'watches24',         to: 'galleries#watches_24',               via: 'get',  as:  'watches_24'
+    match 'watches25',         to: 'galleries#watches_25',               via: 'get',  as:  'watches_25'
+    match 'watches26',         to: 'galleries#watches_26',               via: 'get',  as:  'watches_26'
+    match 'watches27',         to: 'galleries#watches_27',               via: 'get',  as:  'watches_27'
+    match 'watches28',         to: 'galleries#watches_28',               via: 'get',  as:  'watches_28'
+    match 'watches29',         to: 'galleries#watches_29',               via: 'get',  as:  'watches_29'
+    match 'watches30',         to: 'galleries#watches_30',               via: 'get',  as:  'watches_30'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
