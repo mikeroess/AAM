@@ -1,0 +1,29 @@
+<% u = 40 %>
+<div class="container-fluid detail-image">
+	<div class="row detail-row">
+		<div class="col-xs-11">
+			<%= image_tag("sp-38-34.jpg", alt: "Self Portrait 34", 
+			:class => "img-responsive")%></a><br />
+			<div class="row detail-text">
+
+				<div class= "col-xs-11  col-sm-8" id="detail-text">
+					<em>Untitled Self Portrait #34, New Hampshire, 1991	&mdash; <%= link_to("Read Artists Statement", self_portrait_statement_path) %></em>
+				</div><br />
+			</div><br />
+			<div class="row">
+				<div class="col-xs-1 pull-left left-watch">
+					<a href= "/sp<%= (u-1) %>"><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+					:class => "img-responsive")%></a><br />
+				</div>
+				
+				<div class="clearfix visible-sm"></div>
+				<div class="col-xs-1 pull-right right-watch">
+					<a href= "/selfPortraitStatement"><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+					:class => "img-responsive")%></a><br />
+				</div>
+			</div>	
+
+		</div>
+	</div>
+</div>
+
