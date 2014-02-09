@@ -31,7 +31,10 @@ Ann::Application.routes.draw do
   match 'gardenDianaStatement',     to: 'statements#garden_diana_statement',      via: 'get',  as: 'garden_diana_statement'
   match 'iconDianaStatement',       to: 'statements#icon_diana_statement',        via: 'get',  as: 'icon_diana_statement'
   match 'groupStatement',           to: 'statements#group_statement',             via: 'get',  as: 'group_statement'
-  match 'layeredStatement',           to: 'statements#layered_statement',             via: 'get',  as: 'layered_statement'
+  match 'layeredStatement',         to: 'statements#layered_statement',           via: 'get',  as: 'layered_statement'
+  match 'bouyancyStatement',        to: 'statements#bouyancy_statement',          via: 'get',  as: 'bouyancy_statement'
+  match 'botanicalsStatement',      to: 'statements#botanicals_statement',        via: 'get',  as: 'botanicals_statement'
+  match 'atomPlanetStatement',      to: 'statements#atom_planet_statement',       via: 'get',  as: 'atom_planet_statement'
 
   # work details pages through galleries controller
   match 'pillowBook1',              to: 'galleries#pillow_book_1',                  via: 'get',  as:  'pillow_book_1'
@@ -123,6 +126,24 @@ Ann::Application.routes.draw do
     match 'bouyancy4',              to: 'galleries#bouyancy_4',                  via: 'get',  as:  'bouyancy_4'
     match 'bouyancy5',              to: 'galleries#bouyancy_5',                  via: 'get',  as:  'bouyancy_5'
     match 'bouyancy6',              to: 'galleries#bouyancy_6',                  via: 'get',  as:  'bouyancy_6'
+    match 'bouyancy7',              to: 'galleries#bouyancy_7',                  via: 'get',  as:  'bouyancy_7'
+    match 'bouyancy8',              to: 'galleries#bouyancy_8',                  via: 'get',  as:  'bouyancy_8'
+    match 'bouyancy9',              to: 'galleries#bouyancy_9',                  via: 'get',  as:  'bouyancy_9'
+
+    match 'botanicals1',              to: 'galleries#botanicals_1',                  via: 'get',  as:  'botanicals_1'
+    match 'botanicals2',              to: 'galleries#botanicals_2',                  via: 'get',  as:  'botanicals_2'
+    match 'botanicals3',              to: 'galleries#botanicals_3',                  via: 'get',  as:  'botanicals_3'
+    match 'botanicals4',              to: 'galleries#botanicals_4',                  via: 'get',  as:  'botanicals_4'
+
+    match 'ap1',              to: 'galleries#ap_1',                  via: 'get',  as:  'ap_1'
+    match 'ap2',              to: 'galleries#ap_2',                  via: 'get',  as:  'ap_2'
+    match 'ap3',              to: 'galleries#ap_3',                  via: 'get',  as:  'ap_3'
+    match 'ap4',              to: 'galleries#ap_4',                  via: 'get',  as:  'ap_4'
+    match 'ap5',              to: 'galleries#ap_5',                  via: 'get',  as:  'ap_5'
+    match 'ap6',              to: 'galleries#ap_6',                  via: 'get',  as:  'ap_6'
+    match 'ap7',              to: 'galleries#ap_7',                  via: 'get',  as:  'ap_7'
+    match 'ap8',              to: 'galleries#ap_8',                  via: 'get',  as:  'ap_8'
+    match 'ap9',              to: 'galleries#ap_9',                  via: 'get',  as:  'ap_9'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

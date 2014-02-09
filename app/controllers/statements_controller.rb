@@ -7,4 +7,13 @@ class StatementsController < ApplicationController
 
 	def group_statement
 	end
+
+	def layered_statement
+	end
+
+	def bouyancy_statement
+	end
+
+	def botanicals_statement
+	end
 end

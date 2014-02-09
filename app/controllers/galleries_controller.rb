@@ -281,5 +281,45 @@ class GalleriesController < ApplicationController
     def layered_11
     end
 
+    #bouyancy
+    def bouyancy_1
+    end 
+
+    def bouyancy_2
+    end 
+    
+    def bouyancy_3
+    end 
+    
+    def bouyancy_4
+    end 
+    
+    def bouyancy_5
+    end 
+    
+    def bouyancy_6
+    end 
+    
+    def bouyancy_7
+    end 
+    
+    def bouyancy_8
+    end 
+
+    def bouyancy_9
+    end 
+
+    def botanicals_1
+    end
+    
+    def botanicals_2
+    end
+    
+    def botanicals_3
+    end
+    
+    def botanicals_4
+    end
+    
 
 end
