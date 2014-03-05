@@ -1,22 +1,26 @@
-<div class="container-fluid detail-image">
-	<div class="row detail-row">
-		<div class="col-xs-8">
+<% u = 8 %>
+<div class="container-fluid detail-image" id="diana1">
+	<div class="row">
+		<div class="col-xs-7">
 			<%= image_tag("icon_diana_8.jpg", alt: "pillow_book_1", 
 			:class => "img-responsive")%></a><br />
-			<div class="row">
-				<div class="col-xs-2 pull-left">
-					<a href= '/iconDiana7'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-				<div class= "col-xs-8" id="detail-text">
-					<em>Work Detail description, date &mdash; <%= link_to("Read Artists Statement", icon_diana_statement_path) %></em>
-				</div>
-				<div class="col-xs-2 pull-right">
-					<a href= '/iconDiana9'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-			</div>	
-
+			
 		</div>
 	</div>
 </div>
+
+<div class="arrow-row row">
+			<div class="col-xs-3 col-md-3 col-lg-3">
+					<a href= '/iconDiana<%=u-1%>'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+					:class => "img-responsive sp-nav-clock-hand")%></a></a><br />
+		</div>
+		<div class= "col-xs-5 col-md-5 col-lg-5">
+					<em>Diana #41, Austria, 1997 <%= link_to("Read Artists Statement", self_portrait_statement_path, :class => "link" ) %></em>
+		</div>
+		<div class="col-xs-3 col-md-3 col-lg-3">
+						<a href= '/iconDiana<%= u + 1 %>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+					:class => "img-responsive sp-nav-clock-hand")%>
+					</a><br />
+		</div>
+	</div>
+</div>	

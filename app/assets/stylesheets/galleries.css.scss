@@ -1,15 +1,100 @@
+
 // Place all the styles related to the galleries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+//Boxes indicating artist statment at end of gallery
+.statement-box{
+border:2px solid black;
+height:185px;
+width:100%;
+top:20px;
+text-align:center;
+}
+
+#statement{
+	font-size: 250%;
+	font-family: Cardo-Italic;
+	color: #666666;
+	padding-top:25%;
+	margin:auto;
+	@media (max-width: 780px) { margin-bottom: 10%; }
+}
+
+//Nav arrows on detail pages
+#right-arrow{
+   display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
+
+#left-arrow{
+   display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
+
+.arrow-row{
+	color: #666666;
+	left: 15%;
+	position:fixed;
+	background: #FFFFFF;
+	z-index: 9;
+	height:13%;
+	width:100%;
+	bottom: 12%;
+	@media (max-width: 979px) { bottom:12%; }
+	@media (min-width: 768px) {bottom:12%;}
+	@media(max-width:767px){bottom: 0;
+							left:18%;}
+	@media (min-width: 1200px) { bottom:15%;}
+}
+
+.nav-clock-hand {
+	width: 25%; 
+	@media (max-width: 600px) { width: 1000%; }
+	@media (min-width: 1000px) {width: 35%;}
+}
+
+
+.ap-nav-clock-hand {
+	width: 45%; 
+	@media (max-width: 600px) { width: 1000%; }
+	@media (min-width: 1000px) {width: 35%;}
+}
+.sp-nav-clock-hand {
+	width: 45%; 
+	@media (max-width: 600px) { width: 1000%; }
+	@media (min-width: 1000px) {width: 35%;}
+}
+
+.milan-nav-clock-hand {
+	width: 65%; 
+	@media (max-width: 480px) { width: 1000%; }
+}
+
+.left-watch {
+  width: 20%;
+   @media (max-width: 480px) { width:30% }
+}
+
+.right-watch{
+  width: 20%;
+   @media (max-width: 480px) { width:30% }
+}
 
 //general gallery stuff
+
+.link{
+	font-family: Cardo-Italic;
+	color: #666666;
+	text-decoration:underline
+}
 
 #gallery-page-container {
 	text-align: center;
 	margin-bottom: 1%;
-	margin-right: 5%;
 	margin-left: 15%;
 	width: 75%;
 	font-size: 65%;
@@ -24,18 +109,27 @@
 }
 
 .gallery-div{
-	margin-bottom:19%;
+	margin-bottom: 5%;
 }
 
 #gallery-row{
 	font-family: Cardo-Italic;
+	margin-top: 2%;
+	@media (max-width: 780px) { margin-bottom: 10%; }
 }
 
 
-// the arrows that scroll in the galleries
+.sp-detail-9{
+	font-family: Cardo-Italic;
+	color: #666666;
+	@media (max-width: 780px) { margin-bottom: 10%; }
+	
+}
+
+// up and down nav arrows in galleries
 
 .gallery-pull-right{
-	width: 9%;
+	width: 6%;
 	height: 100%;
 }
 
@@ -75,6 +169,10 @@
 
 // Detail pages
 
+.detail-text{
+  text-align: center;
+}
+
 .detail-row {
 padding-top: 3%;
 margin-left: 30%;
@@ -85,9 +183,391 @@ margin-left: 30%;
 padding-top: 3%;
 margin-left: 20%;
  @media (max-width: 480px) { margin-left: 20%; }
+ font-size: 65%;
+ text-align: center;
 }
 
+.detail-row-layered-2 {
+ @media (max-width: 480px) { margin-left: 20%; }
+ font-size: 65%;
+ text-align: center;
+}
+
+.detail-row-ap {
+margin-left: 5%;
+ @media (max-width: 480px) { margin-left: 20%; }
+ font-size: 65%;
+ text-align: center;
+ padding-top: 0%;	
+}
+
+
+
 #detail-text {
-	font-size: 80%;
+	font-size: 75%;
 	height: 25%;
 }
+
+#detail1 {
+	padding-top: 4%;
+	@media (max-width: 480px) { margin-right: 10%; }
+}
+
+#detail2{
+	padding-top:2%;	
+
+}
+
+#detail3{
+	padding-top:14%;
+}
+
+#detail4{
+}
+
+#detail5{
+	padding-top:8%;
+}
+
+.detail-image{
+	font-family: Cardo-Italic;
+	color: #666666;
+	@media (max-width: 780px) { margin-bottom: 10%; }
+}
+
+//ap details
+
+#ap1{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+	}
+
+#ap2{
+	margin-left: 21%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+	}
+
+
+#ap3{
+	margin-left: 20%;
+	padding-top: 0%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+}
+
+#ap5{
+	margin-left: 3%;
+	padding-top: 0%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+}
+
+#ap6{
+	margin-left: 10%;
+	padding-top: 0%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+}
+
+#ap7{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+}
+
+#ap8{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+}
+
+#ap9{
+	margin-left: 25%;
+	padding-top: 0%;
+	@media (max-width: 1150px) { padding-top: 5%; }
+	}
+
+#ap10{
+	margin-left: 20%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 7%; }
+	}
+
+//bouyancy gallery	
+
+#bouyancy4{
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 4%; }
+	}	
+
+#bouyancy6{
+	margin-left: 5%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 4%; }
+	}	
+
+#bouyancy8{
+	margin-left: 20%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}	
+
+
+//bodies gallery
+#bodies{
+	padding-top: 4%;
+}
+
+#bodies1{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 4%; }
+}
+
+#bodies6{
+	margin-left: 25%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 4%; }
+}
+
+#bodies7{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 4%; }
+}
+
+#bodies8{
+	margin-left: 15%;
+	padding-top: 6%;
+}
+
+#bodies9{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 850px) { padding-top: 5%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+#flare-detail{
+	padding-top:4%;
+	width: 42%;
+}
+
+
+//self portraits
+
+#sp1{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+#sp2{
+	margin-left: 15%;
+	padding-top: 8%;
+}
+
+#sp3{
+	margin-left: 25%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+}
+
+#sp10{
+	margin-left: 33%;
+	padding-top: 8%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }	
+}
+
+#sp17{
+	margin-left: 18%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+#sp20{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+//plastic camera
+	.title {
+		text-align: center;
+		margin-top: 6%;
+		margin-left: 15%;
+		font-family: Cardo-Regular;
+		font-size: 130%;
+	}
+
+	#diana1{
+	margin-left: 35%;
+	text-align: center;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+	}
+
+//watches
+#watches1{
+	padding-top: 7%;
+	margin-left: 25%;
+}
+
+#watches3{
+	padding-top: 7%;
+	margin-right: 15%;
+}
+
+#watch-image{
+	margin-bottom: 65%;
+	padding-bottom: 50%;
+}
+
+#watches31{
+	margin-left: 35%;
+	text-align: center;
+	padding-top: 1%;
+	@media (max-width: 1200px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+	}
+
+
+//layered
+#layered1{
+	padding-top: 7%;
+	margin-left: 20%;
+}
+
+#layered2{
+	margin-left: 25%;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+}
+
+#layered4{
+padding-top: 1%;
+	margin-left: 20%;
+}
+
+//group
+#group1{
+	padding-top:5%;
+	margin-left: 20%;
+}
+
+//bouyancy
+#bouyancy1{
+padding-top: 7%;
+margin-left: 15%;
+}
+
+#bouyancy4{
+	margin-left: 15%;
+	padding-bottom: 10%;
+}
+
+#bouyancy3{
+	margin-left: 5%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 6%; }
+}
+
+#bouyancy2{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 7%; }
+}
+
+#bouyancy6{
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+//botanicals
+
+#botanicals-container{
+  margin-left :17%;
+  padding-right: 10%;
+  padding-top: 18%;
+  @media (max-width: 991px) { padding-top: 8%; }
+  height: 100%;
+  max-width: 80%;
+}
+#botanicals1{
+	margin-left: 15%;
+	padding-top: 6%;
+}
+
+//milan
+
+#milan8{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+#milan-detail-text {
+	font-size: 95%;
+	height: 45%;
+}
+
+//Layered
+
+#layered1{
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+#layered4{
+	margin-left: 25%;
+	padding-top: 8%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+}
+
+#layered11{
+	margin-left: 30%;
+	padding-top: 8%;
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 8%; }
+}
+
+//Group
+
+#group1{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1200px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+#group3{
+	margin-left: 15%;
+	padding-top: 1%;
+	@media (max-width: 1050px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+}
+
+//Botanical Book
+
+#botanical-book11{
+	margin-left: 37%;
+	padding-top: 1;
+	@media (max-width: 950px) { padding-top: 8%; }	
+}
+
+#botanicals1{
+	margin-left: 30%;
+	text-align: center;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+	}
+

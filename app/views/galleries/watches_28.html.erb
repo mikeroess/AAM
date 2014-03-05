@@ -1,31 +1,25 @@
 <% u = 28 %>
-<div class="container-fluid detail-image">
-	<div class="row detail-row">
-		<div class="col-xs-11">
+<div class="container-fluid detail-image"id="sp10">
+	<div class="row">
+		<div class="col-xs-8 col-sm-6 col-md-5">
 			<%= image_tag("watch-28-Joel-Peter Witkin-watch.jpg", alt: "Joel Peter Witkin watch", 
 			:class => "img-responsive")%></a><br />
-			<div class="row detail-text">
-
-				<div class= "col-xs-11  col-sm-8" id="detail-text">
-					<em>
-						Crucifixion Joel Peter Witkin’s Watch (2 prints, dissection needle, blood)
-						 &mdash; <%= link_to("Read Artists Statement", watches_statement_path) %></em>
-				</div><br />
-			</div><br />
-			<div class="row">
-				<div class="col-xs-1 pull-left left-watch">
-					<a href= "/watches<%= (u-1) %>"><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-				
-				<div class="clearfix visible-sm"></div>
-				<div class="col-xs-1 pull-right right-watch">
-					<a href= "/watches<%= (u+1) %>"><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-			</div>	
-
 		</div>
 	</div>
 </div>
 
+<div class="arrow-row row">
+			<div class="col-xs-3 col-md-3 col-lg-3">
+						<a href= "/watches<%=u-1%>"><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+						:class => "img-responsive ap-nav-clock-hand")%></a></a><br />
+			</div>
+			<div class= "col-xs-5 col-md-5 col-lg-5">
+					<em>Crucifixion Joel Peter Witkin’s Watch (2 prints, dissection needle, blood) <%= link_to('(Statement)', watches_statement_path, :class => 'link' ) %></em>
+			</div>
+			<div class="col-xs-3 col-md-3 col-lg-3">
+							<a href= '/watches<%=u+1%>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+						:class => "img-responsive ap-nav-clock-hand")%>
+						</a><br />
+			</div>
+
+</div>

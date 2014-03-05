@@ -1,0 +1,99 @@
+<div class="gallery-div">
+
+<!-- buttons to scroll in gallery -->
+	<div class="gallery-pull-right pull-right" >
+		
+			<div class="gallery-up hidden-xs" id="scroll-up">
+				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
+
+			</div>
+			<div class="gallery-down hidden-xs" id="scroll-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			</div>
+		</ul>
+	</div>
+
+	<!--first row -->
+<div class="scrollable-gallery">
+	<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-1-From-Earth-to-Sky-web-thumb.jpg", alt: "From Earth to Sky", :class => "img-responsive"), milan_1_path %><br />
+				Overview
+			</div>
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-4-ceiling-detail-thumb.jpg", alt: "ceiling detail", :class => "img-responsive"), milan_4_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+						<div class="clearfix visible-sm"></div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-2-needles-detail-thumb.jpg", alt: "detail: needles", :class => "img-responsive"), milan_2_path %><br />
+				Detail: Threads and Needles and Clouds
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-3-seeds-detailweb-thumb.jpg", alt: "seeds detail", :class => "img-responsive"), milan_3_path %><br />
+				Detail: Orange Seeds Cast in Bronze in Olive Pollen
+			</div>
+		
+
+		</div>
+	</div>
+
+	<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-5-ceiling-detail-2-thumb.jpg", alt: "ceiling detail 2", :class => "img-responsive"), milan_5_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-6-detail-thumb.jpg", alt: "ceiling detail 3", :class => "img-responsive"), milan_6_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+
+						<div class="clearfix visible-sm"></div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-7-detail-thumb.jpg", alt: "ceiling detail 4", :class => "img-responsive"), milan_7_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-8-detail-thumb.jpg", alt: "ceiling detail 5", :class => "img-responsive"), milan_8_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-9-detail-thumb.jpg", alt: "ceiling detail 6", :class => "img-responsive"), milan_9_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("milan-10-detail-thumb.jpg", alt: "ceiling detail 7", :class => "img-responsive"), milan_10_path %><br />
+				Ceiling: Bleach Painting on Photo Paper
+			</div>
+
+			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
+				<div class="statement-box" id="statement">
+					<strong><%= link_to"Statement", milan_statement_path, :class=>"link" %><br /></strong>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+</div>

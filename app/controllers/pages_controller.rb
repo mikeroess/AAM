@@ -15,4 +15,7 @@ class PagesController < ApplicationController
 	def jewelry
 	end
 
+	def crit1
+	end
+
 end

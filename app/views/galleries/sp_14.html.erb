@@ -1,29 +1,25 @@
 <% u = 14 %>
-<div class="container-fluid detail-image">
-	<div class="row detail-row">
-		<div class="col-xs-11">
+<div class="container-fluid detail-image" id="sp1">
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-1">
 			<%= image_tag("sp-13-02.jpg", alt: "Self Portrait 2", 
 			:class => "img-responsive")%></a><br />
-			<div class="row detail-text">
-
-				<div class= "col-xs-11  col-sm-8" id="detail-text">
-					<em>Untitled Self Portrait #2, Wyoming, 1987 &mdash; <%= link_to("Read Artists Statement", self_portrait_statement_path) %></em>
-				</div><br />
-			</div><br />
-			<div class="row">
-				<div class="col-xs-1 pull-left left-watch">
-					<a href= "/sp<%= (u-1) %>"><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-				
-				<div class="clearfix visible-sm"></div>
-				<div class="col-xs-1 pull-right right-watch">
-					<a href= "/sp<%= (u+1) %>"><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-			</div>	
-
 		</div>
 	</div>
 </div>
 
+<div class="arrow-row row">
+			<div class="col-xs-3 col-md-3 col-lg-3">
+					<a href= '/sp<%=u-1%>'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+					:class => "img-responsive sp-nav-clock-hand")%></a></a><br />
+		</div>
+		<div class= "col-xs-5 col-md-5 col-lg-5">
+					<em>Untitled Self Portrait #2, Wyoming, 1987 <%= link_to("Read Artists Statement", self_portrait_statement_path, :class => "link" ) %></em>
+		</div>
+		<div class="col-xs-3 col-md-3 col-lg-3">
+						<a href= '/sp<%=u+1%>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+					:class => "img-responsive sp-nav-clock-hand")%>
+					</a><br />
+		</div>
+	</div>
+</div>	

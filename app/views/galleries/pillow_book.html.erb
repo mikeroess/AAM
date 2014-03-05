@@ -4,38 +4,39 @@
 <!-- buttons to scroll in gallery -->
 	<div class="gallery-pull-right pull-right" >
 		
-			<div class="gallery-up hidden-xs">
+			<div class="gallery-up hidden-xs" id="scroll-up">
 				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
 
 			</div>
-			<div class="gallery-down hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			<div class="gallery-down hidden-xs" id="scroll-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
 			</div>
 		</ul>
 	</div>
 
 <!--first row-->
+<div class="scrollable-gallery">
 	<div class="container-fluid" id="gallery-page-container">
 
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_1.jpg", alt: "pillow_book_1", :class => "img-responsive"), pillow_book_1_path %><br />
+				<%= link_to image_tag("pillow_book_1-thumb.jpg", alt: "pillow_book_1", :class => "img-responsive"), pillow_book_1_path %><br />
 				Pillow Book #11     Czech, 1999
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_2.jpg", alt: "pillow_book_2", :class => "img-responsive" ), pillow_book_2_path %><br />
+				<%= link_to image_tag("pillow_book_2-thumb.jpg", alt: "pillow_book_2", :class => "img-responsive" ), pillow_book_2_path %><br />
 				Pillow Book #4     Austria, 1998
 			
 			</div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_3.jpg", alt: "pillow_book_3", :class => "img-responsive"), pillow_book_3_path %><br />
+				<%= link_to image_tag("pillow_book_3-thumb.jpg", alt: "pillow_book_3", :class => "img-responsive"), pillow_book_3_path %><br />
 				Pillow Book #6     Italy, 1998
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_4.jpg", alt: "pillow_book_4", :class => "img-responsive"),  pillow_book_4_path %><br />
+				<%= link_to image_tag("pillow_book_4-thumb.jpg", alt: "pillow_book_4", :class => "img-responsive"),  pillow_book_4_path %><br />
 				Pillow Book #8     Italy, 1998	
 			</div>
 		</div>
@@ -47,25 +48,24 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_5.jpg", alt: "pillow_book_5", :class => "img-responsive"), pillow_book_5_path %><br />
+				<%= link_to image_tag("pillow_book_5-thumb.jpg", alt: "pillow_book_5", :class => "img-responsive"), pillow_book_5_path %><br />
 				Pillow Book #12     New York, 1998	
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_6.jpg", alt: "pillow_book_6", :class => "img-responsive" ), pillow_book_6_path %><br />
-				Pillow Book #9     Italy, 1998
-			
+				<%= link_to image_tag("pillow_book_6-thumb.jpg", alt: "pillow_book_6", :class => "img-responsive" ), pillow_book_6_path %><br />
+				Pillow Book #9     Italy, 1998			
 			</div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_7.jpg", alt: "pillow_book_7", :class => "img-responsive"), pillow_book_7_path %><br />
+				<%= link_to image_tag("pillow_book_7-thumb.jpg", alt: "pillow_book_7", :class => "img-responsive"), pillow_book_7_path %><br />
 				Pillow Book #14     New York, 2001
 			</div>
 		
 
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_8.jpg", alt: "pillow_book_8", :class => "img-responsive"),  pillow_book_8_path %><br />
+				<%= link_to image_tag("pillow_book_8-thumb.jpg", alt: "pillow_book_8", :class => "img-responsive"),  pillow_book_8_path %><br />
 				Pillow Book #7     Italy, 1998 
 			</div>
 		</div>
@@ -77,12 +77,12 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_9.jpg", alt: "pillow_book_9", :class => "img-responsive"), pillow_book_9_path %><br />
+				<%= link_to image_tag("pillow_book_9-thumb.jpg", alt: "pillow_book_9", :class => "img-responsive"), pillow_book_9_path %><br />
 				Pillow Book #3     Austria, 1998
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_10.jpg", alt: "pillow_book_10", :class => "img-responsive" ), pillow_book_10_path %><br />
+				<%= link_to image_tag("pillow_book_10-thumb.jpg", alt: "pillow_book_10", :class => "img-responsive" ), pillow_book_10_path %><br />
 				Pillow Book #1     Austria, 1998
 			</div>
 
@@ -91,12 +91,12 @@
 
 		 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_11.jpg", alt: "pillow_book_11", :class => "img-responsive"), pillow_book_11_path %><br />
+				<%= link_to image_tag("pillow_book_11-thumb.jpg", alt: "pillow_book_11", :class => "img-responsive"), pillow_book_11_path %><br />
 				Pillow Book #13     New York, 1998
 			</div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_12.jpg", alt: "pillow_book_12", :class => "img-responsive"),  pillow_book_12_path %><br />
+				<%= link_to image_tag("pillow_book_12-thumb.jpg", alt: "pillow_book_12", :class => "img-responsive"),  pillow_book_12_path %><br />
 				Pillow Book #10     Italy, 1998	
 			</div>
 		</div>
@@ -108,21 +108,29 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_13.jpg", alt: "pillow_book_13", :class => "img-responsive"), pillow_book_13_path %><br />
+				<%= link_to image_tag("pillow_book_13-thumb.jpg", alt: "pillow_book_13", :class => "img-responsive"), pillow_book_13_path %><br />
 				Pillow Book #2     Austria, 1998
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_14.jpg", alt: "pillow_book_14", :class => "img-responsive" ), pillow_book_14_path %><br />
+				<%= link_to image_tag("pillow_book_14-thumb.jpg", alt: "pillow_book_14", :class => "img-responsive" ), pillow_book_14_path %><br />
 				Pillow Book #15     New York, 2001
 			
 			</div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("pillow_book_15.jpg", alt: "pillow_book_15", :class => "img-responsive"), pillow_book_15_path %><br />
+				<%= link_to image_tag("pillow_book_15-thumb.jpg", alt: "pillow_book_15", :class => "img-responsive"), pillow_book_15_path %><br />
 				Pillow Book #5     Italy, 1998
 			</div>
 
+			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
+				<div class="statement-box" id="statement">
+					<strong><%= link_to"Statement", pillow_book_statement_path, :class=>"link" %><br /></strong>
+				</div>
+			</div>
+
+
 		</div>
 	</div>
+</div>
 </div>

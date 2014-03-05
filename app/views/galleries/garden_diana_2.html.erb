@@ -1,22 +1,26 @@
-<div class="container-fluid detail-image">
-	<div class="row detail-row">
-		<div class="col-xs-8">
+<% u = 2 %>
+<div class="container-fluid detail-image" id="diana1">
+	<div class="row">
+		<div class="col-xs-7">
 			<%= image_tag("garden_diana_2.jpg", alt: "garden_diana_1", 
 			:class => "img-responsive")%></a><br />
-			<div class="row">
-				<div class="col-xs-2 pull-left">
-					<a href= '/gardenDiana1'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-				<div class= "col-xs-8" id="detail-text">
-					<em>Work Detail description, date &mdash; <%= link_to("Read Artists Statement", garden_diana_statement_path) %></em>
-				</div>
-				<div class="col-xs-2 pull-right">
-					<a href= '/gardenDiana3'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
-					:class => "img-responsive")%></a><br />
-				</div>
-			</div>	
-
+			
 		</div>
 	</div>
 </div>
+
+<div class="arrow-row row">
+			<div class="col-xs-3 col-md-3 col-lg-3">
+					<a href= '/gardenDiana<%= u-1%>'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+					:class => "img-responsive sp-nav-clock-hand")%></a></a><br />
+		</div>
+		<div class= "col-xs-5 col-md-5 col-lg-5">
+					<em>#4 Self portrait with egg, New York, 1991 <%= link_to("Read Artists Statement", self_portrait_statement_path, :class => "link" ) %></em>
+		</div>
+		<div class="col-xs-3 col-md-3 col-lg-3">
+						<a href= '/gardenDiana<%= u + 1 %>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+					:class => "img-responsive sp-nav-clock-hand")%>
+					</a><br />
+		</div>
+	</div>
+</div>	

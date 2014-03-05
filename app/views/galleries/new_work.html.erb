@@ -3,37 +3,38 @@
 <!-- buttons to scroll in gallery -->
 	<div class="gallery-pull-right pull-right" >
 		
-			<div class="gallery-up hidden-xs">
+			<div class="gallery-up hidden-xs" id="scroll-up">
 				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
 
 			</div>
-			<div class="gallery-down hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			<div class="gallery-down hidden-xs" id="scroll-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
 			</div>
 		</ul>
 	</div>
 
 	<!--first row -->
+<div class="scrollable-gallery">
 	<div class="container" id="gallery-page-container">
 
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-1-atom.jpg", alt: "resume", :class => "img-responsive"), ap_1_path %>
+				<%= link_to image_tag("ap-1-atom-thumb.jpg", alt: "Atom", :class => "img-responsive"), ap_1_path %>
 				Atom, 2007, 96 x 50 ins.
 			</div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-2-bone.jpg", alt: "critcism", :class => "img-responsive"), ap_2_path %>
+				<%= link_to image_tag("ap-2-bone-thumb.jpg", alt: "Bone", :class => "img-responsive"), ap_2_path %>
 				Bone, 2011, 105 x 50 ins.
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-3-bouyancy.jpg", alt: "resume", :class => "img-responsive"), ap_3_path %>
+				<%= link_to image_tag("ap-3-bouyancy-thumb.jpg", alt: "Bouyancy", :class => "img-responsive"), ap_3_path %>
 				Buoyancy, 2011, 115 x 50 ins.
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-4-cells.jpg", alt: "critcism", :class => "img-responsive"), ap_4_path %>
+				<%= link_to image_tag("ap-4-cells-thumb.jpg", alt: "Cells", :class => "img-responsive"), ap_4_path %>
 				Cells, 2007, 69 x 50 ins.
 			</div>
 		
@@ -46,22 +47,22 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-5-electron.jpg", alt: "resume", :class => "img-responsive"), ap_5_path %>
+				<%= link_to image_tag("ap-5-electron-thumb.jpg", alt: "Electron", :class => "img-responsive"), ap_5_path %>
 				Electron, 2011, 114 x 50 ins. 
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-6-flare.jpg", alt: "critcism", :class => "img-responsive"), ap_6_path %>
+				<%= link_to image_tag("ap-6-flare-thumb.jpg", alt: "Flare", :class => "img-responsive"), ap_6_path %>
 				Flare, 2011, 108 x 42 ins.
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-7-fragility.jpg", alt: "resume", :class => "img-responsive"), ap_7_path %>
-				Fragility, 2011, 126 x 50 ins.
+				<%= link_to image_tag("ap-7-fragility-thumb.jpg", alt: "Fragility", :class => "img-responsive"), ap_7_path %>
+				Fragility, 2011, 106 x 50 ins.
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-8-planet.jpg", alt: "critcism", :class => "img-responsive"), ap_8_path %>
+				<%= link_to image_tag("ap-8-planet-thumb.jpg", alt: "Planet", :class => "img-responsive"), ap_8_path %>
 				Planet, 2011, 106 x 50 ins.
 			</div>
 		</div>
@@ -72,11 +73,105 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("ap-9-spirit.jpg", alt: "resume", :class => "img-responsive"), ap_9_path %>
+				<%= link_to image_tag("ap-9-spirit-thumb.jpg", alt: "Spirit", :class => "img-responsive"), ap_9_path %>
 				Spirit, 2005, 86 x 42 ins.
+			</div>	
+
+			<div class="col-xs-12 col-sm-6 col-md-4" id="gallery-row">
+				<%= link_to image_tag("atom-planet.jpg", alt: "Atom Planet", :class => "img-responsive"), ap_10_path %>
 			</div>
 
+			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
+				<div class="statement-box" id="statement">
+					<strong><%= link_to"Statement", atom_planet_statement_path, :class=>"link" %><br /></strong>
+				</div>
+			</div>
 
 		</div>
 	</div>
+
+<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				
+				<%= link_to image_tag("bodies-1-metaphor web-thumb.jpg", alt: "Metaphor", :class => "img-responsive"), bodies_1_path %><br />
+				The Metaphoric Body, 130 x 50 ins.
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-2-light-thumb.jpg", alt: "Light", :class => "img-responsive"), bodies_2_path %><br />
+				Body of Light, 111 x 50 ins.
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-3-energy-web-thumb.jpg", alt: "Energy", :class => "img-responsive"), bodies_3_path %><br />
+				The Energetic Body, 97 x 42 ins.
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-4-Decay-thumb.jpg", alt: "Decay", :class => "img-responsive"), bodies_4_path %><br />
+				Disease and Decay, 96 x 42 ins.
+			</div>
+		
+		</div>
+	</div>
+
+		<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+				
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-5a-liquid-thumb.jpg", alt: "Liquid Detail", :class => "img-responsive"), bodies_5_path %><br />
+				Detail, Body of Liquid, 90 x 50 ins.
+			</div>
+			<div class="clearfix visible-sm"></div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-6-cells-thumb.jpg", alt: "Cells", :class => "img-responsive"), bodies_6_path %><br />
+				Body of Cells, 103 x 50 ins.
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-7a-fragility-thumb.jpg", alt: "Fragility", :class => "img-responsive"), bodies_7_path %><br />
+				Body of Fragility, 102 x 50 ins.
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bodies-8-me-at-Win-thumb.jpg", alt: "Window", :class => "img-responsive"), bodies_8_path %><br />
+				Installed at Win studios in Soho, NYC, 2010
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				&nbsp;
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container" id="gallery-page-container">
+
+		<div class="row" id="gallery-page-row">
+		
+
+			
+			<div class="col-xs-12 col-sm-6 col-md-4" id="gallery-row">
+				<%= link_to image_tag("bodies-9-left-wall-brat-thumb.jpg", alt: "Left Wall", :class => "img-responsive"), bodies_9_path %><br />
+				Bratislava Month of Photography, 2006
+			</div>
+
+			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
+				
+					<div class="statement-box" id="statement">
+						<strong><%= link_to"Statement", bodies_statement_path, :class=>"link" %><br /></strong>
+					</div>
+			
+			</div>
+
+		</div>
+	</div>
+</div>
+
 </div>

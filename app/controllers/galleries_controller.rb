@@ -41,6 +41,24 @@ class GalleriesController < ApplicationController
 	def bouyancy
 	end
 
+    def botanicals_book
+    end
+
+    def monoprints
+    end
+
+    def bubbles
+    end
+
+    def milan
+    end
+
+    def dresses
+    end
+
+    def murals
+    end
+
 # pillow book details
 	def pillow_book_1
 	end
@@ -320,6 +338,115 @@ class GalleriesController < ApplicationController
     
     def botanicals_4
     end
-    
 
+    def botanical_book_1
+    end
+
+    def botanical_book_2
+    end
+
+    def botanical_book_3
+    end
+
+    def botanical_book_4
+    end
+
+    def botanical_book_5
+    end
+
+    def botanical_book_6
+    end
+
+    def botanical_book_7
+    end
+
+    def botanical_book_8
+    end
+
+    def botanical_book_9
+    end
+
+    def botanical_book_10
+    end
+
+    def botanical_book_11
+    end
+
+    def monoprints_1
+    end
+    
+    def monoprints_2
+    end
+
+    def monoprints_3
+    end
+
+    def monoprints_4
+    end
+
+    def monoprints_5
+    end
+
+    def monoprints_6
+    end
+
+    def monoprints_7
+    end
+
+    def monoprints_8
+    end
+
+    def milan_1
+    end
+
+    def milan_2
+    end
+
+    def milan_3
+    end
+
+    def milan_4
+    end
+
+    def milan_5
+    end
+
+    def milan_6
+    end
+
+    def milan_7
+    end
+
+    def milan_8
+    end
+
+    def milan_9
+    end
+
+    def bodies_1
+    end
+
+    def bodies_2
+    end
+
+    def bodies_3
+    end
+
+    def bodies_4
+    end
+
+    def bodies_5
+    end
+
+    def bodies_6
+    end
+
+    def bodies_7
+    end
+
+    def bodies_8
+    end
+
+    def bodies_9
+    end
 end

@@ -4,40 +4,41 @@
 <!-- buttons to scroll in gallery -->
 	<div class="gallery-pull-right pull-right" >
 		
-			<div class="gallery-up hidden-xs">
+			<div class="gallery-up hidden-xs" id="scroll-up">
 				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "up-button") %>
 
 			</div>
-			<div class="gallery-down hidden-xs"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
+			<div class="gallery-down hidden-xs" id="scroll-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "down-button") %>
 			</div>
 		</ul>
 	</div>
 
 <!--first row-->
+<div class="scrollable-gallery">
 	<div class="container-fluid" id="gallery-page-container">
 
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-1-ceiling-dress.jpg", alt: "layered ceiling dress", :class => "img-responsive"), layered_1_path %><br />
-				Ceiling and dress, NYC, 2008
+				<%= link_to image_tag("Layered-1-ceiling-dress-thumb.jpg", alt: "layered ceiling dress", :class => "img-responsive"), layered_1_path %><br />
+				Ceiling and dress, 2008, NYC, and detail
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-3-dress-copy.jpg", alt: "layered dress", :class => "img-responsive" ), layered_2_path %><br />
-				Dress, NYC, 2008
+				<%= link_to image_tag("Layered-3-dress-copy-thumb.jpg", alt: "layered dress", :class => "img-responsive" ), layered_2_path %><br />
+				Ceiling and dress, and detail
 			</div>
 		
 		 <div class="clearfix visible-sm"></div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-5-blumb-bobs.jpg", alt: "layered blumb bobs", :class => "img-responsive"), layered_3_path %><br />
-				Plumb bobs, NYC, 2008
+				<%= link_to image_tag("Layered-5-blumb-bobs-thumb.jpg", alt: "layered blumb bobs", :class => "img-responsive"), layered_3_path %><br />
+				Plumb bobs
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-6-paper-web.jpg", alt: "layered paper ", :class => "img-responsive"),  layered_4_path %><br />
-				Paper Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-6-paper-web-thumb.jpg", alt: "layered paper ", :class => "img-responsive"),  layered_4_path %><br />
+				Paper Cyanotype
 			</div>
 		</div>
 	</div>
@@ -48,25 +49,25 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-7-stripes-hole-web.jpg", alt: "layered stripes hole", :class => "img-responsive"), layered_5_path %><br />
-				Stripes Hole Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-7-stripes-hole-web-thumb.jpg", alt: "layered stripes hole", :class => "img-responsive"), layered_5_path %><br />
+				Striped dress Cyanotype
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-8-seed-pods-web.jpg", alt: "layered seed pods", :class => "img-responsive" ), layered_6_path %><br />
-				Seed Pods Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-8-seed-pods-web-thumb.jpg", alt: "layered seed pods", :class => "img-responsive" ), layered_6_path %><br />
+				Seed Pods Cyanotype
 			</div>
 
 		 <div class="clearfix visible-sm"></div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-9-cotton-web.jpg", alt: "layered cotton", :class => "img-responsive"), layered_7_path %><br />
-				Layered Cotton Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-9-cotton-web-thumb.jpg", alt: "layered cotton", :class => "img-responsive"), layered_7_path %><br />
+				Cotton Cyanotype
 			</div>
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-x1-eggshell-web.jpg", alt: "layered eggshell", :class => "img-responsive"),  layered_8_path %><br />
-				Layered Eggshell Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-x1-eggshell-web-thumb.jpg", alt: "layered eggshell", :class => "img-responsive"),  layered_8_path %><br />
+				Eggshell Cyanotype
 			</div>
 		</div>
 	</div>
@@ -77,20 +78,27 @@
 		<div class="row" id="gallery-page-row">
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-x2-feathers-web.jpg", alt: "layered feathers", :class => "img-responsive"), layered_9_path %><br />
-				Layered Feathers Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-x2-feathers-web-thumb.jpg", alt: "layered feathers", :class => "img-responsive"), layered_9_path %><br />
+				\Feathers Cyanotype
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-x3-hairball-web.jpg", alt: "layered hairball", :class => "img-responsive" ), layered_10_path %><br />
-				Layered Hairball Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-x3-hairball-web-thumb.jpg", alt: "layered hairball", :class => "img-responsive" ), layered_10_path %><br />
+				Hairball Cyanotype
 			</div>
 
 		 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("Layered-x4-little-solid-dress-web.jpg", alt: "layered little solid dress", :class => "img-responsive"), layered_11_path %><br />
-				Layered Little Solid Dresss Cyanotype, NYC, 2008
+				<%= link_to image_tag("Layered-x4-little-solid-dress-web-thumb.jpg", alt: "layered little solid dress", :class => "img-responsive"), layered_11_path %><br />
+				Little Dresss Cyanotype
+			</div>
+
+			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
+				<div class="statement-box" id="statement">
+					<strong><%= link_to"Statement", layered_statement_path, :class=>"link" %><br /></strong>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>

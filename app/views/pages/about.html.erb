@@ -1,32 +1,38 @@
-
-
-
-
-<div class="container-fluid" id="about-page-container">
+<div class="container-fluid" id="botanicals-container">
 
 	<div class="row" id="about-page-row">
 	
-		<div class="col-xs-12 col-sm-6 col-md-3" id="about-row">
-			<%= link_to image_tag("icon_diana_1.jpg", alt: "resume", :class => "img-responsive"), resume_path %><br />
-			Resume
+		<div class="col-xs-9 col-sm-6 col-md-3 link " id="gallery-row">
+				
+					<div class="statement-box" id="statement">
+						<strong><%= link_to"Résumé", resume_path, :class=>"link" %><br /></strong>
+
+					</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-6 col-md-3" id="about-row" >
-			<%= link_to image_tag("icon_diana_1.jpg", alt: "bio", :class => "img-responsive about-image" ), biography_path %><br />
-			Bio
-		
-		</div>
-	
-		<div class="col-xs-12 col-sm-6 col-md-3" id="about-row">
-			<%= link_to image_tag("icon_diana_1.jpg", alt: "critcism", :class => "img-responsive"), criticism_path %><br />
-			Criticism
+		<div class="col-xs-9 col-sm-6 col-md-3 link " id="gallery-row">
+				
+					<div class="statement-box" id="statement">
+						<strong><%= link_to"Bio", biography_path, :class=>"link" %><br /></strong>
+					</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-6 col-md-3" id="about-row">
-			<%= link_to image_tag("icon_diana_1.jpg", alt: "Czech Work", :class => "img-responsive"), "http://www.czechslovakphotos.com/" %><br />
-			Czech Work
+		<div class="col-xs-9 col-sm-6 col-md-3 link " id="gallery-row">
+				
+					<div class="statement-box" id="statement">
+						<strong><%= link_to"Criticism", criticism_path, :class=>"link" %><br /></strong>
+					</div>
 		</div>
-	
+
+		<div class="col-xs-9 col-sm-6 col-md-3 link " id="gallery-row">
+				
+					<div class="statement-box" id="statement">
+						<strong><%= link_to"Czech Work", "http://www.czechslovakphotos.com/", :class=>"link" %><br /></strong>
+					</div>
+		</div>
+			
+			
+
 
 	
 	

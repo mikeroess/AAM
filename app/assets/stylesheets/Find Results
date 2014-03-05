@@ -1,0 +1,22 @@
+Searching 4 files for "overflow"
+
+/Users/mwr/Desktop/Ann/app/assets/stylesheets/pages.css.scss:
+  183    position: fixed;
+  184    height: 100%;
+  185:   overflow-y: auto;
+  186    z-index: 1000;
+  187    border-right: solid #C9C9C9;
+
+1 match in 1 file
+
+
+Searching 4 files for "overflow"
+
+/Users/mwr/Desktop/Ann/app/assets/stylesheets/pages.css.scss:
+  183    position: fixed;
+  184    height: 100%;
+  185:   overflow-y: auto;
+  186    z-index: 1000;
+  187    border-right: solid #C9C9C9;
+
+1 match in 1 file

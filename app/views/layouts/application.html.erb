@@ -13,8 +13,8 @@
 </head>
 
 
-<body>
-  <div id="body">
+<body id="body">
+  
 
       
 <!-- Sidebar -->
@@ -52,18 +52,20 @@
       </div>
 
 <!-- main page -->
-    
-      <div id="main-page">  
-        <%= yield %>
+      <div id="main-page"> 
+          <%= yield %>
       </div>
+      
+      
 
 
-<!-- second fotter -->
+
+<!-- second footer -->
       <div class="bottom-second-footer navbar-fixed-bottom">
         <div class="left-footer-box hidden-xs">
         </div>
         <div class="right-footer-box hidden-xs">
-          <p class="logo">ANNE ARDEN MCDONALD</p>
+          <a href="/" class="link"><p class="logo">ANNE ARDEN MCDONALD</p></a>
       </div>
 
 <!--footer-->
@@ -73,7 +75,7 @@
   	   <div class="container-fluid">
   		  <div class="row">
   			<div class="col-xs-8 col-sm-4">
-  				<small class = "pull-left copyright">all content © Anne Adren McDonald 2014</small>
+  				<small class = "copyright">all content © Anne Adren McDonald 2014</small>
   			</div>
 
   			<div class="col-sm-4">
@@ -81,16 +83,10 @@
   			
   			<div class="col-xs-4 col-sm-4">
           <div class="pull-right social">
-           <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1">
-              F<i class="fa fa-camera-retro"></i>
-            </a>
-
+           <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
           |
             <a href="mailto:anne@anneardenmcdonald.com">
-              <button type="button" class="btn btn-default btn-xs">
-                <span class="glyphicon glyphicon-envelope">
-                </span>
-              </button>
+                <%= image_tag("envelope.png", alt: "envelope", :class=>"image-fluid")%>
             </a>
           </div>
 
@@ -100,6 +96,6 @@
       </footer>
     </div>
   </div>
-</div>
+
 </body>
 </html>

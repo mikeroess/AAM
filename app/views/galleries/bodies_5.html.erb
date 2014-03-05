@@ -1,0 +1,31 @@
+<% u = 5 %>
+<div class="container-fluid detail-image" id="bodies1">
+
+	<div class="row detail-row-ap">
+		<div class="col-xs-8 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2">
+			<%= image_tag("bodies-5a-liquid.jpg", alt: "metaphor", 
+			:class => "img-responsive")%><br />
+		</div>
+		
+		<div class="col-xs-8 col-sm-4 col-md-3">
+			<%= image_tag("bodies-5-liquid-detail.jpg", alt: "metaphor detail", 
+			:class => "img-responsive")%><br />
+		</div>
+	</div>
+</div>
+
+<div class="arrow-row row">
+			<div class="col-xs-3 col-md-3 col-lg-3">
+					<a href= "/bodies<%= (u-1) %>"><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+					:class => "img-responsive nav-clock-hand")%></a></a><br />
+		</div>
+		<div class= "col-xs-5 col-md-5 col-lg-5">
+					<em>Detail, Body of Liquid, 90 x 50 ins. and detail, Made by painting on the photo paper with salt, hydrogen peroxide, lemons, aspirin, betadine, tabasco sauce, and about 30 other substances <%= link_to("(Statement)", bodies_statement_path, :class => "link" ) %></em>
+		</div>
+		<div class="col-xs-3 col-md-3 col-lg-3">
+						<a href= "/bodies<%= (u+1) %>"><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+					:class => "img-responsive nav-clock-hand")%>
+					</a><br />
+		</div>
+	</div>	
+</div>
