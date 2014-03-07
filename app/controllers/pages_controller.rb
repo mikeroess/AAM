@@ -12,6 +12,9 @@ class PagesController < ApplicationController
 	def about
 	end
 
+  def bofvideo
+  end
+
 	def jewelry
 	end
 

@@ -4,11 +4,12 @@ Ann::Application.routes.draw do
   root 'pages#index'
   
   #about pages through pages controller
-  match 'resume',        to: 'pages#resume',           via: 'get',  as: 'resume'
-  match 'biography',     to: 'pages#biography',        via: 'get',  as: 'biography'
-  match 'criticism',     to: 'pages#criticism',        via: 'get',  as: 'criticism'
-  match 'about',         to: 'pages#about',            via: 'get',  as: 'about'
-  match 'jewelry',       to: 'pages#jewelry',          via: 'get',  as: 'jewelry'
+  match 'resume',           to: 'pages#resume',           via: 'get',  as: 'resume'
+  match 'biography',        to: 'pages#biography',        via: 'get',  as: 'biography'
+  match 'criticism',        to: 'pages#criticism',        via: 'get',  as: 'criticism'
+  match 'about',            to: 'pages#about',            via: 'get',  as: 'about'
+  match 'making-of-video',  to: 'pages#bofvideo',         via: 'get',  as: 'bofvideo'
+  match 'jewelry',          to: 'pages#jewelry',          via: 'get',  as: 'jewelry'
   #match 'plasticCamera', to: 'pages#plastic_camera',   via: 'get',  as: 'plastic_camera'
 
 

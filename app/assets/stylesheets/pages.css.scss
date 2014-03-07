@@ -373,5 +373,11 @@ margin-right: auto;
     padding-left: 98px;
 } 
 
-
-
+#video-container{
+  margin-left :17%;
+  padding-right: 10%;
+  padding-top: 5%;
+  @media (max-width: 991px) { padding-top: 8%; }
+  height: 100%;
+  max-width: 80%;
+}
