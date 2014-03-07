@@ -1,31 +1,24 @@
-
-<div class="container-fluid detail-image" id="bouyancy6">
-
-	<div class="row detail-row-layered">
-		<div class="col-xs-8 col-sm-5 col-md-4">
-			<%= image_tag("bouyancy-7-globe-detail-lower.jpg", alt: "Bouyancy 1 ", 
-			:class => "img-responsive")%><br />
-		</div>
-		
-	<div class="col-xs-8 col-sm-5 col-md-4">
-			<%= image_tag("bouyancy-7-globe-detail-upper.jpg", alt: "cyou were born detail", 
-			:class => "img-responsive")%><br />
+<% u = 6 %>
+<div class="container-fluid detail-image" id="bouyancy8">
+	<div class="row">
+		<div class="col-xs-11 col-sm-10 col-md-8">
+			<%= image_tag("bouyancy-6-connected-globe.jpg", alt: "We Are All Connected", 
+			:class => "img-responsive")%></a><br />
 		</div>
 	</div>
 </div>
 
 <div class="arrow-row row">
-			<div class="col-xs-3 col-md-3 col-lg-3">
-					<a href= '/bouyancy5'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
-					:class => "img-responsive nav-clock-hand")%></a></a><br />
+			<div class="col-xs-2 col-md-2 col-lg-2">
+			<a href= '/bouyancy<%= u - 1 %>'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
+					:class => "img-responsive nav-clock-hand")%></a><br />
 		</div>
-		<div class= "col-xs-5 col-md-5 col-lg-5">
-					<em>Globe detail upper (left) and lower (right) <%= link_to("Read Artists Statement", bouyancy_statement_path, :class => "link" ) %></em>
+		<div class= "col-xs-6 col-md-6 col-lg-6">
+					<em>Botanical boxes installed &mdash; <%= link_to("Read Artists Statement", bouyancy_statement_path, :class => "link" ) %></em>
 		</div>
-		<div class="col-xs-3 col-md-3 col-lg-3">
-						<a href= '/bouyancy8'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
-					:class => "img-responsive nav-clock-hand")%>
-					</a><br />
+		<div class="col-xs-2 col-md-2 col-lg-2">
+			<a href= '/bouyancy<%= u + 1 %>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 
+					:class => "img-responsive nav-clock-hand")%></a><br />
 		</div>
 	</div>	
 </div>

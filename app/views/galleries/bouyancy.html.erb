@@ -59,22 +59,29 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-7-globe-detail-upper.jpg", alt: "We are all connected details", :class => "img-responsive"), bouyancy_7_path %><br />
+				We Are All Connected, Detail
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
 				<%= link_to image_tag("bouyancy-10-boxes-in-room-thumb.jpg", alt: "We are all connected", :class => "img-responsive"), bouyancy_8_path %><br />
 				Botanical boxes installed
 			</div>
 		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("bouyancy-11-wall-of-circles-thumb.jpg", alt: "We are all connected", :class => "img-responsive"), bouyancy_9_path %><br />
-				Wall of circles installed, 8 x 8 foot wall
-			</div>	
+			
 		</div>
 	</div>
 
 	<div class="container-fluid" id="gallery-page-container">
 
-		<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
-			<div class="col-xs-12 col-sm-6 col-md-3 link " id="gallery-row">
-				<div class="statement-box" id="statement">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+				<%= link_to image_tag("bouyancy-11-wall-of-circles-thumb.jpg", alt: "We are all connected", :class => "img-responsive"), bouyancy_9_path %><br />
+				Wall of circles installed, 8 x 8 foot wall
+			</div>	
+
+			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
+				
+					<div class="statement-box" id="statement">
 					<strong><%= link_to"Statement", bouyancy_statement_path, :class=>"link" %><br /></strong>
 				</div>
 			</div>

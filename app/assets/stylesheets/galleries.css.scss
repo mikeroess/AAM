@@ -13,11 +13,19 @@ top:20px;
 text-align:center;
 }
 
-#statement{
+.sp-statement-box{
+border:2px;
+border-color:#666666;
+height:85px;
+width:100%;
+text-align:center;
+}
+
+#sp-statement{
 	font-size: 250%;
 	font-family: Cardo-Italic;
 	color: #666666;
-	padding-top:25%;
+	padding-top:5%;
 	margin:auto;
 	@media (max-width: 780px) { margin-bottom: 10%; }
 }
@@ -66,7 +74,7 @@ text-align:center;
 .sp-nav-clock-hand {
 	width: 45%; 
 	@media (max-width: 600px) { width: 1000%; }
-	@media (min-width: 1000px) {width: 35%;}
+	@media (min-width: 1000px) {width: 45%;}
 }
 
 .milan-nav-clock-hand {
@@ -90,6 +98,10 @@ text-align:center;
 	font-family: Cardo-Italic;
 	color: #666666;
 	text-decoration:underline
+}
+
+.link:hover{
+	color: black;
 }
 
 #gallery-page-container {
@@ -461,9 +473,13 @@ padding-top: 1%;
 }
 
 //bouyancy
+
+
 #bouyancy1{
-padding-top: 7%;
+padding-top: 0%;
 margin-left: 15%;
+@media (max-width: 1150px) { padding-top: 8%; }
+@media (min-width: 1200px) { bottom:15%;}	
 }
 
 #bouyancy4{
@@ -559,7 +575,7 @@ margin-left: 15%;
 
 #botanical-book11{
 	margin-left: 37%;
-	padding-top: 1;
+	padding-top: 1%;
 	@media (max-width: 950px) { padding-top: 8%; }	
 }
 

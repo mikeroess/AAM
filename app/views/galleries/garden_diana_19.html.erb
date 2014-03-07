@@ -1,7 +1,7 @@
 <% u = 19 %>
 <div class="container-fluid detail-image" id="diana1">
 	<div class="row">
-		<div class="col-xs-7">
+		<div class="col-xs-7 col-xs-offset-3 col-sm-6 col-md-5">
 			<%= image_tag("garden_diana_19.jpg", alt: "garden_diana_1", 
 			:class => "img-responsive")%></a><br />
 			
@@ -14,8 +14,8 @@
 					<a href= '/gardenDiana<%= u-1%>'><%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", 
 					:class => "img-responsive sp-nav-clock-hand")%></a></a><br />
 		</div>
-		<div class= "col-xs-5 col-md-5 col-lg-5">
-					<em>#30 Hen house and pots, Breaux Bridge, Louisiana <%= link_to("Read Artists Statement", self_portrait_statement_path, :class => "link" ) %></em>
+		<div class= "col-xs-4 col-md-6 col-lg-6">
+					<em>#30 Hen house and pots, Breaux Bridge, Louisiana <%= link_to("Read Artists Statement", garden_diana_statement_path, :class => "link" ) %></em>
 		</div>
 		<div class="col-xs-3 col-md-3 col-lg-3">
 						<a href= '/gardenDiana<%= u + 1 %>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 

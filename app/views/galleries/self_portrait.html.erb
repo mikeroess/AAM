@@ -284,6 +284,12 @@
 		<div class="col-xs-12 col-sm-12 col-md-6" id="gallery-row">
 			<%= link_to image_tag("sp-35-05-thumb.jpg", alt: "critcism", :class => "img-responsive"), sp_38_path %><br />
 			Untitled Self Portrait #5, Connecticut, 1986
+			<div class="col-xs-12 col-sm-12 col-md-12 link " id="gallery-row">
+				
+					<div class="sp-statement-box" id="sp-statement">
+						<strong><%= link_to"Statement", self_portrait_statement_path, :class=>"link" %><br /></strong>
+					</div>
+			</div>
 		</div>
 	
 		<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
@@ -295,23 +301,13 @@
 			<%= link_to image_tag("sp-38-34-thumb.jpg", alt: "bio", :class => "img-responsive" ), sp_40_path %><br />
 			Untitled Self Portrait #34, New Hampshire, 1991
 		</div>
+
+		
 	</div>
 	
 </div>
 
-<div class="container" id="gallery-page-container">
 
-	<div class="row" id="gallery-page-row">
-
-			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
-				
-					<div class="statement-box" id="statement">
-						<strong><%= link_to"Statement", self_portrait_statement_path, :class=>"link" %><br /></strong>
-					</div>
-			
-			</div>
-		</div>
-	</div>
-	</div>
+</div>
 </div>
 </div>
