@@ -1,7 +1,7 @@
 <% u = 15 %>
 <div class="container-fluid detail-image" id="diana1">
 	<div class="row">
-		<div class="col-xs-7 col-xs-offset-3 col-sm-6 col-md-5">
+		<div class="col-xs-7">
 			<%= image_tag("icon_diana_15.jpg", alt: "pillow_book_1", 
 			:class => "img-responsive")%></a><br />
 			
@@ -15,7 +15,7 @@
 					:class => "img-responsive sp-nav-clock-hand")%></a></a><br />
 		</div>
 		<div class= "col-xs-4 col-md-6 col-lg-6">
-					<em>Diana #61, Czech Republic, 1999 <%= link_to("Read Artists Statement", icon_diana_statement_path, :class => "link" ) %></em>
+					<em>Diana #61, Czech Republic, 1999 &mdash; <%= link_to("(Statement)", icon_diana_statement_path, :class => "link" ) %></em>
 		</div>
 		<div class="col-xs-3 col-md-3 col-lg-3">
 						<a href= '/iconDiana<%= u + 1 %>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 

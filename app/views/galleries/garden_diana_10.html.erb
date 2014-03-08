@@ -1,7 +1,7 @@
 <% u = 10 %>
 <div class="container-fluid detail-image" id="diana1">
 	<div class="row">
-		<div class="col-xs-7 col-xs-offset-3 col-sm-6 col-md-5">
+		<div class="col-xs-7">
 			<%= image_tag("garden_diana_10.jpg", alt: "garden_diana_1", 
 			:class => "img-responsive")%></a><br />
 			<em></em>
@@ -15,7 +15,7 @@
 					:class => "img-responsive sp-nav-clock-hand")%></a></a><br />
 		</div>
 		<div class= "col-xs-4 col-md-6 col-lg-6">
-					<em>#67 Pavel Pecha's mother's garden, Slovakia <%= link_to("Read Artists Statement", garden_diana_statement_path, :class => "link" ) %></em>
+					<em>#67 Pavel Pecha's mother's garden, Slovakia &mdash; <%= link_to("(Statement)", garden_diana_statement_path, :class => "link" ) %></em>
 		</div>
 		<div class="col-xs-3 col-md-3 col-lg-3">
 						<a href= '/gardenDiana<%= u + 1 %>'><%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", 

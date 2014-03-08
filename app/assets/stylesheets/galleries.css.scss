@@ -1,4 +1,3 @@
-
 // Place all the styles related to the galleries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -6,7 +5,8 @@
 
 //Boxes indicating artist statment at end of gallery
 .statement-box{
-border:2px solid black;
+border:1px solid;
+border-color:#666666;
 height:185px;
 width:100%;
 top:20px;
@@ -15,7 +15,6 @@ text-align:center;
 
 .sp-statement-box{
 border:2px;
-border-color:#666666;
 height:85px;
 width:100%;
 text-align:center;
@@ -60,36 +59,43 @@ text-align:center;
 }
 
 .nav-clock-hand {
-	width: 25%; 
-	@media (max-width: 600px) { width: 1000%; }
-	@media (min-width: 1000px) {width: 35%;}
+	width: 45%; 
+	@media (max-width: 625px) { width: 500%; }
+	@media (min-width: 1001px ) {width: 40%;}
+}
+
+.pc-nav-clock-hand {
+	width: 45%; 
+	@media (max-width: 625px) { width: 500%; }
+	@media (min-width: 1001px ) {width: 40%;}
 }
 
 
 .ap-nav-clock-hand {
 	width: 45%; 
-	@media (max-width: 600px) { width: 1000%; }
-	@media (min-width: 1000px) {width: 35%;}
+	@media (max-width: 625px) { width: 500%; }
+	@media (min-width: 1001px ) {width: 40%;}
 }
 .sp-nav-clock-hand {
 	width: 45%; 
-	@media (max-width: 600px) { width: 1000%; }
-	@media (min-width: 1000px) {width: 45%;}
+	@media (max-width: 625px) { width: 500%; }
+	@media (min-width: 1001px ) {width: 40%;}
 }
 
 .milan-nav-clock-hand {
-	width: 65%; 
-	@media (max-width: 480px) { width: 1000%; }
+	width: 45%; 
+	@media (max-width: 625px) { width: 500%; }
+	@media (min-width: 1001px ) {width: 40%;}
 }
 
 .left-watch {
-  width: 20%;
-   @media (max-width: 480px) { width:30% }
+  width: 30%;
+   @media (max-width: 480px) { width:800% }
 }
 
 .right-watch{
-  width: 20%;
-   @media (max-width: 480px) { width:30% }
+  width: 30%;
+   @media (max-width: 480px) { width:800% }
 }
 
 //general gallery stuff
@@ -211,6 +217,15 @@ margin-left: 5%;
  font-size: 65%;
  text-align: center;
  padding-top: 0%;	
+}
+
+.detail-row-bouyancy {
+ margin-left: 30%;
+ @media (max-width: 480px) { margin-left: 20%; }
+ font-size: 65%;
+ text-align: center;	
+ padding-top:1%;
+
 }
 
 
@@ -414,10 +429,20 @@ margin-left: 5%;
 		margin-left: 15%;
 		font-family: Cardo-Regular;
 		font-size: 130%;
+		color: #666666;
+		letter-spacing: 3px;
 	}
 
 	#diana1{
 	margin-left: 35%;
+	text-align: center;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+	}
+
+	#pillowBook2{
+	margin-left: 30%;
 	text-align: center;
 	padding-top: 1%;
 	@media (max-width: 1100px) { padding-top: 8%; }
@@ -476,10 +501,9 @@ padding-top: 1%;
 
 
 #bouyancy1{
-padding-top: 0%;
 margin-left: 15%;
-@media (max-width: 1150px) { padding-top: 8%; }
-@media (min-width: 1200px) { bottom:15%;}	
+	padding-top: 1%;
+	@media (max-width: 1150px) { padding-top: 5%; }
 }
 
 #bouyancy4{
@@ -494,9 +518,9 @@ margin-left: 15%;
 }
 
 #bouyancy2{
-	margin-left: 15%;
+	margin-left: 33%;
 	padding-top: 1%;
-	@media (max-width: 1150px) { padding-top: 7%; }
+	@media (max-width: 1025px) { padding-top: 8%; }	
 }
 
 #bouyancy6{
@@ -510,13 +534,13 @@ margin-left: 15%;
 #botanicals-container{
   margin-left :17%;
   padding-right: 10%;
-  padding-top: 18%;
+  padding-top: 8%;
   @media (max-width: 991px) { padding-top: 8%; }
   height: 100%;
   max-width: 80%;
 }
 #botanicals1{
-	margin-left: 15%;
+	margin-left:-3%;
 	padding-top: 6%;
 }
 
@@ -528,6 +552,14 @@ margin-left: 15%;
 	@media (max-width: 1100px) { padding-top: 8%; }
 	@media (min-width: 1200px) { bottom:15%;}	
 }
+
+#milan10{
+	margin-left: 25%;
+	text-align: center;
+	padding-top: 1%;
+	@media (max-width: 1100px) { padding-top: 8%; }
+	@media (min-width: 1200px) { bottom:15%;}	
+	}
 
 #milan-detail-text {
 	font-size: 95%;
@@ -574,7 +606,7 @@ margin-left: 15%;
 //Botanical Book
 
 #botanical-book11{
-	margin-left: 37%;
+	margin-left: 33%;
 	padding-top: 1%;
 	@media (max-width: 950px) { padding-top: 8%; }	
 }

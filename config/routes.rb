@@ -163,6 +163,7 @@ Ann::Application.routes.draw do
     match 'ap8',              to: 'galleries#ap_8',                  via: 'get',  as:  'ap_8'
     match 'ap9',              to: 'galleries#ap_9',                  via: 'get',  as:  'ap_9'
     match 'ap10',              to: 'galleries#ap_10',                  via: 'get',  as:  'ap_10'
+    match 'ap11',              to: 'galleries#ap_11',                  via: 'get',  as:  'ap_11'
 
     match 'sp1',              to: 'galleries#sp_1',                  via: 'get',  as:  'sp_1'
     match 'sp2',              to: 'galleries#sp_2',                  via: 'get',  as:  'sp_2'
@@ -286,6 +287,8 @@ Ann::Application.routes.draw do
     match 'crit4',               to: 'pages#crit4',                          via: 'get',  as:  'crit4'
     match 'crit5',               to: 'pages#crit5',                          via: 'get',  as:  'crit5'
     match 'crit6',               to: 'pages#crit6',                          via: 'get',  as:  'crit6'
+    match 'crit7',               to: 'pages#crit7',                          via: 'get',  as:  'crit7'
+    match 'crit8',               to: 'pages#crit8',                          via: 'get',  as:  'crit8'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
