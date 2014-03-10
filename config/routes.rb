@@ -9,6 +9,7 @@ Ann::Application.routes.draw do
   match 'criticism',        to: 'pages#criticism',        via: 'get',  as: 'criticism'
   match 'about',            to: 'pages#about',            via: 'get',  as: 'about'
   match 'making-of-video',  to: 'pages#bofvideo',         via: 'get',  as: 'bofvideo'
+  match 'aau-audio',        to: 'pages#aauaudio',         via: 'get',  as: 'aauaudio'
   match 'jewelry',          to: 'pages#jewelry',          via: 'get',  as: 'jewelry'
   #match 'plasticCamera', to: 'pages#plastic_camera',   via: 'get',  as: 'plastic_camera'
 

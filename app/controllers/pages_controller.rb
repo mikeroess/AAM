@@ -15,6 +15,9 @@ class PagesController < ApplicationController
   def bofvideo
   end
 
+  def aauaudio
+  end
+
 	def jewelry
 	end
 
