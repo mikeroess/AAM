@@ -12,31 +12,31 @@
 	</div>
 <!--first rowow-->
 	<div class="scrollable-gallery hidden-xs">
-	<div class="container" id="gallery-page-container">
+		<div class="container" id="gallery-page-container">
 
-		<div class="row" id="gallery-page-row">
-		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("botbook-1-bone-thumb.jpg", alt: "bone", :class => "img-responsive"), botanical_book_1_path %><br />
-				Bone
-			</div>
-		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("botbook-2-bones-thumb.jpg", alt: "bones", :class => "img-responsive"), botanical_book_2_path %><br />
-				Bones
-			</div>
-		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("botbook-3-root-thumb.jpg", alt: "root", :class => "img-responsive"),  botanical_book_3_path %><br />
-				Root
-			</div>
+			<div class="row" id="gallery-page-row">
+			
+				<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+					<%= link_to image_tag("botbook-1-bone-thumb.jpg", alt: "bone", :class => "img-responsive"), botanical_book_1_path %><br />
+					Bone
+				</div>
+			
+				<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+					<%= link_to image_tag("botbook-2-bones-thumb.jpg", alt: "bones", :class => "img-responsive"), botanical_book_2_path %><br />
+					Bones
+				</div>
+			
+				<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+					<%= link_to image_tag("botbook-3-root-thumb.jpg", alt: "root", :class => "img-responsive"),  botanical_book_3_path %><br />
+					Root
+				</div>
 
-		    <div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("botbook-4-electric-roots-thumb.jpg", alt: "electric roots", :class => "img-responsive"), botanical_book_4_path %><br />
-				Electric Roots
+			    <div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+					<%= link_to image_tag("botbook-4-electric-roots-thumb.jpg", alt: "electric roots", :class => "img-responsive"), botanical_book_4_path %><br />
+					Electric Roots
+				</div>
 			</div>
 		</div>
-	</div>
 
 <!--second row-->
 	<div class="container" id="gallery-page-container">
@@ -89,7 +89,7 @@
 
 			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
 				
-					<div class="statement-box" id="statement">
+					<div class="statement-box statement-text" id="statement">
 						<strong><%= link_to"Statement", botanical_book_statement_path, :class=>"link" %><br /></strong>
 					</div>
 			
@@ -177,7 +177,7 @@
 
 			<div class="col-xs-6 col-sm-6 col-md-3 link " id="gallery-row">
 				
-					<div class="statement-box" id="statement">
+					<div class="statement-box statement-text" id="statement">
 						<strong><%= link_to "Statement", botanical_book_statement_path, :class=>"link" %><br /></strong>
 					</div>
 			

@@ -2,18 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.statement-text{
+#back-watch{
+	margin-left:auto;
+	margin-right:auto;
+	width:15%;
+}
+
+#statement-text{
 	text-align: center;
 	display: table-cell;
     padding-top: 8%;
     font-size: 85%;
     padding-left: 30%;
     padding-right: 10%;
-}
-
-#back-watch{
-	margin-left:auto;
-	margin-right:auto;
-	width:15%;
-
 }
