@@ -1,40 +1,25 @@
-<div class="gallery-div">
-
-<!-- buttons to scroll in gallery -->
-	<div class="gallery-pull-right pull-right" >
-			
-			<div class="gallery-up hidden-xs" id="scroll-up">
-				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", :class => "img-responsive", :id => "scroll up") %>
-
-			</div>
-			<div class="gallery-down hidden-xs" id="scroll-down"><%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", :class => "img-responsive", :id => "scroll-down") %>
-			</div>
-		</ul>
-	</div>
-<!--first row -->
-
 <div class="scrollable-gallery hidden-xs">
 	<div class="container" id="gallery-page-container">
 
 		<div class="row" id="gallery-page-row">
 		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-1 From Earth to Sky button-thumb.jpg", alt: "From Earth to Sky", :class => "img-responsive"), milan_path %><br />
-				<em>From Earth to Sky</em>
+				From Earth to Sky
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-2 layered button-thumb.jpg", alt: "Layered", :class => "img-responsive"), layered_path %><br />
 			<em>Layered, Buoyed, Tethered, Barely</em>
 			</div>
 		<div class="clearfix visible-sm"></div>
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-3 Group button-thumb.jpg", alt: "group", :class => "img-responsive" ), group_path %><br />
 			<em>Group</em>
 			</div>
 
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-4 botanical button-thumb.jpg", alt: "botanicals", :class => "img-responsive"), botanicals_path %><br />
 					Botanicals
 			</div>
@@ -45,25 +30,25 @@
 	<div class="container" id="gallery-page-container">
 		<div class="row" id="gallery-page-row">
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-5 cave installation button-thumb.jpg", alt: "bouyancy", :class => "img-responsive"),  bouyancy_path %><br />
 			<em>Bouyancy Installation Cave</em>	
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-7 botanical book button-thumb.jpg", alt: "botanical book bone", :class => "img-responsive" ), botanical_book_path %><br />
 				Botanical Book
 			</div>
 			<div class="clearfix visible-sm"></div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-6 monoprint button-thumb.jpg", alt: "monoprints", :class => "img-responsive"), monoprints_path %>
 				Monoprints
 			</div>
 			
 
 		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-8 hands button-thumb.jpg", alt: "hands 1", :class => "img-responsive"), hands_path %><br />
 				Hands
 			</div>
@@ -72,25 +57,23 @@
 	<div class="container" id="gallery-page-container">
 		<div class="row" id="gallery-page-row">
 			
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-9 little dress button-thumb.jpg", alt: "Dresses", :class => "img-responsive" ), dresses_path %><br />
 				Dresses
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
+			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-10 murals button-thumb.jpg", alt: "Mural 1", :class => "img-responsive"), murals_path %><br />
 				Murals
 			</div>
 			<div class="clearfix visible-sm"></div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3 " id="gallery-row">
+			<div class="col-xs-6 col-sm-6 col-md-3 " id="xs-gallery-row">
 				<%= link_to image_tag("archive-11 bubble button-thumb.jpg", alt: "Circles-1", :class => "img-responsive"),  bubbles_path %><br />
 				Circles
 			</div>
 		</div>
 	</div>
-</div>
-
 
 	<div class="scrollable-gallery visible-xs">
 	<div class="container" id="gallery-page-container">
@@ -99,7 +82,7 @@
 		
 			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
 				<%= link_to image_tag("archive-1 From Earth to Sky button-thumb.jpg", alt: "From Earth to Sky", :class => "img-responsive"), milan_path %><br />
-				<em>From Earth to Sky</em>
+				From Earth to Sky
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-md-3" id="xs-gallery-row">
@@ -162,18 +145,12 @@
 			</div>
 			<div class="clearfix visible-sm"></div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3 " id="xs-gallery-row">
+			<div class="col-xs-6 col-sm-6 col-md-3 " id="xs-gallery-row">
 				<%= link_to image_tag("archive-11 bubble button-thumb.jpg", alt: "Circles-1", :class => "img-responsive"),  bubbles_path %><br />
 				Circles
 			</div>
 		</div>
 	</div>
 </div>
-
-</div>
-
-
-
-
 
 </div>
