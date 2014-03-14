@@ -223,6 +223,19 @@ text-align:center;
 	@media (max-width: 780px) { margin-bottom: 10%; }
 }
 
+#hands-gallery-row{
+	font-family: Cardo-Italic;
+	color: #666666;
+  	font-size: 80%;  
+  	text-align: center;
+	margin-top: 2%;
+	margin-left: 0%;
+	@media( max-width: 774px) {	margin-left:15%; }
+	@media (max-width: 780px) { margin-bottom: 10%; }
+	@media (max-width: 780px) { height: 250px; }
+
+}
+
 #about-gallery-row{
 	font-family: Cardo-Italic;
 	color: #666666;
