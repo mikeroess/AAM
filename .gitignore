@@ -10,6 +10,9 @@
 # Compiled assets.
 /public/assets
 
+# Bundler packages.
+/vendor/bundles
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
