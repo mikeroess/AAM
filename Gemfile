@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-# icons to get the facebook icon in the footer
-gem 'font-awesome-less'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -26,6 +23,9 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+# URI parser used to get proper navbar function at small sizes
+require 'uri'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -1,3 +1,14 @@
+<!-- data/logic for underline function in sidebar -->
+<% new_work_array = ['newWork', 'ap', 'atomPlanetStatement', 'bodies', 'bodiesStatement'] %>
+<% self_portrait_array = ['selfPortrait', 'selfPortraitStatement', 'sp'] %>
+<% plastic_camera_array = ['iconDiana', 'iconDianaStatement', 'gardenDiana', 'gardenDianaStatement', 'pillowBook', 'pillowBookStatement', 'plasticCamera'] %>
+<% watches_array = ['watches', 'watchesStatement'] %>
+<% archive_array = ['archive', 'milan', 'milanStatement', 'layered', 'layeredStatement', 'group', 'Group', 'groupStatement', 'botanicals', 'botanicalsStatement', 'bouyancy', 'bouyancyStatement', 'botanicalBook', 'botanicalBookStatement', 'monoprints', 'hands', 'handsStatement', 'dresses', 'dressesStatement', 'murals', 'muralsStatement', 'circles', 'circlesStatment' ] %>
+<% about_array = ['about', 'resume', 'biography', 'aau-audio', 'making-of-video', 'criticism', 'crit'] %>
+<% stripped_uri = URI(request.original_url).path.split('/').last.gsub(/\d/, '') %>
+
+
+<!-- body of site -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,32 +32,83 @@
 
       <div id="sidebar-wrapper" >
         <ul class="sidebar-nav">
-          <li><strong><a href="/newWork">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
-          </li>
-          <li class="visible-xs">&nbsp;
-          </li>
-          <li><strong><a href="/selfPortrait">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
-          </li>
-          <li class="visible-xs">&nbsp;
-          </li>
+          <% if new_work_array.include?stripped_uri  %>
+              <li>
+                <strong class="sidebar-underline"><a href="/newWork">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
+              </li>
+          <% else %>
+              <li>
+                <strong><a href="/newWork">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
+              </li>
+          <% end %>
+              
+              <li class="visible-xs">&nbsp;
+              </li>
+
+          <% if self_portrait_array.include?stripped_uri %>
+              <li>
+                <strong class="sidebar-underline"><a href="/selfPortrait">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
+              </li>
+          <% else %>
+              <li>
+                <strong><a href="/selfPortrait">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
+              </li>
+          <% end %>
+
+              <li class="visible-xs">&nbsp;
+              </li>
+
+          <% if plastic_camera_array.include?stripped_uri %>
+              <li>
+                <strong class="sidebar-underline"><a href= <%= plastic_camera_path %> >P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
+              </li>
+          <% else %>
+              <li>
+                <strong><a href= <%= plastic_camera_path %> >P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
+              </li>
+          <% end %>
+
+              <li class="visible-xs">&nbsp;
+              </li>
+
+          <% if watches_array.include?stripped_uri %>
+              <li>
+                <strong class="sidebar-underline"><a href="/watches">W<span class="small-letter">ATCHES</span></a></strong>
+              </li>
+          <% else %>
+              <li>
+                <strong><a href="/watches">W<span class="small-letter">ATCHES</span></a></strong>
+              </li>
+          <% end %>
+
+              <li class="visible-xs">&nbsp;
+              </li>
+
+          <% if archive_array.include?stripped_uri %>
+              <li>
+                <strong class="sidebar-underline"><a href="/archive">A<span class="small-letter">RCHIVE</span></a></strong>
+              </li>
+          <% else %>
+              <li>
+                <strong><a href="/archive">A<span class="small-letter">RCHIVE</span></a></strong>
+              </li>
+          <% end %>
+
+              <li class="visible-xs">&nbsp;
+              </li>
+
+          <% if about_array.include?stripped_uri %>
+              <li>
+                <strong class="sidebar-underline"><a href="/about">A<span class="small-letter">BOUT</span></a></strong>
+              </li>
+          <% else %>
+              <li>
+                <strong><a href="/about">A<span class="small-letter">BOUT</span></a></strong>
+              </li>
+          <% end %>
+
           <li>
-            <strong><a href= <%= plastic_camera_path %> >P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
-          </li>
-          <li class="visible-xs">&nbsp;
-          </li>
-          <li><strong><a href="/watches">W<span class="small-letter">ATCHES</span></a></strong>
-          </li>
-          <li class="visible-xs">&nbsp;
-          </li>
-          <li><strong><a href="/archive">A<span class="small-letter">RCHIVE</span></a></strong>
-          </li>
-          <li class="visible-xs">&nbsp;
-          </li>
-          <li><strong><a href="/about">A<span class="small-letter">BOUT</span></a></strong>
-          </li>
-          <li class="visible-xs">&nbsp;
-          </li>
-          <li><strong><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">J<span class="small-letter">EWELRY</span></a></strong>
+            <strong><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">J<span class="small-letter">EWELRY</span></a></strong>
           </li>
         </ul>
       </div>
