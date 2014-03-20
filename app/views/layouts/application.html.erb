@@ -5,14 +5,16 @@
 <% watches_array = ['watches', 'watchesStatement'] %>
 <% archive_array = ['archive', 'milan', 'milanStatement', 'layered', 'layeredStatement', 'group', 'Group', 'groupStatement', 'botanicals', 'botanicalsStatement', 'bouyancy', 'bouyancyStatement', 'botanicalBook', 'botanicalBookStatement', 'monoprints', 'hands', 'handsStatement', 'dresses', 'dressesStatement', 'murals', 'muralsStatement', 'circles', 'circlesStatment' ] %>
 <% about_array = ['about', 'resume', 'biography', 'aau-audio', 'making-of-video', 'criticism', 'crit'] %>
-<% stripped_uri = URI(request.original_url).path.split('/').last.gsub(/\d/, '') %>
+<% unless URI(request.original_url).path.split('/').last.blank? %>
+  <% stripped_uri = URI(request.original_url).path.split('/').last.gsub(/\d/, '') %>
+<% end %>
 
 
 <!-- body of site -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Anne Adren McDonald</title>
+  <title>Anne Arden McDonald</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
