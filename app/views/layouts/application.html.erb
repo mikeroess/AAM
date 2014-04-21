@@ -1,173 +1,118 @@
 <!-- data/logic for underline function in sidebar -->
-<% new_work_array = ['newWork', 'ap', 'atomPlanetStatement', 'bodies', 'bodiesStatement'] %>
-<% self_portrait_array = ['selfPortrait', 'selfPortraitStatement', 'sp'] %>
-<% plastic_camera_array = ['iconDiana', 'iconDianaStatement', 'gardenDiana', 'gardenDianaStatement', 'pillowBook', 'pillowBookStatement', 'plasticCamera'] %>
-<% watches_array = ['watches', 'watchesStatement'] %>
-<% archive_array = ['archive', 'milan', 'milanStatement', 'layered', 'layeredStatement', 'group', 'Group', 'groupStatement', 'botanicals', 'botanicalsStatement', 'bouyancy', 'bouyancyStatement', 'botanicalBook', 'botanicalBookStatement', 'monoprints', 'hands', 'handsStatement', 'dresses', 'dressesStatement', 'murals', 'muralsStatement', 'circles', 'circlesStatment' ] %>
-<% about_array = ['about', 'resume', 'biography', 'aau-audio', 'making-of-video', 'criticism', 'crit'] %>
+<% new_work = ['newWork', 'ap', 'atomPlanetStatement', 'bodies', 'bodiesStatement'] %>
+<% self_portrait = ['selfPortrait', 'selfPortraitStatement', 'sp'] %>
+<% plastic_camera = ['iconDiana', 'iconDianaStatement', 'gardenDiana', 'gardenDianaStatement', 'pillowBook', 'pillowBookStatement', 'plasticCamera'] %>
+<% watches = ['watches', 'watchesStatement'] %>
+<% archive = ['archive', 'milan', 'milanStatement', 'layered', 'layeredStatement', 'group', 'Group', 'groupStatement', 'botanicals', 'botanicalsStatement', 'bouyancy', 'bouyancyStatement', 'botanicalBook', 'botanicalBookStatement', 'monoprints', 'hands', 'handsStatement', 'dresses', 'dressesStatement', 'murals', 'muralsStatement', 'circles', 'circlesStatment' ] %>
+<% about = ['about', 'resume', 'biography', 'aau-audio', 'making-of-video', 'criticism', 'crit'] %>
 <% unless URI(request.original_url).path.split('/').last.blank? %>
   <% stripped_uri = URI(request.original_url).path.split('/').last.gsub(/\d/, '') %>
 <% end %>
 
-
-<!-- body of site -->
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Anne Arden McDonald</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>Anne Arden McDonald</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
 
+  <body id="body">
 
-</head>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" >
+      <ul class="sidebar-nav">
 
+        <li>
+          <strong<% if new_work.include?stripped_uri  %> class="sidebar-underline"<% end %>><a href="/newWork">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
+        </li>
 
-<body id="body">
-  
+        <li class="visible-xs">&nbsp;</li>
 
-      
-<!-- Sidebar -->
+        <li>
+          <strong<% if self_portrait.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="/selfPortrait">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
+        </li>
 
-      <div id="sidebar-wrapper" >
-        <ul class="sidebar-nav">
-          <% if new_work_array.include?stripped_uri  %>
-              <li>
-                <strong class="sidebar-underline"><a href="/newWork">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
-              </li>
-          <% else %>
-              <li>
-                <strong><a href="/newWork">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
-              </li>
-          <% end %>
-              
-              <li class="visible-xs">&nbsp;
-              </li>
+        <li class="visible-xs">&nbsp;</li>
 
-          <% if self_portrait_array.include?stripped_uri %>
-              <li>
-                <strong class="sidebar-underline"><a href="/selfPortrait">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
-              </li>
-          <% else %>
-              <li>
-                <strong><a href="/selfPortrait">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
-              </li>
-          <% end %>
+        <li>
+          <strong<% if plastic_camera.include?stripped_uri %> class="sidebar-underline"<% end %>><a href= <%= plastic_camera_path %> >P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
+        </li>
 
-              <li class="visible-xs">&nbsp;
-              </li>
+        <li class="visible-xs">&nbsp;</li>
 
-          <% if plastic_camera_array.include?stripped_uri %>
-              <li>
-                <strong class="sidebar-underline"><a href= <%= plastic_camera_path %> >P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
-              </li>
-          <% else %>
-              <li>
-                <strong><a href= <%= plastic_camera_path %> >P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
-              </li>
-          <% end %>
+        <li>
+          <strong<% if watches.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="/watches">W<span class="small-letter">ATCHES</span></a></strong>
+        </li>
 
-              <li class="visible-xs">&nbsp;
-              </li>
+        <li class="visible-xs">&nbsp;</li>
 
-          <% if watches_array.include?stripped_uri %>
-              <li>
-                <strong class="sidebar-underline"><a href="/watches">W<span class="small-letter">ATCHES</span></a></strong>
-              </li>
-          <% else %>
-              <li>
-                <strong><a href="/watches">W<span class="small-letter">ATCHES</span></a></strong>
-              </li>
-          <% end %>
+        <li>
+          <strong<% if archive.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="/archive">A<span class="small-letter">RCHIVE</span></a></strong>
+        </li>
 
-              <li class="visible-xs">&nbsp;
-              </li>
+        <li class="visible-xs">&nbsp;</li>
 
-          <% if archive_array.include?stripped_uri %>
-              <li>
-                <strong class="sidebar-underline"><a href="/archive">A<span class="small-letter">RCHIVE</span></a></strong>
-              </li>
-          <% else %>
-              <li>
-                <strong><a href="/archive">A<span class="small-letter">RCHIVE</span></a></strong>
-              </li>
-          <% end %>
+        <li>
+          <strong<% if about.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="/about">A<span class="small-letter">BOUT</span></a></strong>
+        </li>
 
-              <li class="visible-xs">&nbsp;
-              </li>
+        <li class="visible-xs">&nbsp;</li>
 
-          <% if about_array.include?stripped_uri %>
-              <li>
-                <strong class="sidebar-underline"><a href="/about">A<span class="small-letter">BOUT</span></a></strong>
-              </li>
-          <% else %>
-              <li>
-                <strong><a href="/about">A<span class="small-letter">BOUT</span></a></strong>
-              </li>
-          <% end %>
-
-          <li>
-            <strong><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">J<span class="small-letter">EWELRY</span></a></strong>
-          </li>
-        </ul>
-      </div>
-
-<!-- main page -->
-      <div id="main-page"> 
-          <%= yield %>
-      </div>
-      
-      
-
-
-
-<!-- second footer -->
-      <div class="bottom-second-footer navbar-fixed-bottom">
-        <div class="left-footer-box hidden-xs">
-        </div>
-        <div class="right-footer-box hidden-xs">
-          <a href="/" class="link"><p class="logo">ANNE ARDEN MCDONALD</p></a>
-      </div>
-
-<!--footer-->
-  
-    <div class="nav navbar-fixed-bottom">
-      <footer class="footer">
-  	   <div class="container-fluid">
-  		  <div class="row copyright-row">
-  			<div class="col-xs-8 col-sm-4 text-center ">
-  				<small class = "copyright">all content © Anne Adren McDonald 2014</small>
-  			</div>
-
-  			<div class="col-sm-4">
-  			</div>
-  			
-  			<div class="col-xs-4 col-sm-4">
-          <div class="pull-right social hidden-xs">
-           <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
-          |
-            <a href="mailto:anne@anneardenmcdonald.com">
-                <%= image_tag("23x23_email.png", alt: "envelope", :class=>"image-fluid")%>
-            </a>
-          </div>
-
-          <div class="pull-right social visible-xs">
-           <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
-          |
-            <a href="mailto:anne@anneardenmcdonald.com">
-                <%= image_tag("16x16_email.png", alt: "envelope", :class=>"image-fluid")%>
-            </a>
-          </div>
-
-  			</div>
-  		</div>
-  		</div>
-      </footer>
+        <li>
+          <strong><a href="http://www.anneardenmcdonald.com/noflash/jewelry.html">J<span class="small-letter">EWELRY</span></a></strong>
+        </li>
+      </ul>
     </div>
-  </div>
 
-</body>
+    <div id="main-page">
+      <%= yield %>
+    </div>
+
+    <div class="bottom-second-footer navbar-fixed-bottom">
+      <div class="left-footer-box hidden-xs">
+      </div>
+      <div class="right-footer-box hidden-xs">
+        <a href="/" class="link"><p class="logo">ANNE ARDEN MCDONALD</p></a>
+      </div>
+
+      <div class="nav navbar-fixed-bottom">
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row copyright-row">
+              <div class="col-xs-8 col-sm-4 text-center ">
+                <small class = "copyright">all content © Anne Adren McDonald 2014</small>
+              </div>
+
+              <div class="col-sm-4">
+              </div>
+
+              <div class="col-xs-4 col-sm-4">
+                <div class="pull-right social hidden-xs">
+                  <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
+                  |
+                  <a href="mailto:anne@anneardenmcdonald.com">
+                    <%= image_tag("23x23_email.png", alt: "envelope", :class=>"image-fluid")%>
+                  </a>
+                </div>
+
+                <div class="pull-right social visible-xs">
+                  <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
+                  |
+                  <a href="mailto:anne@anneardenmcdonald.com">
+                    <%= image_tag("16x16_email.png", alt: "envelope", :class=>"image-fluid")%>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  </body>
 </html>
