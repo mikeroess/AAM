@@ -1,8 +1,16 @@
 $(document).ready(function() {
-  $('#scroll-up, #scroll-down').click(function(event) {
-    event.preventDefault();
-    var $body = $('body'),
-        new_position = $body.scrollTop() + ($(this).attr('id') == 'scroll-up' ? -300 : 300);
-    $body.animate({scrollTop: new_position}, '500');
-  });
+  initPageScrolling();
 });
+
+var initPageScrolling = function initPageScrolling() {
+  var $html = $('html'),
+      // Firefox does not handle scrollTop with body very well, so we'll use
+      // $('html') for that. See http://stackoverflow.com/questions/8149155/animate-scrolltop-not-working-in-firefox
+      // for more.
+      $container = $html.hasClass('firefox') ? $html : $('body');
+  $container.on('click', '#scroll-up, #scroll-down', function(event) {
+    event.preventDefault();
+    var new_position = $container.scrollTop() + ($(this).attr('id') == 'scroll-up' ? -300 : 300);
+    $container.animate({scrollTop: new_position}, '500');
+  });
+};
