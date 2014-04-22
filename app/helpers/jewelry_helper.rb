@@ -1,7 +1,9 @@
 module JewelryHelper
   def pager(current)
+    current = current.to_i
+
     links = []
-    {'1' => 'one', '2' => 'two', '3' => 'three', '4' => 'four'}.each_pair do |number, word|
+    {1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four'}.each_pair do |number, word|
       item = if current == number
         "Page #{word}"
       else
