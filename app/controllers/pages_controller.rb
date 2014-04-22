@@ -18,9 +18,6 @@ class PagesController < ApplicationController
   def aauaudio
   end
 
-	def jewelry
-	end
-
 	def crit1
 	end
 

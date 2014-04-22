@@ -1,0 +1,31 @@
+<%
+  pricepoints = {
+    'ring' => '100.00',
+    'large_ring' => '130.00',
+    'necklace' => '180.00',
+    'large_necklace' => '200.00',
+  }
+
+  price = 'ring' if price.nil?
+  price = pricepoints[price] if pricepoints.has_key?(price)
+%>
+
+<div class="paypal-button">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_xclick" />
+    <input type="hidden" name="business" value="anne@anneardenmcdonald.com" />
+    <input type="hidden" name="item_name" value="<%= name %> by Anne Arden McDonald" />
+    <input type="hidden" name="amount" value="<%= price %>" />
+    <input type="hidden" name="no_shipping" value="2" />
+    <input type="hidden" name="cn" value="Please specify ring size" />
+    <input type="hidden" name="currency_code" value="USD" />
+    <input type="hidden" name="lc" value="US" />
+    <input type="hidden" name="bn" value="PP-BuyNowBF" />
+    <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but23.gif" border="0" name="submit" />
+    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+
+    <% if defined? additional %>
+      <span><%= additional %></span>
+    <% end %>
+  </form>
+</div>

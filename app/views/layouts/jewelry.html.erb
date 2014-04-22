@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anne Arden McDonald</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <%= stylesheet_link_tag 'jewelry', media: 'all' %>
+  </head>
+  <body>
+
+    <center>
+      <%= image_tag 'j_header.gif', alt: 'Anne Arden McDonald Jewelry' %>
+      <br>
+      <div style="width: 675px">
+        <p><i>The first thing I ever cast was orange and grapefruit seeds for the floor of my installation in Milan, then I cast the apple seed ring, and I started thinking about rings as small pieces of wearable art. I wanted to make rings with content, pieces that would be intimate and symbolic to the wearer, which was something I didn't see in the world around me. I hope you enjoy them.
+            <br><br>
+            <b>Prices:</b> Most rings are $100 each (heavier items and larger sizes are $130), buttons are $50 each, and all earrings, necklaces, and cufflinks are $180 (heavier items are $200). All of the prices are for the pieces in silver, the price for gold plated would be more, and the price for solid gold would be related to the market price of the gold.
+            <br><br>
+            <b>Also a disclaimer:</b> All of the pieces have a handmade quality, and some of them are not completely round, so some of the sizes are an educated guess.</i>
+        </p>
+        <h2>Retail Stores:</h2>
+
+        <div class="online_store">
+          <a href="http://www.etsy.com/shop/ardent1">
+            <%= image_tag 'etsy_banner.jpg', alt: 'Etsy Store' %>
+          </a>
+        </div>
+
+        <p class="stores" style="margin-left: 40px"><b>Pip Sqeak Chapeau</b><br />
+          99 Franklin Street<br />
+          Brooklyn NY<br />
+          718-383-8029</p>
+
+        <p class="stores"><b>Christopher 19</b><br>
+          19 Christopher Street<br>
+          New York, NY<br>
+          212-627-9159</p>
+
+        <p class="stores"><b>Paxton Gate</b><br>
+          824 Valencia St.<br>
+          San Francisco, CA<br>
+          415-824-1872</p>
+
+        <p class="stores"><b>Paxton Gate</b><br />
+          4204 N. Mississippi St.<br />
+          Portland, OR<br />
+          503-719-4508</p>
+
+        <p class="stores"><b>Ironwood Collection</b><br />
+          14 S. Broadway<br />
+          Denver, CO.<br />
+          720-458-0015</p>
+
+        <div class="clear"></div>
+        <p class="stores" style="margin-left: 40px"><b>Renga Arts</b><br />
+          3605 Main St.<br />
+          Occidental, CA 95465<br />
+          707-874-9407</p>
+
+        <p class="stores"><b>Portal 108</b><br />
+          108 Main Road<br />
+          Hepburn Springs<br />
+          Victoria Australia<br />
+          +61 3 5348 4353</p>
+
+        <p class="stores"><b>Shatzelein</b><br />
+          1713 South 1st Street<br />
+          Austin, TX<br />
+          512-382-0969</p>
+
+        <p class="stores"><b>Ostentatiore</b><br />
+          11 bis, rue Elzevir<br />
+          Paris, France, 75003</p>
+
+        <p class="stores"><b>Still House</b><br />
+          117 East 7th Street<br />
+          NYC, NY<br />
+          212-539-0200</p>
+
+        <hr>
+      </div>
+      <br />
+      <div><%= pager(@page) %></div>
+      <br />
+      <div>
+    </center>
+
+    <div id="products">
+      <%= yield %>
+    </div>
+
+    <br /><hr><br><div><center><%= pager(@page) %></center></div><br />
+
+    <br>&nbsp;<br>
+
+    <div style="float: left; width: 750px;">
+      <% image_tag 'pixel.gif', alt: '', border: "0", width: "1", height: "60" %>
+
+      <center><a href="/"><%= image_tag 'home.gif', style: 'border: none;' %></a></center>
+    </div></span>
+  </body>
+</html>

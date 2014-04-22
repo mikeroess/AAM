@@ -10,9 +10,6 @@ Ann::Application.routes.draw do
   match 'about',            to: 'pages#about',            via: 'get',  as: 'about'
   match 'making-of-video',  to: 'pages#bofvideo',         via: 'get',  as: 'bofvideo'
   match 'aau-audio',        to: 'pages#aauaudio',         via: 'get',  as: 'aauaudio'
-  match 'jewelry',          to: 'pages#jewelry',          via: 'get',  as: 'jewelry'
-  #match 'plasticCamera', to: 'pages#plastic_camera',   via: 'get',  as: 'plastic_camera'
-
 
   #gallery pages through galleries controller
   match 'newWork',        to:  'galleries#new_work',        via: 'get', as: 'new_work'
@@ -290,6 +287,8 @@ Ann::Application.routes.draw do
     match 'crit6',               to: 'pages#crit6',                          via: 'get',  as:  'crit6'
     match 'crit7',               to: 'pages#crit7',                          via: 'get',  as:  'crit7'
     match 'crit8',               to: 'pages#crit8',                          via: 'get',  as:  'crit8'
+
+  match 'jewelry',               to: 'jewelry#index',                        via: 'get',  as: 'jewelry'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
