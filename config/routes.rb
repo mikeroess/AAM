@@ -162,6 +162,10 @@ Ann::Application.routes.draw do
     match 'ap9',              to: 'galleries#ap_9',                  via: 'get',  as:  'ap_9'
     match 'ap10',              to: 'galleries#ap_10',                  via: 'get',  as:  'ap_10'
     match 'ap11',              to: 'galleries#ap_11',                  via: 'get',  as:  'ap_11'
+    match 'ap12',              to: 'galleries#ap_12',                  via: 'get',  as:  'ap_12'
+    match 'ap13',              to: 'galleries#ap_13',                  via: 'get',  as:  'ap_13'
+    match 'ap14',              to: 'galleries#ap_14',                  via: 'get',  as:  'ap_14'
+    
 
     match 'sp1',              to: 'galleries#sp_1',                  via: 'get',  as:  'sp_1'
     match 'sp2',              to: 'galleries#sp_2',                  via: 'get',  as:  'sp_2'
