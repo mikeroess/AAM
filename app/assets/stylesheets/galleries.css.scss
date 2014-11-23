@@ -3,6 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+//Sidebar styling
+.sidebar-break{
+	
+@media(min-width: 815px) { display: none; }
+}
+
 //Boxes indicating artist statment at end of gallery
 .statement-box{
 border:1px solid;
