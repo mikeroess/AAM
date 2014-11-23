@@ -33,9 +33,13 @@ padding-right: 4%;
   color: #EBEBEB;
   float: bottom;
   font-size: 74%;
+  @media(min-width: 815px)  {font-size: 74%;}
+  @media(min-width: 1400px) {font-size: 100%;}
+  @media(min-width: 1800px) {font-size: 130%;}
+  @media(min-width: 2200px) {font-size: 160%;}
+  @media(min-width: 2500px) {font-size: 250%;}
   opacity: .95;
   z-index:90;
-
 }
  
 .left-border {
@@ -91,6 +95,11 @@ padding-right: 4%;
       padding-right: 5%;
       font-family: Cardo-Light;
       letter-spacing:5px;
+      @media(min-width: 815px)  {font-size: 125%;}
+      @media(min-width: 1400px) {font-size: 160%;}
+      @media(min-width: 1800px) {font-size: 180%;}
+      @media(min-width: 2200px) {font-size: 250%;}
+      @media(min-width: 2500px) {font-size: 440%;}
     }
 
 // sidebar mostly adapted from an example online.
@@ -136,9 +145,23 @@ padding-right: 4%;
   font-size: 68%;
   font-family: Cardo-Bold;
   letter-spacing:1px;
-   @media (max-width: 480px) { letter-spacing:0px;
+  @media (max-width: 480px) { letter-spacing:0px;
                                 font-size: 65%; 
                                 line-height: 17px;}
+  @media(min-width: 815px)  {font-size: 65%;
+                              line-height: 30px;}
+  @media(min-width: 1000px)  {font-size: 70%;
+                              line-height: 40px;}
+  @media(min-width: 1400px) {font-size: 100%;
+                                line-height: 50px;}
+  @media(min-width: 1600px) {font-size: 115%;
+                                line-height: 70px;}
+  @media(min-width: 1800px) {font-size: 130%;
+                                line-height: 80px;}
+  @media(min-width: 2200px) {font-size: 150%;
+                                line-height: 90px;}
+  @media(min-width: 2500px) {font-size: 240%;
+                                line-height: 150px;}
 }
 
 
