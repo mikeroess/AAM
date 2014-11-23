@@ -349,7 +349,7 @@ margin-left: 20%;
 }
 
 .detail-row-ap {
-margin-left: 5%;
+ margin-left: 5%;
  @media (max-width: 480px) { margin-left: 20%; }
  font-size: 65%;
  text-align: center;
@@ -396,7 +396,7 @@ margin-left: 5%;
 .detail-image{
 	font-family: Cardo-Italic;
 	color: #666666;
-	@media (max-width: 780px) { margin-bottom: 10%; }
+	//@media (max-width: 780px) { margin-bottom: 10%; }
 }
 
 //ap details
@@ -404,56 +404,67 @@ margin-left: 5%;
 #ap1{
 	margin-left: 15%;
 	padding-top: 1%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 #ap2{
 	margin-left: 21%;
 	padding-top: 1%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 
 #ap3{
 	margin-left: 20%;
 	padding-top: 0%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap5{
 	margin-left: 3%;
 	padding-top: 0%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap6{
 	margin-left: 10%;
 	padding-top: 0%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap7{
 	margin-left: 15%;
 	padding-top: 1%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap8{
 	margin-left: 15%;
 	padding-top: 1%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap9{
 	margin-left: 25%;
 	padding-top: 0%;
-	@media (max-width: 1150px) { padding-top: 5%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 #ap10{
+	margin-left: 25%;
+	@media (min-width: 850px) { margin-left: 29%; }
+	@media (min-width: 875px) { margin-left: 29%; }
+	@media (min-width: 1050px) { margin-left: 30%; }
+	@media (min-width: 1100px) { margin-left: 31%; }
+	@media (min-width: 1150px) { margin-left: 32%; }
+	@media (min-width: 1200px) { margin-left: 33%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
+	}
+
+#ap11{
 	margin-left: 20%;
-	padding-top: 1%;
-	@media (max-width: 1150px) { padding-top: 7%; }
+	//padding-top: 8px;
+	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 //bouyancy gallery	
