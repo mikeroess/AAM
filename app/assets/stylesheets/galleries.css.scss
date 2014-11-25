@@ -407,72 +407,165 @@ margin-left: 20%;
 }
 
 //ap details
+//@media width 770x details pop from single to two columns
+//~@media width 1060 it pops to med column structure
+
+
+
 
 #ap1{
-	margin-left: 15%;
-	padding-top: 1%;
+	margin-left: 25%;
+	@media (min-width: 770px) { margin-left: 15%; }
+	@media (min-width: 860px) { margin-left: 17%; }
+	@media (min-width: 900px) { margin-left: 20%; }
+	@media (min-width: 950px) { margin-left: 22%; }
+	@media (min-width: 1060px) { margin-left: 15%; }
+	@media (min-width: 1100px) { margin-left: 25%; }
+	@media (min-width: 1150px) { margin-left: 27%; }
+	@media (min-width: 1200px) { margin-left: 30%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 #ap2{
 	margin-left: 21%;
-	padding-top: 1%;
+	@media (min-width: 770px) { margin-left: 20%; }
+	@media (min-width: 860px) { margin-left: 23%; }
+	@media (min-width: 900px) { margin-left: 25%; }
+	@media (min-width: 950px) { margin-left: 29%; }
+	@media (min-width: 1060px) { margin-left: 20%; }
+	@media (min-width: 1100px) { margin-left: 25%; }
+	@media (min-width: 1150px) { margin-left: 27%; }
+	@media (min-width: 1200px) { margin-left: 33%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 
 #ap3{
 	margin-left: 20%;
-	padding-top: 0%;
+	@media (min-width: 770px) { margin-left: 23%; }
+	@media (min-width: 860px) { margin-left: 27%; }
+	@media (min-width: 900px) { margin-left: 29%; }
+	@media (min-width: 950px) { margin-left: 32%; }
+	@media (min-width: 1060px) { margin-left: 27%; }
+	@media (min-width: 1100px) { margin-left: 32%; }
+	@media (min-width: 1150px) { margin-left: 35%; }
+	@media (min-width: 1200px) { margin-left: 38%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
+#ap4{
+	@media (min-width: 1150px) { margin-left: 5%; }
+	@media (min-width: 1200px) { margin-left: 8%; }
+}
+
 #ap5{
-	margin-left: 3%;
-	padding-top: 0%;
+	margin-left: 13%;
+	@media (min-width: 769px) { margin-left: 0%; }
+	@media (min-width: 860px) { margin-left: 0%; }
+	@media (min-width: 900px) { margin-left: 0%; }
+	@media (min-width: 950px) { margin-left: 0%; }
+	@media (min-width: 1060px) { margin-left: 0%; }
+	@media (min-width: 1100px) { margin-left: 8%; }
+	@media (min-width: 1150px) { margin-left: 10%; }
+	@media (min-width: 1200px) { margin-left: 17%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap6{
 	margin-left: 10%;
-	padding-top: 0%;
+	@media (min-width: 769px) { margin-left: 0%; }
+	@media (min-width: 860px) { margin-left: 0%; }
+	@media (min-width: 900px) { margin-left: 0%; }
+	@media (min-width: 950px) { margin-left: 7%; }
+	@media (min-width: 1060px) { margin-left: 11%; }
+	@media (min-width: 1100px) { margin-left: 14%; }
+	@media (min-width: 1150px) { margin-left: 17%; }
+	@media (min-width: 1200px) { margin-left: 20%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap7{
 	margin-left: 15%;
-	padding-top: 1%;
+ 	@media (min-width: 769px) { margin-left: 10%; }
+	@media (min-width: 860px) { margin-left: 10%; }
+	@media (min-width: 900px) { margin-left: 10%; }
+	@media (min-width: 950px) { margin-left: 13%; }
+	@media (min-width: 1000px) { margin-left: 15%; }
+	@media (min-width: 1060px) { margin-left: 25%; }
+	@media (min-width: 1100px) { margin-left: 25%; }
+	@media (min-width: 1150px) { margin-left: 30%; }
+	@media (min-width: 1200px) { margin-left: 32%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap8{
 	margin-left: 15%;
-	padding-top: 1%;
+ 	@media (min-width: 769px) { margin-left: 15%; }
+	@media (min-width: 860px) { margin-left: 25%; }
+	@media (min-width: 900px) { margin-left: 25%; }
+	@media (min-width: 950px) { margin-left: 25%; }
+	@media (min-width: 1000px) { margin-left: 20%; }
+	@media (min-width: 1060px) { margin-left: 25%; }
+	@media (min-width: 1100px) { margin-left: 25%; }
+	@media (min-width: 1150px) { margin-left: 30%; }
+	@media (min-width: 1200px) { margin-left: 32%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 }
 
 #ap9{
 	margin-left: 25%;
-	padding-top: 0%;
+	@media (min-width: 769px) { margin-left: 15%; }
+	@media (min-width: 860px) { margin-left: 25%; }
+	@media (min-width: 900px) { margin-left: 25%; }
+	@media (min-width: 950px) { margin-left: 25%; }
+	@media (min-width: 1000px) { margin-left: 21%; }
+	@media (min-width: 1060px) { margin-left: 22%; }
+	@media (min-width: 1100px) { margin-left: 23%; }
+	@media (min-width: 1150px) { margin-left: 30%; }
+	@media (min-width: 1200px) { margin-left: 32%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 #ap10{
 	margin-left: 25%;
-	@media (min-width: 850px) { margin-left: 29%; }
-	@media (min-width: 875px) { margin-left: 29%; }
-	@media (min-width: 1050px) { margin-left: 30%; }
-	@media (min-width: 1100px) { margin-left: 31%; }
-	@media (min-width: 1150px) { margin-left: 32%; }
-	@media (min-width: 1200px) { margin-left: 33%; }
+	@media (min-width: 769px) { margin-left: 15%; }
+	@media (min-width: 860px) { margin-left: 20%; }
+	@media (min-width: 900px) { margin-left: 25%; }
+	@media (min-width: 950px) { margin-left: 27%; }
+	@media (min-width: 1000px) { margin-left: 29%; }
+	@media (min-width: 1060px) { margin-left: 33%; }
+	@media (min-width: 1100px) { margin-left: 37%; }
+	@media (min-width: 1150px) { margin-left: 39%; }
+	@media (min-width: 1200px) { margin-left: 42%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 	}
 
 #ap11{
 	margin-left: 20%;
-	//padding-top: 8px;
+	@media (min-width: 769px) { margin-left: 15%; }
+	@media (min-width: 860px) { margin-left: 20%; }
+	@media (min-width: 900px) { margin-left: 25%; }
+	@media (min-width: 950px) { margin-left: 29%; }
+	@media (min-width: 1000px) { margin-left: 29%; }
+	@media (min-width: 1060px) { margin-left: 33%; }
+	@media (min-width: 1100px) { margin-left: 37%; }
+	@media (min-width: 1150px) { margin-left: 39%; }
+	@media (min-width: 1200px) { margin-left: 42%; }
 	@media (max-width: 10000px) { padding-top: 8px; }
 	}
+
+#ap12{
+	@media (min-width: 769px) { margin-left: 15%; }
+	@media (min-width: 860px) { margin-left: 20%; }
+	@media (min-width: 900px) { margin-left: 25%; }
+	@media (min-width: 950px) { margin-left: 29%; }
+	@media (min-width: 1000px) { margin-left: 29%; }
+	@media (min-width: 1060px) { margin-left: 33%; }
+	@media (min-width: 1100px) { margin-left: 37%; }
+	@media (min-width: 1150px) { margin-left: 39%; }
+	@media (min-width: 1200px) { margin-left: 42%; }
+	@media (max-width: 10000px) { padding-top: 8px; }
+}
 
 //bouyancy gallery	
 
