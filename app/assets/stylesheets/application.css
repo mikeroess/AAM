@@ -17,37 +17,34 @@
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../assets/glyphicons-halflings-regular.eot');
-  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-       url('../assets/glyphicons-halflings-regular.woff') format('woff'), 
-       url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
-       url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url(font-path('glyphicons-halflings-regular.eot'));
+  src: url(font-path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('glyphicons-halflings-regular.woff')) format('woff'),
+       url(font-path('glyphicons-halflings-regular.ttf')) format('truetype'),
+       url(font-path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
 }
 
 @font-face {
   font-family: 'Cardo-Light';
-  src: url('..Copperplate_Light_SSi_Light.ttf');
+  src: url(font-path('Copperplate_Light_SSi_Light.ttf'));
 }
 
 @font-face {
   font-family: 'Cardo-Regular';
-  src: url('../assets/fonts/Cardo-Regular.ttf');
+  src: url(font-path('Cardo-Regular.ttf'));
  }
 
 @font-face {
   font-family: 'Cardo-Bold';
-  src: url('../assets/fonts/Cardo-Bold.ttf');
+  src: url(font-path('Cardo-Bold.ttf'));
  }
 
 @font-face {
   font-family: 'Cardo-Italic';
-  src: url('../assets/fonts/Cardo-Italic.ttf');
+  src: url(font-path('Cardo-Italic.ttf'));
  }
 
  @font-face {
   font-family: 'Copperplate';
-  src: url('../assets/fonts/Copperplate.dfont');
+  src: url(font-path('Copperplate.dfont'));
  }
-
-
-
