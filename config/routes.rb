@@ -10,7 +10,6 @@ Ann::Application.routes.draw do
   match 'about',            to: 'pages#about',            via: 'get',  as: 'about'
   match 'making-of-video',  to: 'pages#bofvideo',         via: 'get',  as: 'bofvideo'
   match 'aau-audio',        to: 'pages#aauaudio',         via: 'get',  as: 'aauaudio'
-  match 'interview',        to: 'pages#interview',        via: 'get',  as: 'interview'
 
   #gallery pages through galleries controller
   match 'newWork',        to:  'galleries#new_work',        via: 'get', as: 'new_work'
