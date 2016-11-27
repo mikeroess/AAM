@@ -1,0 +1,28 @@
+<div class="container-fluid" id="contact-container">
+  <div class="row">
+    <% if @errors %>
+      <div class="alert alert-danger">
+        The following errors occurred when submitting this form:
+        <ul>
+          <% @errors.each do |error| %><li><%= error %></li><% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= form_for @contact, url: :submit_contact do |f| %>
+      <%= raw negative_captcha(@captcha) %>
+
+      <div class="form-group<% if @contact.errors[:email] %> has-error<% end %>">
+        <%= f.negative_label @captcha, :email, 'Email' %>
+        <%= f.negative_text_field @captcha, :email, class: 'form-control' %>
+      </div>
+
+      <div class="form-group<% if @contact.errors[:message] %> has-error<% end %>">
+        <%= f.negative_label @captcha, :message, 'Message' %>
+        <%= f.negative_text_area @captcha, :message, class: 'form-control' %>
+      </div>
+
+      <%= f.submit 'Send', class: 'btn btn-default' %>
+    <% end %>
+  </div>
+</div>

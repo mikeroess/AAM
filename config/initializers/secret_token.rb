@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Ann::Application.config.secret_key_base = '4c3a222c288b8f8cb6bb3343555a18fd4182d69f3974dfd758373652539c7f6ef9740446e892fe4d9797f65fdb741a67d46bc3596a02f8c14a7967d38b7cd0d1'
+Ann::Application.config.secret_key_base = Rails.application.config_for(:secrets)['secret_key_base']

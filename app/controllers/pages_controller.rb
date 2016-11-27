@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-
 	def index
 	end
 
@@ -20,5 +19,4 @@ class PagesController < ApplicationController
 
 	def crit1
 	end
-
 end
