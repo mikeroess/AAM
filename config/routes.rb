@@ -1,6 +1,4 @@
 Ann::Application.routes.draw do
-  resource :pages
-
   root 'pages#index'
 
   #about pages through pages controller
@@ -110,19 +108,19 @@ Ann::Application.routes.draw do
   match 'gardenDiana19',              to: 'galleries#garden_diana_19',                  via: 'get',  as:  'garden_diana_19'
   match 'gardenDiana20',              to: 'galleries#garden_diana_20',                  via: 'get',  as:  'garden_diana_20'
 
-  match 'Group1',              to: 'galleries#group_1',                  via: 'get',  as:  'group_1'
-  match 'Group2',              to: 'galleries#group_2',                  via: 'get',  as:  'group_2'
-  match 'Group3',              to: 'galleries#group_3',                  via: 'get',  as:  'group_3'
-  match 'Group4',              to: 'galleries#group_4',                  via: 'get',  as:  'group_4'
-  match 'Group5',              to: 'galleries#group_5',                  via: 'get',  as:  'group_5'
-  match 'Group6',              to: 'galleries#group_6',                  via: 'get',  as:  'group_6'
-  match 'Group7',              to: 'galleries#group_7',                  via: 'get',  as:  'group_7'
-  match 'Group8',              to: 'galleries#group_8',                  via: 'get',  as:  'group_8'
-  match 'Group9',              to: 'galleries#group_9',                  via: 'get',  as:  'group_9'
-  match 'Group10',             to: 'galleries#group_10',                 via: 'get',  as:  'group_10'
-  match 'Group11',             to: 'galleries#group_11',                 via: 'get',  as:  'group_11'
-  match 'Group12',             to: 'galleries#group_12',                 via: 'get',  as:  'group_12'
-  match 'Group13',             to: 'galleries#group_13',                 via: 'get',  as:  'group_13'
+  match 'group1',              to: 'galleries#group_1',                  via: 'get',  as:  'group_1'
+  match 'group2',              to: 'galleries#group_2',                  via: 'get',  as:  'group_2'
+  match 'group3',              to: 'galleries#group_3',                  via: 'get',  as:  'group_3'
+  match 'group4',              to: 'galleries#group_4',                  via: 'get',  as:  'group_4'
+  match 'group5',              to: 'galleries#group_5',                  via: 'get',  as:  'group_5'
+  match 'group6',              to: 'galleries#group_6',                  via: 'get',  as:  'group_6'
+  match 'group7',              to: 'galleries#group_7',                  via: 'get',  as:  'group_7'
+  match 'group8',              to: 'galleries#group_8',                  via: 'get',  as:  'group_8'
+  match 'group9',              to: 'galleries#group_9',                  via: 'get',  as:  'group_9'
+  match 'group10',             to: 'galleries#group_10',                 via: 'get',  as:  'group_10'
+  match 'group11',             to: 'galleries#group_11',                 via: 'get',  as:  'group_11'
+  match 'group12',             to: 'galleries#group_12',                 via: 'get',  as:  'group_12'
+  match 'group13',             to: 'galleries#group_13',                 via: 'get',  as:  'group_13'
 
   match 'layered1',              to: 'galleries#layered_1',                  via: 'get',  as:  'layered_1'
   match 'layered2',              to: 'galleries#layered_2',                  via: 'get',  as:  'layered_2'
@@ -283,14 +281,14 @@ Ann::Application.routes.draw do
   match 'bodies9',             to: 'galleries#bodies_9',                   via: 'get',  as:  'bodies_9'
 
   #crit pages
-  match 'crit1',               to: 'pages#crit1',                          via: 'get',  as:  'crit1'
-  match 'crit2',               to: 'pages#crit2',                          via: 'get',  as:  'crit2'
-  match 'crit3',               to: 'pages#crit3',                          via: 'get',  as:  'crit3'
-  match 'crit4',               to: 'pages#crit4',                          via: 'get',  as:  'crit4'
-  match 'crit5',               to: 'pages#crit5',                          via: 'get',  as:  'crit5'
-  match 'crit6',               to: 'pages#crit6',                          via: 'get',  as:  'crit6'
-  match 'crit7',               to: 'pages#crit7',                          via: 'get',  as:  'crit7'
-  match 'crit8',               to: 'pages#crit8',                          via: 'get',  as:  'crit8'
+  match 'criticism1',               to: 'pages#crit1',                          via: 'get',  as:  'crit1'
+  match 'criticism2',               to: 'pages#crit2',                          via: 'get',  as:  'crit2'
+  match 'criticism3',               to: 'pages#crit3',                          via: 'get',  as:  'crit3'
+  match 'criticism4',               to: 'pages#crit4',                          via: 'get',  as:  'crit4'
+  match 'criticism5',               to: 'pages#crit5',                          via: 'get',  as:  'crit5'
+  match 'criticism6',               to: 'pages#crit6',                          via: 'get',  as:  'crit6'
+  match 'criticism7',               to: 'pages#crit7',                          via: 'get',  as:  'crit7'
+  match 'criticism8',               to: 'pages#crit8',                          via: 'get',  as:  'crit8'
 
   match 'jewelry',               to: 'jewelry#index',                        via: 'get',  as: 'jewelry'
 

@@ -1,15 +1,3 @@
-<!-- data/logic for underline function in sidebar -->
-<% new_work = ['newWork', 'ap', 'atomPlanetStatement', 'bodies', 'bodiesStatement'] %>
-<% self_portrait = ['selfPortrait', 'selfPortraitStatement', 'sp'] %>
-<% plastic_camera = ['iconDiana', 'iconDianaStatement', 'gardenDiana', 'gardenDianaStatement', 'pillowBook', 'pillowBookStatement', 'plasticCamera'] %>
-<% watches = ['watches', 'watchesStatement'] %>
-<% archive = ['archive', 'milan', 'milanStatement', 'layered', 'layeredStatement', 'group', 'Group', 'groupStatement', 'botanicals', 'botanicalsStatement', 'bouyancy', 'bouyancyStatement', 'botanicalBook', 'botanicalBookStatement', 'monoprints', 'hands', 'handsStatement', 'dresses', 'dressesStatement', 'murals', 'muralsStatement', 'circles', 'circlesStatment' ] %>
-<% about = ['about', 'resume', 'biography', 'aau-audio', 'making-of-video', 'criticism', 'crit'] %>
-<% contact = ['contact'] %>
-<% unless URI(request.original_url).path.split('/').last.blank? %>
-  <% stripped_uri = URI(request.original_url).path.split('/').last.gsub(/\d/, '') %>
-<% end %>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -26,47 +14,33 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper" >
       <ul class="sidebar-nav">
-
-        <li class="sidebar-break">&nbsp;</li>
-
-        <li>
-          <strong<% if new_work.include?stripped_uri  %> class="sidebar-underline"<% end %>><a href="<%= new_work_path %>">N<span class="small-letter">EW</span> W<span class="small-letter">ORK</span></a></strong>
+        <li<% if new_work_page?  %> class="current"<% end %>>
+          <a href="<%= new_work_path %>">New Work</a>
         </li>
 
-        <li class="sidebar-break">&nbsp;</li>
-
-        <li>
-          <strong<% if self_portrait.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= self_portrait_path %>">S<span class="small-letter">ELF</span> P<span class="small-letter">ORTRAITS</span></a></strong>
+        <li<% if self_portrait_page? %> class="current"<% end %>>
+          <a href="<%= self_portrait_path %>">Self Portraits</a>
         </li>
 
-        <li class="sidebar-break">&nbsp;</li>
-
-        <li>
-          <strong<% if plastic_camera.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= plastic_camera_path %>">P<span class="small-letter">LASTIC</span> C<span class="small-letter">AMERA</span></strong></a>
+        <li<% if plastic_camera_page? %> class="current"<% end %>>
+          <a href="<%= plastic_camera_path %>">Plastic Camera</a>
         </li>
 
-        <li class="sidebar-break">&nbsp;</li>
-
-        <li>
-          <strong<% if watches.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= watches_path %>">W<span class="small-letter">ATCHES</span></a></strong>
+        <li<% if watches_page? %> class="current"<% end %>>
+          <a href="<%= watches_path %>">Watches</a>
         </li>
 
-        <li class="sidebar-break">&nbsp;</li>
-
-        <li>
-          <strong<% if archive.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= archive_path %>">O<span class="small-letter">THER</span> W<span class="small-letter">ORK</span></a></strong>
+        <li<% if archive_page? %> class="current"<% end %>>
+          <a href="<%= archive_path %>">Other Work</a>
         </li>
 
-        <li class="sidebar-break">&nbsp;</li>
-
-        <li>
-          <strong<% if about.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= about_path %>">A<span class="small-letter">BOUT</span></a></strong>
+        <li<% if about_page? %> class="current"<% end %>>
+          <a href="<%= about_path %>">About</a>
         </li>
 
-        <li>
-          <strong<% if contact.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= contact_path %>">C<span class="small-letter">ONTACT</span></a></strong>
+        <li<% if contact_page? %> class="current"<% end %>>
+          <a href="<%= contact_path %>">Contact</a>
         </li>
-
       </ul>
     </div>
 
