@@ -5,6 +5,7 @@
 <% watches = ['watches', 'watchesStatement'] %>
 <% archive = ['archive', 'milan', 'milanStatement', 'layered', 'layeredStatement', 'group', 'Group', 'groupStatement', 'botanicals', 'botanicalsStatement', 'bouyancy', 'bouyancyStatement', 'botanicalBook', 'botanicalBookStatement', 'monoprints', 'hands', 'handsStatement', 'dresses', 'dressesStatement', 'murals', 'muralsStatement', 'circles', 'circlesStatment' ] %>
 <% about = ['about', 'resume', 'biography', 'aau-audio', 'making-of-video', 'criticism', 'crit'] %>
+<% contact = ['contact'] %>
 <% unless URI(request.original_url).path.split('/').last.blank? %>
   <% stripped_uri = URI(request.original_url).path.split('/').last.gsub(/\d/, '') %>
 <% end %>
@@ -63,7 +64,7 @@
         </li>
 
         <li>
-          <strong><a href="mailto:anne@anneardenmcdonald.com">C<span class="small-letter">ONTACT</span></a></strong>
+          <strong<% if contact.include?stripped_uri %> class="sidebar-underline"<% end %>><a href="<%= contact_path %>">C<span class="small-letter">ontact</span></a></strong>
         </li>
 
       </ul>
@@ -103,7 +104,7 @@
                 <div class="pull-right social visible-xs">
                   <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
                   |
-                  <a href="mailto:anne@anneardenmcdonald.com">
+                  <a href="<%= contact_path %>">
                     <%= image_tag("16x16_email.png", alt: "envelope", :class=>"image-fluid")%>
                   </a>
                 </div>
