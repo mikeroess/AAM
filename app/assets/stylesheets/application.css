@@ -32,19 +32,19 @@
 @font-face {
   font-family: 'Cardo-Regular';
   src: url(font-path('Cardo-Regular.ttf'));
- }
+}
 
 @font-face {
   font-family: 'Cardo-Bold';
   src: url(font-path('Cardo-Bold.ttf'));
- }
+}
 
 @font-face {
   font-family: 'Cardo-Italic';
   src: url(font-path('Cardo-Italic.ttf'));
- }
+}
 
- @font-face {
+@font-face {
   font-family: 'Copperplate';
   src: url(font-path('Copperplate.dfont'));
- }
+}
