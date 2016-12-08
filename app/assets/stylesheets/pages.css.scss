@@ -527,11 +527,11 @@
   @media(min-width: 4000px) {margin-right: 65px;}
   @media(min-width: 4500px) {margin-right: 80px;}
 
-  &-1 {
+  &.multiple {
     margin-right:16px;
   }
 
-  &-2 {
+  &.span {
     margin-right:6px;
   }
 }
