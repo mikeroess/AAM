@@ -22,17 +22,16 @@ namespace :deploy do
   end
 
   namespace :assets do
-    desc "Precompile assets locally and then rsync to web servers"
+    desc 'Compiles assets locally and syncs them to each remote server'
     task :precompile_local do
-      run_locally { `RAILS_ENV=#{fetch(:stage)} bundle exec rake "assets:precompile"` }
+      run_locally { with(rails_env: fetch(:stage)) { rake 'assets:precompile' } }
 
-      local_dir = './public/assets/'
       on roles(fetch(:assets_roles, [:web])) do
         remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/public/assets/"
-        run_locally { `rsync -av --delete #{local_dir} #{remote_dir}` }
+        run_locally { execute :rsync, '-av', '--delete', './public/assets/', remote_dir }
       end
 
-      run_locally { `rm -rf #{local_dir}` }
+      run_locally { execute :rm, '-rf', './public/assets/' }
     end
   end
 end
