@@ -2,10 +2,12 @@
 
   <div class="row" id="gallery-row">
 
-    <div class="col-xs-9 col-sm-3 col-md-3 link " id="gallery-row">
+    <div class="col-xs-9 col-sm-3 col-md-3" id="gallery-row">
       <div class="about-statement-box about-statement-text" id="statement">
-        <strong><%= link_to "Résumé", resume_path, :class=>"link" %><br /></strong>
-
+        <strong>Résumé</strong><br />
+        <strong><%= link_to "View", resume_path, :class=>"link" %></strong>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <strong><%= link_to "Download PDF", '/media/resume.pdf', class: 'link' %></strong>
       </div>
     </div>
 
