@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
-gem 'jquery-rails'
 
 gem 'negative_captcha'
 
@@ -16,7 +15,7 @@ group :development do
   # Assets.
   gem 'sass-rails'
   gem 'sass', '~> 3.4'
+  gem 'jquery-rails'
   gem 'uglifier', '>= 1.3.0'
-  gem 'coffee-rails', '~> 4.0.0'
   gem 'therubyracer', platforms: :ruby
 end
