@@ -13,7 +13,7 @@
       <%= raw negative_captcha(@captcha) %>
 
       <div class="form-group<% if @contact.errors[:email].present? %> has-error<% end %>">
-        <%= f.negative_label @captcha, :email, 'Email' %>
+        <%= f.negative_label @captcha, :email, 'Your Email Address' %>
         <%= f.negative_text_field @captcha, :email, class: 'form-control' %>
       </div>
 
