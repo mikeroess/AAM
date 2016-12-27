@@ -9,7 +9,7 @@
     </div>
   </div>
 
-  <% @gallery.images[1..-4].in_groups_of(4, false) do |row| %>
+  <% @gallery.images[1..-4].each_slice(4) do |row| %>
     <div class="row">
       <% row.each do |image| %>
         <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
