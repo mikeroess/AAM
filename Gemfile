@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0'
-gem 'jquery-rails'
+ruby '1.9.3'
+
+gem 'rails', '~> 4.0.0'
+gem 'sprockets-rails', '~> 2.1.4'
 
 gem 'negative_captcha'
 
@@ -14,8 +16,10 @@ group :development do
   gem 'capistrano-passenger'
 
   # Assets.
-  gem 'sass-rails'
+  gem 'bootstrap-sass', '~> 3.3.6'
+  gem 'sass-rails', '>= 3.2'
   gem 'sass', '~> 3.4'
+  gem 'jquery-rails'
   gem 'uglifier', '>= 1.3.0'
   gem 'therubyracer', platforms: :ruby
 end

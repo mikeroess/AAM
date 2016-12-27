@@ -1,0 +1,15 @@
+<div id="arrow-nav" class="row">
+  <div class="col-xs-3 col-md-2 arrow left-arrow">
+    <a href="<%= image.previous_path %>">
+      <%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", class: "img-responsive") %>
+    </a>
+  </div>
+  <div class= "col-xs-6 col-md-8 description">
+    <em><%= image_details(image) %></em>
+  </div>
+  <div class="col-xs-3 col-md-2 arrow right-arrow">
+    <a href="<%= image.next_path %>">
+      <%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", class: "img-responsive") %>
+    </a>
+  </div>
+</div>

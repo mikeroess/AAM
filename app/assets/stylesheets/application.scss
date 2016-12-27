@@ -1,0 +1,412 @@
+/**
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Fonts
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(font-path('glyphicons-halflings-regular.eot'));
+  src: url(font-path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'),
+       url(font-path('glyphicons-halflings-regular.woff')) format('woff'),
+       url(font-path('glyphicons-halflings-regular.ttf')) format('truetype'),
+       url(font-path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
+}
+
+@font-face {
+  font-family: 'Cardo-Light';
+  src: url(font-path('Copperplate_Light_SSi_Light.ttf'));
+}
+
+@font-face {
+  font-family: 'Cardo-Regular';
+  src: url(font-path('Cardo-Regular.ttf'));
+}
+
+@font-face {
+  font-family: 'Cardo-Bold';
+  src: url(font-path('Cardo-Bold.ttf'));
+}
+
+@font-face {
+  font-family: 'Cardo-Italic';
+  src: url(font-path('Cardo-Italic.ttf'));
+}
+
+@font-face {
+  font-family: 'Copperplate';
+  src: url(font-path('Copperplate.dfont'));
+}
+
+body {
+  font-family: Cardo-Regular;
+}
+
+.logo {
+  font-size: 150%;
+  font-family: Cardo-Light;
+  letter-spacing: 5px;
+
+  a {
+    color: #000000;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#main-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16.66%;
+  right: 0;
+}
+
+#sidebar {
+  position: fixed;
+  width: 16.66%;
+  left: 0;
+  height: 100%;
+  z-index: 10;
+  border-right: solid #c9c9c9;
+  border-width: 1px;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  text-align: right;
+  padding-right: 15px;
+  @media (max-width: 480px) { width: 18% }
+
+  ul.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @media (max-width: 480px) { top: 0% }
+
+    li {
+      line-height: 30px;
+      font-size: 68%;
+      font-family: Cardo-Bold;
+      letter-spacing: 1px;
+
+      @media (max-width: 480px) {
+        letter-spacing: 0px;
+        font-size: 65%;
+        line-height: 17px;
+      }
+      @media(min-width: 815px) {
+        font-size: 65%;
+        line-height: 30px;
+      }
+      @media(min-width: 1000px) {
+        font-size: 67%;
+        line-height: 30px;
+      }
+      @media(min-width: 1279px) {
+        font-size: 67%;
+        line-height: 30px;
+      }
+      @media(min-width: 1300px) {
+        font-size: 70%;
+        line-height: 31px;
+        letter-spacing: 1px;
+      }
+      @media(min-width: 1400px) {
+        font-size: 77%;
+        line-height: 34px;
+      }
+      @media(min-width: 1421px) {
+        font-size: 78%;
+        line-height: 35px;
+        letter-spacing: 1px;
+      }
+      @media(min-width: 1525px) {
+        font-size: 81%;
+        line-height: 35px;
+        letter-spacing: 1px;
+      }
+      @media(min-width: 1600px) {
+        font-size: 84%;
+        line-height: 36px;
+      }
+      @media(min-width: 1648px) {
+        font-size: 87%;
+        line-height: 38px;
+        letter-spacing: 1px;
+      }
+      @media(min-width: 1705px) {
+        font-size: 90%;
+        line-height: 40px;
+        letter-spacing: 1px;
+      }
+      @media(min-width: 1800px) {
+        font-size: 91%;
+        line-height: 41px;
+      }
+      @media(min-width: 1855px) {
+        font-size: 95%;
+        line-height: 44px;
+        letter-spacing: 1px;
+      }
+      @media(min-width: 1920px) {
+        font-size: 100%;
+        line-height: 47px;
+        letter-spacing: 2px;
+      }
+      @media(min-width: 2100px) {
+        font-size: 103%;
+        line-height: 50px;
+        letter-spacing: 2px;
+      }
+      @media(min-width: 2200px) {
+        font-size: 150%;
+        line-height: 53px;
+      }
+      @media(min-width: 2300px) {
+        font-size: 107%;
+        line-height: 56px;
+      }
+      @media(min-width: 2472px) {
+        font-size: 140%;
+        letter-spacing: 2px;
+        line-height: 60px;
+      }
+      @media(min-width: 3000px) {
+        font-size: 170%;
+        line-height: 75px;
+      }
+      @media(min-width: 3500px) {
+        font-size: 205%;
+        letter-spacing: 3px;
+        line-height: 90px;
+      }
+      @media(min-width: 4000px) {
+        font-size: 225%;
+        line-height: 105px;
+        letter-spacing: 3px;
+      }
+      @media(min-width: 4500px) {
+        font-size: 265%;
+        line-height: 120px;
+        letter-spacing: 4px;
+      }
+
+      a {
+        color: #000000;
+        display: block;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:first-letter {
+          font-size: 101%;
+        }
+
+        &:hover {
+          color: #999999;
+          background: rgba(255,255,255,0.2);
+        }
+
+        &, &:hover, &:active, &:focus {
+          text-decoration: none;
+        }
+      }
+
+      &.current {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  #sidebar-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+  }
+}
+
+.copyright {
+  font-size: 85%;
+}
+
+#main-footer {
+  background: #3B2D2D;
+  color: #EBEBEB;
+  float: bottom;
+  font-size: 74%;
+  @media(min-width: 815px)  {font-size: 74%;}
+  @media(min-width: 1400px) {font-size: 100%;}
+  @media(min-width: 1800px) {font-size: 130%;}
+  @media(min-width: 2200px) {font-size: 160%;}
+  @media(min-width: 2500px) {font-size: 200%;}
+  @media(min-width: 3000px) {font-size: 250%;}
+  opacity: .95;
+  z-index:90;
+}
+
+.left-border {
+  padding-left: 20px;
+  border-left: solid #fff;
+  border-width: 2px;
+  background: #3B2D2D;
+}
+
+//this covers the area where "Anne Arden McDonald is written in huge letters" 
+//opaque background up to the broder on the cross-hair
+
+.left-footer-box {
+  float: left;
+}
+
+.right-footer-box {
+  float: right;
+  background: #FFFFFF;
+  width: 87%;
+  font-family: Copperplate;
+  height: 25%;
+}
+
+.bottom-second-footer {
+  z-index:50;
+}
+
+.dropdown-menu {
+  .nav-tabs &,
+  .nav-pills &,
+  .navbar & {
+    margin-top: 0;
+  }
+}
+
+.navbar .sub-menu:before {
+  .submenu {
+    &:before {
+      border-bottom: 7px solid transparent;
+      border-left: none;
+      border-right: 7px solid rgba(0, 0, 0, 0.2);
+      border-top: 7px solid transparent;
+      left: -7px;
+      top: 10px;
+    }
+
+    &:after {
+      border-top: 6px solid transparent;
+      border-left: none;
+      border-right: 6px solid #fff;
+      border-bottom: 6px solid transparent;
+      left: 10px;
+      top: 11px;
+      left: -6px;
+    }
+  }
+}
+
+.content-header {
+  height: 65px;
+  line-height: 65px;
+
+  h1 {
+    margin: 0;
+    margin-left: 20px;
+    line-height: 65px;
+    display: inline-block;
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.inset {
+  padding: 20px;
+}
+
+@media (max-width:767px) {
+  #sidebar {
+    left: 0;
+  }
+
+  #menu-toggle {
+    display: inline-block;
+  }
+
+  .inset {
+    padding: 15px;
+  }
+}
+
+.social {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.container-constrained {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 7%;
+}
+
+.link-box {
+  border: 1px solid;
+  border-color: #666666;
+  width: 100%;
+  display: table;
+  text-align: center;
+  font-weight: bold;
+
+  height:165px;
+  @media (max-width: 1040px) { height: 155px; }
+  @media (max-width: 1000px) { height: 150px; }
+  @media (max-width: 940px) { height: 135px; }
+  @media (max-width: 764px) { height: 200px; }
+  @media (max-width: 715px) { height: 185px; }
+  @media (max-width: 700px) { height: 175px; }
+  @media (max-width: 650px) { height: 150px; }
+  @media (max-width: 580px) { height: 150px; }
+  @media (max-width: 530px) { height: 125px; }
+
+  font-size: 250%;
+	@media (max-width: 764px) { font-size: 160%; }
+	@media (max-width: 715px) { font-size: 130%; }
+	@media (max-width: 700px) { font-size: 130%; }
+	@media (max-width: 650px) { font-size: 140%; }
+	@media (max-width: 580px) { font-size: 150%; }
+	@media (max-width: 530px) { font-size: 160%; }
+
+	@media (max-width: 780px) { margin-bottom: 10%; }
+
+  .link-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: inherit;
+    text-align: center;
+
+    a {
+      font-family: Cardo-Italic;
+      color: #666666;
+      text-decoration: underline;
+
+      &:hover{
+        color: black;
+      }
+    }
+  }
+}

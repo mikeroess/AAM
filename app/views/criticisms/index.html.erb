@@ -1,0 +1,31 @@
+<h2>Selected Published Criticism</h2>
+
+<% criticisms_with_summary = @criticisms.select(&:summary?) %>
+<% criticisms_in_sidebar = @criticisms.select(&:sidebar?) %>
+
+<div class="row">
+  <div class="col-sm-<%= criticisms_in_sidebar.empty? ? 12 : 8 %>">
+    <% criticisms_with_summary.each do |criticism| %>
+      <blockquote>
+        <%= raw anneify criticism.summary %>
+        <footer><cite>
+          <% if criticism.full? %>
+            <%= link_to criticism.citation, criticism_path(criticism.id) %>
+          <% else %>
+            <%= criticism.citation %>
+          <% end %>
+        </cite></footer>
+      </blockquote>
+    <% end %>
+  </div>
+
+  <% unless criticisms_in_sidebar.empty? %>
+    <div class="col-sm-4" id="pages-box">
+      <% criticisms_in_sidebar.each do |criticism| %>
+        <div class="pages-image">
+          <%= link_to image_tag(criticism.images.first), criticism_path(criticism.id) %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

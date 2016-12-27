@@ -1,37 +1,17 @@
+<%= render partial: 'title', locals: { gallery: @gallery } %>
 
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 gallery-item">
+    <%= link_to image_tag(@gallery.images[0].main_image), @gallery.statement_path %>
+  </div>
+</div>
 
-<div class="gallery-div">
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+    <%= link_to image_tag(@gallery.images[1].main_image), @gallery.statement_path %>
+  </div>
 
-<!--first rowow-->
-	<div class="container" id="gallery-page-container">
-
-		<div class="row" id="gallery-page-row">
-		
-			<div class="col-xs-12 col-sm-12 col-md-12" id="gallery-row">
-				<%= link_to image_tag("murals-3-many-flying.jpg", alt: "murals 1", :class => "img-responsive"), murals_statement_path %><br />
-			</div>
-		</div>
-
-		<div class="row" id="gallery-page-row">
-
-			<div class="col-xs-12 col-sm-6 col-md-4" id="gallery-row">
-				<%= link_to image_tag("murals-1-face-on-fire.jpg", alt: "murals 2", :class => "img-responsive" ), murals_statement_path %><br />			
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4" id="gallery-row">
-				<%= link_to image_tag("murals-2-exploding-man.jpg", alt: "murals 3", :class => "img-responsive"), murals_statement_path %><br />
-			</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-3 link" id="gallery-row">
-					<div class="statement-box statement-text" id="statement">
-						<strong><%= link_to"Statement", murals_statement_path, :class=>"link" %><br /></strong>
-					</div>
-				</div>
-			</div>
-	</div>
-
-		
-	</div>
-
-
+  <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+    <%= link_to image_tag(@gallery.images[2].main_image), @gallery.statement_path %>
+  </div>
 </div>

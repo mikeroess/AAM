@@ -1,26 +1,18 @@
-	 <div class="container-fluid">
-		<div class="row"> 
-				<h1 class="title">Plastic Camera Work</h1>
-		</div>
-	</div>
+<h2>Plastic Camera Work</h2>
 
-	<div class="container-fluid" id="plastic-camera-page-container">
+<div class="row">
+  <div class="col-xs-12 col-sm-4 gallery-item">
+    <%= link_to image_tag("icon_diana_18.jpg"), gallery_path(:icon_diana) %>
+    <em>Icon Diana Photos</em>
+  </div>
 
-		<div class="col-xs-6 col-sm-4" id="about-row">
-			<%= link_to image_tag("icon_diana_18.jpg", alt: "icon_diana_4", :class => "img-responsive"), icon_diana_path %><br />
-			<em>Icon Diana Photos</em>
-		</div>
+  <div class="col-xs-12 col-sm-4 gallery-item">
+    <%= link_to image_tag("pillow_book_7.jpg"), gallery_path(:pillow_book) %>
+    <em>Pillow Book - A collaboration with Radek Grosman</em>
+  </div>
 
-		<div class="col-xs-6 col-sm-4" id="about-row">
-			<%= link_to image_tag("pillow_book_7.jpg", alt: "pillow_book_6", :class => "img-responsive" ), pillow_book_path %><br />
-			<em>Pillow Book - A collaboration with Radek Grosman</em>
-		
-		</div>
-	
-		<div class="col-xs-6 col-sm-4" id="about-row">
-			<%= link_to image_tag("garden_diana_4.jpg", alt: "garden_diana_1", :class => "img-responsive" ), garden_diana_path %><br />
-			<em>Garden and Travel Diana Photos</em>
-		</div>
-	</div>
-
-	
+  <div class="col-xs-12 col-sm-4 gallery-item">
+    <%= link_to image_tag("garden_diana_4.jpg"), gallery_path(:garden_diana) %>
+    <em>Garden and Travel Diana Photos</em>
+  </div>
+</div>

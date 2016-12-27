@@ -1,0 +1,6 @@
+<h2>
+  <%= gallery.name %>
+  <% if gallery.statement? %>
+    <small><%= link_to 'Statement', gallery.statement.path %></small>
+  <% end %>
+</h2>

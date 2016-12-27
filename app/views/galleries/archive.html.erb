@@ -1,106 +1,64 @@
-<div class="gallery-div">
-
-<!-- buttons to scroll in gallery -->
-	<div class="gallery-pull-right pull-right" >
-			
-			<div class="gallery-up hidden-xs" id="scroll-up">
-				<%= link_to image_tag("watch_3_up.jpg", alt: "scroll up", 
-				:class => "img-responsive", width:"320", height: "480", :id => "scroll up") %>
-
-			</div>
-			<div class="gallery-down hidden-xs" id="scroll-down">
-				<%= link_to image_tag("watch_3_down.jpg", alt: "scroll down", 
-				:class => "img-responsive", width:"320", height: "480", :id => "scroll-down") %>
-			</div>
-		
-	</div>
-<!--first row -->
+<%= render 'scrollbars' %>
 
 <div class="scrollable-gallery">
-	<div class="container" id="gallery-page-container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-1 From Earth to Sky button.jpg", alt: "From Earth to Sky"), gallery_path(:milan) %>
+      From Earth to Sky
+    </div>
 
-		<div class="row" id="gallery-page-row">
-		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-1 From Earth to Sky button.jpg", alt: "From Earth to Sky", :class => "img-responsive", width: "320", height: "480"), milan_path %><br />
-				<em>From Earth to Sky</em>
-			</div>
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-2 layered button.jpg", alt: "Layered"), gallery_path(:layered) %>
+      Layered, Buoyed, Tethered, Barely
+    </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-2 layered button.jpg", alt: "Layered", :class => "img-responsive", width: "370", height: "480"), layered_path %><br />
-			<em>Layered, Buoyed, Tethered, Barely</em>
-			</div>
-		<div class="clearfix visible-sm"></div>
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-3 Group button.jpg", alt: "group", :class => "img-responsive", width: "343", height: "480"), group_path %><br />
-			<em>Group</em>
-			</div>
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-3 Group button.jpg", alt: "group"), gallery_path(:group) %>
+      Group
+    </div>
 
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-4 botanical button.jpg", alt: "botanicals"), gallery_path(:botanicals) %><br />
+      Botanicals
+    </div>
+  </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-4 botanical button.jpg", alt: "botanicals", :class => "img-responsive", width: "346", height: "480"), botanicals_path %><br />
-					Botanicals
-			</div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-5 cave installation button.jpg", alt: "buoyancy"), gallery_path(:buoyancy) %>
+      Buoyancy Installation Cave
+    </div>
 
-		</div>
-	</div>
-		
-	<div class="container" id="gallery-page-container">
-		<div class="row" id="gallery-page-row">
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-7 botanical book button.jpg", alt: "botanical book bone"), gallery_path(:botanical_book) %>
+      Botanical Book
+    </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-5 cave installation button.jpg", alt: "bouyancy", :class => "img-responsive", width: "330", height: "480"),  bouyancy_path %><br />
-			<em>Bouyancy Installation Cave</em>	
-			</div>
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-6 monoprint button.jpg", alt: "monoprints"), gallery_path(:monoprints) %>
+      Monoprints
+    </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-7 botanical book button.jpg", alt: "botanical book bone", :class => "img-responsive", width: "344", height: "480"), botanical_book_path %><br />
-				Botanical Book
-			</div>
-			<div class="clearfix visible-sm"></div>
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-8 hands button.jpg", alt: "hands 1"), gallery_path(:hands) %>
+      Hands
+    </div>
+  </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-6 monoprint button.jpg", alt: "monoprints", :class => "img-responsive", width: "426", height: "480"), monoprints_path %>
-				Monoprints
-			</div>
-			
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-9 little dress button.jpg", alt: "Dresses"), gallery_path(:dresses) %>
+      Dresses
+    </div>
 
-		
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-8 hands button.jpg", alt: "hands 1", :class => "img-responsive", width: "384", height: "480"), hands_path %><br />
-				Hands
-			</div>
-		</div>
-	</div>
-	<div class="container" id="gallery-page-container">
-		<div class="row" id="gallery-page-row">
-			
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-9 little dress button.jpg", alt: "Dresses", :class => "img-responsive", width: "338", height: "480"), dresses_path %><br />
-				Dresses
-			</div>
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-10 murals button.jpg", alt: "Mural 1"), gallery_path(:murals) %>
+      Murals
+    </div>
 
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-10 murals button.jpg", alt: "Mural 1", :class => "img-responsive", width: "345", height: "480"), murals_path %><br />
-				Murals
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-3" id="gallery-row">
-				<%= link_to image_tag("archive-11 bubble button.jpg", alt: "Circles 1", :class => "img-responsive", width: "345", height: "480"), bubbles_path %><br />
-				Circles
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-</div>
-
-
-
-
-
+    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <%= link_to image_tag("archive-11 bubble button.jpg", alt: "Circles 1"), gallery_path(:circles) %>
+      Circles
+    </div>
+  </div>
 </div>

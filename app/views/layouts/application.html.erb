@@ -1,94 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Anne Arden McDonald</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-  </head>
+  <%= render 'shared/head' %>
 
+  <body id="<%= current_page_class %>">
+    <div class="container-fluid">
+      <div class="row">
+        <%= render 'shared/sidebar' %>
 
-  <body id="body">
-
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper" >
-      <ul class="sidebar-nav">
-        <li<% if new_work_page?  %> class="current"<% end %>>
-          <a href="<%= new_work_path %>">New Work</a>
-        </li>
-
-        <li<% if self_portrait_page? %> class="current"<% end %>>
-          <a href="<%= self_portrait_path %>">Self Portraits</a>
-        </li>
-
-        <li<% if plastic_camera_page? %> class="current"<% end %>>
-          <a href="<%= plastic_camera_path %>">Plastic Camera</a>
-        </li>
-
-        <li<% if watches_page? %> class="current"<% end %>>
-          <a href="<%= watches_path %>">Watches</a>
-        </li>
-
-        <li<% if archive_page? %> class="current"<% end %>>
-          <a href="<%= archive_path %>">Other Work</a>
-        </li>
-
-        <li<% if about_page? %> class="current"<% end %>>
-          <a href="<%= about_path %>">About</a>
-        </li>
-
-        <li<% if contact_page? %> class="current"<% end %>>
-          <a href="<%= contact_path %>">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-    <div id="main-page">
-      <%= yield %>
-    </div>
-
-    <div class="bottom-second-footer navbar-fixed-bottom">
-      <div class="left-footer-box hidden-xs">
-      </div>
-      <div class="right-footer-box hidden-xs">
-        <a href="/" class="link"><p class="logo">ANNE ARDEN MCDONALD</p></a>
-      </div>
-
-      <div class="nav navbar-fixed-bottom">
-        <footer class="footer">
+        <div id="main-content" class="col-xs-10">
           <div class="container-fluid">
-            <div class="row copyright-row">
-              <div class="col-xs-8 col-sm-4 text-center ">
-                <small class = "copyright">all content © Anne Adren McDonald 2014</small>
-              </div>
-
-              <div class="col-sm-4">
-              </div>
-
-              <div class="col-xs-4 col-sm-4">
-                <div class="pull-right social hidden-xs">
-                  <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
-                  |
-                  <a href="<%= contact_path %>">
-                    <%= image_tag("23x23_email.png", alt: "envelope", :class=>"image-fluid")%>
-                  </a>
-                </div>
-
-                <div class="pull-right social visible-xs">
-                  <a href="https://www.facebook.com/pages/Anne-Arden-McDonald/116579048353973?ref=search&sid=751108032.2233621175..1"><%= image_tag("facebooklogo.png", alt: "facebook logo", :class=>"image-fluid")%></a>
-                  |
-                  <a href="<%= contact_path %>">
-                    <%= image_tag("16x16_email.png", alt: "envelope", :class=>"image-fluid")%>
-                  </a>
-                </div>
-
-              </div>
-            </div>
+            <%= yield %>
           </div>
-        </footer>
+        </div>
+      </div>
+
+      <div class="row">
+        <% if front_page? %>
+          <%= render 'shared/footer' %>
+        <% end %>
       </div>
     </div>
-
   </body>
 </html>

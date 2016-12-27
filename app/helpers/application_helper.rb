@@ -1,63 +1,80 @@
+require 'pp'
+
 module ApplicationHelper
+  PAGE_GROUPS = [
+    :front, :gallery, :about, :contact
+  ].freeze
+
+  Gallery::Gallery.all.each do |gallery|
+    define_method(:"#{gallery.slug}_page?") do
+      current_path_starts_with?(gallery.path)
+    end
+  end
+
   def stripped_uri
-    path = URI(request.original_url).path.split('/').last
-    path.blank? ? nil : "/#{path.gsub(/\d/, '')}"
+    path = URI(request.original_url).path
+    path.blank? ? nil : path.gsub(/\/\d+/, '')
   end
 
-  def method_missing(method, *args, &_blk)
-    return super unless method.to_s.end_with?('_page?')
-    prefixes = send(:"#{method.to_s.gsub('_page?', '')}_path_prefixes")
-    prefixes.include? stripped_uri
+  def current_page_class
+    group = PAGE_GROUPS.find { |g| send(:"#{g}_page?") }
+    group ? "#{group}-page" : ''
   end
 
-  def respond_to_missing?(method, include_private=false)
-    method.to_s.end_with?('_page?') || super
+  def front_page?
+    URI(request.original_url).path == '/'
+  end
+
+  def gallery_page?
+    Gallery::Gallery.all.any? { |g| send(:"#{g.slug}_page?") }
+  end
+
+  def new_work_page?
+    current_path_starts_with?(
+      gallery_path(:new_work), gallery_path(:atom_planet),
+      gallery_path(:bodies)
+    )
+  end
+
+  def plastic_camera_page?
+    current_path_starts_with?(
+      gallery_path(:icon_diana),
+      gallery_path(:garden_diana),
+      gallery_path(:pillow_book),
+      gallery_path(:plastic_camera)
+    )
+  end
+
+  def archive_page?
+    current_path_starts_with?(
+      gallery_path(:archive),
+      gallery_path(:milan),
+      gallery_path(:layered),
+      gallery_path(:group),
+      gallery_path(:botanicals)
+    )
+  end
+
+  def about_page?
+    current_path_starts_with?(
+      about_path, resume_path, biography_path, aauaudio_path, bofvideo_path,
+      criticisms_path
+    )
+  end
+
+  def contact_page?
+    current_path_starts_with?(contact_path)
+  end
+
+  def link_box
+    content_tag(:div, class: 'link-box') do
+      content_tag(:div, class: 'link-box-inner') { yield }
+    end
   end
 
   private
 
-  def new_work_path_prefixes
-    [new_work_path, '/ap', atom_planet_statement_path, '/bodies', bodies_statement_path]
-  end
-
-  def self_portrait_path_prefixes
-    [self_portrait_path, self_portrait_statement_path, '/sp']
-  end
-
-  def plastic_camera_path_prefixes
-    [
-      icon_diana_path, icon_diana_statement_path,
-      garden_diana_path, garden_diana_statement_path,
-      pillow_book_path, pillow_book_statement_path,
-      plastic_camera_path
-    ]
-  end
-
-  def watches_path_prefixes
-    [watches_path, watches_statement_path]
-  end
-
-  def archive_path_prefixes
-    [
-      archive_path, milan_path, milan_statement_path,
-      layered_path, layered_statement_path,
-      group_path, group_statement_path,
-      botanicals_path, botanicals_statement_path,
-      bouyancy_path, bouyancy_statement_path,
-      botanical_book_path, botanical_book_statement_path,
-      monoprints_path, monoprints_statement_path,
-      hands_path, hands_statement_path,
-      dresses_path, dresses_statement_path,
-      murals_path, murals_statement_path,
-      bubbles_path, circles_statement_path
-    ]
-  end
-
-  def about_path_prefixes
-    [about_path, resume_path, biography_path, aauaudio_path, bofvideo_path, criticism_path]
-  end
-
-  def contact_path_prefixes
-    [contact_path]
+  def current_path_starts_with?(*prefixes)
+    prefixes.include? stripped_uri
   end
 end

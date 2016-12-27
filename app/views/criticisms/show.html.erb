@@ -1,0 +1,22 @@
+<% if @criticism.title %>
+  <h2><%= @criticism.title %></h2>
+<% end %>
+
+<% if @criticism.citation %>
+  <p class="byline"><%= @criticism.citation %></p>
+<% end %>
+
+<div class="row">
+  <div class="col-sm-8">
+    <%= raw anneify @criticism.full %>
+    <div id="back-watch"><%= link_to image_tag("watch_2_left.jpg"), criticisms_path %></div>
+  </div>
+
+  <% unless @criticism.images.empty? %>
+    <div class="col-xs-4" id="pages-box">
+      <% @criticism.images.each do |image| %>
+        <div class="pages-image"><%= image_tag(image) %></div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

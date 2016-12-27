@@ -1,0 +1,11 @@
+<%= render partial: 'title', locals: { gallery: gallery } %>
+
+<% gallery.images.in_groups_of(4, false) do |row| %>
+  <div class="row">
+    <% row.each do |item| %>
+      <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+        <%= render partial: 'image', locals: { image: item } %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

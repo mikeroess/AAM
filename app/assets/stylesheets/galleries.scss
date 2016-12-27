@@ -1,0 +1,433 @@
+#statement-text {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8%;
+  font-size: 85%;
+  width: 60%;
+  @media(min-width: 1300px) {font-size: 90%;}
+  @media(min-width: 1525px) {font-size: 110%;}
+  @media(min-width: 1648px) {font-size: 112%;}
+  @media(min-width: 1725px) {font-size: 120%;}
+  @media(min-width: 1855px) {font-size: 125%;}
+  @media(min-width: 2100px) {font-size: 130%;}
+  @media(min-width: 2300px) {font-size: 145%;}
+  @media(min-width: 2472px) {font-size: 165%;}
+  @media(min-width: 3000px) {font-size: 190%;}
+  @media(min-width: 3500px) {font-size: 250%;}
+  @media(min-width: 4000px) {font-size: 320%;}
+  @media(min-width: 4500px) {font-size: 340%;}
+
+  #back-watch {
+    margin: 0 auto;
+    width: 15%;
+  }
+}
+
+//Nav arrows on detail pages
+#right-arrow{
+  display:table-cell;
+  vertical-align:middle;
+  float:none;
+}
+
+#left-arrow{
+  display:table-cell;
+  vertical-align:middle;
+  float:none;
+}
+
+#arrow-nav {
+  color: #666666;
+  background: #FFFFFF;
+  z-index: 9;
+  font-family: Cardo-Italic;
+  color: #666666;
+  text-align: center;
+  position: fixed;
+  display: block !important;
+  padding: 15px;
+  bottom: 0;
+  @media(min-width: 1300px) {font-size: 115%;}
+  @media(min-width: 1648px) {font-size: 130%;}
+  @media(min-width: 1855px) {font-size: 150%;}
+  @media(min-width: 2472px) {font-size: 220%;}
+  @media(min-width: 3000px) {font-size: 240%;}
+  @media(min-width: 3500px) {font-size: 290%;}
+  @media(min-width: 4000px) {font-size: 320%;}
+  @media(min-width: 4500px) {font-size: 400%;}
+
+  .description {
+    margin-top: 5px;
+  }
+
+  .arrow {
+    img {
+      width: 45%;
+      margin: 0 auto;
+      @media (max-width: 625px) { width: 500%; }
+      @media (min-width: 1001px ) {width: 40%;}
+    }
+  }
+}
+
+.left-watch {
+  width: 30%;
+  @media (max-width: 480px) { width:800% }
+}
+
+.right-watch{
+  width: 30%;
+  @media (max-width: 480px) { width:800% }
+}
+
+.scrollable-gallery {
+  margin-right: 55px;
+}
+
+.gallery-item {
+  font-family: Cardo-Italic;
+  color: #666666;
+  font-size: 80%;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 0%;
+  @media( max-width: 774px) {	margin-left:15%; }
+  @media (max-width: 780px) { margin-bottom: 10%; }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#hands-gallery-row{
+  font-family: Cardo-Italic;
+  color: #666666;
+  font-size: 80%;  
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 0%;
+  @media( max-width: 774px) {	margin-left:15%; }
+  @media (max-width: 780px) { margin-bottom: 10%; }
+  @media (max-width: 780px) { height: 250px; }
+
+}
+
+#about-gallery-row{
+  font-family: Cardo-Italic;
+  color: #666666;
+  font-size: 80%;  
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 0%;
+  @media (max-width: 780px) { margin-bottom: 10%; }
+}
+
+#xs-gallery-row{
+  font-family: Cardo-Italic;
+  color: black;
+  font-size: 80%;  
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 0%;
+  @media( max-width: 774px) {	margin-left:15%; }
+  @media (max-width: 780px) { margin-bottom: 10%; }
+}
+
+#gallery-row-picture{
+  font-family: Cardo-Italic;
+  color: #666666;
+  font-size: 80%;  
+  text-align: center;
+  margin-top: 2%;
+  @media (max-width: 780px) { margin-bottom: 10%; }
+}
+
+
+.sp-detail-9{
+  font-family: Cardo-Italic;
+  color: #666666;
+  @media (max-width: 780px) { margin-bottom: 10%; }
+
+}
+
+// up and down nav arrows in galleries
+
+.gallery-pull-right{
+  width: 6%;
+  height: 100%;
+}
+
+.gallery-up{
+  margin-left: 1%;
+  position: fixed;
+  margin-top: 5%;
+  width: 5%;
+
+}
+
+.gallery-down{
+  position: fixed;
+  margin-left: 1%;
+  bottom: 23%;
+  width: 5%;
+}
+
+// Detail pages
+
+.detail-text{
+  text-align: center;
+}
+
+.detail-row {
+  padding-top: 3%;
+  margin-left: 30%;
+  @media (max-width: 480px) { margin-left: 40%; }
+}
+
+.detail-row-layered {
+  padding-top: 3%;
+  margin-left: 20%;
+  @media (max-width: 480px) { margin-left: 20%; }
+  font-size: 65%;
+  text-align: center;
+}
+
+.detail-row-layered-2 {
+  @media (max-width: 480px) { margin-left: 20%; }
+  font-size: 65%;
+  text-align: center;
+}
+
+.detail-row-bouyancy {
+  margin-left: 30%;
+  @media (max-width: 480px) { margin-left: 20%; }
+  font-size: 65%;
+  text-align: center;	
+  padding-top:1%;
+
+}
+
+.main-image {
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+  }
+
+  &-with-detail {
+    img {
+      width: 49%;
+    }
+  }
+}
+
+//bouyancy gallery	
+
+#bouyancy4{
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 4%; }
+}	
+
+#bouyancy6{
+  margin-left: 5%;
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 4%; }
+}	
+
+#bouyancy8{
+  margin-left: 20%;
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}	
+
+#flare-detail{
+  padding-top:4%;
+  width: 42%;
+}
+
+//watches
+#watches1{
+  padding-top: 7%;
+  margin-left: 25%;
+}
+
+#watches3{
+  padding-top: 7%;
+  margin-right: 15%;
+}
+
+#watch-image{
+  margin-bottom: 65%;
+  padding-bottom: 50%;
+}
+
+#watches31{
+  margin-left: 35%;
+  text-align: center;
+  padding-top: 1%;
+  @media (max-width: 1200px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+
+//layered
+#layered1{
+  padding-top: 7%;
+  margin-left: 20%;
+}
+
+#layered2{
+  margin-left: 25%;
+  padding-top: 1%;
+  @media (max-width: 1100px) { padding-top: 8%; }
+}
+
+#layered4{
+  padding-top: 1%;
+  margin-left: 20%;
+}
+
+//group
+#group1{
+  padding-top:5%;
+  margin-left: 20%;
+}
+
+//bouyancy
+
+
+#bouyancy1{
+  margin-left: 15%;
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 5%; }
+}
+
+#bouyancy4{
+  margin-left: 15%;
+  padding-bottom: 10%;
+}
+
+#bouyancy3{
+  margin-left: 5%;
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 6%; }
+}
+
+#bouyancy2{
+  margin-left: 33%;
+  padding-top: 1%;
+  @media (max-width: 1025px) { padding-top: 8%; }	
+}
+
+#bouyancy6{
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+//botanicals
+
+#botanicals-container{
+  margin-left :17%;
+  padding-right: 10%;
+  padding-top: 8%;
+  @media (max-width: 991px) { padding-top: 8%; }
+  height: 100%;
+  max-width: 80%;
+}
+#botanicals1{
+  margin-left:-3%;
+  padding-top: 6%;
+}
+
+//milan
+
+#milan8{
+  margin-left: 15%;
+  padding-top: 1%;
+  @media (max-width: 1100px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+#milan10{
+  margin-left: 25%;
+  text-align: center;
+  padding-top: 1%;
+  @media (max-width: 1100px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+#milan-detail-text {
+  font-size: 95%;
+  height: 45%;
+}
+
+//Layered
+
+#layered1{
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+#layered4{
+  margin-left: 25%;
+  padding-top: 8%;
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 8%; }
+}
+
+#layered11{
+  margin-left: 30%;
+  padding-top: 8%;
+  padding-top: 1%;
+  @media (max-width: 1150px) { padding-top: 8%; }
+}
+
+//Group
+
+#group1{
+  margin-left: 15%;
+  padding-top: 1%;
+  @media (max-width: 1200px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+#group3{
+  margin-left: 15%;
+  padding-top: 1%;
+  @media (max-width: 1050px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+//Botanical Book
+
+#botanical-book11{
+  margin-left: 33%;
+  padding-top: 1%;
+  @media (max-width: 950px) { padding-top: 8%; }	
+}
+
+#botanicals1{
+  margin-left: 30%;
+  text-align: center;
+  padding-top: 1%;
+  @media (max-width: 1100px) { padding-top: 8%; }
+  @media (min-width: 1200px) { bottom:15%;}	
+}
+
+//Botanicals
+
+#botanicals-container{
+  @media(min-width: 1700px) {font-size: 130%;}
+  @media(min-width: 1900px) {font-size: 150%;}
+  @media(min-width: 2500px) {font-size: 200%;}
+  @media(min-width: 3000px) {font-size: 240%;}
+  @media(min-width: 3500px) {font-size: 280%;}
+  @media(min-width: 4000px) {font-size: 320%;}
+  @media(min-width: 4500px) {font-size: 350%;}
+}

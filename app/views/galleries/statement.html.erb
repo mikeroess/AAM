@@ -1,0 +1,9 @@
+<div id="statement-text">
+  <h2><%= @gallery.name %></h2>
+
+  <%= raw anneify @gallery.statement.text %>
+
+  <div id="back-watch">
+    <%= link_to image_tag("watch_2_left.jpg", alt: "back", class: "img-responsive"), @gallery.path %>
+  </div>
+</div>

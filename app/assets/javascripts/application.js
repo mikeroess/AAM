@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= bootstrap.min
+//= require bootstrap-sprockets
 //= require_tree .
 
 var $html = $('html');

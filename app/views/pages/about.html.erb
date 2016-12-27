@@ -1,63 +1,49 @@
-<div class="container-fluid" id="botanicals-container">
-
-  <div class="row" id="gallery-row">
-
-    <div class="col-xs-9 col-sm-3 col-md-3" id="gallery-row">
-      <div class="about-statement-box about-statement-text" id="statement">
-        <strong>Résumé</strong><br />
-        <strong><%= link_to "View", resume_path, :class=>"link" %></strong>
-        <span class="separator">&nbsp;|&nbsp;</span>
-        <strong><%= link_to "Download PDF", '/media/resume.pdf', class: 'link' %></strong>
-      </div>
+<div class="container-constrained">
+  <div class="row">
+    <div class="col-xs-9 col-sm-3 col-md-3 gallery-item">
+      <%= link_box do %>
+        <div>Résumé</div>
+        <div>
+          <%= link_to "View", resume_path %>
+          <span class="separator"> | </span>
+          <%= link_to "Download PDF", '/media/resume.pdf' %>
+        </div>
+      <% end %>
     </div>
 
-    <div class="col-xs-9 col-sm-3 col-md-3 link " id="gallery-row">
-      <div class="about-statement-box about-statement-text" id="statement">
-        <strong><%= link_to "Bio", biography_path, :class=>"link" %><br /></strong>
-      </div>
+    <div class="col-xs-9 col-sm-3 col-md-3 gallery-item">
+      <%= link_box do %>
+        <%= link_to "Bio", biography_path %>
+      <% end %>
     </div>
 
-    <div class="col-xs-9 col-sm-3 col-md-3 link " id="gallery-row">
-      <div class="about-statement-box about-statement-text" id="statement">
-        <strong><%= link_to "Press", criticism_path, :class=>"link" %><br /></strong>
-      </div>
+    <div class="col-xs-9 col-sm-3 col-md-3 gallery-item">
+      <%= link_box do %>
+        <%= link_to "Press", criticisms_path %>
+      <% end %>
     </div>
 
-    <div class="col-xs-9 col-sm-3 col-md-3 link " id="gallery-row">
-      <div class="about-statement-box about-statement-text" id="statement">
-        <strong><%= link_to "Link to Czech and Slovak Site", "http://www.czechslovakphotos.com/", :class=>"link" %><br /></strong>
-      </div>
+    <div class="col-xs-9 col-sm-3 col-md-3 gallery-item">
+      <%= link_box do %>
+        <%= link_to "Czech and Slovak Site", "http://www.czechslovakphotos.com/" %>
+      <% end %>
     </div>
-
   </div>
 
-<div class="row" id="gallery-row">
-
-    <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 link " id="gallery-row-picture">
-
-        <strong><%= link_to image_tag("annetv.png", :class => "img-responsive", :border => 0), 'https://www.youtube.com/watch?v=SBo3O2b4ARo' %><br /></strong>
-        TV spot--Caught in the Act: Art in Brooklyn
-      </div>
-
-
-
-
-    <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 link " id="gallery-row-picture">
-
-        <strong><%= link_to image_tag("00me by dragin web crop.jpg",:class => "img-responsive", :border => 0), aauaudio_path %><br /></strong>
-        Interview with Rachel Hubbard
-
+  <div class="row">
+    <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 gallery-item">
+      <%= link_to image_tag("annetv.png", :class => "img-responsive", :border => 0), 'https://www.youtube.com/watch?v=SBo3O2b4ARo' %>
+      TV spot--Caught in the Act: Art in Brooklyn
     </div>
 
-    <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 link " id="gallery-row-picture">
-
-        <strong><%= link_to image_tag("making_of_fragility.png",:class => "img-responsive", :border => 0), bofvideo_path %></strong><br />
-        Video of the making of Body of Fragility
-
+    <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 gallery-item">
+      <%= link_to image_tag("00me by dragin web crop.jpg",:class => "img-responsive", :border => 0), aauaudio_path %>
+      Interview with Rachel Hubbard
     </div>
 
-
-
+    <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-3 gallery-item">
+      <%= link_to image_tag("making_of_fragility.png",:class => "img-responsive", :border => 0), bofvideo_path %>
+      Video of the making of Body of Fragility
+    </div>
   </div>
-
 </div>

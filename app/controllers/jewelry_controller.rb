@@ -1,10 +1,8 @@
 class JewelryController < ApplicationController
-
   layout 'jewelry'
 
-	def index
+  def index
     @page = params[:page] || 1
     render "index_#{@page}"
-	end
-
+  end
 end
