@@ -2,7 +2,7 @@ require 'pp'
 
 module ApplicationHelper
   PAGE_GROUPS = [
-    :front, :gallery, :about, :contact
+    :front, :gallery_image, :gallery, :about, :contact
   ].freeze
 
   Gallery::Gallery.all.each do |gallery|
@@ -18,7 +18,7 @@ module ApplicationHelper
 
   def current_page_class
     group = PAGE_GROUPS.find { |g| send(:"#{g}_page?") }
-    group ? "#{group}-page" : ''
+    group ? "#{group.to_s.tr('_', '-')}-page" : ''
   end
 
   def front_page?
@@ -27,6 +27,10 @@ module ApplicationHelper
 
   def gallery_page?
     Gallery::Gallery.all.any? { |g| send(:"#{g.slug}_page?") }
+  end
+
+  def gallery_image_page?
+    gallery_page? && request.params[:id].present?
   end
 
   def new_work_page?
