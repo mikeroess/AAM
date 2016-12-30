@@ -1,7 +1,7 @@
 <% if @full_image %>
   <%= image_tag(@image.image, id: 'main-image-full') %>
 <% else %>
-  <div id="main-image-container" class="row">
+  <div id="main-image-container">
     <%= image_tag(@image.image, id: 'main-image') %>
   </div>
 <% end %>
