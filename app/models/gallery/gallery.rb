@@ -53,16 +53,16 @@ module Gallery
       statement.present?
     end
 
-    def path
-      Rails.application.routes.url_helpers.gallery_path(slug)
+    def path(params = {})
+      Rails.application.routes.url_helpers.gallery_path(slug, params)
     end
 
-    def statement_path
-      Rails.application.routes.url_helpers.gallery_statement_path(slug) if statement?
+    def statement_path(params = {})
+      Rails.application.routes.url_helpers.gallery_statement_path(slug, params) if statement?
     end
 
-    def end_path
-      statement? ? statement_path : path
+    def end_path(params = {})
+      statement? ? statement_path(params) : path(params)
     end
 
     def self.find(name)

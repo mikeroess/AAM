@@ -4,8 +4,8 @@ module Gallery
 
     attr_accessor :text, :gallery
 
-    def path
-      Rails.application.routes.url_helpers.gallery_statement_path(gallery.slug)
+    def path(params = {})
+      Rails.application.routes.url_helpers.gallery_statement_path(gallery.slug, params)
     end
   end
 end

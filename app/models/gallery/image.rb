@@ -19,23 +19,23 @@ module Gallery
       ].compact.join(', ')
     end
 
-    def path
-      Rails.application.routes.url_helpers.gallery_image_path(gallery.slug, id)
+    def path(params = {})
+      Rails.application.routes.url_helpers.gallery_image_path(gallery.slug, id, params)
     end
 
-    def previous_path
+    def previous_path(params = {})
       if self == gallery.images.first
-        gallery.end_path
+        gallery.end_path(params)
       else
-        Rails.application.routes.url_helpers.gallery_image_path(gallery.slug, index)
+        Rails.application.routes.url_helpers.gallery_image_path(gallery.slug, index, params)
       end
     end
 
-    def next_path
+    def next_path(params = {})
       if self == gallery.images.last
-        gallery.end_path
+        gallery.end_path(params)
       else
-        Rails.application.routes.url_helpers.gallery_image_path(gallery.slug, id + 1)
+        Rails.application.routes.url_helpers.gallery_image_path(gallery.slug, id + 1, params)
       end
     end
   end

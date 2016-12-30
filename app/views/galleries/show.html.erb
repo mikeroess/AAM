@@ -1,5 +1,9 @@
-<div id="main-image-container" class="row">
-  <%= image_tag(@image.image, id: 'main-image') %>
-</div>
+<% if @full_image %>
+  <%= image_tag(@image.image, id: 'main-image-full') %>
+<% else %>
+  <div id="main-image-container" class="row">
+    <%= image_tag(@image.image, id: 'main-image') %>
+  </div>
+<% end %>
 
-<%= render partial: 'description_and_links', locals: { image: @image } %>
+<%= render partial: 'description_and_links', locals: { image: @image, full_image: @full_image } %>
