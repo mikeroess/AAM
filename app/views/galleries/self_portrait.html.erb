@@ -1,33 +1,35 @@
-<%= render 'scrollbars' %>
+<div class="row">
+  <%= render 'scrollbars' %>
 
-<div class="scrollable-gallery">
-  <%= render partial: 'title', locals: { gallery: @gallery } %>
+  <div class="scrollable-gallery container-fluid">
+    <%= render partial: 'title', locals: { gallery: @gallery } %>
 
-  <div class="row">
-    <div class="col-xs-12 gallery-item">
-      <%= render partial: 'image', locals: { image: @gallery.images.first } %>
-    </div>
-  </div>
-
-  <% @gallery.images[1..-4].each_slice(4) do |row| %>
     <div class="row">
-      <% row.each do |image| %>
-        <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <div class="col-xs-12 gallery-item">
+        <%= render partial: 'image', locals: { image: @gallery.images.first } %>
+      </div>
+    </div>
+
+    <% @gallery.images[1..-4].each_slice(3) do |row| %>
+      <div class="row">
+        <% row.each do |image| %>
+          <div class="col-md-4 gallery-item">
+            <%= render partial: 'image', locals: { image: image } %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+    <div class="row">
+      <div class="col-md-6 gallery-item">
+        <%= render partial: 'image', locals: { image: @gallery.images[-3] } %>
+      </div>
+
+      <% @gallery.images[-2..-1].each do |image| %>
+        <div class="col-md-3 gallery-item">
           <%= render partial: 'image', locals: { image: image } %>
         </div>
       <% end %>
     </div>
-  <% end %>
-
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 gallery-item">
-      <%= render partial: 'image', locals: { image: @gallery.images[-3] } %>
-    </div>
-
-    <% @gallery.images[-2..-1].each do |image| %>
-      <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
-        <%= render partial: 'image', locals: { image: image } %>
-      </div>
-    <% end %>
   </div>
 </div>

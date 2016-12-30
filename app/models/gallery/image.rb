@@ -3,12 +3,7 @@ module Gallery
     include ActiveModel::Model
 
     attr_accessor :name, :description, :dimensions, :year, :location,
-                  :main_image, :detail_image,
-                  :index, :gallery
-
-    def detail?
-      detail_image.present?
-    end
+                  :image, :index, :gallery
 
     def id
       index + 1
@@ -20,11 +15,7 @@ module Gallery
 
     def long_text
       [
-        detail? ? "#{name} and detail" : name,
-        location,
-        description,
-        year,
-        dimensions
+        name, location, description, year, dimensions
       ].compact.join(', ')
     end
 

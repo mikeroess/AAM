@@ -35,79 +35,67 @@
       description: Outline of terracotta clay, painted with medicines, spices and household cleaners
       dimensions: 96 x 50 ins.
       year: 2007
-      main_image: ap-1-atom.jpg
-      detail_image: ap-1-atom-detail.jpg
+      image: ap-1-atom.jpg
     - name: Bone
       description: Bleach painting made with sponges
       year: 2011
       dimensions: 105 x 50 ins.
-      main_image: ap-2-bone.jpg
-      detail_image: ap-2-bone-detail.jpg
+      image: ap-2-bone.jpg
     - name: Buoyancy
       description: Contact print of bags of water and raw eggs
       year: 2011
       dimensions: 115 x 50 ins.
-      main_image: ap-3-buoyancy.jpg
-      detail_image: ap-3-buoyancy-detail.jpg
+      image: ap-3-buoyancy.jpg
     - name: Cells
       description: Contact print of circular and spherical objects
       year: 2007
       dimensions: 69 x 50 ins.
-      main_image: ap-4-cells.jpg
-      detail_image: ap-4-cell-detail.jpg
+      image: ap-4-cells.jpg
     - name: Electron
       description: Printed through a black mask
       year: 2011
       dimensions: 114 x 50 ins.
-      main_image: ap-5-electron.jpg
-      detail_image: ap-5-electron-detail.jpg
+      image: ap-5-electron.jpg
     - name: Flare
       description: Bleach painting
       year: 2011
       dimensions: 108 x 42 ins.
-      main_image: ap-6-flare.jpg
-      detail_image: ap-6-flare-detail.jpg
+      image: ap-6-flare.jpg
     - name: Fragility
       description: Contact print of a pile of layers of glass and eggshells, exposed with a flashlight
       year: 2011
       dimensions: 106 x 50 ins.
-      main_image: ap-7-fragility.jpg
-      detail_image: ap-7-fragility-detail.jpg
+      image: ap-7-fragility.jpg
     - name: Planet
       description: Layers of glue used as a resist against developer and fix
       year: 2011
       dimensions: 106 x 50 ins.
-      main_image: ap-8-planet.jpg
-      detail_image: ap-8-planet-detail.jpg
+      image: ap-8-planet.jpg
     - name: Spirit
       description: Contact print of glass fishing floats and christmas balls, painted with bleach
       year: 2005
       dimensions: 86 x 42 ins.
-      main_image: ap-9-spirit.jpg
-      detail_image: spirit detail web.jpg
+      image: ap-9-spirit.jpg
     - name: Predevelop
       description: Digital capture of a chemical painting on photo paper
       year: 2013
       dimensions: 110 x 50 ins. (dimensions variable)
-      main_image: ap-10-predevelop.jpg
-      detail_image: ap-10-predevelop-detail.jpg
+      image: ap-10-predevelop.jpg
     - name: Lumen
       description: Gold-toned chemical lumen print
       year: 2014
       dimensions: 110 x 50 ins.
-      main_image: ap-11-lumen.jpg
-      detail_image: ap-11-lumen-detail.jpg
+      image: ap-11-lumen.jpg
     - name: Rust
       description: Silver gelatin paper toned with rust
       year: 2014
       dimensions: 113 x 42 ins.
-      main_image: ap-12-rust.jpg
-      detail_image: ap-12-rust-detail.jpg
+      image: ap-12-rust.jpg
     - name: Installed at Skink Ink in Brooklyn, NY
-      main_image: atom-planet.jpg
+      image: atom-planet.jpg
     - name: Digital versions of silver gelatin prints, 36 x 28 inches each, installed
       year: 2011
-      main_image: ap11.jpg
+      image: ap11.jpg
 
 - name: The Body in Transformation
   id: bodies
@@ -188,44 +176,37 @@
     - name: The Metaphoric Body
       description: Contact print of small objects
       dimensions: 130 x 50 ins.
-      main_image: bodies-1-metaphor web.jpg
-      detail_image: bodies-1a-metaphor-detail.jpg
+      image: bodies-1-metaphor web.jpg
     - name: Body of Light
       description: Made by sprinkling powdered bleach onto developed photo paper
       dimensions: 111 x 50 ins.
-      main_image: bodies-2-light.jpg
-      detail_image: bodies-2a-light-detail.jpg
+      image: bodies-2-light.jpg
     - name: The Energetic Body
       description: Exposed by burning a line of fire around the body
       dimensions: 97 x 42 ins
-      main_image: bodies-3-energy-web.jpg
-      detail_image: bodies-3a-energy-detail.jpg
+      image: bodies-3-energy-web.jpg
     - name: Disease and Decay
       description: Made by making a body of glue, and digging down through it with chemistry
       dimensions: 96 x 42 ins.
-      main_image: bodies-4-Decay.jpg
-      detail_image: bodies-4a-decay-detail.jpg
+      image: bodies-4-Decay.jpg
     - name: Body of Liquid
       dimensions: 90 x 50 ins.
       description: Made by painting on the photo paper with salt, hydrogen peroxide, lemons, aspirin, betadine, tabasco sauce, and about 30 other substances
-      main_image: bodies-5a-liquid.jpg
-      detail_image: bodies-5-liquid-detail.jpg
+      image: bodies-5a-liquid.jpg
     - name: Body of Cells
       description: Contact print of spheres and circles
       dimensions: 103 x 50 ins.
-      main_image: bodies-6-cells.jpg
-      detail_image: bodies-6a-cells-detail.jpg
+      image: bodies-6-cells.jpg
     - name: Body of Fragility
       description: A pile of broken glass and eggshells, laid out in the form of a body and exposed with a small flashlight
       dimensions: 126 x 50 ins.
-      main_image: bodies-7a-fragility.jpg
-      detail_image: bodies-7-fragility-detail.jpg
+      image: bodies-7a-fragility.jpg
     - name: Installed at Win studios in Soho, NYC
       year: 2010
-      main_image: bodies-8-me-at-Win.jpg
+      image: bodies-8-me-at-Win.jpg
     - name: Bratislava Month of Photography
       year: 2006
-      main_image: bodies-9-left-wall-brat.jpg
+      image: bodies-9-left-wall-brat.jpg
 
 - name: Self Portraits
   id: self_portrait
@@ -246,163 +227,163 @@
     - name: 'Untitled Self Portrait #3'
       year: 1987
       location: Connecticut
-      main_image: sp-08-03.jpg
+      image: sp-08-03.jpg
     - name: 'Untitled Self Portrait #58'
       location: Austria
       year: 1994
-      main_image: sp-01-58.jpg
+      image: sp-01-58.jpg
     - name: 'Untitled Self Portrait #24'
       location: California
       year: 1989
-      main_image: sp-02-24.jpg
+      image: sp-02-24.jpg
     - name: 'Untitled Self Portrait #21'
       location: California
       year: 1989
-      main_image: sp-03-21.jpg
+      image: sp-03-21.jpg
     - name: 'Untitled Self Portrait #55'
       location: Ohio
       year: 1994
-      main_image: sp-04-55.jpg
+      image: sp-04-55.jpg
     - name: 'Untitled Self Portrait #38'
       location: Czech Republic
       year: 1992
-      main_image: sp-05-38.jpg
+      image: sp-05-38.jpg
     - name: 'Untitled Self Portrait #41'
       location: Hungary
       year: 1992
-      main_image: sp-09-41.jpg
+      image: sp-09-41.jpg
     - name: 'Untitled Self Portrait #22'
       location: California
       year: 1989
-      main_image: sp-10-22.jpg
+      image: sp-10-22.jpg
     - name: 'Untitled Self Portrait #61'
       location: Austria
       year: 1994
-      main_image: sp-12-61.jpg
+      image: sp-12-61.jpg
     - name: 'Untitled Self Portrait #12'
       location: Connecticut
       year: 1989
-      main_image: sp-06-12.jpg
+      image: sp-06-12.jpg
     - name: 'Untitled Self Portrait #25'
       location: Massachusetts
       year: 1990
-      main_image: sp-07-25.jpg
+      image: sp-07-25.jpg
     - name: 'Untitled Self Portrait #29'
       location: Massachusetts
       year: 1990
-      main_image: sp-11-29.jpg
+      image: sp-11-29.jpg
     - name: 'Untitled Self Portrait #35'
       location: New Hampshire
       year: 1991
-      main_image: sp-16-35.jpg
+      image: sp-16-35.jpg
     - name: 'Untitled Self Portrait #2'
       location: Wyoming
       year: 1987
-      main_image: sp-13-02.jpg
+      image: sp-13-02.jpg
     - name: 'Untitled Self Portrait #40'
       location: Hungary
       year: 1992
-      main_image: sp-14-40.jpg
+      image: sp-14-40.jpg
     - name: 'Untitled Self Portrait #63'
       location: New York
       year: 1995
-      main_image: sp-15-63.jpg
+      image: sp-15-63.jpg
     - name: 'Untitled Self Portrait #31'
       location: Massachusetts
       year: 1991
-      main_image: sp-18-31.jpg
+      image: sp-18-31.jpg
     - name: 'Untitled Self Portrait #70'
       location: Austria
       year: 1995
-      main_image: sp-17-70.jpg
+      image: sp-17-70.jpg
     - name: 'Untitled Self Portrait #73'
       location: Austria
       year: 1995
-      main_image: sp-19-73.jpg
+      image: sp-19-73.jpg
     - name: 'Untitled Self Portrait #26'
       location: Massachusetts
       year: 1990
-      main_image: sp-20-26.jpg
+      image: sp-20-26.jpg
     - name: 'Untitled Self Portrait #67'
       location: New York
       year: 1995
-      main_image: sp-21-67.jpg
+      image: sp-21-67.jpg
     - name: 'Untitled Self Portrait #36'
       location: New Jersey
       year: 1992
-      main_image: sp-22-36.jpg
+      image: sp-22-36.jpg
     - name: 'Untitled Self Portrait #46'
       location: Maine
       year: 1993
-      main_image: sp-25-46.jpg
+      image: sp-25-46.jpg
     - name: 'Untitled Self Portrait #54'
       location: Ohio
       year: 1994
-      main_image: sp-26-54.jpg
+      image: sp-26-54.jpg
     - name: 'Untitled Self Portrait #39'
       location: Czech Republic
       year: 1992
-      main_image: sp-27-39.jpg
+      image: sp-27-39.jpg
     - name: 'Untitled Self Portrait #32'
       location: Massachusetts
       year: 1991
-      main_image: sp-28-32.jpg
+      image: sp-28-32.jpg
     - name: 'Untitled Self Portrait #37'
       location: Massachusetts
       year: 1992
-      main_image: sp-29-37.jpg
+      image: sp-29-37.jpg
     - name: 'Untitled Self Portrait #45'
       location: Massachusetts
       year: 1993
-      main_image: sp-33-45.jpg
+      image: sp-33-45.jpg
     - name: 'Untitled Self Portrait #20'
       location: Utah
       year: 1989
-      main_image: sp-32-20.jpg
+      image: sp-32-20.jpg
     - name: 'Untitled Self Portrait #33'
       location: New Hampshire
       year: 1991
-      main_image: sp-23-33.jpg
+      image: sp-23-33.jpg
     - name: 'Untitled Self Portrait #72'
       location: Austria
       year: 1995
-      main_image: sp-24-72.jpg
+      image: sp-24-72.jpg
     - name: 'Untitled Self Portrait #10'
       location: Rhode Island
       year: 1987
-      main_image: sp-30-10.jpg
+      image: sp-30-10.jpg
     - name: 'Untitled Self Portrait #57'
       location: Tennessee
       year: 1994
-      main_image: sp-31-57.jpg
+      image: sp-31-57.jpg
     - name: 'Untitled Self Portrait #18'
       location: California
       year: 1989
-      main_image: sp-34-18.jpg
+      image: sp-34-18.jpg
     - name: 'Untitled Self Portrait #66'
       location: New York
       year: 1995
-      main_image: sp-39-66.jpg
+      image: sp-39-66.jpg
     - name: 'Untitled Self Portrait #68'
       location: New York
       year: 1995
-      main_image: sp-40-68.jpg
+      image: sp-40-68.jpg
     - name: 'Untitled Self Portrait #49'
       location: Finland
       year: 1993
-      main_image: sp-36-49.jpg
+      image: sp-36-49.jpg
     - name: 'Untitled Self Portrait #5'
       location: Connecticut
       year: 1986
-      main_image: sp-35-05.jpg
+      image: sp-35-05.jpg
     - name: 'Untitled Self Portrait #14'
       location: Colorado
       year: 1989
-      main_image: sp-37-14.jpg
+      image: sp-37-14.jpg
     - name: 'Untitled Self Portrait #34'
       location: New Hampshire
       year: 1991
-      main_image: sp-38-34.jpg
+      image: sp-38-34.jpg
 
 - id: icon_diana
   statement: >-
@@ -432,79 +413,79 @@
     - name: 'Diana #40'
       location: Antigua
       year: 1994
-      main_image: icon_diana_1.jpg
+      image: icon_diana_1.jpg
     - name: 'Diana #49'
       location: New York
       year: 1997
-      main_image: icon_diana_2.jpg
+      image: icon_diana_2.jpg
     - name: 'Diana #64'
       location: Italy
       year: 1999
-      main_image: icon_diana_3.jpg
+      image: icon_diana_3.jpg
     - name: 'Diana #53'
       location: New York
       year: 1998
-      main_image: icon_diana_4.jpg
+      image: icon_diana_4.jpg
     - name: 'Diana #34'
       location: New York
       year: 1996
-      main_image: icon_diana_5.jpg
+      image: icon_diana_5.jpg
     - name: 'Diana #26'
       location: New Hampshire
       year: 1995
-      main_image: icon_diana_6.jpg
+      image: icon_diana_6.jpg
     - name: 'Diana #41'
       location: Austria
       year: 1997
-      main_image: icon_diana_7.jpg
+      image: icon_diana_7.jpg
     - name: 'Diana #62'
       location: Czech Republic
       year: 1999
-      main_image: icon_diana_8.jpg
+      image: icon_diana_8.jpg
     - name: 'Diana #36'
       location: Long Island
       year: 1994
-      main_image: icon_diana_9.jpg
+      image: icon_diana_9.jpg
     - name: 'Diana #60'
       location: Czech Republic
       year: 1999
-      main_image: icon_diana_10.jpg
+      image: icon_diana_10.jpg
     - name: 'Diana #59'
       location: Italy
       year: 1999
-      main_image: icon_diana_11.jpg
+      image: icon_diana_11.jpg
     - name: 'Diana #38'
       location: Austria
       year: 1995
-      main_image: icon_diana_12.jpg
+      image: icon_diana_12.jpg
     - name: 'Diana #42'
       location: Hungary
       year: 1995
-      main_image: icon_diana_13.jpg
+      image: icon_diana_13.jpg
     - name: 'Diana #39'
       location: Finland
       year: 1993
-      main_image: icon_diana_14.jpg
+      image: icon_diana_14.jpg
     - name: 'Diana #61'
       location: Czech Republic
       year: 1999
-      main_image: icon_diana_15.jpg
+      image: icon_diana_15.jpg
     - name: 'Diana #51'
       location: New Mexico
       year: 1998
-      main_image: icon_diana_16.jpg
+      image: icon_diana_16.jpg
     - name: 'Diana #57'
       location: Italy
       year: 1998
-      main_image: icon_diana_17.jpg
+      image: icon_diana_17.jpg
     - name: 'Diana #55'
       location: New York
       year: 2000
-      main_image: icon_diana_18.jpg
+      image: icon_diana_18.jpg
     - name: 'Diana #37'
       location: Austria
       year: 1995
-      main_image: icon_diana_19.jpg
+      image: icon_diana_19.jpg
 
 - name: Pillow Book, 1999-2000
   id: pillow_book
@@ -535,63 +516,63 @@
     - name: 'Pillow Book #11'
       location: Czech
       year: 1999
-      main_image: pillow_book_1.jpg
+      image: pillow_book_1.jpg
     - name: 'Pillow Book #4'
       location: Austria
       year: 1998
-      main_image: pillow_book_2.jpg
+      image: pillow_book_2.jpg
     - name: 'Pillow Book #6'
       location: Italy
       year: 1998
-      main_image: pillow_book_3.jpg
+      image: pillow_book_3.jpg
     - name: 'Pillow Book #8'
       location: Italy
       year: 1998
-      main_image: pillow_book_4.jpg
+      image: pillow_book_4.jpg
     - name: 'Pillow Book #12'
       location: New York
       year: 1998
-      main_image: pillow_book_5.jpg
+      image: pillow_book_5.jpg
     - name: 'Pillow Book #9'
       location: Italy
       year: 1998
-      main_image: pillow_book_6.jpg
+      image: pillow_book_6.jpg
     - name: 'Pillow Book #14'
       location: New York
       year: 2001
-      main_image: pillow_book_7.jpg
+      image: pillow_book_7.jpg
     - name: 'Pillow Book #7'
       location: Italy
       year: 1998
-      main_image: pillow_book_8.jpg
+      image: pillow_book_8.jpg
     - name: 'Pillow Book #3'
       location: Austria
       year: 1998
-      main_image: pillow_book_9.jpg
+      image: pillow_book_9.jpg
     - name: 'Pillow Book #1'
       location: Austria
       year: 1998
-      main_image: pillow_book_10.jpg
+      image: pillow_book_10.jpg
     - name: 'Pillow Book #13'
       location: New York
       year: 1998
-      main_image: pillow_book_11.jpg
+      image: pillow_book_11.jpg
     - name: 'Pillow Book #10'
       location: Italy
       year: 1998
-      main_image: pillow_book_12.jpg
+      image: pillow_book_12.jpg
     - name: 'Pillow Book #2'
       location: Austria
       year: 1998
-      main_image: pillow_book_13.jpg
+      image: pillow_book_13.jpg
     - name: 'Pillow Book #15'
       location: New York
       year: 2001
-      main_image: pillow_book_14.jpg
+      image: pillow_book_14.jpg
     - name: 'Pillow Book #5'
       location: Italy
       year: 1998
-      main_image: pillow_book_15.jpg
+      image: pillow_book_15.jpg
 
 - name: Travel and Garden Diana
   id: garden_diana
@@ -620,69 +601,69 @@
     - name: '#13 Baby carriage'
       location: Budapest, Hungary
       year: 1992
-      main_image: garden_diana_1.jpg
+      image: garden_diana_1.jpg
     - name: '#4 Self portrait with egg'
       location: New York
       year: 1991
-      main_image: garden_diana_2.jpg
+      image: garden_diana_2.jpg
     - name: '#20 Ferry tender'
-      main_image: garden_diana_3.jpg
+      image: garden_diana_3.jpg
     - name: '#1 Carousel'
       location: Tuileries Garden, Paris
       year: 1991
-      main_image: garden_diana_4.jpg
+      image: garden_diana_4.jpg
     - name: "#10 Don't mow"
       location: Hadley, Mass
       year: 1989
-      main_image: garden_diana_5.jpg
+      image: garden_diana_5.jpg
     - name: '#9 Root balls'
       location: Long Island, NY
-      main_image: garden_diana_6.jpg
+      image: garden_diana_6.jpg
     - name: '#11 Kudzu'
       location: TN
-      main_image: garden_diana_7.jpg
+      image: garden_diana_7.jpg
     - name: '#14 Shipyard'
       location: Suomenlinna, Finland
       year: 1993
-      main_image: garden_diana_8.jpg
+      image: garden_diana_8.jpg
     - name: '#15 Little door'
       location: Suomenlinna, Finland
       year: 1993
-      main_image: garden_diana_9.jpg
+      image: garden_diana_9.jpg
     - name: "#67 Pavel Pecha's mother's garden"
       location: Slovakia
-      main_image: garden_diana_10.jpg
+      image: garden_diana_10.jpg
     - name: "#16 Ladder, Pavel Banka's garden outside of Prague"
-      main_image: garden_diana_11.jpg
+      image: garden_diana_11.jpg
     - name: '#44 Zig zag fence'
       location: Breaux Bridge, Louisiana
-      main_image: garden_diana_12.jpg
+      image: garden_diana_12.jpg
     - name: '#7 Drip castle'
       location: Rockport, Maine
-      main_image: garden_diana_13.jpg
+      image: garden_diana_13.jpg
     - name: '#66 Contessa'
       location: Burning Man, Nevada
       year: 2006
-      main_image: garden_diana_14.jpg
+      image: garden_diana_14.jpg
     - name: '#27 Fuzzy willow'
       location: Budapest, Hungary
-      main_image: garden_diana_15.jpg
+      image: garden_diana_15.jpg
     - name: "#65 My sister's wedding"
       location: Long Island, NY
-      main_image: garden_diana_16.jpg
+      image: garden_diana_16.jpg
     - name: '#23 Laundry'
       location: Schrattenberg, Austria
       year: 1995
-      main_image: garden_diana_17.jpg
+      image: garden_diana_17.jpg
     - name: '#32 House and fence'
       location: Breaux Bridge, Louisiana
-      main_image: garden_diana_18.jpg
+      image: garden_diana_18.jpg
     - name: '#30 Hen house and pots'
       location: Breaux Bridge, Louisiana
-      main_image: garden_diana_19.jpg
+      image: garden_diana_19.jpg
     - name: '#22 Arch in Prague'
       location: Czech Republic
-      main_image: garden_diana_20.jpg
+      image: garden_diana_20.jpg
 
 - id: watches
   statement: >-
@@ -701,106 +682,106 @@
     - name: Tide
       year: 2013
       description: (print, magnets, metal shavings)
-      main_image: watch-1-tide.jpg
+      image: watch-1-tide.jpg
     - name: Outlaw
       year: 2008
       description: (tintype, dice, wood, mourning pin, ganglia)
-      main_image: watch-2-outlaw.jpg
+      image: watch-2-outlaw.jpg
     - name: Fear of Nothingness
       description: (bones, sheet music, photograph, typed metal)
-      main_image: watch-7-fear-of-nothingness.jpg
+      image: watch-7-fear-of-nothingness.jpg
     - name: Diving Bell
       year: 2013
       description: (print, light bulb, barnacles, blue sand)
-      main_image: watch-4-diving-bell.jpg
+      image: watch-4-diving-bell.jpg
     - name: Alice
       description: (vial, mercury, cyanotype, typed paper)
-      main_image: watch-5-Alice.jpg
+      image: watch-5-Alice.jpg
     - name: Dreaming of Flying
       description: (hummingbird egg, moth, fabric)
-      main_image: watch-6-dreaming-of-flying.jpg
+      image: watch-6-dreaming-of-flying.jpg
     - name: Chrysalis
       description: (seeds, wood, pillow stuffing, twigs, chrysalis forms built from cotton and fabric)
-      main_image: watch-3-chrysalis.jpg
+      image: watch-3-chrysalis.jpg
     - name: Home
       year: 2012
       description: (microscope slides, photograph, tiny fish, printed metal)
-      main_image: watch-8-home.jpg
+      image: watch-8-home.jpg
     - name: Cynthia Witkin's watch
       description: (photograph, sand, thermometer, vial with 2 shells)
-      main_image: watch-9-Cynthia-Witkins-watch.jpg
+      image: watch-9-Cynthia-Witkins-watch.jpg
     - name: Lightship Frying Pan
       description: (map of cygnus a and b, buckshot, wood and painted metal, vial, mercury, hourglass)
-      main_image: watch-10-Lightship-frying-pan.jpg
+      image: watch-10-Lightship-frying-pan.jpg
     - name: Global Warming
       year: 2012
       description: (photograph, gold leaf, thermometer, spiral, lens)
-      main_image: watch-11-global-warming.jpg
+      image: watch-11-global-warming.jpg
     - name: Flight
       description: (feathers, fabric, wire mesh)
-      main_image: watch-12-feathers.jpg
+      image: watch-12-feathers.jpg
     - name: Iceberg
       year: 2013
       description: (glass, tapioca, glass balls, mica, watch hand)
-      main_image: watch-13-Iceberg.jpg
+      image: watch-13-Iceberg.jpg
     - name: My Soul
       description: (print, sheet music, tack, dirt from Chimayo shrine)
-      main_image: watch-14-my-soul.jpg
+      image: watch-14-my-soul.jpg
     - name: Structure
       year: 2008
       description: (print, feather, bones, broken glass spheres)
-      main_image: watch-15-structure.jpg
+      image: watch-15-structure.jpg
     - name: Winter House
       year: 2013
       description: (photograph, bones)
-      main_image: watch-19-winter-house.jpg
+      image: watch-19-winter-house.jpg
     - name: Couples
       year: 2012
       description: (photograph, mustard seeds, type letter I)
-      main_image: watch-17-couple.jpg
+      image: watch-17-couple.jpg
     - name: Pippin's Watch
       description: (print, tack, wheel)
-      main_image: watch-18-pippin.jpg
+      image: watch-18-pippin.jpg
     - name: Tension
       year: 2008
       description: (tacks, pendulum, wood, paper and mustard seeds)
-      main_image: watch-16-tension.jpg
+      image: watch-16-tension.jpg
     - name: Children Carrying
       description: (photograph, paper, lead, eraser, nail, ball chain, watch face)
-      main_image: watch-20-children-carrying.jpg
+      image: watch-20-children-carrying.jpg
     - name: Cradle Zero
       description: (print and chain)
-      main_image: watch-21-cradle-zero.jpg
+      image: watch-21-cradle-zero.jpg
     - name: Alpha, Omega
       year: 2012
       description: (paint chips, print, bones, sewing notion, seeds)
-      main_image: watch-24-alpha-omega.jpg
+      image: watch-24-alpha-omega.jpg
     - name: Flying Dutchman
       description: (sheet music, watch parts, sand)
-      main_image: watch-23-flying-dutchman.jpg
+      image: watch-23-flying-dutchman.jpg
     - name: Glass Darkly
       description: (biblical text, burned wood, glass balls)
-      main_image: watch-25-glass-darkly.jpg
+      image: watch-25-glass-darkly.jpg
     - name: Self Portrait
       description: (my hair, glass eye)
-      main_image: watch-26-self-portrait.jpg
+      image: watch-26-self-portrait.jpg
     - name: Leo Steinberg's watch
       description: (dirt, roots, onion bulb, bone hand)
-      main_image: watch-27-Leo-Steinberg's-watch.jpg
+      image: watch-27-Leo-Steinberg's-watch.jpg
     - name: Crucifixion Joel Peter Witkin's Watch
       description: (2 prints, dissection needle, blood)
-      main_image: watch-28-Joel-Peter Witkin-watch.jpg
+      image: watch-28-Joel-Peter Witkin-watch.jpg
     - name: Infinite Air
       description: (sheet music, microscope slides, wire, camera filter)
-      main_image: watch-27-infinate-air.jpg
+      image: watch-27-infinate-air.jpg
     - name: Mercury Bathers
       description: (cyanotype, mercury)
-      main_image: watch-29-mercury-bathers.jpg
+      image: watch-29-mercury-bathers.jpg
     - name: Woman Planting
       description: (fabric, dirt, coin, onion bulbs)
-      main_image: watch-30-woman-planting.jpg
+      image: watch-30-woman-planting.jpg
     - name: Installation
-      main_image: watches-INSTALLATION THUMB.jpg
+      image: watches-INSTALLATION THUMB.jpg
 
 - name: From Earth to Sky, Milan
   id: milan
@@ -839,25 +820,25 @@
       description: From Earth to Sky
       location: Milan, Italy
       year: 2005
-      main_image: milan-1-From-Earth-to-Sky-web.jpg
+      image: milan-1-From-Earth-to-Sky-web.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-4-ceiling-detail.jpg
+      image: milan-4-ceiling-detail.jpg
     - name: 'Detail: Threads and Needles and Clouds'
-      main_image: milan-2-needles-detail.jpg
+      image: milan-2-needles-detail.jpg
     - name: 'Detail: Orange Seeds Cast in Bronze in Olive Pollen'
-      main_image: milan-3-seeds-detailweb.jpg
+      image: milan-3-seeds-detailweb.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-5-ceiling-detail-2.jpg
+      image: milan-5-ceiling-detail-2.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-6-detail.jpg
+      image: milan-6-detail.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-7-detail.jpg
+      image: milan-7-detail.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-8-detail.jpg
+      image: milan-8-detail.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-9-detail.jpg
+      image: milan-9-detail.jpg
     - name: 'Ceiling: Bleach Painting on Photo Paper'
-      main_image: milan-10-detail.jpg
+      image: milan-10-detail.jpg
 
 - name: Layered, Buoyed, Tethered, Barely
   id: layered
@@ -882,31 +863,29 @@
     - name: Ceiling and dress
       year: 2008
       location: NYC
-      main_image: Layered-1-ceiling-dress.jpg
-      detail_image: Layered-2-ceilingleft.jpg
+      image: Layered-1-ceiling-dress.jpg
     - name: Ceiling and dress
       year: 2008
       location: NYC
-      main_image: Layered-3-dress-copy.jpg
-      detail_image: Layered-4-dress-detail.jpg
+      image: Layered-3-dress-copy.jpg
     - name: Plumb bobs
-      main_image: Layered-5-blumb-bobs.jpg
+      image: Layered-5-blumb-bobs.jpg
     - name: Paper Cyanotype
-      main_image: Layered-6-paper-web.jpg
+      image: Layered-6-paper-web.jpg
     - name: Striped dress Cyanotype
-      main_image: Layered-7-stripes-hole-web.jpg
+      image: Layered-7-stripes-hole-web.jpg
     - name: Seed Pod Cyanotype
-      main_image: Layered-8-seed-pods-web.jpg
+      image: Layered-8-seed-pods-web.jpg
     - name: Cotton Cyanotype
-      main_image: Layered-9-cotton-web.jpg
+      image: Layered-9-cotton-web.jpg
     - name: Eggshell Cyanotype
-      main_image: Layered-x1-eggshell-web.jpg
+      image: Layered-x1-eggshell-web.jpg
     - name: Feathers Cyanotype
-      main_image: Layered-x2-feathers-web.jpg
+      image: Layered-x2-feathers-web.jpg
     - name: Hairball Cyanotype
-      main_image: Layered-x3-hairball-web.jpg
+      image: Layered-x3-hairball-web.jpg
     - name: Little dress Cyanotype
-      main_image: Layered-x4-little-solid-dress-web.jpg
+      image: Layered-x4-little-solid-dress-web.jpg
 
 - name: Group Work, 1997
   id: group
@@ -923,55 +902,55 @@
     - name: Chair
       location: Austria
       year: 1997
-      main_image: Group-1-10-1997-Austria.jpg
+      image: Group-1-10-1997-Austria.jpg
     - name: Jovan
       location: Austria
       year: 1997
-      main_image: Group-3-5-1997-Austria.jpg
+      image: Group-3-5-1997-Austria.jpg
     - name: 'Radek #1'
       location: Czech Republic
       year: 1997
-      main_image: Group-4-2-1997-Czech.jpg
+      image: Group-4-2-1997-Czech.jpg
     - name: 'Radek #4'
       location: New York
       year: 2001
-      main_image: Group-5-13-2001-New-York.jpg
+      image: Group-5-13-2001-New-York.jpg
     - name: 'Radek #2'
       location: Czech Republic
       year: 1997
-      main_image: Group-6-3-1997-Czech.jpg
+      image: Group-6-3-1997-Czech.jpg
     - name: 'Radek #3'
       location: New York
       year: 1998
-      main_image: Group-7-12-1998-New-York web copy.jpg
+      image: Group-7-12-1998-New-York web copy.jpg
     - name: Saku Aila
       location: Austria
       year: 1997
-      main_image: Group-8-6-1997-Austria.jpg
+      image: Group-8-6-1997-Austria.jpg
     - name: Anabela Sara
       location: Austria
       year: 1997
-      main_image: Group-9-8-1997-Austria.jpg
+      image: Group-9-8-1997-Austria.jpg
     - name: Ring of people
       location: Austria
       year: 1997
-      main_image: Group-10-9-1997-Austria.jpg
+      image: Group-10-9-1997-Austria.jpg
     - name: Sugar
       location: New York
       year: 1997
-      main_image: Group-11-11-1997-New-York.jpg
+      image: Group-11-11-1997-New-York.jpg
     - name: 'Radek #5'
       location: New Jersey
       year: 2001
-      main_image: Group-12-14-2001-New-Jersey.jpg
+      image: Group-12-14-2001-New-Jersey.jpg
     - name: Tasho
       location: Austria
       year: 1997
-      main_image: Group-13-7-1997-Austria.jpg
+      image: Group-13-7-1997-Austria.jpg
     - name: Jana
       location: Czech Republic
       year: 1997
-      main_image: Group-2-1-1997-Czech.jpg
+      image: Group-2-1-1997-Czech.jpg
 
 - id: botanicals
   statement: >-
@@ -987,13 +966,13 @@
     All prints are on 20 x 24 inch sheet film, exhibited as light boxes.
   images:
     - name: Couples
-      main_image: bot-1-couples.jpg
+      image: bot-1-couples.jpg
     - name: Eyelash
-      main_image: bot-2-eyelash.jpg
+      image: bot-2-eyelash.jpg
     - name: Flying
-      main_image: bot-3-flying.jpg
+      image: bot-3-flying.jpg
     - name: Women
-      main_image: bot-4-women.jpg
+      image: bot-4-women.jpg
 
 - id: buoyancy
   statement: >-
@@ -1019,36 +998,32 @@
     - name: You Are Born
       year: 2005
       dimensions: 42 x 96 ins.
-      main_image: buoyancy-1-you-are-born.jpg
-      detail_image: buoyancy-1a-you-are-born-detail.jpg
+      image: buoyancy-1-you-are-born.jpg
     - name: The Path You Walk Will Be Who You Are
       year: 2005
       dimensions: 42 x 96 ins.
-      main_image: buoyancy-2-the-path-you-walk-will-be-who-you-are-crop.jpg
+      image: buoyancy-2-the-path-you-walk-will-be-who-you-are-crop.jpg
     - name: You Will Die
-      main_image: buoyancy-3-you-will-die.jpg
-      detail_image: buoyancy-3a-you-will-die-detail-alt.jpg
+      image: buoyancy-3-you-will-die.jpg
     - name: Your Spirit Will Pass Out of Your Body and Back Into the Universe
       year: 2005
       dimensions: 42 x 96 ins.
-      main_image: ap-9-spirit.jpg
-      detail_image: spirit detail web.jpg
+      image: ap-9-spirit.jpg
     - name: Life Cycle installed
       year: 2005
       dimensions: 14 feet wide
-      main_image: buoyancy-9-life-cycle-installed.jpg
+      image: buoyancy-9-life-cycle-installed.jpg
     - name: We Are All Connected
       year: 2005
       dimensions: 312 x 120 ins.
-      main_image: buoyancy-6-connected-globe.jpg
+      image: buoyancy-6-connected-globe.jpg
     - name: We Are All Connected, Detail
-      main_image: buoyancy-7-globe-detail-lower.jpg
-      detail_image: buoyancy-7-globe-detail-upper.jpg
+      image: buoyancy-7-globe-detail-lower.jpg
     - name: Botanical boxes installed
-      main_image: buoyancy-10-boxes-in-room.jpg
+      image: buoyancy-10-boxes-in-room.jpg
     - name: Wall of circles installed
       dimensions: 8 x 8 foot wall
-      main_image: buoyancy-11-wall-of-circles.jpg
+      image: buoyancy-11-wall-of-circles.jpg
 
 - id: botanical_book
   statement: >-
@@ -1059,38 +1034,38 @@
     they are printed on 11 x 14 inch paper.
   images:
     - name: Bone
-      main_image: botbook-1-bone.jpg
+      image: botbook-1-bone.jpg
     - name: Bones
-      main_image: botbook-2-bones.jpg
+      image: botbook-2-bones.jpg
     - name: Root
-      main_image: botbook-3-root.jpg
+      image: botbook-3-root.jpg
     - name: Electric Roots
-      main_image: botbook-4-electric-roots.jpg
+      image: botbook-4-electric-roots.jpg
     - name: Twigs
-      main_image: botbook-5-twigs-cr.jpg
+      image: botbook-5-twigs-cr.jpg
     - name: Cabbages
-      main_image: botbook-6-cabbages-cr.jpg
+      image: botbook-6-cabbages-cr.jpg
     - name: Ferns
-      main_image: botbook-7-ferns-cr.jpg
+      image: botbook-7-ferns-cr.jpg
     - name: Lichen Alphabet
-      main_image: botbook-8-lichen-alphabet-cr.jpg
+      image: botbook-8-lichen-alphabet-cr.jpg
     - name: Sunflower Seeds
-      main_image: botbook-9-sunflower-seeds-cr.jpg
+      image: botbook-9-sunflower-seeds-cr.jpg
     - name: Lichen Circle
-      main_image: botbook-10-lichen-circle-cr.jpg
+      image: botbook-10-lichen-circle-cr.jpg
     - name: Seed Pairs
-      main_image: botbook-11-seed-pairs-cr.jpg
+      image: botbook-11-seed-pairs-cr.jpg
 
 - id: monoprints
   images:
-    - main_image: monoprints-1-arms-out.jpg
-    - main_image: 2 house and cloudweb.jpg
-    - main_image: monoprints-3-pats-web.jpg
-    - main_image: monoprints-4-fly-from house.jpg
-    - main_image: monoprints-5-bird-person.jpg
-    - main_image: monoprints-6-run-from-ball.jpg
-    - main_image: monoprints-7-whirlpool.jpg
-    - main_image: monoprints-8-swarm.jpg
+    - image: monoprints-1-arms-out.jpg
+    - image: 2 house and cloudweb.jpg
+    - image: monoprints-3-pats-web.jpg
+    - image: monoprints-4-fly-from house.jpg
+    - image: monoprints-5-bird-person.jpg
+    - image: monoprints-6-run-from-ball.jpg
+    - image: monoprints-7-whirlpool.jpg
+    - image: monoprints-8-swarm.jpg
 
 - name: Hands 1997
   id: hands
@@ -1108,14 +1083,14 @@
  
     All images are on 11 x 14 inch silver gelatin paper.
   images:
-    - main_image: hand1.jpg
-    - main_image: hand2.jpg
-    - main_image: hand3.jpg
-    - main_image: hand4.jpg
-    - main_image: hand5.jpg
-    - main_image: hand6.jpg
-    - main_image: hand7.jpg
-    - main_image: hand8.jpg
+    - image: hand1.jpg
+    - image: hand2.jpg
+    - image: hand3.jpg
+    - image: hand4.jpg
+    - image: hand5.jpg
+    - image: hand6.jpg
+    - image: hand7.jpg
+    - image: hand8.jpg
 
 - name: Installation of Little Dresses
   id: dresses
@@ -1132,13 +1107,13 @@
     it was about any one individual dress or image: it evoked memory as a soft
     yet perpetual radiance.
   images:
-    - main_image: dresses-3-images.jpg
-    - main_image: dresses-caress.jpg
-    - main_image: dresses-fringe-dress.jpg
-    - main_image: dresses-little-dress.jpg
-    - main_image: dresses-red-dress.jpg
-    - main_image: dresses-shoulders.jpg
-    - main_image: dresses-yellow-dress.jpg
+    - image: dresses-3-images.jpg
+    - image: dresses-caress.jpg
+    - image: dresses-fringe-dress.jpg
+    - image: dresses-little-dress.jpg
+    - image: dresses-red-dress.jpg
+    - image: dresses-shoulders.jpg
+    - image: dresses-yellow-dress.jpg
 
 - id: murals
   statement: >-
@@ -1157,9 +1132,9 @@
     printed a collaged image onto mural paper. The final image is about 8 by 15
     feet.
   images:
-    - main_image: murals-3-many-flying.jpg
-    - main_image: murals-1-face-on-fire.jpg
-    - main_image: murals-2-exploding-man.jpg
+    - image: murals-3-many-flying.jpg
+    - image: murals-1-face-on-fire.jpg
+    - image: murals-2-exploding-man.jpg
 
 - id: circles
   statement: >-
@@ -1171,10 +1146,10 @@
 
     All prints are on 16 x 20 inch silver gelatin paper.
   images:
-    - main_image: bubbles-1.jpg
-    - main_image: bubbles-2.jpg
-    - main_image: bubbles-3.jpg
-    - main_image: bubbles-4.jpg
+    - image: bubbles-1.jpg
+    - image: bubbles-2.jpg
+    - image: bubbles-3.jpg
+    - image: bubbles-4.jpg
 
 - id: new_work
   galleries:

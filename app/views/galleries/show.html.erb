@@ -1,9 +1,5 @@
-<div class="row main-image<% if @image.detail? %>-with-detail<% end %>">
-  <%= image_tag(@image.main_image) %>
-
-  <% if @image.detail? %>
-    <%= image_tag(@image.detail_image) %>
-  <% end %>
+<div id="main-image-container" class="row">
+  <%= image_tag(@image.image, id: 'main-image') %>
 </div>
 
 <%= render partial: 'description_and_links', locals: { image: @image } %>

@@ -1,9 +1,11 @@
 <%= render partial: 'title', locals: { gallery: gallery } %>
 
-<% gallery.images.each_slice(4) do |row| %>
+<% items_per_row = 3 %>
+
+<% gallery.images.each_slice(items_per_row) do |row| %>
   <div class="row">
     <% row.each do |item| %>
-      <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
+      <div class="col-md-<%= 12 / items_per_row %> gallery-item">
         <%= render partial: 'image', locals: { image: item } %>
       </div>
     <% end %>

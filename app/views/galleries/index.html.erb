@@ -1,11 +1,13 @@
-<%= render 'galleries/scrollbars' %>
+<div class="row">
+  <%= render 'galleries/scrollbars' %>
 
-<div class="scrollable-gallery">
-  <% if @gallery.meta? %>
-    <% @gallery.galleries.each do |gallery| %>
-      <%= render partial: 'gallery', locals: { gallery: gallery } %>
+  <div class="container-fluid scrollable-gallery">
+    <% if @gallery.meta? %>
+      <% @gallery.galleries.each do |gallery| %>
+        <%= render partial: 'gallery', locals: { gallery: gallery } %>
+      <% end %>
+    <% else %>
+      <%= render partial: 'gallery', locals: { gallery: @gallery } %>
     <% end %>
-  <% else %>
-    <%= render partial: 'gallery', locals: { gallery: @gallery } %>
-  <% end %>
+  </div>
 </div>
