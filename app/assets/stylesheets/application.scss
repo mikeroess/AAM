@@ -144,9 +144,7 @@ body {
   left: 0;
   height: 100%;
   z-index: 10;
-  border-right: solid #c9c9c9;
-  border-width: 1px;
-  transition: all 0.4s ease 0s;
+  border-right: 1px solid #c9c9c9;
   background: #fff;
   text-align: right;
   padding-right: 15px;
@@ -294,7 +292,7 @@ body {
     }
   }
 
-  #sidebar-footer {
+  footer {
     position: absolute;
     bottom: 10px;
     right: 15px;
@@ -306,44 +304,15 @@ body {
 }
 
 #main-footer {
-  background: #3B2D2D;
-  color: #EBEBEB;
-  float: bottom;
-  font-size: 74%;
-  @media(min-width: 815px)  {font-size: 74%;}
-  @media(min-width: 1400px) {font-size: 100%;}
-  @media(min-width: 1800px) {font-size: 130%;}
-  @media(min-width: 2200px) {font-size: 160%;}
-  @media(min-width: 2500px) {font-size: 200%;}
-  @media(min-width: 3000px) {font-size: 250%;}
-  opacity: .95;
-  z-index:90;
+  border-top: 1px solid #c9c9c9;
 }
 
-.left-border {
-  padding-left: 20px;
-  border-left: solid #fff;
-  border-width: 2px;
-  background: #3B2D2D;
-}
-
-//this covers the area where "Anne Arden McDonald is written in huge letters" 
-//opaque background up to the broder on the cross-hair
-
-.left-footer-box {
-  float: left;
-}
-
-.right-footer-box {
+#footer-logo {
   float: right;
   background: #FFFFFF;
-  width: 87%;
+  width: 83%;
   font-family: Copperplate;
   height: 25%;
-}
-
-.bottom-second-footer {
-  z-index:50;
 }
 
 .dropdown-menu {
