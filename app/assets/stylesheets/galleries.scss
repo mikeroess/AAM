@@ -141,10 +141,6 @@
   @media (max-width: 480px) { margin-left: 40%; }
 }
 
-/**
- * APPROACH 1 -- 100% on longest side, no upscale.
- */
-
 #gallery-image-page #main-content {
   > .container-fluid {
     height: 90%;
@@ -167,16 +163,3 @@
   max-width: 80vw;
   max-height: 90vh;
 }
-
-/**
- * APPROACH 2 -- 100% width all the time.
- */
-
-#main-image-full {
-  width: 100%;
-  height: auto !important;
-}
-
-/**
- * END APPROACHES
- */

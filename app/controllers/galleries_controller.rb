@@ -10,7 +10,6 @@ class GalleriesController < ApplicationController
   end
 
   def show
-    @full_image = params[:full_image]
   end
 
   def statement
