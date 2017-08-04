@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <%= render 'shared/head' %>
+  <head>
+    <title>Anne Arden McDonald</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= csrf_meta_tags %>
+  </head>
 
   <body id="<%= current_page_class %>">
     <div class="container-fluid">
@@ -23,4 +28,7 @@
       <% end %>
     </div>
   </body>
+
+  <%= javascript_include_tag "application" %>
+  <%= content_for :scripts %>
 </html>

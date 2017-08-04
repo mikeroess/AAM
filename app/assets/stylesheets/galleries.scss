@@ -157,4 +157,23 @@
 #main-image {
   max-width: 80vw;
   max-height: 86vh;
+  cursor: none;
+}
+
+/**
+Loupe 2.0.1
+https://github.com/redoPop/loupe
+*/
+
+.loupe {
+  background: rgba(0, 0, 0, 0.25) no-repeat;
+  min-width: 300px;
+  min-height: 300px;
+  pointer-events: none;
+  border: 1px solid #000;
+  border-radius: 100%;
+  -webkit-box-shadow: 1px 1px 4px #000;
+  -moz-box-shadow: 1px 1px 4px #000;
+  box-shadow: 1px 1px 4px #000;
+  transition: opacity 0.3s;
 }
