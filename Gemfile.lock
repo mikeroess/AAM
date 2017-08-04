@@ -52,6 +52,8 @@ GEM
       capistrano-bundler (~> 1.1)
     erubis (2.7.0)
     execjs (2.7.0)
+    font-awesome-rails (4.7.0.2)
+      railties (>= 3.2, < 5.2)
     hike (1.2.3)
     i18n (0.7.0)
     jquery-rails (3.1.4)
@@ -124,6 +126,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   capistrano-passenger
   capistrano-rails
+  font-awesome-rails
   jquery-rails
   negative_captcha
   rails (~> 4.0.0)
@@ -137,4 +140,4 @@ RUBY VERSION
    ruby 1.9.3p551
 
 BUNDLED WITH
-   1.13.6
+   1.13.7

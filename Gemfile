@@ -6,6 +6,7 @@ gem 'rails', '~> 4.0.0'
 gem 'sprockets-rails', '~> 2.1.4'
 
 gem 'negative_captcha'
+gem 'font-awesome-rails'
 
 # URI parser used to get proper navbar function at small sizes
 require 'uri'
