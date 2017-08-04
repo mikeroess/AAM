@@ -90,8 +90,8 @@ body {
   bottom: 0;
   right: 0;
   left: 16.66%;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 #sidebar {
@@ -223,7 +223,6 @@ body {
       a {
         color: #000;
         display: block;
-        font-weight: bold;
         text-transform: uppercase;
 
         &:first-letter {
@@ -269,7 +268,7 @@ body {
   width: 83%;
   font-family: Copperplate;
   height: 25%;
-  padding: 4% 5%;
+  padding: 2% 5%;
 
   > * {
     float: right;
