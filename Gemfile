@@ -13,7 +13,7 @@ require 'uri'
 
 group :development do
   # Use Capistrano for deployment
-  gem 'capistrano', '~> 3.4' # Pinned for compatibility with Ruby <= 1.9
+  gem 'capistrano', '3.3.3' # Pinned for compatibility with Ruby <= 1.9
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
 
