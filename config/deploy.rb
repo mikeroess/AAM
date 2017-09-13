@@ -24,7 +24,7 @@ namespace :deploy do
   namespace :assets do
     desc 'Compiles assets locally and syncs them to each remote server'
     task :precompile_local do
-      run_locally { with(rails_env: fetch(:stage)) { rake 'assets:precompile' } }
+      run_locally { with(rails_env: :development) { rake 'assets:precompile' } }
 
       on roles(fetch(:assets_roles, [:web])) do
         remote_dir = "#{host.user}@#{host.hostname}:#{release_path}/public/assets/"
