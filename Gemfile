@@ -7,6 +7,7 @@ gem 'sprockets-rails', '~> 2.1.4'
 
 gem 'negative_captcha'
 gem 'font-awesome-rails'
+gem 'jquery-rails'
 
 # URI parser used to get proper navbar function at small sizes
 require 'uri'
@@ -21,7 +22,6 @@ group :development do
   gem 'bootstrap-sass', '~> 3.3.6'
   gem 'sass-rails', '>= 3.2'
   gem 'sass', '~> 3.4'
-  gem 'jquery-rails'
   gem 'uglifier', '>= 1.3.0'
   gem 'therubyracer', platforms: :ruby
 end
