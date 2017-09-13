@@ -1,7 +1,11 @@
 <div class="row">
-  <%= render 'galleries/scrollbars' %>
+  <div class="col-xs-12">
+    <%= render partial: 'title', locals: { gallery: @gallery } %>
+  </div>
+</div>
 
-  <div class="container-fluid scrollable-gallery">
+<div class="row scrollable-gallery-container">
+  <div class="scrollable-gallery">
     <% if @gallery.meta? %>
       <% @gallery.galleries.each do |gallery| %>
         <%= render partial: 'gallery', locals: { gallery: gallery } %>
@@ -10,4 +14,6 @@
       <%= render partial: 'gallery', locals: { gallery: @gallery } %>
     <% end %>
   </div>
+
+  <%= render 'scrollbars' %>
 </div>

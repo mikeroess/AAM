@@ -10,14 +10,12 @@
   <body id="<%= current_page_class %>">
     <div class="container-fluid">
       <div class="row">
-        <aside id="sidebar" class="col-sm-2">
+        <aside id="sidebar" class="col-xs-2">
           <%= render 'shared/sidebar' %>
         </aside>
 
-        <div id="main-content" class="col-sm-10">
-          <div class="container-fluid">
-            <%= yield %>
-          </div>
+        <div id="main-content" class="col-xs-10">
+          <%= yield %>
         </div>
       </div>
 

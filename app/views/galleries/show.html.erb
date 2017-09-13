@@ -1,5 +1,7 @@
 <div id="main-image-container" class="row">
-  <%= image_tag(@image.image, id: 'main-image') %>
+  <div class="col-xs-12">
+    <%= image_tag(@image.image, id: 'main-image') %>
+  </div>
 </div>
 
 <%= render partial: 'description_and_links', locals: { image: @image } %>

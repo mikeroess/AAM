@@ -1,9 +1,11 @@
 <div class="row">
-  <%= render 'scrollbars' %>
-
-  <div class="scrollable-gallery container-fluid">
+  <div class="col-xs-12">
     <%= render partial: 'title', locals: { gallery: @gallery } %>
+  </div>
+</div>
 
+<div class="row scrollable-gallery-container">
+  <div class="scrollable-gallery">
     <div class="row">
       <div class="col-xs-12 gallery-item">
         <%= render partial: 'image', locals: { image: @gallery.images.first } %>
@@ -32,4 +34,6 @@
       <% end %>
     </div>
   </div>
+
+  <%= render 'scrollbars' %>
 </div>

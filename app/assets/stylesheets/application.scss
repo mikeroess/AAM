@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
 
 @import "bootstrap-sprockets";
@@ -90,21 +89,27 @@ body {
   bottom: 0;
   right: 0;
   left: 16.66%;
-  padding-left: 35px;
-  padding-right: 35px;
+  //padding-left: 15px;
+  //padding-right: 15px;
+
+  @media (min-width: 768px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 #sidebar {
   position: fixed;
-  width: 16.66%;
   left: 0;
   height: 100%;
   z-index: 10;
   border-right: 1px solid #c9c9c9;
   background: #fff;
   text-align: right;
-  padding-right: 15px;
-  @media (max-width: 480px) { width: 18% }
+  @media (max-width: 768px) {
+    padding-right: 2px;
+    padding-left: 0;
+  }
 
   ul.navigation {
     list-style: none;
@@ -369,6 +374,7 @@ body {
   width: 100%;
   display: table;
   text-align: center;
+  font-family: Cardo-Regular;
   font-weight: bold;
 
   height:165px;
@@ -382,7 +388,7 @@ body {
   @media (max-width: 580px) { height: 150px; }
   @media (max-width: 530px) { height: 125px; }
 
-  font-size: 250%;
+  font-size: 175%;
 	@media (max-width: 764px) { font-size: 160%; }
 	@media (max-width: 715px) { font-size: 130%; }
 	@media (max-width: 700px) { font-size: 130%; }
@@ -399,7 +405,6 @@ body {
     text-align: center;
 
     a {
-      font-family: Cardo-Italic;
       color: #666;
       text-decoration: underline;
 
@@ -420,3 +425,9 @@ body {
     min-height: calc(100vh - 20px);
   }
 }
+
+@import "contact";
+@import "criticisms";
+@import "front";
+@import "galleries";
+@import "pages";
