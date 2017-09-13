@@ -124,6 +124,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
+  capistrano (~> 3.4)
   capistrano-passenger
   capistrano-rails
   font-awesome-rails
@@ -140,4 +141,4 @@ RUBY VERSION
    ruby 1.9.3p551
 
 BUNDLED WITH
-   1.13.7
+   1.15.3
