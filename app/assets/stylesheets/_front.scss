@@ -4,11 +4,11 @@
   }
 
   #main-content {
+    overflow: hidden;
+
     img {
       padding-top: 20px;
-
       width: 100%;
-      overflow: hidden;
     }
   }
 }
