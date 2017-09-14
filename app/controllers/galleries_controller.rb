@@ -1,9 +1,7 @@
 class GalleriesController < ApplicationController
-  LOUPE_COOKIE_NAME = :gallery_loupe_notice_seen
-
-  before_action :find_gallery, except: :dismiss_loupe_notice
+  before_action :find_gallery
   before_action :find_template, only: :index
-  before_action :find_image, :set_loupe_notice, only: :show
+  before_action :find_image, only: :show
 
   def index
     render @template
@@ -13,11 +11,6 @@ class GalleriesController < ApplicationController
   end
 
   def statement
-  end
-
-  def dismiss_loupe_notice
-    cookies.permanent.signed[LOUPE_COOKIE_NAME] = true
-    head :no_content
   end
 
   private
@@ -36,9 +29,5 @@ class GalleriesController < ApplicationController
 
   def find_image
     @image = @gallery.images[params[:id].to_i - 1]
-  end
-
-  def set_loupe_notice
-    @show_loupe_notice = cookies.signed[LOUPE_COOKIE_NAME].blank?
   end
 end

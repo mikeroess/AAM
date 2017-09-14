@@ -9,6 +9,7 @@
 
 # Compiled assets.
 /public/assets
+/_static/
 
 # Bundler packages.
 /vendor/bundle

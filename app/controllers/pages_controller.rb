@@ -5,6 +5,12 @@ class PagesController < ApplicationController
   def biography
   end
 
+  def contact
+  end
+
+  def contact_success
+  end
+
   def about
   end
 
@@ -12,5 +18,8 @@ class PagesController < ApplicationController
   end
 
   def aauaudio
+  end
+
+  def error
   end
 end

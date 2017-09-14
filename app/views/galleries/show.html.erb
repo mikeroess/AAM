@@ -6,34 +6,38 @@
 
 <%= render partial: 'description_and_links', locals: { image: @image } %>
 
-<% if @show_loupe_notice %>
-  <div id="loupe-notice-modal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <p>Hover over images in the gallery to take a closer look.</p>
-          <%= image_tag('loupe.gif', alt: 'Loupe Example') %>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
+<div id="loupe-notice-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Hover over images in the gallery to take a closer look.</p>
+        <%= image_tag('loupe.gif', alt: 'Loupe Example') %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
 
-  <% content_for :scripts do %>
-    <script type="text/javascript">
-      (function($) {
-        $(document).ready(function() {
-          if ($(window).width() >= 768) {
-            $('#loupe-notice-modal').modal('show');
-            $.post('<%= dismiss_loupe_notice_path %>');
-          }
-        });
-      })(jQuery);
-    </script>
-  <% end %>
+<% content_for :scripts do %>
+  <script type="text/javascript">
+    (function($, Cookies) {
+      var LOUPE_COOKIE_NAME = 'gallery_loupe_notice_seen';
+
+      $(document).ready(function() {
+        console.log(Cookies.get(LOUPE_COOKIE_NAME));
+        if ($(window).width() < 768 || Cookies.get(LOUPE_COOKIE_NAME)) {
+          console.log('RETURNING');
+          return;
+        }
+
+        $('#loupe-notice-modal').modal('show');
+        Cookies.set(LOUPE_COOKIE_NAME, true);
+      });
+    })(jQuery, Cookies);
+  </script>
 <% end %>

@@ -1,7 +1,0 @@
-<IfModule mod_passenger.c>
-	Options -MultiViews
-	PassengerResolveSymlinksInDocumentRoot on
-	RailsEnv production
-	RackBaseURI /
-	SetEnv GEM_HOME /home1/examplec/ruby/gems
-</IfModule>

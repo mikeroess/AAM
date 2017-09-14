@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require jquery.loupe
+//= require js.cookie
 //= require_tree .
 
 var $html = $('html');

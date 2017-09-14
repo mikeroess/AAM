@@ -3,17 +3,17 @@ Ann::Application.routes.draw do
 
   get 'resume', to: 'pages#resume', as: :resume
   get 'biography', to: 'pages#biography', as: :biography
+  get 'contact', to: 'pages#contact', as: :contact
+  get 'contact/success', to: 'pages#contact_success'
   get 'about', to: 'pages#about', as: :about
   get 'making-of-video', to: 'pages#bofvideo', as: :bofvideo
   get 'aau-audio', to: 'pages#aauaudio', as: :aauaudio
+  get 'error', to: 'pages#error', as: :error
 
   get 'criticism', to: 'criticisms#index', as: :criticisms
   get 'criticism/:id', to: 'criticisms#show', as: :criticism, constraints: { id: /\d+/ }
 
   get 'jewelry', to: 'jewelry#index', as: :jewelry
-
-  get 'contact', to: 'contact#new', as: :contact
-  post 'contact', to: 'contact#create', as: :submit_contact
 
   get '/:gallery', to: 'galleries#index', as: :gallery
   get '/:gallery/statement', to: 'galleries#statement', as: :gallery_statement
