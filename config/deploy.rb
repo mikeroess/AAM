@@ -2,6 +2,7 @@ lock '3.3.3'
 
 set :application, 'anneardenmcdonald.com'
 set :repo_url, 'https://github.com/mikeroess/AAM.git'
+set :branch, ENV.fetch('REVISION', 'master')
 set :deploy_to, '/home4/annearde/rails'
 set :log_level, :info
 set :linked_files, %w{config/secrets.yml}
