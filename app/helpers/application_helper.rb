@@ -76,6 +76,13 @@ module ApplicationHelper
     end
   end
 
+  def loop_clearfix(index)
+    classes = ['visible-xs', 'clearfix']
+    classes << 'visible-sm' if index.odd?
+    classes += ['visible-md', 'visible-lg'] if index % 3 == 2
+    content_tag(:div, '', class: classes)
+  end
+
   private
 
   def current_path_starts_with?(*prefixes)
