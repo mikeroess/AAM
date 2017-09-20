@@ -18,4 +18,6 @@ Ann::Application.routes.draw do
   get '/:gallery', to: 'galleries#index', as: :gallery
   get '/:gallery/statement', to: 'galleries#statement', as: :gallery_statement
   get '/:gallery/:id', to: 'galleries#show', as: :gallery_image, constraints: { id: /\d+/ }
+
+  post '/ajax/gallery-loupe-notice', to: 'galleries#dismiss_loupe_notice', as: :dismiss_loupe_notice
 end

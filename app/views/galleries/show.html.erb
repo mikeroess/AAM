@@ -28,7 +28,10 @@
     <script type="text/javascript">
       (function($) {
         $(document).ready(function() {
-          $('#loupe-notice-modal').modal('show');
+          if ($(window).width() >= 768) {
+            $('#loupe-notice-modal').modal('show');
+            $.post('<%= dismiss_loupe_notice_path %>');
+          }
         });
       })(jQuery);
     </script>

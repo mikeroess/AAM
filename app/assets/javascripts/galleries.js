@@ -18,6 +18,10 @@
   };
 
   var initLoupe = function() {
-    $('#gallery-image-page #main-image').loupe({width: 250, height: 250});
+    if ($(window).width() >= 768) {
+      $('#gallery-image-page #main-image')
+        .addClass('with-loupe')
+        .loupe({width: 250, height: 250});
+    }
   };
 })(jQuery);
