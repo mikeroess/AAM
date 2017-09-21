@@ -2,6 +2,10 @@
 
 #resume {
   margin-left: 16%;
+
+  span[class^='col-'] {
+    padding-left: 0;
+  }
 }
 
 #about-page {
@@ -96,14 +100,6 @@
   @media(min-width: 3500px) {margin-left: 110px;}
   @media(min-width: 4000px) {margin-left: 100px;}
   @media(min-width: 4500px) {margin-left: 175px;}
-}
-
-.collections {
-  &__b { padding-left: 75px; }
-  &__c { padding-left: 45px; }
-  &__d { padding-left: 77px; }
-  &__e { padding-left: 90px; }
-  &__f { padding-left: 98px; }
 }
 
 #media-container {
