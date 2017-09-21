@@ -58,6 +58,7 @@ body {
 .logo {
   font-family: Cardo-Light;
 
+  @media(min-width: 768px) { font-size: 110%; letter-spacing: 5px; }
   @media(min-width: 815px) { font-size: 125%; letter-spacing: 5px; }
   @media(min-width: 1300px) { font-size: 138%; letter-spacing: 5px; }
   @media(min-width: 1421px) { font-size: 140%; letter-spacing: 5px; }
@@ -126,7 +127,8 @@ body {
       @media (max-width: 480px) {
         letter-spacing: 0px;
         font-size: 65%;
-        line-height: 17px;
+        line-height: inherit;
+        margin-bottom: 8px;
       }
       @media(min-width: 815px) {
         font-size: 65%;
