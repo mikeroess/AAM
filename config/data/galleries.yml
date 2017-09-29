@@ -1,35 +1,47 @@
 - name: Atom, Planet
   id: atom_planet
   statement: >-
-    For years I have been experimenting with different ways of generating an
-    image on photographic paper. I recently began thinking about the dialogue
-    that painters and sculptors have with their mediums and realized that I
-    wanted come up with ways that my process could inform the resulting image.
-    While still working with photo paper, light and chemistry, I used some
-    well-known processes like the photogram and invented other ways of
-    producing images without using a negative. Some of these methods included
-    painting bleach onto blackened photo paper, or building layered piles of
-    glass and eggshells and moving around them with a flashlight to make an
-    exposure. I also tested eighty medicines, spices and household cleaners by
-    painting them onto photo paper before running the image through the
-    developer and fix. I used glue as a resist and dug down to the photo paper
-    surface with alternating developers and fix to create an image on the
-    paper. Some of the images were made in the dark and some in daylight, some
-    processes were additive and others reductive. I have been developing these
-    processes and using them to make a series of giant (50 x 111 inch or 125 x
-    280om) images of circles and spheres, meant to represent planets and atoms,
-    to visualize the macrocosm and the microcosm of life as we know it. I am
-    hoping next to explore biology, and I am looking into testing
-    bioluminescent organisms to expose the photo paper and creating bacterial,
-    fungal and mold-based ecosystems to eat the sugar that is present in the
-    gelatin of silver gelatin paper.
+    The Atom Planet series explores ways of generating an image on
+    photographic paper without using a camera or negative. The dialogue that
+    occurs between painters or sculptors, and their chosen medium is one source
+    of inspiration for inventing processes that inform the resulting photograph.
+    Another is the scientific method, where you observe phenomena, formulate a
+    hypothesis, test it with experiments, use careful measurements, note
+    variables, observe results, and then use this information to build an
+    image.
 
-    I think these giant camera-less photographs I have been making ask some
-    interesting questions about what photography is, and what it can be. I
-    believe that at 170 years old, photography is a very young medium. We still
-    have so much unexplored terrain. Unfortunately, we also stand at a
-    precipice, as digital photography is eroding the availability of some of
-    the analogue materials that photographers have employed.
+    While still working with photo paper, light, and chemistry, I use some
+    well-known processes like the photogram, and invent other ways of producing
+    images without using a negative. Some of these methods include painting
+    bleach onto blackened photo paper, or building layered piles of glass and
+    eggshells and moving around them with a flashlight to make an exposure. In
+    one image over 100 medicines, spices, and household cleaners were painted
+    onto photo paper and run through regular photographic chemistry to test for
+    colors and textures. The methods are often an unorthodox collection of
+    materials and techniques from the domestic and scientific realms brought
+    into the darkroom, often coaxing or scrubbing, evaporating or decaying, an
+    image into the paper.
+
+    Using glue as a resist and digging down to the photo paper surface with
+    alternating photo chemicals causes an image to emerge on the paper in the
+    form of a chemical painting. Some images are made in the dark and some in
+    daylight, some processes are additive and others reductive. After
+    developing these processes and using them to make a series of giant (50 x
+    111 inch or 125 x 280cm) photographs, the imagery emerges as circles and
+    spheres, meant to represent planets and atoms, to visualize the macrocosm
+    and the microcosm of life as we know it. The scale has a relationship to
+    abstract expressionist painting; I am often physically in the piece while
+    building it, exploring it as if it were a terrain or landscape. The scale
+    is also impacting the subject matter, the work more often explores the
+    cosmological realm than the atomic, but this obsession with circles is also
+    related to a search for a sense of wholeness.
+
+    These giant camera-less photographs pose some interesting questions about
+    what photography is, and what it can be. Photography is a young medium, and
+    there is so much undiscovered terrain. We stand at a precipice: digital
+    photography is eroding the availability of some of the analogue materials
+    that photographers have employed, and it’s important to experiment
+    quickly while the materials are still available.
   images:
     - name: Atom
       description: Outline of terracotta clay, painted with medicines, spices and household cleaners
@@ -1152,6 +1164,48 @@
     - image: bubbles-4.jpg
 
 - id: new_work
+  statement: >-
+    The Atom Planet series explores ways of generating an image on
+    photographic paper without using a camera or negative. The dialogue that
+    occurs between painters or sculptors, and their chosen medium is one source
+    of inspiration for inventing processes that inform the resulting photograph.
+    Another is the scientific method, where you observe phenomena, formulate a
+    hypothesis, test it with experiments, use careful measurements, note
+    variables, observe results, and then use this information to build an
+    image.
+
+    While still working with photo paper, light, and chemistry, I use some
+    well-known processes like the photogram, and invent other ways of producing
+    images without using a negative. Some of these methods include painting
+    bleach onto blackened photo paper, or building layered piles of glass and
+    eggshells and moving around them with a flashlight to make an exposure. In
+    one image over 100 medicines, spices, and household cleaners were painted
+    onto photo paper and run through regular photographic chemistry to test for
+    colors and textures. The methods are often an unorthodox collection of
+    materials and techniques from the domestic and scientific realms brought
+    into the darkroom, often coaxing or scrubbing, evaporating or decaying, an
+    image into the paper.
+
+    Using glue as a resist and digging down to the photo paper surface with
+    alternating photo chemicals causes an image to emerge on the paper in the
+    form of a chemical painting. Some images are made in the dark and some in
+    daylight, some processes are additive and others reductive. After
+    developing these processes and using them to make a series of giant (50 x
+    111 inch or 125 x 280cm) photographs, the imagery emerges as circles and
+    spheres, meant to represent planets and atoms, to visualize the macrocosm
+    and the microcosm of life as we know it. The scale has a relationship to
+    abstract expressionist painting; I am often physically in the piece while
+    building it, exploring it as if it were a terrain or landscape. The scale
+    is also impacting the subject matter, the work more often explores the
+    cosmological realm than the atomic, but this obsession with circles is also
+    related to a search for a sense of wholeness.
+
+    These giant camera-less photographs pose some interesting questions about
+    what photography is, and what it can be. Photography is a young medium, and
+    there is so much undiscovered terrain. We stand at a precipice: digital
+    photography is eroding the availability of some of the analogue materials
+    that photographers have employed, and it’s important to experiment
+    quickly while the materials are still available.
   galleries:
     - atom_planet
     - bodies
