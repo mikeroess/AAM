@@ -1,5 +1,3 @@
-require 'pp'
-
 module ApplicationHelper
   PAGE_GROUPS = [
     :front, :gallery_image, :gallery, :about, :contact
@@ -37,7 +35,15 @@ module ApplicationHelper
     current_path_starts_with?(
       gallery_path(:new_work), gallery_path(:atom_planet),
       gallery_path(:bodies)
-    )
+    ) || framed_page? || scrolls_page?
+  end
+
+  def framed_page?
+    current_path_starts_with?(gallery_path(:framed))
+  end
+
+  def scrolls_page?
+    current_path_starts_with?(gallery_path(:scrolls))
   end
 
   def plastic_camera_page?

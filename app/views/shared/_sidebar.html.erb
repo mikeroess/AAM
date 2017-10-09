@@ -5,6 +5,15 @@
 <ul class="navigation">
   <li<% if new_work_page?  %> class="current"<% end %>>
     <a href="<%= gallery_path(:new_work) %>">New Work</a>
+
+    <ul>
+      <li<% if framed_page?  %> class="current"<% end %>>
+        <a href="<%= gallery_path(:framed) %>">Framed</a>
+      </li>
+      <li<% if scrolls_page?  %> class="current"<% end %>>
+        <a href="<%= gallery_path(:scrolls) %>">Scrolls</a>
+      </li>
+    </ul>
   </li>
 
   <li<% if self_portrait_page? %> class="current"<% end %>>
