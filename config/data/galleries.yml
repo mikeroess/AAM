@@ -1208,8 +1208,8 @@
     quickly while the materials are still available.
   show_gallery_titles: true
   galleries:
-    - scrolls
     - framed
+    - scrolls
 
 - id: scrolls
   galleries:
