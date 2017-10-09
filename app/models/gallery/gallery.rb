@@ -2,7 +2,8 @@ module Gallery
   class Gallery
     include ActiveModel::Model
 
-    attr_accessor :id, :name, :images, :gallery_slugs, :statement
+    attr_accessor :id, :name, :images, :gallery_slugs, :statement,
+                  :show_gallery_titles, :gallery_link
     cattr_accessor :all
 
     alias_method :slug, :id
@@ -53,8 +54,13 @@ module Gallery
       statement.present?
     end
 
+    def show_gallery_titles?
+      show_gallery_titles.present?
+    end
+
     def path(params = {})
-      Rails.application.routes.url_helpers.gallery_path(slug, params)
+      gallery = gallery_link || slug
+      Rails.application.routes.url_helpers.gallery_path(gallery, params)
     end
 
     def statement_path(params = {})

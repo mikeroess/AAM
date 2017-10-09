@@ -1,9 +1,26 @@
-<div class="row">
-  <% gallery.images.each_with_index do |item, index| %>
-    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item">
-      <%= render partial: 'image', locals: { image: item } %>
-    </div>
+<% show_subtitle = false if local_assigns[:show_subtitle].nil? %>
 
-    <%= loop_clearfix index %>
+<% if show_subtitle %>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3><%= gallery.name %></h3>
+    </div>
+  </div>
+<% end %>
+
+<% if gallery.meta? %>
+  <% gallery.galleries.each do |subgallery| %>
+    <%= render partial: 'gallery', locals: { gallery: subgallery, show_subtitle: gallery.show_gallery_titles? } %>
   <% end %>
-</div>
+<% else %>
+  <div class="row">
+    <% gallery.images.each_with_index do |item, index| %>
+      <div class="col-md-4 col-sm-6 col-xs-12 gallery-item">
+        <%= render partial: 'image', locals: { image: item } %>
+      </div>
+
+      <%= loop_clearfix index %>
+    <% end %>
+  </div>
+<% end %>
+

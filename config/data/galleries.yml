@@ -1206,9 +1206,154 @@
     photography is eroding the availability of some of the analogue materials
     that photographers have employed, and it’s important to experiment
     quickly while the materials are still available.
+  show_gallery_titles: true
+  galleries:
+    - scrolls
+    - framed
+
+- id: scrolls
   galleries:
     - atom_planet
     - bodies
+
+- id: framed
+  gallery_link: new_work
+  images:
+    - name: Deep Space
+      year: 2015
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 1-Deep-space.jpg
+    - name: Wasted flowers
+      year: 2016
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 2-Wasted-flowers.jpg
+    - name: Growing planet
+      year: 2015
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 3-Growing-planet.jpg
+    - name: Enzyme print
+      year: 2016
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 4-Enzyme-print.jpg
+    - name: Nebula
+      year: 2017
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 5-Nebula.jpg
+    - name: Solar flare
+      year: 2015
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 6-Solar-flare-no-border.jpg
+    - name: Explosion
+      year: 2017
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 7-Explosion.jpg
+    - name: Shattered
+      year: 2017
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 8-Shattered.jpg
+    - name: Mushroom shadows
+      year: 2016
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 9-Mushroom-lumen.jpg
+    - name: Breakaway
+      year: 2017
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 10-Breakaway.jpg
+    - name: Island
+      year: 2016
+      dimensions: 20 x 16 ins.
+      description: cameraless silver gelatin print
+      image: 10.5 Island 2016.jpg
+    - name: Cluster
+      year: 2016
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 11-Cluster.jpg
+    - name: Spinning Planet
+      year: 2015
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 12-Spinning Planet.jpg
+    - name: Asteroids
+      year: 2015
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 13-Asteroids.jpg
+    - name: Imprint
+      year: 2017
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 14-imprint.jpg
+    - name: Virus
+      year: 2017
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 15-Virus.jpg
+    - name: Falling
+      year: 2016
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 16-Falling 2016jpg.jpg
+    - name: Molecule
+      year: 2017
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 17-Molecule.jpg
+    - name: Rock Planet
+      year: 2015
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 17-Rock-planet.jpg
+    - name: Milky Sun
+      year: 2016
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 18-Milky-sun-2016.jpg
+    - name: Forest Planet
+      year: 2015
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 19-Forest-planet-2015.jpg
+    - name: Big Bang
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 20-Big bang.jpg
+    - name: Sphere Pale
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 21-Sphere pale.jpg
+    - name: Moon
+      year: 2017
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 22-Moon, 2017 web.jpg
+    - name: Saturn
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 23-Saturn.jpg
+    - name: Sphere Dark
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 24-Sphere dark.jpg
+    - name: Standing on the Edge of the Sun
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 25-Stand on the edge of the sun.jpg
 
 - name: Plastic Camera Work
   id: plastic_camera

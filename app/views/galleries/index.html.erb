@@ -6,13 +6,7 @@
 
 <div class="row scrollable-gallery-container">
   <div class="scrollable-gallery">
-    <% if @gallery.meta? %>
-      <% @gallery.galleries.each do |gallery| %>
-        <%= render partial: 'gallery', locals: { gallery: gallery } %>
-      <% end %>
-    <% else %>
-      <%= render partial: 'gallery', locals: { gallery: @gallery } %>
-    <% end %>
+    <%= render partial: 'gallery', locals: { gallery: @gallery } %>
   </div>
 
   <%= render 'scrollbars' %>
