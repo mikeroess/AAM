@@ -1163,7 +1163,7 @@
     - image: bubbles-3.jpg
     - image: bubbles-4.jpg
 
-- id: new_work
+- id: scrolls
   statement: >-
     The Atom Planet series explores ways of generating an image on
     photographic paper without using a camera or negative. The dialogue that
@@ -1206,18 +1206,11 @@
     photography is eroding the availability of some of the analogue materials
     that photographers have employed, and it’s important to experiment
     quickly while the materials are still available.
-  show_gallery_titles: true
-  galleries:
-    - framed
-    - scrolls
-
-- id: scrolls
   galleries:
     - atom_planet
     - bodies
 
 - id: framed
-  gallery_link: new_work
   images:
     - name: Deep Space
       year: 2015

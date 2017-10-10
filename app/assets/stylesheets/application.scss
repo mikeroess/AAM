@@ -123,6 +123,11 @@ body {
   }
 
   .navigation {
+    text-transform: uppercase;
+
+    *:first-letter {
+      font-size: 101%;
+    }
 
     &, ul {
       list-style: none;
@@ -232,11 +237,6 @@ body {
 
       a {
         color: #000;
-        text-transform: uppercase;
-
-        &:first-letter {
-          font-size: 101%;
-        }
 
         &:hover {
           color: #999;

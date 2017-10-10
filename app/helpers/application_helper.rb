@@ -31,19 +31,14 @@ module ApplicationHelper
     gallery_page? && request.params[:id].present?
   end
 
-  def new_work_page?
-    current_path_starts_with?(
-      gallery_path(:new_work), gallery_path(:atom_planet),
-      gallery_path(:bodies)
-    ) || framed_page? || scrolls_page?
-  end
-
   def framed_page?
     current_path_starts_with?(gallery_path(:framed))
   end
 
   def scrolls_page?
-    current_path_starts_with?(gallery_path(:scrolls))
+    current_path_starts_with?(
+      gallery_path(:scrolls), gallery_path(:atom_planet), gallery_path(:bodies)
+    )
   end
 
   def plastic_camera_page?

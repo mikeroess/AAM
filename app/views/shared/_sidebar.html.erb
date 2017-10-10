@@ -3,9 +3,8 @@
 <% unless _front_page %><%= render 'shared/logo' %><% end %>
 
 <ul class="navigation">
-  <li<% if new_work_page?  %> class="current"<% end %>>
-    <a href="<%= gallery_path(:new_work) %>">New Work</a>
-
+  <li>
+    New Work:
     <ul>
       <li<% if framed_page?  %> class="current"<% end %>>
         <a href="<%= gallery_path(:framed) %>">Framed</a>
