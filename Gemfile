@@ -4,6 +4,7 @@ gem 'rails'
 gem 'sprockets-rails'
 gem 'rake'
 
+gem 'sprockets-image_compressor'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'sass-rails'
