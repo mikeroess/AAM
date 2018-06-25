@@ -17,7 +17,7 @@ namespace :static do
     begin
       static_dir = Rails.root.join('_static')
 
-      ['', 'error', 'contact/success'].each do |path|
+      ['', 'error', 'contact/success', '.htaccess'].each do |path|
         `wget --mirror -nH --no-if-modified-since --html-extension --directory-prefix="#{static_dir}" http://localhost:3000/#{path}`
       end
 
