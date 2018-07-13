@@ -13,7 +13,7 @@ Ann::Application.routes.draw do
   get 'criticism', to: 'criticisms#index', as: :criticisms
   get 'criticism/:id', to: 'criticisms#show', as: :criticism, constraints: { id: /\d+/ }
 
-  get 'jewelry', to: 'jewelry#index', as: :jewelry
+  get 'jewelry(/:page)', to: 'jewelry#index', as: :jewelry, defaults: { page: 1 }
 
   get '/:gallery', to: 'galleries#index', as: :gallery
   get '/:gallery/statement', to: 'galleries#statement', as: :gallery_statement
