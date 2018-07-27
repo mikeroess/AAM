@@ -40,6 +40,24 @@
   .gallery-item img {
     width: 100%;
   }
+
+  .highlighted-link {
+    font-family: Cardo-Regular;
+    font-size: 175%;
+    @media (max-width: 764px) { font-size: 160%; }
+    @media (max-width: 715px) { font-size: 130%; }
+    @media (max-width: 700px) { font-size: 130%; }
+    @media (max-width: 650px) { font-size: 140%; }
+    @media (max-width: 580px) { font-size: 150%; }
+    @media (max-width: 530px) { font-size: 160%; }
+
+    color: #333;
+    text-decoration: underline;
+
+    &:hover{
+      color: black;
+    }
+  }
 }
 
 #pages-box {

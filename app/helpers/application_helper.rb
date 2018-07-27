@@ -11,7 +11,7 @@ module ApplicationHelper
 
   def stripped_uri
     path = URI(request.original_url).path
-    path.blank? ? nil : path.gsub(/\/\d+/, '')
+    path.blank? ? nil : path.gsub(%r{/\d+}, '')
   end
 
   def current_page_class
@@ -51,8 +51,7 @@ module ApplicationHelper
   end
 
   def archive_page?
-    plastic_camera_page? ||
-    current_path_starts_with?(
+    plastic_camera_page? || current_path_starts_with?(
       gallery_path(:archive),
       gallery_path(:milan),
       gallery_path(:layered),
@@ -64,19 +63,12 @@ module ApplicationHelper
 
   def about_page?
     current_path_starts_with?(
-      about_path, resume_path, biography_path, aauaudio_path, bofvideo_path,
-      criticisms_path
+      about_path, resume_path, aauaudio_path, bofvideo_path, criticisms_path
     )
   end
 
   def contact_page?
     current_path_starts_with?(contact_path)
-  end
-
-  def link_box
-    content_tag(:div, class: 'link-box') do
-      content_tag(:div, class: 'link-box-inner') { yield }
-    end
   end
 
   def loop_clearfix(index)

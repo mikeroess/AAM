@@ -2,9 +2,6 @@ class PagesController < ApplicationController
   def index
   end
 
-  def biography
-  end
-
   def contact
   end
 

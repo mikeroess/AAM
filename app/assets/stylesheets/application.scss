@@ -384,53 +384,6 @@ body {
   margin-top: 7%;
 }
 
-.link-box {
-  border: 1px solid;
-  border-color: #666;
-  width: 100%;
-  display: table;
-  text-align: center;
-  font-family: Cardo-Regular;
-  font-weight: bold;
-
-  height:165px;
-  @media (max-width: 1040px) { height: 155px; }
-  @media (max-width: 1000px) { height: 150px; }
-  @media (max-width: 940px) { height: 135px; }
-  @media (max-width: 764px) { height: 200px; }
-  @media (max-width: 715px) { height: 185px; }
-  @media (max-width: 700px) { height: 175px; }
-  @media (max-width: 650px) { height: 150px; }
-  @media (max-width: 580px) { height: 150px; }
-  @media (max-width: 530px) { height: 125px; }
-
-  font-size: 175%;
-	@media (max-width: 764px) { font-size: 160%; }
-	@media (max-width: 715px) { font-size: 130%; }
-	@media (max-width: 700px) { font-size: 130%; }
-	@media (max-width: 650px) { font-size: 140%; }
-	@media (max-width: 580px) { font-size: 150%; }
-	@media (max-width: 530px) { font-size: 160%; }
-
-	@media (max-width: 780px) { margin-bottom: 10%; }
-
-  .link-box-inner {
-    display: table-cell;
-    vertical-align: middle;
-    height: inherit;
-    text-align: center;
-
-    a {
-      color: #666;
-      text-decoration: underline;
-
-      &:hover{
-        color: black;
-      }
-    }
-  }
-}
-
 .modal-dialog {
   display: flex;
   flex-direction: column;
@@ -440,6 +393,10 @@ body {
   @media (max-width: 767px) {
     min-height: calc(100vh - 20px);
   }
+}
+
+.mt-3 {
+  margin-top: 30px;
 }
 
 @import "contact";

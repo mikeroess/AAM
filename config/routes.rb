@@ -2,7 +2,6 @@ Ann::Application.routes.draw do
   root 'pages#index'
 
   get 'resume', to: 'pages#resume', as: :resume
-  get 'biography', to: 'pages#biography', as: :biography
   get 'contact', to: 'pages#contact', as: :contact
   get 'contact/success', to: 'pages#contact_success'
   get 'about', to: 'pages#about', as: :about

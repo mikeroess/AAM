@@ -1,48 +1,39 @@
 <div class="container-constrained">
   <div class="row">
-    <div class="col-xs-12 col-sm-3 gallery-item">
-      <%= link_box do %>
-        <div>Résumé</div>
-        <div>
-          <%= link_to "View", resume_path %>
-          <span class="separator"> | </span>
-          <%= link_to "Download PDF", '/media/resume.pdf' %>
-        </div>
-      <% end %>
-    </div>
-
-    <div class="col-xs-12 col-sm-3 gallery-item">
-      <%= link_box do %>
-        <%= link_to "Bio", biography_path %>
-      <% end %>
-    </div>
-
-    <div class="col-xs-12 col-sm-3 gallery-item">
-      <%= link_box do %>
-        <%= link_to "Press", criticisms_path %>
-      <% end %>
-    </div>
-
-    <div class="col-xs-12 col-sm-3 gallery-item">
-      <%= link_box do %>
-        <%= link_to "Czech and Slovak Site", "http://www.czechslovakphotos.com/" %>
-      <% end %>
+    <div class="col-xs-12">
+      <p><strong>Anne Arden McDonald</strong> is a Brooklyn based visual artist who grew up in Atlanta Georgia. From age 15 to 30 she made self portraits by building installations in abandoned interiors and performing privately for her camera in these spaces, publishing a book of this work in 2004. For 20 years, she was a private dealer for 13 Czech and Slovak photographers who do performances for the camera. She also has a large body of dreamy photographs shot with a Diana camera over several decades. More recently she has been using light and chemistry the way a painter or sculptor would to build images on photographic paper.</p>
+      <p>McDonald’s work has been exhibited widely: in the past 30 years, she has had 44 solo exhibitions in 10 countries (about 230 total shows in 14 countries) and has been published in over 215 places in 20 countries, including in Aperture, European Photography, and Eyemazing Magazines. Her work is in the collections of the Brooklyn Museum, the Worchester Art Museum, the Houston MFA, the Denver At Museum, the Detroit Institute of Art and the Bibliothque Nationale in Paris. She was a Lapine Fellow at the Millay Colony, was given a grant of studio space from the Sharpe Foundation, and has been in residence at the Byrdcliffe colony from 2015-2017. She taught for 6 years at Parsons School of Design in New York, and has lectured about topics such as staged photography, self portraiture, Czech and Slovak photography, alternative photography, and her own work.</p>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
-      <%= link_to image_tag("annetv.png", :class => "img-responsive", :border => 0), 'https://www.youtube.com/watch?v=SBo3O2b4ARo' %>
+  <div class="row mt-3">
+    <div class="col-xs-12">
+      <div>
+        <%= link_to 'Résumé', resume_path, class: 'highlighted-link' %>
+        <%= link_to '(Download PDF)', '/media/resume.pdf', class: 'highlighted-link' %>
+      </div>
+      <div>
+        <%= link_to 'Press', criticisms_path, class: 'highlighted-link' %>
+      </div>
+      <div>
+        <%= link_to 'Czech and Slovak Site', 'http://www.czechslovakphotos.com/', class: 'highlighted-link' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-xs-12 col-md-4 gallery-item">
+      <%= link_to image_tag('annetv.png', class: 'img-responsive', border: 0), 'https://www.youtube.com/watch?v=SBo3O2b4ARo' %>
       TV spot--Caught in the Act: Art in Brooklyn
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
-      <%= link_to image_tag("00me by dragin web crop.jpg",:class => "img-responsive", :border => 0), aauaudio_path %>
+    <div class="col-xs-12 col-md-4 gallery-item">
+      <%= link_to image_tag('00me by dragin web crop.jpg', class: 'img-responsive', border: 0), aauaudio_path %>
       Interview with Rachel Hubbard
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-3 gallery-item">
-      <%= link_to image_tag("making_of_fragility.png",:class => "img-responsive", :border => 0), bofvideo_path %>
+    <div class="col-xs-12 col-md-4 gallery-item">
+      <%= link_to image_tag('making_of_fragility.png', class: 'img-responsive', border: 0), bofvideo_path %>
       Video of the making of Body of Fragility
     </div>
   </div>
