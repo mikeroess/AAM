@@ -9,23 +9,22 @@
 }
 
 #about-page {
-  p {
-    color: #666;
+  p, a {
     text-align: justify;
 
-    font-size: 80%;
-    @media(min-width: 1300px) { font-size: 90%; }
-    @media(min-width: 1525px) { font-size: 110%; }
-    @media(min-width: 1648px) { font-size: 112%; }
-    @media(min-width: 1725px) { font-size: 120%; }
-    @media(min-width: 1855px) { font-size: 125%; }
-    @media(min-width: 2100px) { font-size: 130%; }
-    @media(min-width: 2300px) { font-size: 145%; }
-    @media(min-width: 2472px) { font-size: 165%; }
-    @media(min-width: 3000px) { font-size: 190%; }
-    @media(min-width: 3500px) { font-size: 240%; }
-    @media(min-width: 4000px) { font-size: 320%; }
-    @media(min-width: 4500px) { font-size: 340%; }
+    font-size: 85%;
+    @media(min-width: 1300px) {font-size: 90%;}
+    @media(min-width: 1525px) {font-size: 110%;}
+    @media(min-width: 1648px) {font-size: 112%;}
+    @media(min-width: 1725px) {font-size: 120%;}
+    @media(min-width: 1855px) {font-size: 125%;}
+    @media(min-width: 2100px) {font-size: 130%;}
+    @media(min-width: 2300px) {font-size: 145%;}
+    @media(min-width: 2472px) {font-size: 165%;}
+    @media(min-width: 3000px) {font-size: 190%;}
+    @media(min-width: 3500px) {font-size: 250%;}
+    @media(min-width: 4000px) {font-size: 320%;}
+    @media(min-width: 4500px) {font-size: 340%;}
   }
 
   blockquote {
@@ -43,19 +42,11 @@
 
   .highlighted-link {
     font-family: Cardo-Regular;
-    font-size: 175%;
-    @media (max-width: 764px) { font-size: 160%; }
-    @media (max-width: 715px) { font-size: 130%; }
-    @media (max-width: 700px) { font-size: 130%; }
-    @media (max-width: 650px) { font-size: 140%; }
-    @media (max-width: 580px) { font-size: 150%; }
-    @media (max-width: 530px) { font-size: 160%; }
-
-    color: #333;
+    color: #666;
     text-decoration: underline;
 
     &:hover{
-      color: black;
+      color: #333;
     }
   }
 }
