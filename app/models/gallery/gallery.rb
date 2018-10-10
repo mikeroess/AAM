@@ -42,11 +42,11 @@ module Gallery
       images.empty? && !galleries.empty?
     end
 
-    def statement=(text)
-      @statement = if text.is_a?(Statement)
-                     text
-                   else
-                     Statement.new(text: text, gallery: self)
+    def statement=(statement)
+      @statement = case statement
+                   when Statement then statement
+                   when String then Statement.new(title: name, text: statement, gallery: self)
+                   when Hash then Statement.new(title: statement['title'], text: statement['text'], gallery: self)
                    end
     end
 

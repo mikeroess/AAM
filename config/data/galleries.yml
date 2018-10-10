@@ -693,14 +693,14 @@
     to obscure or reveal different meanings, giving them a dynamism that cannot
     be conveyed by a still image.
 
-    * Probably worth a mention that most of these cases come from
-    standard-issue watches given to early railroad conductors, and some of the
-    backs are engraved with images of trains. Before the railroad, it was
-    typical to have a local time that was different from town to town, but to
-    avoid crashes, time was standardized, and for a while this was known as
-    "railroad time." These cases themselves were a footnote in the history of
-    our changing relationship to time. <a href="https://en.wikipedia.org/wiki/Railway_time">
-    https://en.wikipedia.org/wiki/Railway_time</a>
+    * Probably worth a mention that most of these cases come from standard-issue
+    watches given to early railroad conductors, and some of the backs are
+    engraved with images of trains. Before the railroad, it was typical to have
+    a local time that was different from town to town, but to avoid crashes,
+    time was standardized, and for a while this was known as "railroad time."
+    These cases themselves were a footnote in the history of our changing
+    relationship to time.
+    <a href="https://en.wikipedia.org/wiki/Railway_time">https://en.wikipedia.org/wiki/Railway_time</a>
 
     Watches are 2.5 inches in diameter.
   images:
@@ -1177,53 +1177,105 @@
     - image: bubbles-4.jpg
 
 - id: scrolls
-  statement: >-
-    The Atom Planet series explores ways of generating an image on
-    photographic paper without using a camera or negative. The dialogue that
-    occurs between painters or sculptors, and their chosen medium is one source
-    of inspiration for inventing processes that inform the resulting photograph.
-    Another is the scientific method, where you observe phenomena, formulate a
-    hypothesis, test it with experiments, use careful measurements, note
-    variables, observe results, and then use this information to build an
-    image.
+  statement:
+    title: 'Atom, Planet: Camera-less Photography'
+    text: >-
+      While most photography employs a lens, and either film or a digital sensor,
+      this series explores ways of generating images on photographic paper
+      without using a camera or negative. The source of inspiration for inventing
+      processes that inform the resulting photograph is the dialogue that occurs
+      between painters or sculptors, and their chosen medium. Another is the
+      scientific method, where you observe phenomena, formulate a hypothesis, test
+      it with experiments, use careful measurements, note variables, observe
+      results, and use this information to build an image.
 
-    While still working with photo paper, light, and chemistry, I use some
-    well-known processes like the photogram, and invent other ways of producing
-    images without using a negative. Some of these methods include painting
-    bleach onto blackened photo paper, or building layered piles of glass and
-    eggshells and moving around them with a flashlight to make an exposure. In
-    one image over 100 medicines, spices, and household cleaners were painted
-    onto photo paper and run through regular photographic chemistry to test for
-    colors and textures. The methods are often an unorthodox collection of
-    materials and techniques from the domestic and scientific realms brought
-    into the darkroom, often coaxing or scrubbing, evaporating or decaying, an
-    image into the paper.
+      While still working with photo paper, light, and chemistry, I revisit some
+      historic processes like Man Ray’s photogram, Pierre Cordier’s chemigram,
+      and lumen printing, and also invent other ways of producing images without
+      using a negative. These processes are utilizing optical situations, or
+      chemical reactions, or a combination of the two. Applying glue as a resist
+      and digging down to the photo paper surface with alternating photo chemicals
+      causes an image to emerge on the paper in the form of a chemical painting.
+      Some of these camera-less experiments include painting bleach onto blackened
+      photo paper, building layered piles of glass and eggshells and moving around
+      them with a flashlight to make an exposure, and growing a self-replicating
+      garden of mold that feeds on silver gelatin paper. In one image, over 100
+      medicines, spices, and household cleaners were applied to photo paper and
+      run through darkroom chemistry to test for colors and textures. The methods
+      are an unorthodox collection of materials and techniques from the domestic
+      and scientific realms, brought into the darkroom, often coaxing or
+      scrubbing an image into the photographic paper. Some images are made in the
+      dark and some in daylight, some processes are additive and others reductive,
+      the result is a series of giant (50 x 111 inch) and many smaller
+      photographs. The imagery emerges as circles and spheres, meant to represent
+      planets and atoms, to visualize the macrocosm and the microcosm of life as
+      we know it.
 
-    Using glue as a resist and digging down to the photo paper surface with
-    alternating photo chemicals causes an image to emerge on the paper in the
-    form of a chemical painting. Some images are made in the dark and some in
-    daylight, some processes are additive and others reductive. After
-    developing these processes and using them to make a series of giant (50 x
-    111 inch or 125 x 280cm) photographs, the imagery emerges as circles and
-    spheres, meant to represent planets and atoms, to visualize the macrocosm
-    and the microcosm of life as we know it. The scale has a relationship to
-    abstract expressionist painting; I am often physically in the piece while
-    building it, exploring it as if it were a terrain or landscape. The scale
-    is also impacting the subject matter, the work more often explores the
-    cosmological realm than the atomic, but this obsession with circles is also
-    related to a search for a sense of wholeness.
+      The scale has a relationship to large painting; the physical demands of the
+      area being treated require a bodily presence in the piece while building it,
+      exploring as if it were a landscape. The scale impacts the subject matter,
+      the work more often addresses the cosmological realm than the atomic, but
+      this obsession with circles is also related to a search for a sense of
+      wholeness.
 
-    These giant camera-less photographs pose some interesting questions about
-    what photography is, and what it can be. Photography is a young medium, and
-    there is so much undiscovered terrain. We stand at a precipice: digital
-    photography is eroding the availability of some of the analogue materials
-    that photographers have employed, and it’s important to experiment
-    quickly while the materials are still available.
+      Photography is a very young and exciting medium, and there is so much
+      undiscovered terrain. In some ways, it stands at a precipice: digital
+      photography is eroding the availability of some analog materials, and the
+      study and use of silver gelatin papers. I am working to develop these
+      processes, and to pose interesting questions about what photography is, and
+      what it can be.
   galleries:
     - atom_planet
     - bodies
 
 - id: framed
+  statement:
+    title: 'Atom, Planet: Camera-less Photography'
+    text: >-
+      While most photography employs a lens, and either film or a digital sensor,
+      this series explores ways of generating images on photographic paper
+      without using a camera or negative. The source of inspiration for inventing
+      processes that inform the resulting photograph is the dialogue that occurs
+      between painters or sculptors, and their chosen medium. Another is the
+      scientific method, where you observe phenomena, formulate a hypothesis, test
+      it with experiments, use careful measurements, note variables, observe
+      results, and use this information to build an image.
+
+      While still working with photo paper, light, and chemistry, I revisit some
+      historic processes like Man Ray’s photogram, Pierre Cordier’s chemigram,
+      and lumen printing, and also invent other ways of producing images without
+      using a negative. These processes are utilizing optical situations, or
+      chemical reactions, or a combination of the two. Applying glue as a resist
+      and digging down to the photo paper surface with alternating photo chemicals
+      causes an image to emerge on the paper in the form of a chemical painting.
+      Some of these camera-less experiments include painting bleach onto blackened
+      photo paper, building layered piles of glass and eggshells and moving around
+      them with a flashlight to make an exposure, and growing a self-replicating
+      garden of mold that feeds on silver gelatin paper. In one image, over 100
+      medicines, spices, and household cleaners were applied to photo paper and
+      run through darkroom chemistry to test for colors and textures. The methods
+      are an unorthodox collection of materials and techniques from the domestic
+      and scientific realms, brought into the darkroom, often coaxing or
+      scrubbing an image into the photographic paper. Some images are made in the
+      dark and some in daylight, some processes are additive and others reductive,
+      the result is a series of giant (50 x 111 inch) and many smaller
+      photographs. The imagery emerges as circles and spheres, meant to represent
+      planets and atoms, to visualize the macrocosm and the microcosm of life as
+      we know it.
+
+      The scale has a relationship to large painting; the physical demands of the
+      area being treated require a bodily presence in the piece while building it,
+      exploring as if it were a landscape. The scale impacts the subject matter,
+      the work more often addresses the cosmological realm than the atomic, but
+      this obsession with circles is also related to a search for a sense of
+      wholeness.
+
+      Photography is a very young and exciting medium, and there is so much
+      undiscovered terrain. In some ways, it stands at a precipice: digital
+      photography is eroding the availability of some analog materials, and the
+      study and use of silver gelatin papers. I am working to develop these
+      processes, and to pose interesting questions about what photography is, and
+      what it can be.
   images:
     - name: Deep Space
       year: 2015
