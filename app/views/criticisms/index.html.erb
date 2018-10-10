@@ -21,6 +21,7 @@
 
   <% unless criticisms_in_sidebar.empty? %>
     <div class="col-sm-4" id="pages-box">
+      <h4>Click on magazine below for full essay</h4>
       <% criticisms_in_sidebar.each do |criticism| %>
         <div class="pages-image">
           <%= link_to image_tag(criticism.images.first), criticism_path(criticism.id) %>
