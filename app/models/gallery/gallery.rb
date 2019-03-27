@@ -6,7 +6,7 @@ module Gallery
                   :show_gallery_titles, :gallery_link
     cattr_accessor :all
 
-    alias_method :slug, :id
+    alias slug id
 
     def initialize(attrs = {})
       super

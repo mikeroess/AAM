@@ -1,5 +1,4 @@
 require 'pdf/reader'
-require 'pp'
 
 namespace :resume do
   desc 'Parse Anne\'s PDF resume and convert it to HTML'
@@ -34,28 +33,31 @@ class ResumeParser
   def sections
     collector = Collector.new
     reader.pages.each { |p| p.walk(collector) }
+    group_lines_into_sections(collector.lines)
+      .map { |section| Section.parse(section) }
+  end
 
-    sections = []
-
-    collector.lines.each do |line|
+  def group_lines_into_sections(lines)
+    lines.each_with_object([]) do |line, acc|
       next if line.strip.empty?
 
-      normalized = line
-                   .gsub(/\s+,/, ',')
-                   .gsub(/\-\s+/, '-')
-                   .gsub(%r{</em>(\s*)<em>}, '\1')
-                   .gsub(%r{<em>\s+</em>}, ' ')
-                   .gsub(%r{(\s+)</em>}, '</em>\1')
-                   .gsub(',</em>', '</em>,')
-                   .gsub(/<em>\s+/, '<em>')
+      normalized = normalize_line(line)
 
       case
-      when section_header?(line) then sections << [normalized]
-      when !sections.empty? then sections[-1] << normalized
+      when section_header?(line) then acc << [normalized]
+      when !acc.empty? then acc[-1] << normalized
       end
     end
+  end
 
-    sections.map { |section| Section.parse(section) }
+  def normalize_line(line)
+    line.gsub(/\s+,/, ',')
+        .gsub(/\-\s+/, '-')
+        .gsub(%r{</em>(\s*)<em>}, '\1')
+        .gsub(%r{<em>\s+</em>}, ' ')
+        .gsub(%r{(\s+)</em>}, '</em>\1')
+        .gsub(',</em>', '</em>,')
+        .gsub(/<em>\s+/, '<em>')
   end
 
   class Collector
@@ -70,7 +72,7 @@ class ResumeParser
       @lines = []
     end
 
-    def concatenate_matrix(_, _, _, _, _, y)
+    def concatenate_matrix(_, _, _, _, _, y) # rubocop:disable Metrics/ParameterLists
       if @current_y == y
         @newline = false
       else
@@ -79,12 +81,11 @@ class ResumeParser
       end
     end
 
-    def set_text_font_and_size(font, size)
+    def set_text_font_and_size(font, _)
       font_h = @page.fonts[font]
       @font = PDF::Reader::Font.new(@page.objects, font_h)
       @format = case
                 when font_h[:FontDescriptor][:ItalicAngle] != 0 then :em
-                else nil
                 end
     end
 
@@ -93,12 +94,7 @@ class ResumeParser
     end
 
     def show_text(text)
-      formatted_text = case @format
-                       when :em then "<em>#{text}</em>"
-                       when :strong then "<strong>#{text}</strong>"
-                       else text
-                       end
-      formatted_text = @font.to_utf8(formatted_text)
+      formatted_text = format_text(text)
       if @newline
         @lines << formatted_text
         @newline = false
@@ -107,11 +103,24 @@ class ResumeParser
         @lines[-1] << formatted_text
       end
     end
+
+    def format_text(text)
+      formatted_text = case @format
+                       when :em then "<em>#{text}</em>"
+                       else text
+                       end
+      @font.to_utf8(formatted_text)
+    end
   end
 
   class Section
     attr_accessor :items
     attr_writer :title
+
+    def initialize(title = nil, items = nil)
+      @title = title
+      @items = items || []
+    end
 
     def title
       @title.titlecase
@@ -144,33 +153,32 @@ class ResumeParser
     def render_items
       [].tap do |lines|
         lines << '  <dl>'
-        items.each do |group|
-          lines << "    <dt>#{group[:year]}</dt>"
-          lines << '    <dd>'
-          lines << '      <ul>'
-          lines.concat group[:lines].map { |i| "        <li>#{i}</li>" }
-          lines << '      </ul>'
-          lines << '    </dd>'
-        end
+        lines.concat items.flat_map { |group| render_group(group) }
         lines << '  </dl>'
       end
     end
 
-    def self.parse(lines)
-      new.tap do |section|
-        section.title = lines.shift.strip
-
-        parsed = []
-        lines.each do |line|
-          if line.strip =~ /^[0-9]/
-            year, line = /^([\d-]+)(.*)/.match(line.strip).captures
-            parsed << { year: year.strip, lines: [line.strip] }
-          else
-            parsed[-1][:lines] << line.strip
-          end
-        end
-        section.items = parsed
+    def render_group(group)
+      [].tap do |lines|
+        lines << "    <dt>#{group[:year]}</dt>"
+        lines << '    <dd>'
+        lines << '      <ul>'
+        lines.concat group[:lines].map { |i| "        <li>#{i}</li>" }
+        lines << '      </ul>'
+        lines << '    </dd>'
       end
+    end
+
+    def self.parse(lines)
+      new(lines.shift.strip, lines.each_with_object([]) do |line, parsed|
+        year, rest = /^([\d-]*)(.*)/.match(line.strip).captures
+        rest = rest.strip
+        if year.present?
+          parsed << { year: year.strip, lines: [rest] }
+        else
+          parsed[-1][:lines] << rest
+        end
+      end)
     end
   end
 
