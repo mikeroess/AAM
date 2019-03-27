@@ -14,5 +14,7 @@ gem 'js_cookie_rails'
 gem 'uglifier'
 gem 'therubyracer', platforms: :ruby
 
+gem 'pdf-reader', require: false
+
 # URI parser used to get proper navbar function at small sizes
 require 'uri'

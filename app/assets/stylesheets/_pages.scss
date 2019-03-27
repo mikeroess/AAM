@@ -9,15 +9,33 @@
   }
 
   section {
-    margin-top: 30px;
+    @extend .clearfix;
+    margin-bottom: 30px;
 
-    &:first-child {
-      margin-top: 0;
+    div[class^='col-'] {
+      padding-left: 0;
     }
   }
 
-  span[class^='col-'] {
-    padding-left: 0;
+  dl {
+    margin-bottom: 0px;
+
+    dt {
+      font-weight: normal;
+      width: 10%;
+      float: left;
+      clear: left;
+    }
+
+    dd {
+      margin-left: 10%;
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -95,46 +113,6 @@
 
 #pages-box-text {
   margin-right: 15%;
-}
-
-.year {
-  margin-right:24px;
-  @media(min-width: 1300px) {margin-right: 25px;}
-  @media(min-width: 1525px) {margin-right: 26px;}
-  @media(min-width: 1648px) {margin-right: 26px;}
-  @media(min-width: 1725px) {margin-right: 26px;}
-  @media(min-width: 1855px) {margin-right: 26px;}
-  @media(min-width: 2100px) {margin-right: 28px;}
-  @media(min-width: 2300px) {margin-right: 28px;}
-  @media(min-width: 2472px) {margin-right: 35px;}
-  @media(min-width: 3000px) {margin-right: 29px;}
-  @media(min-width: 3500px) {margin-right: 50px;}
-  @media(min-width: 4000px) {margin-right: 65px;}
-  @media(min-width: 4500px) {margin-right: 80px;}
-
-  &.multiple {
-    margin-right:16px;
-  }
-
-  &.span {
-    margin-right:6px;
-  }
-}
-
-.indent {
-  margin-left: 48px;
-  @media(min-width: 1300px) {margin-left: 53px;}
-  @media(min-width: 1525px) {margin-left: 55px;}
-  @media(min-width: 1648px) {margin-left: 56px;}
-  @media(min-width: 1725px) {margin-left: 57px;}
-  @media(min-width: 1855px) {margin-left: 58px;}
-  @media(min-width: 2100px) {margin-left: 60px;}
-  @media(min-width: 2300px) {margin-left: 65px;}
-  @media(min-width: 2472px) {margin-left: 80px;}
-  @media(min-width: 3000px) {margin-left: 85px;}
-  @media(min-width: 3500px) {margin-left: 110px;}
-  @media(min-width: 4000px) {margin-left: 100px;}
-  @media(min-width: 4500px) {margin-left: 175px;}
 }
 
 #media-container {
