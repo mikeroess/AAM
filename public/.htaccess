@@ -1,3 +1,9 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{SERVER_PORT} 80
+  RewriteRule ^(.*)$ https://anneardenmcdonald.com/$1 [R=301,L]
+</IfModule>
+
 <IfModule mod_expires.c>
   # Use of ETag is discouraged when Last-Modified is present
   Header unset ETag
