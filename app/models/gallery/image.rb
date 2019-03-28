@@ -3,11 +3,13 @@ module Gallery
     include ActiveModel::Model
 
     attr_accessor :name, :description, :dimensions, :year, :location,
-                  :image, :index, :gallery
+                  :image, :index, :gallery, :sold
 
     def id
       index + 1
     end
+
+    alias sold? sold
 
     def short_text
       [name, location, year, dimensions].compact.join(', ')

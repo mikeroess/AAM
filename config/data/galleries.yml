@@ -714,6 +714,7 @@
       image: watch-2-outlaw.jpg
     - name: Fear of Nothingness
       description: (bones, sheet music, photograph, typed metal)
+      sold: true
       image: watch-7-fear-of-nothingness.jpg
     - name: Diving Bell
       year: 2013
@@ -727,13 +728,16 @@
       image: watch-6-dreaming-of-flying.jpg
     - name: Chrysalis
       description: (seeds, wood, pillow stuffing, twigs, chrysalis forms built from cotton and fabric)
+      sold: true
       image: watch-3-chrysalis.jpg
     - name: Home
       year: 2012
       description: (microscope slides, photograph, tiny fish, printed metal)
+      sold: true
       image: watch-8-home.jpg
     - name: Cynthia Witkin's watch
       description: (photograph, sand, thermometer, vial with 2 shells)
+      sold: true
       image: watch-9-Cynthia-Witkins-watch.jpg
     - name: Lightship Frying Pan
       description: (map of cygnus a and b, buckshot, wood and painted metal, vial, mercury, hourglass)
@@ -744,6 +748,7 @@
       image: watch-11-global-warming.jpg
     - name: Flight
       description: (feathers, fabric, wire mesh)
+      sold: true
       image: watch-12-feathers.jpg
     - name: Iceberg
       year: 2013
@@ -763,9 +768,11 @@
     - name: Couples
       year: 2012
       description: (photograph, mustard seeds, type letter I)
+      sold: true
       image: watch-17-couple.jpg
     - name: Pippin's Watch
       description: (print, tack, wheel)
+      sold: true
       image: watch-18-pippin.jpg
     - name: Tension
       year: 2008
@@ -773,6 +780,7 @@
       image: watch-16-tension.jpg
     - name: Children Carrying
       description: (photograph, paper, lead, eraser, nail, ball chain, watch face)
+      sold: true
       image: watch-20-children-carrying.jpg
     - name: Cradle Zero
       description: (print and chain)
@@ -786,12 +794,14 @@
       image: watch-23-flying-dutchman.jpg
     - name: Glass Darkly
       description: (biblical text, burned wood, glass balls)
+      sold: true
       image: watch-25-glass-darkly.jpg
     - name: Self Portrait
       description: (my hair, glass eye)
       image: watch-26-self-portrait.jpg
     - name: Leo Steinberg's watch
       description: (dirt, roots, onion bulb, bone hand)
+      sold: true
       image: watch-27-Leo-Steinberg's-watch.jpg
     - name: Crucifixion Joel Peter Witkin's Watch
       description: (2 prints, dissection needle, blood)
@@ -804,6 +814,7 @@
       image: watch-29-mercury-bathers.jpg
     - name: Woman Planting
       description: (fabric, dirt, coin, onion bulbs)
+      sold: true
       image: watch-30-woman-planting.jpg
     - name: Installation
       image: watches-INSTALLATION THUMB.jpg
@@ -1286,6 +1297,7 @@
       year: 2016
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
+      sold: true
       image: 2-Wasted-flowers.jpg
     - name: Growing planet
       year: 2015
@@ -1301,6 +1313,7 @@
       year: 2017
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
+      sold: true
       image: 5-Nebula.jpg
     - name: Solar flare
       year: 2015
@@ -1331,6 +1344,7 @@
       year: 2016
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
+      sold: true
       image: 10.5 Island 2016.jpg
     - name: Cluster
       year: 2016
@@ -1391,6 +1405,7 @@
       year: 2016
       dimensions: 40 x 30 ins.
       description: cameraless silver gelatin print
+      sold: true
       image: 21-Sphere pale.jpg
     - name: Moon
       year: 2017
@@ -1406,6 +1421,7 @@
       year: 2016
       dimensions: 40 x 30 ins.
       description: cameraless silver gelatin print
+      sold: true
       image: 24-Sphere dark.jpg
     - name: Standing on the Edge of the Sun
       year: 2016
