@@ -43,6 +43,21 @@
     that photographers have employed, and it’s important to experiment
     quickly while the materials are still available.
   images:
+    - name: Enzyme Print
+      description: cameraless silver gelatin photograph
+      year: 2016
+      dimensions: 86 x 42 ins.
+      image: Enzyme-print.jpg
+    - name: Liquid
+      description: cameraless silver gelatin photograph
+      year: 2016
+      dimensions: 103 x 50 ins.
+      image: Liquid.jpg
+    - name: Moons
+      description: cameraless silver gelatin photograph
+      year: 2016
+      dimensions: 106 x 50 ins.
+      image: Moons.jpg
     - name: Atom
       description: cameraless silver gelatin photograph
       dimensions: 96 x 50 ins.
@@ -1288,6 +1303,82 @@
       processes, and to pose interesting questions about what photography is, and
       what it can be.
   images:
+    - name: Birth
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Birth.jpg
+    - name: Broken
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Broken.jpg
+    - name: Floating (Jupiter)
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Floating-Jupiter.jpg
+    - name: Flow
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Flow.jpg
+    - name: Mold
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Mold.jpg
+    - name: Molecule
+      description: cameraless silver gelatin print
+      year: 2017
+      dimensions: 20 x 16 ins.
+      image: Molecule.jpg
+    - name: Particle
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Particle.jpg
+    - name: Shadow Flowers
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      sold: true
+      image: Shadow-Flowers.jpg
+    - name: Thistle
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Thistle.jpg
+    - name: Virus
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 20 x 16 ins.
+      image: Virus.jpg
+    - name: Black Hole
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 24 x 20 ins.
+      image: Black-hole.jpg
+    - name: Cluster
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 34 x 29 ins.
+      image: Cluster.jpg
+    - name: Fragility
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 34 x 29 ins.
+      image: Fragility.jpg
+    - name: Island
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 24 x 20 ins.
+      image: Island.jpg
+    - name: Void
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 30 x 30 ins.
+      image: Void.jpg
     - name: Deep Space
       year: 2015
       dimensions: 20 x 16 ins.
