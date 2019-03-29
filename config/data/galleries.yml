@@ -1354,31 +1354,6 @@
       year: 2018
       dimensions: 20 x 16 ins.
       image: Virus.jpg
-    - name: Black Hole
-      description: cameraless silver gelatin print
-      year: 2018
-      dimensions: 24 x 20 ins.
-      image: Black-hole.jpg
-    - name: Cluster
-      description: cameraless silver gelatin print
-      year: 2018
-      dimensions: 34 x 29 ins.
-      image: Cluster.jpg
-    - name: Fragility
-      description: cameraless silver gelatin print
-      year: 2018
-      dimensions: 34 x 29 ins.
-      image: Fragility.jpg
-    - name: Island
-      description: cameraless silver gelatin print
-      year: 2018
-      dimensions: 24 x 20 ins.
-      image: Island.jpg
-    - name: Void
-      description: cameraless silver gelatin print
-      year: 2018
-      dimensions: 30 x 30 ins.
-      image: Void.jpg
     - name: Deep Space
       year: 2015
       dimensions: 20 x 16 ins.
@@ -1437,31 +1412,11 @@
       description: cameraless silver gelatin print
       sold: true
       image: 10.5 Island 2016.jpg
-    - name: Cluster
-      year: 2016
-      dimensions: 24 x 20 ins.
+    - name: Island
       description: cameraless silver gelatin print
-      image: 11-Cluster.jpg
-    - name: Spinning Planet
-      year: 2015
+      year: 2018
       dimensions: 24 x 20 ins.
-      description: cameraless silver gelatin print
-      image: 12-Spinning Planet.jpg
-    - name: Asteroids
-      year: 2015
-      dimensions: 24 x 20 ins.
-      description: cameraless silver gelatin print
-      image: 13-Asteroids.jpg
-    - name: Imprint
-      year: 2017
-      dimensions: 24 x 20 ins.
-      description: cameraless silver gelatin print
-      image: 14-imprint.jpg
-    - name: Virus
-      year: 2017
-      dimensions: 24 x 20 ins.
-      description: cameraless silver gelatin print
-      image: 15-Virus.jpg
+      image: Island.jpg
     - name: Falling
       year: 2016
       dimensions: 24 x 20 ins.
@@ -1487,17 +1442,51 @@
       dimensions: 24 x 20 ins.
       description: cameraless silver gelatin print
       image: 19-Forest-planet-2015.jpg
+    - name: Spinning Planet
+      year: 2015
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 12-Spinning Planet.jpg
+    - name: Asteroids
+      year: 2015
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 13-Asteroids.jpg
+    - name: Imprint
+      year: 2017
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 14-imprint.jpg
+    - name: Virus
+      year: 2017
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 15-Virus.jpg
+    - name: Black Hole
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 24 x 20 ins.
+      image: Black-hole.jpg
+    - name: Cluster
+      year: 2016
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 11-Cluster.jpg
+    - name: Fragility
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 34 x 29 ins.
+      image: Fragility.jpg
+    - name: Cluster
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 34 x 29 ins.
+      image: Cluster.jpg
     - name: Big Bang
       year: 2016
       dimensions: 40 x 30 ins.
       description: cameraless silver gelatin print
       image: 20-Big bang.jpg
-    - name: Sphere Pale
-      year: 2016
-      dimensions: 40 x 30 ins.
-      description: cameraless silver gelatin print
-      sold: true
-      image: 21-Sphere pale.jpg
     - name: Moon
       year: 2017
       dimensions: 40 x 30 ins.
@@ -1519,6 +1508,17 @@
       dimensions: 40 x 30 ins.
       description: cameraless silver gelatin print
       image: 25-Stand on the edge of the sun.jpg
+    - name: Void
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 30 x 30 ins.
+      image: Void.jpg
+    - name: Sphere Pale
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      sold: true
+      image: 21-Sphere pale.jpg
 
 - name: Plastic Camera Work
   id: plastic_camera
