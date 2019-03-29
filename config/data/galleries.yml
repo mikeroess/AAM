@@ -36,28 +36,13 @@
     cosmological realm than the atomic, but this obsession with circles is also
     related to a search for a sense of wholeness.
 
-    These giant camera-less photographs pose some interesting questions about
+    These giant cameraless photographs pose some interesting questions about
     what photography is, and what it can be. Photography is a young medium, and
     there is so much undiscovered terrain. We stand at a precipice: digital
     photography is eroding the availability of some of the analogue materials
     that photographers have employed, and it’s important to experiment
     quickly while the materials are still available.
   images:
-    - name: Enzyme Print
-      description: cameraless silver gelatin photograph
-      year: 2016
-      dimensions: 86 x 42 ins.
-      image: Enzyme-print.jpg
-    - name: Liquid
-      description: cameraless silver gelatin photograph
-      year: 2016
-      dimensions: 103 x 50 ins.
-      image: Liquid.jpg
-    - name: Moons
-      description: cameraless silver gelatin photograph
-      year: 2016
-      dimensions: 106 x 50 ins.
-      image: Moons.jpg
     - name: Atom
       description: cameraless silver gelatin photograph
       dimensions: 96 x 50 ins.
@@ -118,11 +103,23 @@
       year: 2014
       dimensions: 113 x 42 ins.
       image: ap-12-rust.jpg
+    - name: Enzyme Print
+      description: cameraless silver gelatin photograph
+      year: 2016
+      dimensions: 86 x 42 ins.
+      image: Enzyme-print.jpg
+    - name: Liquid
+      description: cameraless silver gelatin photograph
+      year: 2016
+      dimensions: 103 x 50 ins.
+      image: Liquid.jpg
+    - name: Moons
+      description: cameraless silver gelatin photograph
+      year: 2016
+      dimensions: 106 x 50 ins.
+      image: Moons.jpg
     - name: Installed at Skink Ink in Brooklyn, NY
       image: atom-planet.jpg
-    - name: Digital versions of silver gelatin prints, 36 x 28 inches each, installed
-      year: 2011
-      image: ap11.jpg
 
 - name: The Body in Transformation
   id: bodies
@@ -1204,7 +1201,7 @@
 
 - id: scrolls
   statement:
-    title: 'Atom, Planet: Camera-less Photography'
+    title: 'Atom, Planet: Cameraless Photography'
     text: >-
       While most photography employs a lens, and either film or a digital sensor,
       this series explores ways of generating images on photographic paper
@@ -1222,7 +1219,7 @@
       chemical reactions, or a combination of the two. Applying glue as a resist
       and digging down to the photo paper surface with alternating photo chemicals
       causes an image to emerge on the paper in the form of a chemical painting.
-      Some of these camera-less experiments include painting bleach onto blackened
+      Some of these cameraless experiments include painting bleach onto blackened
       photo paper, building layered piles of glass and eggshells and moving around
       them with a flashlight to make an exposure, and growing a self-replicating
       garden of mold that feeds on silver gelatin paper. In one image, over 100
@@ -1256,7 +1253,7 @@
 
 - id: framed
   statement:
-    title: 'Atom, Planet: Camera-less Photography'
+    title: 'Atom, Planet: Cameraless Photography'
     text: >-
       While most photography employs a lens, and either film or a digital sensor,
       this series explores ways of generating images on photographic paper
@@ -1274,7 +1271,7 @@
       chemical reactions, or a combination of the two. Applying glue as a resist
       and digging down to the photo paper surface with alternating photo chemicals
       causes an image to emerge on the paper in the form of a chemical painting.
-      Some of these camera-less experiments include painting bleach onto blackened
+      Some of these cameraless experiments include painting bleach onto blackened
       photo paper, building layered piles of glass and eggshells and moving around
       them with a flashlight to make an exposure, and growing a self-replicating
       garden of mold that feeds on silver gelatin paper. In one image, over 100
@@ -1359,18 +1356,18 @@
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
       image: 1-Deep-space.jpg
-    - name: Wasted flowers
+    - name: Wasted Flowers
       year: 2016
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
       sold: true
       image: 2-Wasted-flowers.jpg
-    - name: Growing planet
+    - name: Growing Planet
       year: 2015
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
       image: 3-Growing-planet.jpg
-    - name: Enzyme print
+    - name: Enzyme Print
       year: 2016
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
@@ -1381,7 +1378,7 @@
       description: cameraless silver gelatin print
       sold: true
       image: 5-Nebula.jpg
-    - name: Solar flare
+    - name: Solar Flare
       year: 2015
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
@@ -1396,7 +1393,7 @@
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
       image: 8-Shattered.jpg
-    - name: Mushroom shadows
+    - name: Mushroom Shadows
       year: 2016
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
