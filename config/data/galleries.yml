@@ -1324,6 +1324,7 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
+      sold: true
       image: Mold.jpg
     - name: Molecule
       description: cameraless silver gelatin print
@@ -1409,6 +1410,11 @@
       description: cameraless silver gelatin print
       sold: true
       image: 10.5 Island 2016.jpg
+    - name: Cluster
+      year: 2016
+      dimensions: 24 x 20 ins.
+      description: cameraless silver gelatin print
+      image: 11-Cluster.jpg
     - name: Island
       description: cameraless silver gelatin print
       year: 2018
@@ -1464,21 +1470,11 @@
       year: 2018
       dimensions: 24 x 20 ins.
       image: Black-hole.jpg
-    - name: Cluster
-      year: 2016
-      dimensions: 24 x 20 ins.
-      description: cameraless silver gelatin print
-      image: 11-Cluster.jpg
     - name: Fragility
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 34 x 29 ins.
       image: Fragility.jpg
-    - name: Cluster
-      description: cameraless silver gelatin print
-      year: 2018
-      dimensions: 34 x 29 ins.
-      image: Cluster.jpg
     - name: Big Bang
       year: 2016
       dimensions: 40 x 30 ins.
@@ -1516,6 +1512,11 @@
       description: cameraless silver gelatin print
       sold: true
       image: 21-Sphere pale.jpg
+    - name: Cluster
+      description: cameraless silver gelatin print
+      year: 2018
+      dimensions: 34 x 29 ins.
+      image: Cluster.jpg
 
 - name: Plastic Camera Work
   id: plastic_camera
