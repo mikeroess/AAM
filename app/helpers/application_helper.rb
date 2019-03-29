@@ -50,15 +50,21 @@ module ApplicationHelper
     )
   end
 
-  def archive_page?
+  def other_work_page?
     plastic_camera_page? || current_path_starts_with?(
+      gallery_path(:other_work),
+      gallery_path(:self_portrait),
+      gallery_path(:watches)
+    )
+  end
+
+  def archive_page?
+    current_path_starts_with?(
       gallery_path(:archive),
       gallery_path(:botanicals),
       gallery_path(:group),
       gallery_path(:layered),
-      gallery_path(:milan),
-      gallery_path(:self_portrait),
-      gallery_path(:watches)
+      gallery_path(:milan)
     )
   end
 

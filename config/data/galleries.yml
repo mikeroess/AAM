@@ -1528,11 +1528,15 @@
     - garden_diana
 
 - name: Other Work
-  id: archive
+  id: other_work
   galleries:
     - self_portrait
     - watches
     - plastic_camera
+
+- name: Archive
+  id: archive
+  galleries:
     - milan
     - layered
     - group
