@@ -1436,16 +1436,16 @@
     - pillow_book
     - garden_diana
 
-- id: archive
+- name: Other Work
+  id: archive
   galleries:
+    - self_portrait
+    - watches
+    - plastic_camera
     - milan
     - layered
     - group
     - botanicals
-    - buoyancy
     - botanical_book
     - monoprints
-    - hands
     - dresses
-    - murals
-    - circles
