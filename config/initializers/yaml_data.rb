@@ -12,7 +12,7 @@ yaml_data_watcher = Rails.application.config.file_watcher.new([], data_dir.to_s 
     yaml = data_dir.join("#{filename}.yml")
     raise "Could not load configuration. No such file - #{yaml}" unless yaml.exist?
 
-    records = YAML.load(ERB.new(yaml.read).result)
+    records = YAML.safe_load(ERB.new(yaml.read).result)
     model.all = records.map.with_index do |attrs, index|
       attrs[:id] = index + 1 unless attrs['id']
       model.new(attrs)

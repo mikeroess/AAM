@@ -1,5 +1,18 @@
+Bundler/OrderedGems:
+  Enabled: false
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - lib/tasks/static.rake
+
 Metrics/LineLength:
   Enabled: false
 
 Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
   Enabled: false

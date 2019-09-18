@@ -7,11 +7,9 @@ class GalleriesController < ApplicationController
     render @template
   end
 
-  def show
-  end
+  def show; end
 
-  def statement
-  end
+  def statement; end
 
   private
 

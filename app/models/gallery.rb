@@ -1,3 +1,3 @@
 module Gallery
-  class NotFound < Exception; end
+  class NotFound < RuntimeError; end
 end

@@ -5,7 +5,7 @@ namespace :static do
   end
 
   desc 'Build a static version of the site'
-  task build: [:'assets:precompile', :clean] do
+  task build: %i[assets:precompile clean] do
     pid_file = Rails.root.join('tmp', 'pids', 'server.pid').to_s
     if File.exist? pid_file
       server_started = false

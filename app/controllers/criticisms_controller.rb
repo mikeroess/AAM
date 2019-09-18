@@ -4,11 +4,9 @@ class CriticismsController < ApplicationController
 
   rescue_from Criticism::NotFound, with: :not_found
 
-  def index
-  end
+  def index; end
 
-  def show
-  end
+  def show; end
 
   private
 

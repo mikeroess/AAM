@@ -1,7 +1,8 @@
 class Criticism
   include ActiveModel::Model
 
-  attr_accessor :id, :citation, :summary, :title, :full, :images, :sidebar
+  attr_accessor :id, :citation, :summary, :title, :full, :sidebar
+  attr_writer :images
   cattr_accessor :all
 
   def full?
@@ -24,5 +25,5 @@ class Criticism
     all.find { |c| c.id == id } || raise(NotFound)
   end
 
-  class NotFound < Exception; end
+  class NotFound < RuntimeError; end
 end

@@ -1,7 +1,5 @@
 module ApplicationHelper
-  PAGE_GROUPS = [
-    :front, :gallery_image, :gallery, :about, :contact
-  ].freeze
+  PAGE_GROUPS = %i[front gallery_image gallery about contact].freeze
 
   Gallery::Gallery.all.each do |gallery|
     define_method(:"#{gallery.slug}_page?") do
@@ -79,9 +77,9 @@ module ApplicationHelper
   end
 
   def loop_clearfix(index)
-    classes = ['visible-xs', 'clearfix']
+    classes = %w[visible-xs clearfix]
     classes << 'visible-sm' if index.odd?
-    classes += ['visible-md', 'visible-lg'] if index % 3 == 2
+    classes += %w[visible-md visible-lg] if index % 3 == 2
     content_tag(:div, '', class: classes)
   end
 

@@ -16,5 +16,9 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'pdf-reader', require: false
 
+group :development do
+  gem 'rubocop'
+end
+
 # URI parser used to get proper navbar function at small sizes
 require 'uri'

@@ -23,7 +23,7 @@ class ResumeParser
       lines << '<div id="resume" class="container-constrained resume">'
       lines << '  <div class="row">'
       lines << '    <div class="col-xs-12">'
-      lines.concat sections.map(&:render).flatten.map { |l| "      #{l}" }
+      lines.concat(sections.map(&:render).flatten.map { |l| "      #{l}" })
       lines << '    </div>'
       lines << '  </div>'
       lines << '</div>'
@@ -43,9 +43,10 @@ class ResumeParser
 
       normalized = normalize_line(line)
 
-      case
-      when section_header?(line) then acc << [normalized]
-      when !acc.empty? then acc[-1] << normalized
+      if section_header?(line)
+        acc << [normalized]
+      elsif !acc.empty?
+        acc[-1] << normalized
       end
     end
   end
@@ -84,9 +85,7 @@ class ResumeParser
     def set_text_font_and_size(font, _)
       font_h = @page.fonts[font]
       @font = PDF::Reader::Font.new(@page.objects, font_h)
-      @format = case
-                when font_h[:FontDescriptor][:ItalicAngle] != 0 then :em
-                end
+      @format = :em if font_h[:FontDescriptor][:ItalicAngle] != 0
     end
 
     def show_text_with_positioning(parts)
@@ -140,8 +139,7 @@ class ResumeParser
     end
 
     def self.parse(lines)
-      case
-      when lines[1].strip =~ /^[0-9]/
+      if lines[1].strip =~ /^[0-9]/
         YearSection.parse(lines)
       else
         ColumnsSection.parse(lines)
@@ -153,7 +151,7 @@ class ResumeParser
     def render_items
       [].tap do |lines|
         lines << '  <dl>'
-        lines.concat items.flat_map { |group| render_group(group) }
+        lines.concat(items.flat_map { |group| render_group(group) })
         lines << '  </dl>'
       end
     end
@@ -163,7 +161,7 @@ class ResumeParser
         lines << "    <dt>#{group[:year]}</dt>"
         lines << '    <dd>'
         lines << '      <ul>'
-        lines.concat group[:lines].map { |i| "        <li>#{i}</li>" }
+        lines.concat(group[:lines].map { |i| "        <li>#{i}</li>" })
         lines << '      </ul>'
         lines << '    </dd>'
       end
@@ -187,7 +185,7 @@ class ResumeParser
       [].tap do |lines|
         items.partition.with_index { |_, i| i.even? }.each do |group|
           lines << '  <div class="col-xs-12 col-sm-6 col-md-4">'
-          lines.concat group.map { |i| "    #{i}<br />" }
+          lines.concat(group.map { |i| "    #{i}<br />" })
           lines << '  </div>'
         end
         lines << '  <div class="hidden-xs hidden-sm col-md-4"></div>'
