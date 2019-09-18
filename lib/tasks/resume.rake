@@ -72,11 +72,11 @@ class ResumeParser
       @lines = []
     end
 
-    def concatenate_matrix(_, _, _, _, _, y) # rubocop:disable Metrics/ParameterLists
-      if @current_y == y
+    def set_text_matrix_and_text_line_matrix(_, _, _, _, _, y_pos) # rubocop:disable Metrics/ParameterLists
+      if @current_y == y_pos
         @newline = false
       else
-        @current_y = y
+        @current_y = y_pos
         @newline = true
       end
     end
