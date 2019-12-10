@@ -12,7 +12,7 @@ gem 'sass'
 gem 'jquery-rails'
 gem 'js_cookie_rails'
 gem 'uglifier'
-gem 'therubyracer', platforms: :ruby
+gem 'mini_racer'
 
 gem 'pdf-reader', require: false
 

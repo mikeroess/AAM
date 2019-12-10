@@ -71,7 +71,7 @@ GEM
       thor (>= 0.14, < 2.0)
     js_cookie_rails (2.2.0)
       railties (>= 3.1)
-    libv8 (3.16.14.19)
+    libv8 (7.3.492.27.1)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -83,6 +83,8 @@ GEM
     mimemagic (0.3.3)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
+    mini_racer (0.2.8)
+      libv8 (>= 6.9.411)
     minitest (5.11.3)
     nio4r (2.3.1)
     nokogiri (1.10.2)
@@ -128,7 +130,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    ref (2.0.0)
     rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -161,9 +162,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
@@ -185,6 +183,7 @@ DEPENDENCIES
   font-awesome-rails
   jquery-rails
   js_cookie_rails
+  mini_racer
   pdf-reader
   rails
   rake
@@ -193,7 +192,6 @@ DEPENDENCIES
   sass-rails
   sprockets-image_compressor
   sprockets-rails
-  therubyracer
   uglifier
 
 BUNDLED WITH
