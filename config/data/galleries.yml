@@ -1249,9 +1249,9 @@
       what it can be.
   galleries:
     - atom_planet
-    - bodies
 
-- id: framed
+- name: 20 x 16 inches
+  id: t20x16
   statement:
     title: 'Atom, Planet: Cameraless Photography'
     text: >-
@@ -1300,58 +1300,68 @@
       processes, and to pose interesting questions about what photography is, and
       what it can be.
   images:
+    - name: Earth Flower
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20x16 ins.
+    - name: Infinity Cut
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20x16 ins.
+    - name: Sublime
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20x16 ins.
+    - name: Underwater Flower
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20x16 ins.
+    - name: Flaming
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20x16 ins.
     - name: Birth
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Birth.jpg
     - name: Broken
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Broken.jpg
     - name: Floating (Jupiter)
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Floating-Jupiter.jpg
     - name: Flow
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Flow.jpg
     - name: Mold
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
       sold: true
-      image: Mold.jpg
     - name: Molecule
       description: cameraless silver gelatin print
       year: 2017
       dimensions: 20 x 16 ins.
-      image: Molecule.jpg
     - name: Shadow Flowers
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
       sold: true
-      image: Shadow-Flowers.jpg
     - name: Particle
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Particle.jpg
     - name: Thistle
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Thistle.jpg
     - name: Virus
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      image: Virus.jpg
     - name: Deep Space
       year: 2015
       dimensions: 20 x 16 ins.
@@ -1410,6 +1420,69 @@
       description: cameraless silver gelatin print
       sold: true
       image: 10.5 Island 2016.jpg
+
+- name: 24 x 20 inches
+  id: t24x20
+  statement:
+    title: 'Atom, Planet: Cameraless Photography'
+    text: >-
+      While most photography employs a lens, and either film or a digital sensor,
+      this series explores ways of generating images on photographic paper
+      without using a camera or negative. The source of inspiration for inventing
+      processes that inform the resulting photograph is the dialogue that occurs
+      between painters or sculptors, and their chosen medium. Another is the
+      scientific method, where you observe phenomena, formulate a hypothesis, test
+      it with experiments, use careful measurements, note variables, observe
+      results, and use this information to build an image.
+
+      While still working with photo paper, light, and chemistry, I revisit some
+      historic processes like Man Ray’s photogram, Pierre Cordier’s chemigram,
+      and lumen printing, and also invent other ways of producing images without
+      using a negative. These processes are utilizing optical situations, or
+      chemical reactions, or a combination of the two. Applying glue as a resist
+      and digging down to the photo paper surface with alternating photo chemicals
+      causes an image to emerge on the paper in the form of a chemical painting.
+      Some of these cameraless experiments include painting bleach onto blackened
+      photo paper, building layered piles of glass and eggshells and moving around
+      them with a flashlight to make an exposure, and growing a self-replicating
+      garden of mold that feeds on silver gelatin paper. In one image, over 100
+      medicines, spices, and household cleaners were applied to photo paper and
+      run through darkroom chemistry to test for colors and textures. The methods
+      are an unorthodox collection of materials and techniques from the domestic
+      and scientific realms, brought into the darkroom, often coaxing or
+      scrubbing an image into the photographic paper. Some images are made in the
+      dark and some in daylight, some processes are additive and others reductive,
+      the result is a series of giant (50 x 111 inch) and many smaller
+      photographs. The imagery emerges as circles and spheres, meant to represent
+      planets and atoms, to visualize the macrocosm and the microcosm of life as
+      we know it.
+
+      The scale has a relationship to large painting; the physical demands of the
+      area being treated require a bodily presence in the piece while building it,
+      exploring as if it were a landscape. The scale impacts the subject matter,
+      the work more often addresses the cosmological realm than the atomic, but
+      this obsession with circles is also related to a search for a sense of
+      wholeness.
+
+      Photography is a very young and exciting medium, and there is so much
+      undiscovered terrain. In some ways, it stands at a precipice: digital
+      photography is eroding the availability of some analog materials, and the
+      study and use of silver gelatin papers. I am working to develop these
+      processes, and to pose interesting questions about what photography is, and
+      what it can be.
+  images:
+    - name: Rust Flowers
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 24x20 ins.
+    - name: Flowers Rain Light
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 24x20 ins.
+    - name: Wet Rust
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 24x20 ins.
     - name: Cluster
       year: 2016
       dimensions: 24 x 20 ins.
@@ -1419,7 +1492,6 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 24 x 20 ins.
-      image: Island.jpg
     - name: Falling
       year: 2016
       dimensions: 24 x 20 ins.
@@ -1470,11 +1542,70 @@
       year: 2018
       dimensions: 24 x 20 ins.
       image: Black-hole.jpg
+
+- name: 40 x 30 inches
+  id: t40x30
+  statement:
+    title: 'Atom, Planet: Cameraless Photography'
+    text: >-
+      While most photography employs a lens, and either film or a digital sensor,
+      this series explores ways of generating images on photographic paper
+      without using a camera or negative. The source of inspiration for inventing
+      processes that inform the resulting photograph is the dialogue that occurs
+      between painters or sculptors, and their chosen medium. Another is the
+      scientific method, where you observe phenomena, formulate a hypothesis, test
+      it with experiments, use careful measurements, note variables, observe
+      results, and use this information to build an image.
+
+      While still working with photo paper, light, and chemistry, I revisit some
+      historic processes like Man Ray’s photogram, Pierre Cordier’s chemigram,
+      and lumen printing, and also invent other ways of producing images without
+      using a negative. These processes are utilizing optical situations, or
+      chemical reactions, or a combination of the two. Applying glue as a resist
+      and digging down to the photo paper surface with alternating photo chemicals
+      causes an image to emerge on the paper in the form of a chemical painting.
+      Some of these cameraless experiments include painting bleach onto blackened
+      photo paper, building layered piles of glass and eggshells and moving around
+      them with a flashlight to make an exposure, and growing a self-replicating
+      garden of mold that feeds on silver gelatin paper. In one image, over 100
+      medicines, spices, and household cleaners were applied to photo paper and
+      run through darkroom chemistry to test for colors and textures. The methods
+      are an unorthodox collection of materials and techniques from the domestic
+      and scientific realms, brought into the darkroom, often coaxing or
+      scrubbing an image into the photographic paper. Some images are made in the
+      dark and some in daylight, some processes are additive and others reductive,
+      the result is a series of giant (50 x 111 inch) and many smaller
+      photographs. The imagery emerges as circles and spheres, meant to represent
+      planets and atoms, to visualize the macrocosm and the microcosm of life as
+      we know it.
+
+      The scale has a relationship to large painting; the physical demands of the
+      area being treated require a bodily presence in the piece while building it,
+      exploring as if it were a landscape. The scale impacts the subject matter,
+      the work more often addresses the cosmological realm than the atomic, but
+      this obsession with circles is also related to a search for a sense of
+      wholeness.
+
+      Photography is a very young and exciting medium, and there is so much
+      undiscovered terrain. In some ways, it stands at a precipice: digital
+      photography is eroding the availability of some analog materials, and the
+      study and use of silver gelatin papers. I am working to develop these
+      processes, and to pose interesting questions about what photography is, and
+      what it can be.
+  images:
+    - name: Chaos Birth
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 40x30 ins.
+    - name: Void
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 40x30 ins.
+      image: Void-2019.jpg
     - name: Fragility
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 34 x 29 ins.
-      image: Fragility.jpg
     - name: Big Bang
       year: 2016
       dimensions: 40 x 30 ins.
@@ -1505,7 +1636,6 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 30 x 30 ins.
-      image: Void.jpg
     - name: Sphere Pale
       year: 2016
       dimensions: 40 x 30 ins.
@@ -1516,7 +1646,6 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 34 x 29 ins.
-      image: Cluster.jpg
 
 - name: Plastic Camera Work
   id: plastic_camera

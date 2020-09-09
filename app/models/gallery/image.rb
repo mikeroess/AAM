@@ -2,11 +2,16 @@ module Gallery
   class Image
     include ActiveModel::Model
 
+    attr_writer :image
     attr_accessor :name, :description, :dimensions, :year, :location,
-                  :image, :index, :gallery, :sold
+                  :index, :gallery, :sold
 
     def id
       index + 1
+    end
+
+    def image
+      @image || "#{name.parameterize(preserve_case: true)}.jpg"
     end
 
     alias sold? sold

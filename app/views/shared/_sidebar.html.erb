@@ -6,10 +6,16 @@
   <li>
     New Work:
     <ul>
-      <li<% if framed_page?  %> class="current"<% end %>>
-        <a href="<%= gallery_path(:framed) %>">Framed</a>
+      <li<% if t20x16_page? %> class="current"<% end %>>
+        <a href="<%= gallery_path(:t20x16) %>">20x16 ins.</a>
       </li>
-      <li<% if scrolls_page?  %> class="current"<% end %>>
+      <li<% if t24x20_page? %> class="current"<% end %>>
+        <a href="<%= gallery_path(:t24x20) %>">24x20 ins.</a>
+      </li>
+      <li<% if t40x30_page? %> class="current"<% end %>>
+        <a href="<%= gallery_path(:t40x30) %>">40x30 ins.</a>
+      </li>
+      <li<% if scrolls_page? %> class="current"<% end %>>
         <a href="<%= gallery_path(:scrolls) %>">Scrolls</a>
       </li>
     </ul>
