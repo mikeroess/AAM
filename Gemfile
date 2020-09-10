@@ -1,7 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+# We don't need all of rails.
+gem 'activesupport'
+gem 'actionpack'
+gem 'actionview'
+gem 'activemodel'
+gem 'railties'
 gem 'sprockets-rails'
+
 gem 'rake'
 
 gem 'sprockets-image_compressor'
