@@ -14,6 +14,10 @@ module Gallery
       @image || "#{name.parameterize(preserve_case: true)}.jpg"
     end
 
+    def thumbnail
+      "thumbs/#{image}"
+    end
+
     alias sold? sold
 
     def short_text
