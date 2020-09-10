@@ -1303,26 +1303,26 @@
     - name: Earth Flower
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 20x16 ins.
+      dimensions: 20 x 16 ins.
     - name: Infinity Cut
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 20x16 ins.
+      dimensions: 20 x 16 ins.
     - name: Sublime
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 20x16 ins.
-    - name: Underwater Flower
-      description: cameraless silver gelatin print
-      year: 2019
-      dimensions: 20x16 ins.
-    - name: Flaming
-      description: cameraless silver gelatin print
-      year: 2019
-      dimensions: 20x16 ins.
+      dimensions: 20 x 16 ins.
     - name: Birth
       description: cameraless silver gelatin print
       year: 2018
+      dimensions: 20 x 16 ins.
+    - name: Flaming
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20 x 16 ins.
+    - name: Underwater Flower
+      description: cameraless silver gelatin print
+      year: 2019
       dimensions: 20 x 16 ins.
     - name: Broken
       description: cameraless silver gelatin print
@@ -1474,15 +1474,15 @@
     - name: Rust Flowers
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 24x20 ins.
+      dimensions: 24 x 20 ins.
     - name: Flowers Rain Light
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 24x20 ins.
+      dimensions: 24 x 20 ins.
     - name: Wet Rust
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 24x20 ins.
+      dimensions: 24 x 20 ins.
     - name: Cluster
       year: 2016
       dimensions: 24 x 20 ins.
@@ -1596,12 +1596,7 @@
     - name: Chaos Birth
       description: cameraless silver gelatin print
       year: 2019
-      dimensions: 40x30 ins.
-    - name: Void
-      description: cameraless silver gelatin print
-      year: 2019
-      dimensions: 40x30 ins.
-      image: Void-2019.jpg
+      dimensions: 40 x 30 ins.
     - name: Fragility
       description: cameraless silver gelatin print
       year: 2018
