@@ -1300,6 +1300,14 @@
       processes, and to pose interesting questions about what photography is, and
       what it can be.
   images:
+    - name: Night
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20 x 16 ins.
+    - name: Rupture
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20 x 16 ins.
     - name: Earth Flower
       description: cameraless silver gelatin print
       year: 2019
