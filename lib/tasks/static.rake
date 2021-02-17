@@ -36,7 +36,7 @@ namespace :static do
         File.rename(file, "#{new_name}/index.html")
       end
     ensure
-      if server_started
+      if server_started && File.exist?(pid_file)
         pid = File.read(pid_file)
         Process.kill(9, pid.to_i)
         File.delete(pid_file)
