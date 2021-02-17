@@ -1,15 +1,21 @@
+require:
+  - rubocop-rake
+
+AllCops:
+  NewCops: enable
+
 Bundler/OrderedGems:
   Enabled: false
 
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
+Layout/LineLength:
+  Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - lib/tasks/static.rake
-
-Metrics/LineLength:
-  Enabled: false
 
 Style/Documentation:
   Enabled: false

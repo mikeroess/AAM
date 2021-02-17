@@ -3,9 +3,9 @@ require 'pdf/reader'
 namespace :resume do
   desc 'Parse Anne\'s PDF resume and convert it to HTML'
   task parse: :environment do
-    reader = PDF::Reader.new(Rails.root + 'public' + 'media' + 'resume.pdf')
+    reader = PDF::Reader.new(Rails.root.join('public', 'media', 'resume.pdf'))
     parser = ResumeParser.new(reader)
-    File.open(Rails.root + 'app' + 'views' + 'pages' + 'resume.html.erb', 'w') do |f|
+    File.open(Rails.root.join('app', 'views', 'pages', 'resume.html.erb'), 'w') do |f|
       f << parser.as_html
     end
   end
@@ -53,7 +53,7 @@ class ResumeParser
 
   def normalize_line(line)
     line.gsub(/\s+,/, ',')
-        .gsub(/\-\s+/, '-')
+        .gsub(/-\s+/, '-')
         .gsub(%r{</em>(\s*)<em>}, '\1')
         .gsub(%r{<em>\s+</em>}, ' ')
         .gsub(%r{(\s+)</em>}, '</em>\1')

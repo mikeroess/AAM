@@ -5,6 +5,7 @@ module Gallery
     attr_accessor :id, :show_gallery_titles, :gallery_link
     attr_reader :statement
     attr_writer :name, :images, :gallery_slugs
+
     cattr_accessor :all
 
     alias slug id

@@ -3,6 +3,7 @@ class Criticism
 
   attr_accessor :id, :citation, :summary, :title, :full, :sidebar
   attr_writer :images
+
   cattr_accessor :all
 
   def full?

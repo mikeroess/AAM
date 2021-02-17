@@ -10,7 +10,7 @@ module GalleriesHelper
       else
         content_tag(:p, paragraph, nil, false)
       end
-    end.join('')
+    end.join
   end
 
   def image_details(image)
