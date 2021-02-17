@@ -1357,7 +1357,6 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
-      sold: true
     - name: Particle
       description: cameraless silver gelatin print
       year: 2018
@@ -1408,6 +1407,7 @@
       description: cameraless silver gelatin print
       image: 7-Explosion.jpg
     - name: Shattered
+      sold: true
       year: 2017
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
