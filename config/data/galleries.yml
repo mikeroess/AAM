@@ -1300,10 +1300,44 @@
       processes, and to pose interesting questions about what photography is, and
       what it can be.
   images:
+    - name: Black Snow
+      description: cameraless silver gelatin print
+      year: 2021
+      dimensions: 20 x 16 ins.
+    - name: Burst
+      description: cameraless silver gelatin print
+      year: 2021
+      dimensions: 20 x 16 ins.
+    - name: Cloud
+      description: cameraless silver gelatin print
+      year: 2021
+      dimensions: 20 x 16 ins.
+    - name: Portrait of Dad in Medicine
+      description: cameraless silver gelatin print
+      year: 2021
+      dimensions: 20 x 16 ins.
+      image: Dads-Meds.jpg
+    - name: Cracking
+      description: cameraless silver gelatin print
+      year: 2020
+      dimensions: 20 x 16 ins.
+    - name: Dust
+      description: cameraless silver gelatin print
+      year: 2020
+      dimensions: 20 x 16 ins.
+    - name: Spore Planet
+      description: cameraless silver gelatin print
+      year: 2020
+      dimensions: 20 x 16 ins.
+    - name: Fire Dark
+      description: cameraless silver gelatin print
+      year: 2019
+      dimensions: 20 x 16 ins.
     - name: Night
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
+      sold: true
     - name: Rupture
       description: cameraless silver gelatin print
       year: 2019
@@ -1601,6 +1635,10 @@
       processes, and to pose interesting questions about what photography is, and
       what it can be.
   images:
+    - name: Waterfall
+      description: cameraless silver gelatin print
+      year: 2021
+      dimensions: 40 x 30 ins.
     - name: Chaos Birth
       description: cameraless silver gelatin print
       year: 2019
@@ -1630,11 +1668,6 @@
       description: cameraless silver gelatin print
       sold: true
       image: 24-Sphere dark.jpg
-    - name: Standing on the Edge of the Sun
-      year: 2016
-      dimensions: 40 x 30 ins.
-      description: cameraless silver gelatin print
-      image: 25-Stand on the edge of the sun.jpg
     - name: Void
       description: cameraless silver gelatin print
       year: 2018
@@ -1649,6 +1682,11 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 34 x 29 ins.
+    - name: Standing on the Edge of the Sun
+      year: 2016
+      dimensions: 40 x 30 ins.
+      description: cameraless silver gelatin print
+      image: 25-Stand on the edge of the sun.jpg
 
 - name: Plastic Camera Work
   id: plastic_camera
