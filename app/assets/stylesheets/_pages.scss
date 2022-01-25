@@ -17,19 +17,15 @@
     }
   }
 
-  dl {
-    margin-bottom: 0px;
+  .item {
+    display: flex;
 
-    dt {
+    .item--year {
       font-weight: normal;
       width: 10%;
-      float: left;
-      clear: left;
     }
 
-    dd {
-      margin-left: 10%;
-
+    .item--items {
       ul {
         list-style: none;
         padding-left: 0;

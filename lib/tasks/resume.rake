@@ -150,20 +150,20 @@ class ResumeParser
   class YearSection < Section
     def render_items
       [].tap do |lines|
-        lines << '  <dl>'
         lines.concat(items.flat_map { |group| render_group(group) })
-        lines << '  </dl>'
       end
     end
 
     def render_group(group)
       [].tap do |lines|
-        lines << "    <dt>#{group[:year]}</dt>"
-        lines << '    <dd>'
+        lines << '  <div class="item">'
+        lines << %(    <div class="item--year">#{group[:year]}</div>)
+        lines << '    <div class="item--items">'
         lines << '      <ul>'
         lines.concat(group[:lines].map { |i| "        <li>#{i}</li>" })
         lines << '      </ul>'
-        lines << '    </dd>'
+        lines << '    </div>'
+        lines << '  </div>'
       end
     end
 
