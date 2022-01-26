@@ -9,7 +9,7 @@ gem 'railties'
 gem 'sprockets-rails'
 
 gem 'rake'
-gem 'thin'
+gem 'webrick'
 
 gem 'sprockets-image_compressor'
 gem 'font-awesome-rails'
