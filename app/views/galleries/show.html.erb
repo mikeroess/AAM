@@ -31,7 +31,6 @@
       $(document).ready(function() {
         console.log(Cookies.get(LOUPE_COOKIE_NAME));
         if ($(window).width() < 768 || Cookies.get(LOUPE_COOKIE_NAME)) {
-          console.log('RETURNING');
           return;
         }
 
