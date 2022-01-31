@@ -139,7 +139,9 @@ class ResumeParser
     end
 
     def self.parse(lines)
-      if lines[1].strip =~ /^[0-9]/
+      if lines.size == 1
+        Section.new(lines.first.strip)
+      elsif lines[1].strip =~ /^[0-9]/
         YearSection.parse(lines)
       else
         ColumnsSection.parse(lines)
