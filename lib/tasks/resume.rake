@@ -186,11 +186,10 @@ class ResumeParser
     def render_items
       [].tap do |lines|
         items.partition.with_index { |_, i| i.even? }.each do |group|
-          lines << '  <div class="col-xs-12 col-sm-6 col-md-4">'
-          lines.concat(group.map { |i| "    #{i}<br />" })
+          lines << '  <div class="col-xs-12 col-sm-6 col-lg-4">'
+          lines.concat(group.map { |i| %(    <div style="white-space: nowrap;">#{i}</div>) })
           lines << '  </div>'
         end
-        lines << '  <div class="hidden-xs hidden-sm col-md-4"></div>'
       end
     end
 
