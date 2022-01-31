@@ -1300,11 +1300,11 @@
       processes, and to pose interesting questions about what photography is, and
       what it can be.
   images:
-    - name: Black Snow
+    - name: Burst
       description: cameraless silver gelatin print
       year: 2021
       dimensions: 20 x 16 ins.
-    - name: Burst
+    - name: Black Snow
       description: cameraless silver gelatin print
       year: 2021
       dimensions: 20 x 16 ins.
@@ -1329,7 +1329,7 @@
       description: cameraless silver gelatin print
       year: 2020
       dimensions: 20 x 16 ins.
-    - name: Fire Dark
+    - name: Earth Flower
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
@@ -1338,11 +1338,11 @@
       year: 2019
       dimensions: 20 x 16 ins.
       sold: true
-    - name: Rupture
+    - name: Fire Dark
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
-    - name: Earth Flower
+    - name: Sublime
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
@@ -1350,7 +1350,7 @@
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
-    - name: Sublime
+    - name: Rupture
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
