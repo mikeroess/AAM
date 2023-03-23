@@ -27,6 +27,3 @@ gem 'pdf-reader', require: false
 
 gem 'rubocop'
 gem 'rubocop-rake', require: false
-
-# URI parser used to get proper navbar function at small sizes
-require 'uri'

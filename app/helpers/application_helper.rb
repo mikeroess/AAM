@@ -1,3 +1,5 @@
+require 'uri'
+
 module ApplicationHelper
   PAGE_GROUPS = %i[front gallery_image gallery about contact].freeze
 
