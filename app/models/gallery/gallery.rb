@@ -13,7 +13,7 @@ module Gallery
     def initialize(attrs = {})
       super
       self.images = images.each_with_index.map do |image, index|
-        Image.new(image.merge(gallery: self, index: index))
+        Image.new(image.merge(gallery: self, index:))
       end
     end
 
