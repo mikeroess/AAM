@@ -1,0 +1,15 @@
+require_relative 'config/environment'
+require 'parklife/rails'
+
+Parklife.application.configure do |config|
+  config.base = 'https://anneardenmcdonald.com'
+  config.build_dir = '_static'
+end
+
+Parklife.application.routes do
+  root crawl: true
+
+  get 'error'
+  get 'contact/success'
+  get 'jewelry', crawl: true
+end

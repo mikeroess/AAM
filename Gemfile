@@ -21,12 +21,12 @@ gem 'js_cookie_rails'
 gem 'uglifier'
 gem 'mini_racer'
 
+gem 'parklife'
+
 gem 'pdf-reader', require: false
 
-group :development do
-  gem 'rubocop'
-  gem 'rubocop-rake', require: false
-end
+gem 'rubocop'
+gem 'rubocop-rake', require: false
 
 # URI parser used to get proper navbar function at small sizes
 require 'uri'
