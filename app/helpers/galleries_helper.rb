@@ -14,8 +14,9 @@ module GalleriesHelper
   end
 
   def image_details(image)
-    parts = [image.long_text]
-    parts << link_to('Statement', image.gallery.statement_path) if image.gallery.statement?
-    parts.reject(&:blank?).join('&nbsp;&mdash;&nbsp;').html_safe
+    details = image.long_text
+    details << ' (not available)' if image.sold?
+    details << " &mdash; #{link_to('Statement', image.gallery.statement_path)}" if image.gallery.statement?
+    details.html_safe
   end
 end
