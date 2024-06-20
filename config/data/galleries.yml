@@ -1350,6 +1350,7 @@
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
+      sold: true
     - name: Rupture
       description: cameraless silver gelatin print
       year: 2019
@@ -1366,6 +1367,7 @@
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
+      sold: true
     - name: Broken
       description: cameraless silver gelatin print
       year: 2018
@@ -1374,6 +1376,7 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 20 x 16 ins.
+      sold: true
     - name: Flow
       description: cameraless silver gelatin print
       year: 2018
