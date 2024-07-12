@@ -9,7 +9,7 @@ namespace :static do
   desc 'Build a static version of the site'
   task build: %i[assets:precompile clean] do
     Parklife.application.tap do |app|
-      app.load_Parkfile(File.join(Dir.pwd, 'Parkfile'))
+      app.load_Parkfile(Rails.root.join('Parkfile'))
     end.build
     Rails.root.join('public').each_child do |dir|
       FileUtils.cp_r(dir, build_dir)
@@ -30,7 +30,7 @@ namespace :static do
             '--one-file-system', '--compress',
             '--exclude=czechslovakphotos.com',
             "#{build_dir}/",
-            'annearde@anneardenmcdonald.com:~/public_html/'
+            'anneardenmcdonald.com:~/public_html/'
     puts '== Done syncing static site'
   end
 end
