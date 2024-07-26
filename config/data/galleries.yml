@@ -56,6 +56,7 @@
       dimensions: 96 x 50 ins.
       year: 2007
       image: ap-1-atom.jpg
+      sold: true
     - name: Bone
       description: cameraless silver gelatin photograph
       year: 2011
@@ -121,6 +122,7 @@
       year: 2016
       dimensions: 103 x 50 ins.
       image: Liquid.jpg
+      sold: true
     - name: Moons
       description: cameraless silver gelatin photograph
       year: 2016
@@ -743,9 +745,11 @@
     - name: Alice
       description: (vial, mercury, cyanotype, typed paper)
       image: watch-5-Alice.jpg
+      sold: true
     - name: Dreaming of Flying
       description: (hummingbird egg, moth, fabric)
       image: watch-6-dreaming-of-flying.jpg
+      sold: true
     - name: Chrysalis
       description: (seeds, wood, pillow stuffing, twigs, chrysalis forms built from cotton and fabric)
       sold: true
@@ -762,6 +766,7 @@
     - name: Lightship Frying Pan
       description: (map of cygnus a and b, buckshot, wood and painted metal, vial, mercury, hourglass)
       image: watch-10-Lightship-frying-pan.jpg
+      sold: true
     - name: Global Warming
       year: 2012
       description: (photograph, gold leaf, thermometer, spiral, lens)
@@ -823,15 +828,18 @@
       description: (dirt, roots, onion bulb, bone hand)
       sold: true
       image: watch-27-Leo-Steinberg's-watch.jpg
-    - name: Crucifixion Joel Peter Witkin's Watch
+    - name: Joel Peter Witkin's Watch
       description: (2 prints, dissection needle, blood)
       image: watch-28-Joel-Peter Witkin-watch.jpg
+      sold: true
     - name: Infinite Air
       description: (sheet music, microscope slides, wire, camera filter)
       image: watch-27-infinate-air.jpg
+      sold: true
     - name: Mercury Bathers
       description: (cyanotype, mercury)
       image: watch-29-mercury-bathers.jpg
+      sold: true
     - name: Woman Planting
       description: (fabric, dirt, coin, onion bulbs)
       sold: true
@@ -1472,6 +1480,7 @@
       dimensions: 20 x 16 ins.
       description: cameraless silver gelatin print
       image: 9-Mushroom-lumen.jpg
+      sold: true
     - name: Breakaway
       year: 2017
       dimensions: 20 x 16 ins.
@@ -1547,6 +1556,7 @@
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 24 x 20 ins.
+      sold: true
     - name: Wet Rust
       description: cameraless silver gelatin print
       year: 2019
