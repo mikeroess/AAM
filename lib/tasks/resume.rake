@@ -85,7 +85,11 @@ class ResumeParser
     def set_text_font_and_size(font, _)
       font_h = @page.fonts[font]
       @font = PDF::Reader::Font.new(@page.objects, font_h)
-      @format = :em unless font_h[:FontDescriptor].nil? || font_h[:FontDescriptor][:ItalicAngle].zero?
+      @format = if font_h[:FontDescriptor].nil? || font_h[:FontDescriptor][:ItalicAngle].zero?
+                  nil
+                else
+                  :em
+                end
     end
 
     def show_text_with_positioning(parts)
