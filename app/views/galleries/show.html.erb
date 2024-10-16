@@ -29,7 +29,6 @@
       var LOUPE_COOKIE_NAME = 'gallery_loupe_notice_seen';
 
       $(document).ready(function() {
-        console.log(Cookies.get(LOUPE_COOKIE_NAME));
         if ($(window).width() < 768 || Cookies.get(LOUPE_COOKIE_NAME)) {
           return;
         }
