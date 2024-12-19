@@ -14,7 +14,7 @@ namespace :images do
         print "Generating thumbnail for #{image.image}..."
 
         tempfile = Tempfile.new(['', image_path.extname])
-        system "magick convert #{Shellwords.escape(image_path)} -resize '600>' #{Shellwords.escape(tempfile.path)}"
+        system "magick #{Shellwords.escape(image_path)} -resize '600>' #{Shellwords.escape(tempfile.path)}"
 
         if thumb_path.file? && FileUtils.identical?(thumb_path, tempfile.path)
           puts 'already exists, skipping'
