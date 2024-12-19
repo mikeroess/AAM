@@ -1326,6 +1326,16 @@
       atoms and planets, both circles--it is also an expression of my search for
       a sense of wholeness.
   images:
+    - name: Corpuscle
+      description: cameraless silver gelatin print
+      year: 2024
+      dimensions: 20 x 16 ins.
+    - name: Flow
+      description: cameraless silver gelatin print
+      year: 2024
+      dimensions: 20 x 16 ins.
+      image: Flow-2024.jpg
+      sold: true
     - name: Burst
       description: cameraless silver gelatin print
       year: 2021
@@ -1355,7 +1365,7 @@
       description: cameraless silver gelatin print
       year: 2020
       dimensions: 20 x 16 ins.
-    - name: Earth Flower
+    - name: Primordial Ooze
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 20 x 16 ins.
@@ -1557,7 +1567,7 @@
       year: 2019
       dimensions: 24 x 20 ins.
       sold: true
-    - name: Wet Rust
+    - name: Red Birth
       description: cameraless silver gelatin print
       year: 2019
       dimensions: 24 x 20 ins.
