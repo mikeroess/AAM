@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-# We don't need all of rails.
 gem 'activesupport'
 gem 'actionpack'
 gem 'actionview'
