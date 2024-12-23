@@ -1,8 +1,7 @@
-require 'pdf/reader'
-
 namespace :resume do
   desc 'Parse Anne\'s PDF resume and convert it to HTML'
   task parse: :environment do
+    require 'pdf/reader'
     reader = PDF::Reader.new(Rails.root.join('public', 'media', 'resume.pdf'))
     parser = ResumeParser.new(reader)
     File.open(Rails.root.join('app', 'views', 'pages', 'resume.html.erb'), 'w') do |f|

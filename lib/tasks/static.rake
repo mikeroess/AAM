@@ -8,6 +8,7 @@ namespace :static do
 
   desc 'Build a static version of the site'
   task build: %i[assets:precompile clean] do
+    require 'parklife'
     Parklife.application.tap do |app|
       app.load_Parkfile(Rails.root.join('Parkfile'))
     end.build
