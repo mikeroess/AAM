@@ -8,6 +8,7 @@ gem 'railties'
 
 gem 'rake'
 gem 'webrick'
+gem 'mini_magick', require: false
 
 gem 'propshaft'
 gem 'cssbundling-rails'

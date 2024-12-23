@@ -16,6 +16,7 @@ Layout/LineLength:
 
 Metrics/BlockLength:
   Exclude:
+    - lib/tasks/images.rake
     - lib/tasks/static.rake
 
 Style/Documentation:
