@@ -2,7 +2,7 @@
 
 <% unless _front_page %><%= render 'shared/logo' %><% end %>
 
-<ul class="navigation">
+<ul class="navigation mt-4 mt-md-0">
   <li>
     New Work:
     <ul>
@@ -35,7 +35,7 @@
 </ul>
 
 <% unless _front_page %>
-  <footer class="hidden-xs">
+  <footer class="d-none d-sm-block">
     <%= render 'shared/social' %>
     <%= render 'shared/copyright' %>
   </footer>

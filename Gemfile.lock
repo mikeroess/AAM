@@ -35,25 +35,18 @@ GEM
       uri (>= 0.13.1)
     afm (0.2.2)
     ast (2.4.2)
-    autoprefixer-rails (10.4.19.0)
-      execjs (~> 2)
     base64 (0.2.0)
     benchmark (0.4.0)
     bigdecimal (3.1.8)
-    bootstrap-sass (3.4.1)
-      autoprefixer-rails (>= 5.2.1)
-      sassc (>= 2.0.0)
     builder (3.3.0)
     concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     crass (1.0.6)
+    cssbundling-rails (1.4.1)
+      railties (>= 6.0.0)
     date (3.4.1)
     drb (2.2.1)
     erubi (1.13.1)
-    execjs (2.10.0)
-    ffi (1.17.0)
-    font-awesome-rails (4.7.0.9)
-      railties (>= 3.2, < 9.0)
     hashery (2.1.2)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
@@ -61,22 +54,15 @@ GEM
     irb (1.14.3)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    jquery-rails (4.6.0)
-      rails-dom-testing (>= 1, < 3)
-      railties (>= 4.2.0)
-      thor (>= 0.14, < 2.0)
-    js_cookie_rails (2.2.0)
-      railties (>= 3.1)
+    jsbundling-rails (1.3.1)
+      railties (>= 6.0.0)
     json (2.9.1)
     language_server-protocol (3.17.0.3)
-    libv8-node (22.7.0.4)
     logger (1.6.4)
     loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mini_portile2 (2.8.8)
-    mini_racer (0.15.0)
-      libv8-node (~> 22.7.0.1)
     minitest (5.25.4)
     nokogiri (1.17.2)
       mini_portile2 (~> 2.8.2)
@@ -95,6 +81,11 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
+    propshaft (1.1.0)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
+      railties (>= 7.0.0)
     psych (5.2.2)
       date
       stringio
@@ -144,33 +135,13 @@ GEM
       rubocop (~> 1.0)
     ruby-progressbar (1.13.0)
     ruby-rc4 (0.1.5)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     securerandom (0.4.1)
-    sprockets (4.2.1)
-      concurrent-ruby (~> 1.0)
-      rack (>= 2.2.4, < 4)
-    sprockets-image_compressor (0.3.0)
-      sprockets
-    sprockets-rails (3.5.2)
-      actionpack (>= 6.1)
-      activesupport (>= 6.1)
-      sprockets (>= 3.0.0)
     stringio (3.1.2)
     thor (1.3.2)
-    tilt (2.4.0)
     ttfunk (1.8.0)
       bigdecimal (~> 3.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uglifier (4.2.1)
-      execjs (>= 0.3.0, < 3)
     unicode-display_width (3.1.2)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
@@ -187,21 +158,15 @@ DEPENDENCIES
   actionview
   activemodel
   activesupport
-  bootstrap-sass
-  font-awesome-rails
-  jquery-rails
-  js_cookie_rails
-  mini_racer
+  cssbundling-rails
+  jsbundling-rails
   parklife
   pdf-reader
+  propshaft
   railties
   rake
   rubocop
   rubocop-rake
-  sassc-rails
-  sprockets-image_compressor
-  sprockets-rails
-  uglifier
   webrick
 
 BUNDLED WITH

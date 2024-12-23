@@ -13,7 +13,7 @@
   </div>
 
   <% unless @criticism.images.empty? %>
-    <div class="col-xs-4" id="pages-box">
+    <div class="col-4" id="pages-box">
       <% @criticism.images.each do |image| %>
         <div class="pages-image"><%= image_tag(image) %></div>
       <% end %>

@@ -4,7 +4,7 @@ Website of Anne Arden McDonald
 Install
 -------
 
-* `bundle install`
+* `./bin/setup`
 
 Static Site
 -----------
@@ -21,4 +21,3 @@ static site:
     is a good way to see how the site will look/behave in production.
 * `RAILS_ENV=production bundle exec rake static:deploy`: Builds the static site
     then deploys it to the production server.
-

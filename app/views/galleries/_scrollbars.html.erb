@@ -1,7 +1,7 @@
 <div class="scrollbars">
   <% %w(up down).each do |dir| %>
     <div class="gallery-scroll gallery-<%= dir %>" id="scroll-<%= dir %>">
-      <%= link_to image_tag("watch_3_#{dir}.jpg", alt: "scroll #{dir}", class: 'img-responsive', width: 320, height: 480, id: "#{dir}-button") %>
+      <%= link_to image_tag("watch_3_#{dir}.jpg", alt: "scroll #{dir}", class: 'img-fluid', width: 320, height: 480, id: "#{dir}-button") %>
     </div>
   <% end %>
 </div>

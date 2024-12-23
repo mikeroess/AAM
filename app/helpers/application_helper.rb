@@ -74,13 +74,6 @@ module ApplicationHelper
     current_path_starts_with?(contact_path)
   end
 
-  def loop_clearfix(index)
-    classes = %w[visible-xs clearfix]
-    classes << 'visible-sm' if index.odd?
-    classes += %w[visible-md visible-lg] if index % 3 == 2
-    content_tag(:div, '', class: classes)
-  end
-
   private
 
   def current_path_starts_with?(*prefixes)

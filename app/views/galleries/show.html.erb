@@ -1,5 +1,5 @@
 <div id="main-image-container" class="row">
-  <div class="col-xs-12">
+  <div class="col-12">
     <%= image_tag(@image.image, id: 'main-image') %>
   </div>
 </div>
@@ -10,32 +10,15 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <p>Hover over images in the gallery to take a closer look.</p>
         <%= image_tag('loupe.gif', alt: 'Loupe Example') %>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
-
-<% content_for :scripts do %>
-  <script type="text/javascript">
-    (function($, Cookies) {
-      var LOUPE_COOKIE_NAME = 'gallery_loupe_notice_seen';
-
-      $(document).ready(function() {
-        if ($(window).width() < 768 || Cookies.get(LOUPE_COOKIE_NAME)) {
-          return;
-        }
-
-        $('#loupe-notice-modal').modal('show');
-        Cookies.set(LOUPE_COOKIE_NAME, true);
-      });
-    })(jQuery, Cookies);
-  </script>
-<% end %>

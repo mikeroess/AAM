@@ -44,7 +44,7 @@
   color: #666;
   background: #fff;
   z-index: 9;
-  font-family: Cardo-Italic;
+  font-style: italic;
   text-align: center;
   display: flex !important;
   align-items: center;
@@ -85,7 +85,7 @@
 }
 
 .gallery-item {
-  font-family: Cardo-Italic;
+  font-style: italic;
   color: #666;
   font-size: 80%;
   text-align: center;
@@ -103,11 +103,11 @@
 
 .scrollable-gallery-container {
   .scrollable-gallery {
-    @extend .col-xs-12, .col-sm-11;
+    @extend .col-12, .col-sm-11;
   }
 
   .scrollbars {
-    @extend .col-sm-1, .hidden-xs;
+    @extend .d-none, .d-sm-block, .col-sm-1;
 
     .gallery-scroll {
       width: 5%;

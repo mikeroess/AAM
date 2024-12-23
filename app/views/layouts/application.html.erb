@@ -6,16 +6,18 @@
     <meta charset="utf-8">
     <%= stylesheet_link_tag "application", media: "all" %>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <%= stylesheet_link_tag "application" %>
   </head>
 
   <body id="<%= current_page_class %>">
     <div class="container-fluid">
       <div class="row">
-        <aside id="sidebar" class="col-xs-2">
+        <aside id="sidebar" class="col-2">
           <%= render 'shared/sidebar' %>
         </aside>
 
-        <div id="main-content" class="col-xs-10">
+        <div id="main-content" class="col-10">
           <%= yield %>
         </div>
       </div>

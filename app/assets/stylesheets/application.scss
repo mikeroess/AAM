@@ -1,54 +1,44 @@
-/**
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- */
+$font-family-base: Cardo;
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
+@import "bootstrap/scss/bootstrap";
 
 // Fonts
 
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: font-url('glyphicons-halflings-regular.eot');
-  src: font-url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-       font-url('glyphicons-halflings-regular.woff') format('woff'),
-       font-url('glyphicons-halflings-regular.ttf') format('truetype'),
-       font-url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  font-family: 'Cardo';
+  src: url('Cardo-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Cardo-Light';
-  src: font-url('Copperplate_Light_SSi_Light.ttf');
+  font-family: 'Cardo';
+  src: url('Cardo-Bold.ttf');
+  font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Cardo-Regular';
-  src: font-url('Cardo-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Cardo-Bold';
-  src: font-url('Cardo-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Cardo-Italic';
-  src: font-url('Cardo-Italic.ttf');
+  font-family: 'Cardo';
+  src: url('Cardo-Italic.ttf');
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Copperplate';
-  src: font-url('Copperplate.dfont');
+  src: url('Copperplate.dfont');
+}
+
+@font-face {
+  font-family: 'Copperplate';
+  src: url('Copperplate_Light_SSi_Light.ttf');
+  font-weight: lighter;
+}
+
+html {
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
 }
 
 h2 {
@@ -61,12 +51,9 @@ h3 {
   font-size: 20px;
 }
 
-body {
-  font-family: Cardo-Regular;
-}
-
 .logo {
-  font-family: Cardo-Light;
+  font-family: Copperplate;
+  font-weight: lighter;
 
   @media(min-width: 768px) { font-size: 110%; letter-spacing: 5px; }
   @media(min-width: 815px) { font-size: 125%; letter-spacing: 5px; }
@@ -87,10 +74,7 @@ body {
 
   a {
     color: #000;
-
-    &:hover {
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
 }
 
@@ -100,8 +84,6 @@ body {
   bottom: 0;
   right: 0;
   left: 16.66%;
-  //padding-left: 15px;
-  //padding-right: 15px;
 
   @media (min-width: 768px) {
     padding-left: 35px;
@@ -138,7 +120,7 @@ body {
 
     li {
       font-size: 65%;
-      font-family: Cardo-Bold;
+      font-weight: bold;
       line-height: inherit;
       letter-spacing: 0px;
       margin-bottom: 8px;
@@ -301,37 +283,6 @@ body {
   }
 }
 
-.dropdown-menu {
-  .nav-tabs &,
-  .nav-pills &,
-  .navbar & {
-    margin-top: 0;
-  }
-}
-
-.navbar .sub-menu:before {
-  .submenu {
-    &:before {
-      border-bottom: 7px solid transparent;
-      border-left: none;
-      border-right: 7px solid rgba(0, 0, 0, 0.2);
-      border-top: 7px solid transparent;
-      left: -7px;
-      top: 10px;
-    }
-
-    &:after {
-      border-top: 6px solid transparent;
-      border-left: none;
-      border-right: 6px solid #fff;
-      border-bottom: 6px solid transparent;
-      left: 10px;
-      top: 11px;
-      left: -6px;
-    }
-  }
-}
-
 .content-header {
   height: 65px;
   line-height: 65px;
@@ -344,37 +295,21 @@ body {
   }
 }
 
-#menu-toggle {
-  display: none;
-}
-
-.inset {
-  padding: 20px;
-}
-
 @media (max-width:767px) {
   #sidebar {
     left: 0;
   }
-
-  #menu-toggle {
-    display: inline-block;
-  }
-
-  .inset {
-    padding: 15px;
-  }
 }
 
 .social {
-  font-size: 24px;
+  img {
+    width: 24px;
+    height: 21px;
+  }
 
   a {
     color: #000;
-
-    &:hover {
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
 }
 
@@ -393,10 +328,6 @@ body {
   @media (max-width: 767px) {
     min-height: calc(100vh - 20px);
   }
-}
-
-.mt-3 {
-  margin-top: 30px;
 }
 
 @import "contact";

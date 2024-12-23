@@ -2,7 +2,7 @@
 
 <% if show_subtitle %>
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-12">
       <h3><%= gallery.name %></h3>
     </div>
   </div>
@@ -14,12 +14,10 @@
   <% end %>
 <% else %>
   <div class="row">
-    <% gallery.images.each_with_index do |item, index| %>
-      <div class="col-md-4 col-sm-6 col-xs-12 gallery-item">
+    <% gallery.images.each do |item| %>
+      <div class="col-md-4 col-sm-6 col-12 gallery-item">
         <%= render partial: 'image', locals: { image: item } %>
       </div>
-
-      <%= loop_clearfix index %>
     <% end %>
   </div>
 <% end %>

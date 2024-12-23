@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-12">
     <%= render partial: 'title', locals: { gallery: @gallery } %>
   </div>
 </div>
@@ -7,32 +7,31 @@
 <div class="row scrollable-gallery-container">
   <div class="scrollable-gallery">
     <div class="row">
-      <div class="col-xs-12 gallery-item">
+      <div class="col-12 gallery-item">
         <%= render partial: 'image', locals: { image: @gallery.images.first } %>
       </div>
     </div>
 
     <div class="row">
-      <% @gallery.images[1..-4].each_with_index do |image, index| %>
-        <div class="col-md-4 col-sm-6 col-xs-12 gallery-item">
+      <% @gallery.images[1..-4].each do |image| %>
+        <div class="col-md-4 col-sm-6 col-12 gallery-item">
           <%= render partial: 'image', locals: { image: image } %>
         </div>
-        <%= loop_clearfix index %>
       <% end %>
     </div>
 
     <div class="row">
-      <div class="col-sm-6 col-xs-12 gallery-item">
+      <div class="col-sm-6 col-12 gallery-item">
         <%= render partial: 'image', locals: { image: @gallery.images[-3] } %>
       </div>
 
-      <div class="clearfix visible-xs"></div>
+      <div class="clearfix d-block d-sm-none"></div>
 
       <% @gallery.images[-2..-1].each do |image| %>
-        <div class="col-sm-3 col-xs-12 gallery-item">
+        <div class="col-sm-3 col-12 gallery-item">
           <%= render partial: 'image', locals: { image: image } %>
         </div>
-        <div class="clearfix visible-xs"></div>
+        <div class="clearfix d-block d-sm-none"></div>
       <% end %>
     </div>
   </div>
