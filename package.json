@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
-    "build:css": "node_modules/.bin/sass ./app/assets/stylesheets/application.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "build:css": "node_modules/.bin/sass ./app/assets/stylesheets/application.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules --quiet-deps"
   },
   "devDependencies": {
     "bootstrap": "^5.3.3",
@@ -11,7 +11,6 @@
     "js.cookie": "^0.0.4",
     "sass": "^1.83.0",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1",
-    "yarn": "^1.22.22"
+    "webpack-cli": "^6.0.1"
   }
 }
