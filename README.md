@@ -14,10 +14,17 @@ This site is deployed as a compiled set of HTML files. Because of this, you can'
 The `static` namespace of rake tasks contains some tasks for working with the
 static site:
 
-* `RAILS_ENV=production bundle exec rake static:build`: Builds the static site
+* `RAILS_ENV=production ./bin/rails static:build`: Builds the static site
     to a `_static` directory.
-* `RAILS_ENV=production bundle exec rake static:serve`: Builds the static site,
+* `RAILS_ENV=production ./bin/rails static:serve`: Builds the static site,
     then starts up a webrick server so you can browse it in your browser. This
     is a good way to see how the site will look/behave in production.
-* `RAILS_ENV=production bundle exec rake static:deploy`: Builds the static site
+* `RAILS_ENV=production ./bin/rails static:deploy`: Builds the static site
     then deploys it to the production server.
+
+Other Commands
+--------------
+
+* `./bin/rails images`: Compress/optimize all images in the
+    `app/assets/images` directory and create thumbnail versions.
+* `./bin/rubocop`: Run linting checks.
