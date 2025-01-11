@@ -11,6 +11,7 @@ gem 'webrick', require: false
 gem 'parklife', require: false
 gem 'pdf-reader', require: false
 gem 'mini_magick', require: false
+gem 'image_optim', require: false
 
 gem 'propshaft'
 gem 'cssbundling-rails'

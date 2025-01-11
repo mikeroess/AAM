@@ -1,3 +1,6 @@
+desc 'Run all image tasks'
+task images: ['images:optimize', 'images:thumbnails']
+
 namespace :images do
   desc 'Generate thumbnail versions of all gallery images'
   task thumbnails: :environment do
@@ -30,5 +33,23 @@ namespace :images do
         end
       end
     end
+  end
+
+  desc 'Optimize images'
+  task optimize: :environment do
+    require 'image_optim'
+    images = Dir["#{Rails.root.join('app', 'assets', 'images')}/*.*"]
+    ImageOptim.new(
+      pngcrush: false,
+      pngout: false,
+      advpng: false,
+      pngquant: false,
+      oxipng: false,
+      jhead: false,
+      gifsicle: false,
+      svgo: false,
+      jpegoptim: { allow_lossy: true, max_quality: 80 },
+      verbose: true
+    ).optimize_images!(images)
   end
 end
