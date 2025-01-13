@@ -79,6 +79,9 @@
 
   .highlighted-link {
     font-size: 85%;
+    color: #666;
+    text-decoration: underline;
+
     @media(min-width: 1300px) {font-size: 90%;}
     @media(min-width: 1525px) {font-size: 110%;}
     @media(min-width: 1648px) {font-size: 112%;}
@@ -91,8 +94,6 @@
     @media(min-width: 3500px) {font-size: 250%;}
     @media(min-width: 4000px) {font-size: 320%;}
     @media(min-width: 4500px) {font-size: 340%;}
-    color: #666;
-    text-decoration: underline;
 
     &:hover{
       color: #333;
@@ -124,7 +125,8 @@
   margin-left :17%;
   padding-right: 10%;
   padding-top: 5%;
-  @media (max-width: 991px) { padding-top: 8%; }
   height: 100%;
   max-width: 80%;
+
+  @media (max-width: 991px) { padding-top: 8%; }
 }
