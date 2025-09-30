@@ -8,7 +8,7 @@ gem 'railties'
 
 gem 'rake'
 gem 'webrick', require: false
-gem 'parklife', require: false
+gem 'parklife-rails'
 gem 'pdf-reader', require: false
 gem 'mini_magick', require: false
 gem 'image_optim', require: false
