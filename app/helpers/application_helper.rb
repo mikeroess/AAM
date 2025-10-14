@@ -10,8 +10,7 @@ module ApplicationHelper
   end
 
   def stripped_uri
-    path = URI(request.original_url).path
-    path.blank? ? nil : path.gsub(%r{/\d+}, '')
+    URI(request.original_url).path
   end
 
   def current_page_class
@@ -77,6 +76,7 @@ module ApplicationHelper
   private
 
   def current_path_starts_with?(*prefixes)
-    prefixes.include? stripped_uri
+    uri = stripped_uri
+    prefixes.any? { |p| uri.start_with? p }
   end
 end
