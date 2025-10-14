@@ -1,0 +1,29 @@
+<li class="nav-item">
+  New Work:
+  <ul>
+    <li class="nav-item">
+      <a class="nav-link<% if t20x16_page? %> active<% end %>" href="<%= gallery_path(:t20x16) %>">20x16 ins.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link<% if t24x20_page? %> active<% end %>" href="<%= gallery_path(:t24x20) %>">24x20 ins.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link<% if t40x30_page? %> active<% end %>" href="<%= gallery_path(:t40x30) %>">40x30 ins.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link<% if scrolls_page? %> active<% end %>" href="<%= gallery_path(:scrolls) %>">Scrolls</a>
+    </li>
+  </ul>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link<% if other_work_page? %> active<% end %>" href="<%= gallery_path(:other_work) %>">Other Work</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link<% if about_page? %> active<% end %>" href="<%= about_path %>">About</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link<% if contact_page? %> active<% end %>" href="<%= contact_path %>">Contact</a>
+</li>

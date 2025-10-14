@@ -1,22 +1,13 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 #contact-page {
-  img {
-    width: 100%;
-    margin-top: 30px;
-
-    @media(min-width: 992px) { margin-top: 0; }
-  }
-
   #main-content {
-    width: 73%;
-    margin-left: 5%;
-    margin-right: 5%;
     padding-top: 5%;
-    height: 100%;
-    max-width: 100%;
+
+    img {
+      width: 100%;
+      margin-top: 30px;
+
+      @media(min-width: 992px) { margin-top: 0; }
+    }
   }
 
   p {

@@ -11,21 +11,33 @@
   </head>
 
   <body id="<%= current_page_class %>">
+    <nav class="navbar d-sm-none border-bottom">
+      <div class="container-fluid">
+        <%= render 'shared/logo' %>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse<% if front_page? %> show<% end%>" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto my-2">
+            <%= render 'shared/navigation' %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container-fluid">
       <div class="row">
-        <aside id="sidebar" class="col-2">
+        <aside id="sidebar" class="col-2 d-none d-sm-flex flex-column justify-content-between">
           <%= render 'shared/sidebar' %>
         </aside>
 
-        <div id="main-content" class="col-10">
+        <div id="main-content" class="col-12 col-sm-10 offset-sm-2">
           <%= yield %>
         </div>
       </div>
 
       <% if front_page? %>
-        <div class="row">
-          <%= render 'shared/footer' %>
-        </div>
+        <%= render 'shared/footer' %>
       <% end %>
     </div>
   </body>

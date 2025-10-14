@@ -1,41 +1,17 @@
 <% _front_page = front_page? %>
 
-<% unless _front_page %><%= render 'shared/logo' %><% end %>
+<div>
+  <% unless _front_page %>
+    <div class="d-none d-md-block mt-4 mb-2"><%= render 'shared/logo' %></div>
+  <% end %>
 
-<ul class="navigation mt-4 mt-md-0">
-  <li>
-    New Work:
-    <ul>
-      <li<% if t20x16_page? %> class="current"<% end %>>
-        <a href="<%= gallery_path(:t20x16) %>">20x16 ins.</a>
-      </li>
-      <li<% if t24x20_page? %> class="current"<% end %>>
-        <a href="<%= gallery_path(:t24x20) %>">24x20 ins.</a>
-      </li>
-      <li<% if t40x30_page? %> class="current"<% end %>>
-        <a href="<%= gallery_path(:t40x30) %>">40x30 ins.</a>
-      </li>
-      <li<% if scrolls_page? %> class="current"<% end %>>
-        <a href="<%= gallery_path(:scrolls) %>">Scrolls</a>
-      </li>
-    </ul>
-  </li>
-
-  <li<% if other_work_page? %> class="current"<% end %>>
-    <a href="<%= gallery_path(:other_work) %>">Other Work</a>
-  </li>
-
-  <li<% if about_page? %> class="current"<% end %>>
-    <a href="<%= about_path %>">About</a>
-  </li>
-
-  <li<% if contact_page? %> class="current"<% end %>>
-    <a href="<%= contact_path %>">Contact</a>
-  </li>
-</ul>
+  <ul class="navigation mt-4 mt-md-0">
+    <%= render 'shared/navigation' %>
+  </ul>
+</div>
 
 <% unless _front_page %>
-  <footer class="d-none d-sm-block">
+  <footer class="d-none d-lg-block">
     <%= render 'shared/social' %>
     <%= render 'shared/copyright' %>
   </footer>
