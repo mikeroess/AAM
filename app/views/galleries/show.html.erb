@@ -1,10 +1,10 @@
-<div id="main-image-container" class="row">
-  <div class="col-12">
-    <%= image_tag(@image.image, id: 'main-image') %>
+<div class="image-container d-flex flex-column" style="height: 100vh;">
+  <div class="flex-grow-1 d-flex align-items-center">
+    <%= image_tag(@image.image) %>
   </div>
-</div>
 
-<%= render partial: 'description_and_links', locals: { image: @image } %>
+  <%= render partial: 'description_and_links', locals: { image: @image } %>
+</div>
 
 <div id="loupe-notice-modal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">

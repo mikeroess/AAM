@@ -1,15 +1,16 @@
-<div id="arrow-nav" class="row">
-  <div class="col-3 col-md-2 arrow left-arrow">
-    <a href="<%= image.previous_path %>">
-      <%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", class: "img-fluid") %>
-    </a>
-  </div>
-  <div class= "col-6 col-md-8 description">
-    <em><%= image_details(image) %></em>
-  </div>
-  <div class="col-3 col-md-2 arrow right-arrow">
-    <a href="<%= image.next_path %>">
-      <%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", class: "img-fluid") %>
-    </a>
+<div class="gallery-image--nav pb-2">
+  <div class="description d-md-none"><%= image_details(image) %></div>
+  <div class="arrows">
+    <div class="arrow">
+      <a href="<%= image.previous_path %>">
+        <%= image_tag("watch_4_left.jpg", alt: "left facing watch hand", class: "img-fluid") %>
+      </a>
+    </div>
+    <div class="description d-none d-md-block flex-grow-1"><%= image_details(image) %></div>
+    <div class="arrow">
+      <a href="<%= image.next_path %>">
+        <%= image_tag("watch_4_right.jpg", alt: "right facing watch hand", class: "img-fluid") %>
+      </a>
+    </div>
   </div>
 </div>

@@ -27,53 +27,6 @@
   }
 }
 
-//Nav arrows on detail pages
-#right-arrow{
-  display:table-cell;
-  vertical-align:middle;
-  float:none;
-}
-
-#left-arrow{
-  display:table-cell;
-  vertical-align:middle;
-  float:none;
-}
-
-#arrow-nav {
-  color: #666;
-  background: #fff;
-  z-index: 9;
-  font-style: italic;
-  text-align: center;
-  display: flex !important;
-  align-items: center;
-  bottom: 0;
-  width: 100%;
-  height: 15%;
-  margin-left: 0;
-  margin-right: 0;
-
-  @media(min-width: 768px) { height: 10%; }
-  @media(min-width: 1300px) {font-size: 115%;}
-  @media(min-width: 1648px) {font-size: 130%;}
-  @media(min-width: 1855px) {font-size: 150%;}
-  @media(min-width: 2472px) {font-size: 220%;}
-  @media(min-width: 3000px) {font-size: 240%;}
-  @media(min-width: 3500px) {font-size: 290%;}
-  @media(min-width: 4000px) {font-size: 320%;}
-  @media(min-width: 4500px) {font-size: 400%;}
-
-  .arrow {
-    img {
-      width: 500%;
-      margin: 0 auto;
-      @media (min-width: 768px) { width: 45%; }
-      @media (min-width: 1001px ) { width: 40%; }
-    }
-  }
-}
-
 .left-watch {
   width: 800%;
   @media (min-width: 480px) { width: 30%; }
@@ -84,37 +37,39 @@
   @media (min-width: 480px) { width: 30%; }
 }
 
-.gallery-item {
-  font-style: italic;
-  color: #666;
-  font-size: 80%;
-  text-align: center;
-  margin-bottom: 2%;
-  margin-left: 0%;
+#gallery-page {
+  .gallery-item {
+    font-style: italic;
+    color: #666;
+    font-size: 80%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: 0%;
 
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.scrollable-gallery-container {
-  .scrollable-gallery {
-    @extend .col-12, .col-sm-11;
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
   }
 
-  .scrollbars {
-    @extend .d-none, .d-sm-block, .col-sm-1;
+  .scrollable-gallery-container {
+    .scrollable-gallery {
+      @extend .col-12, .col-sm-11;
+    }
 
-    .gallery-scroll {
-      width: 5%;
-      position: fixed;
+    .scrollbars {
+      @extend .d-none, .d-sm-block, .col-sm-1;
 
-      &.gallery-down {
-        bottom: 0;
+      .gallery-scroll {
+        width: 5%;
+        position: fixed;
+
+        &.gallery-down {
+          bottom: 0;
+        }
       }
     }
   }
@@ -122,48 +77,59 @@
 
 // Detail pages
 
-.detail-text {
-  text-align: center;
-}
+#gallery-image-page {
+  .image-container {
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
 
-.detail-row {
-  padding-top: 3%;
-  margin-left: 40%;
-  @media (min-width: 480px) { margin-left: 30%; }
-}
+      @media (min-width: 992px) {
+        max-width: 76vw;
+        max-height: 86vh;
+      }
 
-#gallery-image-page #main-content {
-  #main-image-container {
-    display: flex;
-    align-items: center;
-  }
-}
+      &.with-loupe {
+        cursor: none;
+      }
+    }
 
-#main-image-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 85%;
-  margin-left: 0;
+    .description {
+      font-style: italic;
+      text-align: center;
+    }
 
-  @media (min-width: 768px) { height: 90%; }
-}
+    .arrows {
+      color: #666;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
 
-#main-image {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+      img {
+        width: 70px;
+        margin: 0 auto;
 
-  @media (min-width: 992px) {
-    max-width: 76vw;
-    max-height: 86vh;
-  }
+        @media (min-width: 768px) { width: 90px; }
+      }
 
-  &.with-loupe {
-    cursor: none;
+      .description {
+        padding: 0 20px;
+
+        @media(min-width: 1300px) {font-size: 115%;}
+        @media(min-width: 1648px) {font-size: 130%;}
+        @media(min-width: 1855px) {font-size: 150%;}
+        @media(min-width: 2472px) {font-size: 220%;}
+        @media(min-width: 3000px) {font-size: 240%;}
+        @media(min-width: 3500px) {font-size: 290%;}
+        @media(min-width: 4000px) {font-size: 320%;}
+        @media(min-width: 4500px) {font-size: 400%;}
+      }
+    }
   }
 }
 
@@ -183,4 +149,5 @@ https://github.com/redoPop/loupe
   -moz-box-shadow: 1px 1px 4px #000;
   box-shadow: 1px 1px 4px #000;
   transition: opacity 0.3s;
+  z-index: 1000;
 }
