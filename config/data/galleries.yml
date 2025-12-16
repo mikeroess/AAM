@@ -1353,10 +1353,12 @@
       year: 2021
       dimensions: 20 x 16 ins.
       image: Dads-Meds.jpg
+      sold: true
     - name: Cracking
       description: cameraless silver gelatin print
       year: 2020
       dimensions: 20 x 16 ins.
+      sold: true
     - name: Dust
       description: cameraless silver gelatin print
       year: 2020
@@ -1723,6 +1725,7 @@
       description: cameraless silver gelatin print
       year: 2018
       dimensions: 30 x 30 ins.
+      sold: true
     - name: Sphere Pale
       year: 2016
       dimensions: 40 x 30 ins.
