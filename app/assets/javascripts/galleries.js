@@ -20,7 +20,7 @@
   };
 
   const initLoupe = function() {
-    $('#gallery-image-page #main-image')
+    $('#gallery-image-page .image-container img')
       .addClass('with-loupe')
       .loupe({width: 250, height: 250});
   };
