@@ -10,13 +10,11 @@
 # Compiled assets.
 /public/assets
 /_static/
+/app/assets/builds/*
+!/app/assets/builds/.keep
 
 # Bundler packages.
 /vendor/bundle
-
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
@@ -25,12 +23,7 @@
 # ignore DS_Store
 /.DS_Store
 
-/config/secrets.yml
-
-# Ignore master key for decrypting credentials and more.
-/config/master.key
-
-/app/assets/builds/*
-!/app/assets/builds/.keep
+# Ignore key files for decrypting credentials and more.
+/config/*.key
 
 /node_modules
