@@ -107,6 +107,7 @@
       year: 2014
       dimensions: 110 x 50 ins.
       image: ap-11-lumen.jpg
+      sold: true
     - name: Rust
       description: camaraless silver gelatin photograph
       year: 2014
