@@ -1,6 +1,6 @@
 <div class="image-container d-flex flex-column" style="height: 100vh;">
   <div class="flex-grow-1 d-flex align-items-center">
-    <%= image_tag(@image.image) %>
+    <%= image_tag(@image.image, alt: @image.name, class: 'gallery-image--image') %>
   </div>
 
   <%= render partial: 'description_and_links', locals: { image: @image } %>
