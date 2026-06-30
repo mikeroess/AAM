@@ -92,7 +92,7 @@ class ResumeParser
     end
 
     def show_text_with_positioning(parts)
-      show_text(parts.select { |p| p.is_a?(String) }.join)
+      show_text(parts.grep(String).join)
     end
 
     def show_text(text)
